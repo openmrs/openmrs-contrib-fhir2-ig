@@ -1,0 +1,21 @@
+id: openmrs
+canonical: http://fhir.openmrs.org/fhir
+version: 0.1.0
+name: OMRSFhir2ImplementationGuide
+title: OpenMRS FHIR2 Implementation Guide
+status: draft
+publisher: OpenMRS, Inc.
+contact:
+  - name: OpenMRS, Inc.
+    telecom:
+      - system: url
+        value: https://openmrs.org
+description: An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR
+license: CC-BY-SA-4.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-license: true
+  apply-contact: true
+copyrightYear: 2021+
+releaseLabel: ci-build

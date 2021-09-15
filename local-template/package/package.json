@@ -1,0 +1,12 @@
+{
+    "name": "openmrs.fhir2.template",
+    "version": "1.0.0",
+    "type": "fhir.template",
+    "license": "CC-BY-SA-4.0",
+    "description": "Local template extension for FHIR IG",
+    "author": "http://openmrs.org",
+    "base":  "openhie.fhir.template",
+    "dependencies": {
+      "openhie.fhir.template": "current"
+    }
+  }

@@ -1,0 +1,27 @@
+# Temporary folders #
+#####################
+temp
+template
+output
+fsh-generated
+
+# Working files #
+#################
+.index.json
+
+# Don't commit this because it's so large #
+###########################################
+/input-cache
+
+# Windows generated files #
+###########################
+Thumbs.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# backup files #
+################
+*.bak
