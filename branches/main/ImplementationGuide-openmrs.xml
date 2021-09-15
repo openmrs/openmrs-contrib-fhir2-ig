@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-09-15T19:19:59+00:00"/>
+  <date value="2021-09-15T19:37:29+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -193,6 +193,17 @@
       </reference>
       <name value="OpenMRS Location"/>
       <description value="An OpenMRS location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-location-contact-point"/>
+      </reference>
+      <name value="OpenMRS Location Contact Point"/>
+      <description value="An OpenMRS Location Phone Number"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

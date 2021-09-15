@@ -14,6 +14,13 @@
     "name": "OMRSLocation"
   },
   {
+    "id": "omrs-location-contact-point",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location-contact-point",
+    "version": "0.1.0",
+    "name": "OMRSLocationContactPoint"
+  },
+  {
     "id": "omrs-patient",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
