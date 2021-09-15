@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2021-09-15T19:19:59+00:00",
+  "date": "2021-09-15T19:37:29+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -304,6 +304,20 @@
         },
         "name": "OpenMRS Location",
         "description": "An OpenMRS location",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/omrs-location-contact-point"
+        },
+        "name": "OpenMRS Location Contact Point",
+        "description": "An OpenMRS Location Phone Number",
         "exampleBoolean": false
       },
       {
