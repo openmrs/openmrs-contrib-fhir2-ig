@@ -13,11 +13,13 @@ on:
   push:
     branches: 
       - main
+      - doc
       - draft
       - candidate
   pull_request:
     branches: 
       - main
+      - doc
       - draft
       - candidate
 
