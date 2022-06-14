@@ -22,7 +22,7 @@ https://www.ruby-lang.org/en/documentation/installation/
         npm install -g fsh-sushi
         sushi --help
 
-4. Install Java
+4. Install Java   
 https://java.com/en/download/help/download_options.html
 
 5. Update IG Publisher
