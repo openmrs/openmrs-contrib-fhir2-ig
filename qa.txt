@@ -3,7 +3,7 @@
 
 err = 0, warn = 5, info = 0
 IG Publisher Version: 1.1.121
-Generated Tue Jun 14 21:30:10 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Tue Jun 14 21:30:49 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 0 / 1 / 1
