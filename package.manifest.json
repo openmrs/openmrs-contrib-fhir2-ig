@@ -1,6 +1,8 @@
 {
   "version": "0.1.0",
-  "fhirVersion": "[4.0.1]",
-  "date": "20210915193707",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220614212934",
   "name": "openmrs"
 }
