@@ -37,5 +37,6 @@ https://java.com/en/download/help/download_options.html
 
 8. ### Publication
    This ImplementationGuide is published in the following locations:
+   
     Continuous Build: https://github.com/openmrs/openmrs-contrib-fhir2-ig/blob/main/input/pagecontent/index.md
    
