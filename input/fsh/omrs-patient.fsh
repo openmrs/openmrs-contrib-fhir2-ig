@@ -18,6 +18,8 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * photo 0..0
 * contact 0..0
 * communication 0..0
+* address 0..0
+* deceased[x] 0..0
 * link 0..0
 
 Profile:      OMRSPatientIdentifier
@@ -33,3 +35,4 @@ Id:           omrs-patient-identifier-location
 Title:        "OpenMRS Patient Identifier Location"
 Description:  "OpenMRS location for which this identifier is valid"
 * value[x] only Reference(OMRSLocation)
+
