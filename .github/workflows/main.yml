@@ -5,7 +5,7 @@
 
 # Make sure your repo has a branch called gh-pages
 
-name: CI
+name: Deploy to Github Pages
 
 # Controls when the action will run. 
 on:
@@ -13,13 +13,10 @@ on:
   push:
     branches: 
       - main
-      - draft
-      - candidate
+ 
   pull_request:
     branches: 
       - main
-      - draft
-      - candidate
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -48,10 +45,6 @@ jobs:
         with:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
-
-      - name: Get branch names
-        id: branch-name
-        uses: tj-actions/branch-names@v4.3
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
