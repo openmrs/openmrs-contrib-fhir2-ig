@@ -11,3 +11,6 @@ Description: "A FHIR Person as understood by OpenMRS"
 * address 0..* MS
 * active 1..1 MS
 * active = true
+* photo 0..0
+* managingOrganization 0..0
+* link 0..0
