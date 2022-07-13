@@ -3,7 +3,7 @@
   /* see http://build.fhir.org/ig/FHIR/ig-guidance/colors.html */
 
   --ig-status-text-color: #6b6868; /* 1. IG Title and status text color */
-  --navbar-bg-color: #007d79; /* 2. Header container color */
+  --navbar-bg-color: #00473f; /* 2. Header container color */
   --footer-container-bg-color: #007d79; /* 4. Footer container color */
   --stripe-bg-color: #007d79; /* 5. Header strip color */
 

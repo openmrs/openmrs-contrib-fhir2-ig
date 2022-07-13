@@ -6,20 +6,9 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
-<!--
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
-		</a>
 
-	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
-		</a>
-
-	</li>
--->
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle"> Technical Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
