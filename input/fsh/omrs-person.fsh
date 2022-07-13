@@ -14,3 +14,26 @@ Description: "A FHIR Person as understood by OpenMRS"
 * photo 0..0
 * managingOrganization 0..0
 * link 0..0
+
+//OpenMRS Person Example
+
+Instance: example-openmrs-person
+InstanceOf: OMRSPerson 
+Usage: #example
+Title: "Openmrs Person"
+Description: "Example OMRS Person Resource"
+* identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
+* identifier.use = #official
+* identifier.type.text = "OpenMRS ID"
+* identifier.value = "1000Y"
+* name.id = "915c9146-8bdb-4fad-bc51-4af10d041c86"
+* name.family = "John"
+* name.given = "Smith"
+* gender = #male
+* birthDate = "2001-09-08"
+* address.extension.url = "http://fhir.openmrs.org/ext/address"
+* address.use = #home
+* address.country = "Uganda"
+* address.city = "Ntungamo"
+* address.district = "Ntungamo"
+* active = true
