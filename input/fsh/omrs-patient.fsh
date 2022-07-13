@@ -10,15 +10,19 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * identifier only OMRSPatientIdentifier
 * active 1..1
 * active = true
-* name 1..1
-* gender 1..1
+* name 0..*
+* gender 0..1
 * birthDate 1..1
-* maritalStatus 0..0
-* multipleBirth[x] 0..0
-* photo 0..0
-* contact 0..0
-* communication 0..0
-* link 0..0
+* maritalStatus 0..1
+* multipleBirth[x] 0..1
+* photo 0..*
+* address 0..*
+* contact 0..*
+* telecom 0..*
+* communication 0..*
+* link 0..*
+* managingOrganization 0..1
+* generalPractitioner 0..* 
 
 Profile:      OMRSPatientIdentifier
 Parent:       Identifier
