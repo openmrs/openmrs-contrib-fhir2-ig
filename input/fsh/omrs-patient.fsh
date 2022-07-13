@@ -24,6 +24,7 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * managingOrganization 0..1
 * generalPractitioner 0..* 
 
+
 Profile:      OMRSPatientIdentifier
 Parent:       Identifier
 Id:           omrs-patient-identifier
