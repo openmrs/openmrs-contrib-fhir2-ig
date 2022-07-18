@@ -37,3 +37,51 @@ Description: "Example OMRS Person Resource"
 * address.city = "Ntungamo"
 * address.district = "Ntungamo"
 * active = true
+
+/** mapping FHIR HL7 vs OMRS*/
+
+Mapping: PersonMapping
+Source: OMRSPerson
+Target: "http://hl7.org/fhir/3.0/StructureDefinition/Person"
+Id: person-mapping
+Title: "FHIR HL7 vs OMRS "
+Description: "Person is a FHIR resource that is used to represent demographics and administrative information about a person independent of a specific health-related context. FHIR Persons are mapped to OpenMRS Person objects."
+* -> "OMRS Person" "This profile maps to Person in OMRS FHIR2"
+* identifier -> "Patient.identifier"
+* id -> "Person.uuid"
+* telecom -> "Person.personAttribute" "The attribute used is determined by the fhir2.personContactPointAttributeTypeUuid global property"
+* gender -> "Person.gender"
+* birthDate -> "Person.birthDate" "Estimated birthdates report month and year for people 5 and under or only year for people older than 5"
+* address -> "Person.address"
+* link -> "Person.link"
+
+
+Instance: PersonName
+InstanceOf: SearchParameter
+Title: "Search on the Person.name element"
+Description: "Search Parameter extension enabling clients to search on the Person.name element"
+Usage: #definition
+* description = "Searches the full name of the person"
+* name = "name"
+* status = #active
+* code = #HumanName
+* base = #OMRSPerson
+* expression = "Person.name"
+* type = #string
+
+
+Instance: PersonBirthDate
+InstanceOf: SearchParameter
+Title: "Search on the Person.birthdate element"
+Description: "Searches based on the person's birthdate"
+Usage: #definition
+* url = "sdsd"
+* description = "Searches based on the person's birthdate"
+* name = "birthDate"
+* status = #active
+* code = #date
+* base = #OMRSPerson
+* expression = "Person.birthDate"
+* type = #date
+
+
