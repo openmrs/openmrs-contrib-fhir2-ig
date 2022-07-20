@@ -56,32 +56,3 @@ Description: "Person is a FHIR resource that is used to represent demographics a
 * link -> "Person.link"
 
 
-Instance: PersonName
-InstanceOf: SearchParameter
-Title: "Search on the Person.name element"
-Description: "Search Parameter extension enabling clients to search on the Person.name element"
-Usage: #definition
-* description = "Searches the full name of the person"
-* name = "name"
-* status = #active
-* code = #HumanName
-* base = #OMRSPerson
-* expression = "Person.name"
-* type = #string
-
-
-Instance: PersonBirthDate
-InstanceOf: SearchParameter
-Title: "Search on the Person.birthdate element"
-Description: "Searches based on the person's birthdate"
-Usage: #definition
-* url = "sdsd"
-* description = "Searches based on the person's birthdate"
-* name = "birthDate"
-* status = #active
-* code = #date
-* base = #OMRSPerson
-* expression = "Person.birthDate"
-* type = #date
-
-
