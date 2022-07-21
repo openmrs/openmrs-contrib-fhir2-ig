@@ -6,3 +6,4 @@ Description: "DiagnosticReport resource created by a OpenMRS that representing r
 * code.coding 1..*
 * code.coding from OpenMRSOrderCodeVS
 * result only Reference(OpenMRSObservation)
+

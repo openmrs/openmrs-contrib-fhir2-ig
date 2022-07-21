@@ -33,3 +33,4 @@ Description:  "The status of the diagnostic report, subset from https://www.hl7.
 * DS#diagnostic-report-status-unknown "Unknown"
 * DS#diagnostic-report-status-canceled "Canceled"
 * DS#diagnostic-report-status-amended "Amended"
+
