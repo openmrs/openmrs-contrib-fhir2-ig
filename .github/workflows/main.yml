@@ -54,15 +54,20 @@ jobs:
         uses: tj-actions/branch-names@v4.3
 
       - name: Deploy candidate
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'false'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output 
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy candidate branch
+          target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
+          clean: false 
 
       - name: Deploy main
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy main branch
+          clean-exclude: branches
