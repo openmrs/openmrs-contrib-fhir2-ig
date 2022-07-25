@@ -8,19 +8,17 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier only OMRSPatientIdentifier
-* active 1..1 MS
+* active 1..1
 * active = true
-* name 1..1 MS
-* gender 1..1 MS 
-* birthDate 1..1 MS
+* name 1..1
+* gender 1..1
+* birthDate 1..1
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
 * photo 0..0
 * contact 0..0
 * communication 0..0
 * link 0..0
-* managingOrganization 0..0
-* generalPractitioner 0..* 
 
 Profile:      OMRSPatientIdentifier
 Parent:       Identifier
