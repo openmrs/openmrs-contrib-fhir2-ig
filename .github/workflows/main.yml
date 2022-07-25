@@ -22,10 +22,7 @@ on:
       - candidate
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-  
-permissions:
-  pull-requests: write  
+  workflow_dispatch:  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -60,6 +57,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'false'
         with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
           commit-message: Deploy candidate branch
@@ -70,6 +68,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
           commit-message: Deploy main branch
