@@ -5,12 +5,11 @@
 
 # Make sure your repo has a branch called gh-pages
 
-name: Build and Publish
+name: Build IG
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
+  pull_request:
     branches: 
       - main
       - draft
@@ -43,26 +42,3 @@ jobs:
         with:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
-
-      - name: Get branch names
-        id: branch-name
-        uses: tj-actions/branch-names@v4.3
-
-      - name: Deploy candidate
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: ${{ steps.branch-name.outputs.is_default }} == 'false'
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: ./output # The folder the action should deploy.
-          commit-message: Deploy candidate branch
-          target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
-          clean: false 
-
-      - name: Deploy main
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: ./output # The folder the action should deploy.
-          commit-message: Deploy main branch
-          clean-exclude: branches
