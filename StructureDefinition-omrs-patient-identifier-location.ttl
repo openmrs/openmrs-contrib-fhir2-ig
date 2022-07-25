@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "OMRSPatientIdentifierLocationExtension"];
   fhir:StructureDefinition.title [ fhir:value "OpenMRS Patient Identifier Location"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-25T18:06:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-25T18:10:42+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];

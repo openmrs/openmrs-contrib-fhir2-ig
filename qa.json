@@ -3,7 +3,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "package-id": "openmrs",
   "ig-ver": "0.1.0",
-  "date": "Mon, 25 Jul, 2022 18:06:36 +0000",
+  "date": "Mon, 25 Jul, 2022 18:10:42 +0000",
   "errs": 0,
   "warnings": 5,
   "hints": 0,
