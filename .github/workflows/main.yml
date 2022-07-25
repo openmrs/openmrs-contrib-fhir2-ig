@@ -5,17 +5,12 @@
 
 # Make sure your repo has a branch called gh-pages
 
-name: CI
+name: Build and Publish
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: 
-      - main
-      - draft
-      - candidate
-  pull_request:
     branches: 
       - main
       - draft
