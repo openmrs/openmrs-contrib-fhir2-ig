@@ -1,0 +1,26 @@
+﻿OMRSFhir2ImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 0
+IG Publisher Version: 1.1.126
+Generated Mon Jul 25 18:10:57 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-openmrs.json ==
+== fsh-generated/resources/StructureDefinition-omrs-location.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-omrs-location-contact-point.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location-contact-point'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-omrs-patient.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location'): The Implementation Guide contains no examples for this extension
