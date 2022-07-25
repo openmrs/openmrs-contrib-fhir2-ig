@@ -33,5 +33,5 @@ https://java.com/en/download/help/download_options.html
 
         ./_genonce.sh
 
-7. Open Published IG Static files under the `./output/` folder
+7. Open Published IG Static files under the `./output/` folder and view the built IG in the browser
    
