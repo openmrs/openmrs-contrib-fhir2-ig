@@ -1,11 +1,13 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 5, info = 0
-IG Publisher Version: 1.1.126
-Generated Mon Jul 25 18:28:37 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
- Build Errors : 0 / 0 / 0
+err = 2, warn = 5, info = 0
+IG Publisher Version: 1.1.127
+Generated Tue Jul 26 21:28:11 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 1 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient : 0 / 1 / 1
@@ -13,7 +15,12 @@ Generated Mon Jul 25 18:28:37 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 993: The link '"Patient/5946f880-b197-400b-9caa-a3c661d23041"' for ""Patient/5946f880-b197-400b-9caa-a3c661d23041"" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
+== fsh-generated/resources/Observation-example-openmrs-Observation.json ==
+ERROR: Observation/example-openmrs-Observation: Observation.text.div: The URL is not valid because '(URL contains Invalid Characters (["]))' : "Patient/5946f880-b197-400b-9caa-a3c661d23041" 
+ERROR: Observation/example-openmrs-Observation: Observation.subject: Unable to resolve resource with reference '"Patient/5946f880-b197-400b-9caa-a3c661d23041"'
+== fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
 == fsh-generated/resources/StructureDefinition-omrs-location.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-omrs-location-contact-point.json ==

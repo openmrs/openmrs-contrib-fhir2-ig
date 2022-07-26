@@ -7,6 +7,13 @@
     "name": "OMRSFhir2ImplementationGuide"
   },
   {
+    "id": "OpenMRS-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation",
+    "version": "0.1.0",
+    "name": "OpenMRSObservation"
+  },
+  {
     "id": "omrs-location",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",

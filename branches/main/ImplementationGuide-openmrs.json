@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-07-25T18:28:18+00:00",
+  "date": "2022-07-26T21:27:45+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -399,6 +399,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OpenMRS-observation"
+        },
+        "name": "OpenMRS Observation",
+        "description": "Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -408,6 +422,20 @@
         "name": "OpenMRS Patient Identifier Location",
         "description": "OpenMRS location for which this identifier is valid",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-openmrs-Observation"
+        },
+        "name": "Openmrs Observation",
+        "description": "Example OMRS Observation Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"
       }
     ],
     "page": {
