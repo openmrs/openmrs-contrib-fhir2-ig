@@ -7,7 +7,6 @@ Description: "A Task resource represent an activity that is to be performed,and 
 * basedOn 1..*  MS
 * basedOn only Reference(OpenMRSServiceRequest)
 * for only Reference(OMRSPatient)
-// * encounter only Reference(Encounter)
 * authoredOn 1..1 MS
 * status from OMRSPatientTaskStatusVS
 * intent from OMRSPatientTaskIntentVS
@@ -56,7 +55,6 @@ Description: "Task is used to represent an activity that is to be performed,and 
 * status -> "status"
 * intent -> "intent"
 * basedOn -> "basedOn"
-// * encounter -> "encounter"
 * owner -> "owner"
 * input -> "input"
 * output -> "output"
