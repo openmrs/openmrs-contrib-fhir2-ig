@@ -7,5 +7,3 @@ Description: " Service Request Resource is represents a request for some type of
 * code.coding 1..*
 * code.coding from OpenMRSOrderCodeVS
 * subject only Reference(OMRSPatient)
-// * encounter only Reference(Encounter)
-
