@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "example-openmrs-Observation",
+  "meta": {
+    "profile": [
+      "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-openmrs-Observation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>identifier</b>: id: e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9</p><p><b>status</b>: preliminary</p><p><b>category</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>code</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>subject</b>: <a href=\"&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;\">\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"</a></p><p><b>effective</b>: 2014-11-25 10:17:00+1100</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.openmrs.org/ext/task/identifier",
+      "value": "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"
+    }
+  ],
+  "status": "preliminary",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "22748-8"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "22748-8"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2014-11-25T22:17:00+11:00"
+}

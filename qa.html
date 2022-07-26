@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 0, warn = 5, info = 0, 0 -->
+<!-- broken links = errors = 2, warn = 5, info = 0, 1 -->
 <head>
   <title>OMRSFhir2ImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OMRSFhir2ImplementationGuide</h1>
- <p>Generated Mon Jul 25 18:28:37 UTC 2022, FHIR version 4.0.1 for openmrs#0.1.0 (canonical = <a href="http://fhir.openmrs.org/fhir">http://fhir.openmrs.org/fhir</a> (<a href="http://fhir.openmrs.org/fhir/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Jul 26 21:28:11 UTC 2022, FHIR version 4.0.1 for openmrs#0.1.0 (canonical = <a href="http://fhir.openmrs.org/fhir">http://fhir.openmrs.org/fhir</a> (<a href="http://fhir.openmrs.org/fhir/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.126</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.127</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openmrs, Canonical = http://fhir.openmrs.org/fhir</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -52,19 +52,26 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.openmrs.org/fhir (Problem #1 with package-list.json at http://fhir.openmrs.org/fhir: Invalid HTTP response 404 from http://fhir.openmrs.org/fhir/package-list.json?nocache=1658773698714 (Not Found) (content in /tmp/fhir-http-3.log))</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.openmrs.org/fhir (Problem #1 with package-list.json at http://fhir.openmrs.org/fhir: Invalid HTTP response 404 from http://fhir.openmrs.org/fhir/package-list.json?nocache=1658870865317 (Not Found) (content in /tmp/fhir-http-3.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 5, info = 0, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 2, warn = 5, info = 0, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-openmrs"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-openmrs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-openmrs-Observation"><b>/github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-OpenMRS-observation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-omrs-location"><b>/github/workspace/fsh-generated/resources/StructureDefinition-omrs-location</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -87,6 +94,9 @@
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-openmrs-Observation.html#l345">output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 993</a></b></td><td><b>error</b></td><td><b>The link '&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;' for &quot;&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;&quot; cannot be resolved</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImplementationGuide-openmrs"> </a>
@@ -98,9 +108,35 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-example-openmrs-Observation"> </a>
+<h2><a href="Observation-example-openmrs-Observation.html">fsh-generated/resources/Observation-example-openmrs-Observation.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-OpenMRS-observation.html">OpenMRS Observation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains Invalid Characters ([&quot;]))' : &quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot; </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l35/c69)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference '&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-OpenMRS-observation"> </a>
+<h2><a href="StructureDefinition-OpenMRS-observation.html">fsh-generated/resources/StructureDefinition-OpenMRS-observation.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-omrs-location"> </a>
-<h2><a href="StructureDefinition-omrs-location.html">fsh-generated/resources/StructureDefinition-omrs-location.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-omrs-location.html">fsh-generated/resources/StructureDefinition-omrs-location.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -112,8 +148,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-omrs-location-contact-point"> </a>
-<h2><a href="StructureDefinition-omrs-location-contact-point.html">fsh-generated/resources/StructureDefinition-omrs-location-contact-point.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-omrs-location-contact-point.html">fsh-generated/resources/StructureDefinition-omrs-location-contact-point.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -125,8 +161,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-omrs-patient"> </a>
-<h2><a href="StructureDefinition-omrs-patient.html">fsh-generated/resources/StructureDefinition-omrs-patient.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-omrs-patient.html">fsh-generated/resources/StructureDefinition-omrs-patient.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -138,8 +174,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-omrs-patient-identifier"> </a>
-<h2><a href="StructureDefinition-omrs-patient-identifier.html">fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-omrs-patient-identifier.html">fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -151,8 +187,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-omrs-patient-identifier-location"> </a>
-<h2><a href="StructureDefinition-omrs-patient-identifier-location.html">fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-omrs-patient-identifier-location.html">fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -166,5 +202,21 @@
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-openmrs-Observation.html">fsh-generated/resources/Observation-example-openmrs-Observation.json</a></td><td><b>Unable to resolve resource with reference '&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="XHTML_URL_INVALID"> </a>
+<h2>XHTML_URL_INVALID</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-openmrs-Observation.html">fsh-generated/resources/Observation-example-openmrs-Observation.json</a></td><td><b>The URL is not valid because '(URL contains Invalid Characters ([&quot;]))' : &quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot; </b></td>
+   </tr>
+</table>
 </body>
 </html>

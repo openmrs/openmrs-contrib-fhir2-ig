@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-25T18:28:18+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-26T21:27:45+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -383,6 +383,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/OpenMRS-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenMRS Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -392,6 +406,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenMRS Patient Identifier Location" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "OpenMRS location for which this identifier is valid" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/Observation/example-openmrs-Observation>;
+         fhir:Reference.reference [ fhir:value "Observation/example-openmrs-Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Openmrs Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example OMRS Observation Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation";
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

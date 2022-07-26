@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-07-25T18:28:18+00:00"/>
+  <date value="2022-07-26T21:27:45+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -259,6 +259,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-observation"/>
+      </reference>
+      <name value="OpenMRS Observation"/>
+      <description value="Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -267,6 +278,17 @@
       <name value="OpenMRS Patient Identifier Location"/>
       <description value="OpenMRS location for which this identifier is valid"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-openmrs-Observation"/>
+      </reference>
+      <name value="Openmrs Observation"/>
+      <description value="Example OMRS Observation Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
