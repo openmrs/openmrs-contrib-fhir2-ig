@@ -3,14 +3,14 @@ Parent:       Location
 Id:           omrs-location
 Title:        "OpenMRS Location"
 Description:  "An OpenMRS location"
-* identifier 1..1 MS
-* status 1..1 MS
+* identifier 1..1 
+* status 1..1 
 * status from LocationStatusVS
-* name 1..1 MS
-* position 0..1 MS
+* name 1..1 
+* position 0..1 
 * position.longitude 1..1
 * position.latitude 1..1 
-* telecom 0..1 MS
+* telecom 0..1 
 * telecom only OMRSLocationContactPoint 
 * address only OMRSAddress
 
@@ -20,20 +20,20 @@ Parent:       ContactPoint
 Id:           omrs-location-contact-point
 Title:        "OpenMRS Location Contact Point"
 Description:  "An OpenMRS Location Phone Number"
-* id 1..1 MS
-* value 1..1 MS
+* id 1..1 
+* value 1..1 
 
 Profile: OMRSAddress
 Parent: Address
 Id: omrs-address
 Title: "OMRS Address"
 Description: "Address profile specifies the geological location details"
-* use 0..1 MS
-* city 0..1 MS
-* district 0..1 MS
-* state 0..1 MS
-* postalCode 0..1 MS
-* country 0..1 MS
+* use 0..1 
+* city 0..1 
+* district 0..1 
+* state 0..1 
+* postalCode 0..1 
+* country 0..1 
 
 
 Alias: $SCT = https://fhir.openmrs.org/location-status
