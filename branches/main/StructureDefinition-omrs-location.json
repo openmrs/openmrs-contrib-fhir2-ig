@@ -3,7 +3,7 @@
   "id": "omrs-location",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.id\">id</a><a name=\"Location.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.status\">status</a><a name=\"Location.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">active | suspended | inactive</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">operationalStatus</span><a name=\"Location.operationalStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.name\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of the location as used by humans</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">alias</span><a name=\"Location.alias\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">mode</span><a name=\"Location.mode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">type</span><a name=\"Location.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.telecom\">telecom</a><a name=\"Location.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-location-contact-point.html\" title=\"ContactPoint\">OMRSLocationContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Technology mediated contact point (phone, fax, email, etc.)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">physicalType</span><a name=\"Location.physicalType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">managingOrganization</span><a name=\"Location.managingOrganization\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">hoursOfOperation</span><a name=\"Location.hoursOfOperation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">availabilityExceptions</span><a name=\"Location.availabilityExceptions\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">endpoint</span><a name=\"Location.endpoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.id\">id</a><a name=\"Location.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.meta\">meta</a><a name=\"Location.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.meta.tag\">tag</a><a name=\"Location.meta.tag\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Tags applied to this resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.identifier\">identifier</a><a name=\"Location.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Unique code or number identifying the location to its users</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.status\">status</a><a name=\"Location.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">active | suspended | inactive</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-location-status-vs.html\">Location Status ValueSet</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.name\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of the location as used by humans</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.description\">description</a><a name=\"Location.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional details about the location that could be displayed as further information to identify the location beyond its name</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.telecom\">telecom</a><a name=\"Location.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-location-contact-point.html\" title=\"ContactPoint\">OMRSLocationContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Technology mediated contact point (phone, fax, email, etc.)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address\">address</a><a name=\"Location.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-address.html\" title=\"Address\">OMRSAddress</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address expressed using postal conventions (as opposed to GPS or other location definition formats)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.line\">line</a><a name=\"Location.address.line\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Street name, number, direction &amp; P.O. Box etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.city\">city</a><a name=\"Location.address.city\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of city, town etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.district\">district</a><a name=\"Location.address.district\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">District name (aka county)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.state\">state</a><a name=\"Location.address.state\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Sub-unit of country (abbreviations ok)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.postalCode\">postalCode</a><a name=\"Location.address.postalCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Postal code for area</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.country\">country</a><a name=\"Location.address.country\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Country (e.g. can be ISO 3166 2 or 3 letter code)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position\">position</a><a name=\"Location.position\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position.longitude\">longitude</a><a name=\"Location.position.longitude\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Longitude with WGS84 datum</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position.latitude\">latitude</a><a name=\"Location.position.latitude\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Latitude with WGS84 datum</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.partOf\">partOf</a><a name=\"Location.partOf\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Another Location this one is physically a part of</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "extension": [
     {
@@ -20,7 +20,7 @@
   "name": "OMRSLocation",
   "title": "OpenMRS Location",
   "status": "active",
-  "date": "2022-07-26T21:27:45+00:00",
+  "date": "2022-07-27T18:06:27+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -44,6 +44,12 @@
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "location-Mapping",
+      "uri": "http://hl7.org/fhir/3.0/StructureDefinition/Location",
+      "name": "FHIR HL7 vs OMRS FHIR2",
+      "comment": "Location is a FHIR resource that represents details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated. In the current implementation, FHIR Locations are mapped to OpenMRS Location objects."
     }
   ],
   "kind": "resource",
@@ -127,6 +133,11 @@
           {
             "identity": "rim",
             "map": ".Role[classCode=SDLC]"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "OMRS Location",
+            "comment": "This profile maps to Location in OMRS FHIR2"
           }
         ]
       },
@@ -136,7 +147,7 @@
         "short": "Logical id of this artifact",
         "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
         "comment": "The only time that a resource does not have an id is when it is being submitted to the server using a create operation.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Resource.id",
@@ -155,7 +166,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "Location.uuid"
+          }
+        ]
       },
       {
         "id": "Location.meta",
@@ -186,6 +203,321 @@
         ],
         "isModifier": false,
         "isSummary": true
+      },
+      {
+        "id": "Location.meta.id",
+        "path": "Location.meta.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.meta.extension",
+        "path": "Location.meta.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.meta.versionId",
+        "path": "Location.meta.versionId",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
+        "comment": "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Meta.versionId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Location.meta.lastUpdated",
+        "path": "Location.meta.lastUpdated",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "comment": "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Meta.lastUpdated",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Location.meta.source",
+        "path": "Location.meta.source",
+        "short": "Identifies where the resource comes from",
+        "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
+        "comment": "In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. \n\nThis element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Meta.source",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Location.meta.profile",
+        "path": "Location.meta.profile",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://hl7.org/fhir/R4/structuredefinition-definitions.html#StructureDefinition.url).",
+        "comment": "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Meta.profile",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Location.meta.security",
+        "path": "Location.meta.security",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "comment": "The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Meta.security",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "SecurityLabels"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "Security Labels from the Healthcare Privacy and Security Classification System.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/security-labels"
+        }
+      },
+      {
+        "id": "Location.meta.tag",
+        "path": "Location.meta.tag",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "comment": "The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Meta.tag",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Tags"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
+          "valueSet": "http://hl7.org/fhir/ValueSet/common-tags"
+        },
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "tags"
+          }
+        ]
       },
       {
         "id": "Location.implicitRules",
@@ -450,8 +782,8 @@
         "short": "Unique code or number identifying the location to its users",
         "definition": "Unique code or number identifying the location to its users.",
         "requirements": "Organization label locations in registries, need to keep track of those.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Location.identifier",
           "min": 0,
@@ -502,7 +834,6 @@
             "code": "code"
           }
         ],
-        "patternCode": "active",
         "constraint": [
           {
             "key": "ele-1",
@@ -517,15 +848,8 @@
         "isModifierReason": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid",
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "LocationStatus"
-            }
-          ],
           "strength": "required",
-          "description": "Indicates whether the location is still in use.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/location-status|4.0.1"
+          "valueSet": "http://fhir.openmrs.org/fhir/ValueSet/location-status-vs"
         },
         "mapping": [
           {
@@ -535,6 +859,10 @@
           {
             "identity": "rim",
             "map": ".statusCode"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "retired"
           }
         ]
       },
@@ -544,7 +872,7 @@
         "short": "The operational status of the location (typically only for a bed/room)",
         "definition": "The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Location.operationalStatus",
           "min": 0,
@@ -623,6 +951,10 @@
           {
             "identity": "rim",
             "map": ".name"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "name"
           }
         ]
       },
@@ -634,7 +966,7 @@
         "comment": "There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the location.",
         "requirements": "Over time locations and organizations go through many changes and can be known by different names.\n\nFor searching knowing previous names that the location was known by can be very useful.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Location.alias",
           "min": 0,
@@ -698,6 +1030,10 @@
           {
             "identity": "rim",
             "map": ".playingEntity[classCode=PLC determinerCode=INSTANCE].desc"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "description"
           }
         ]
       },
@@ -709,7 +1045,7 @@
         "comment": "This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood.",
         "requirements": "When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Location.mode",
           "min": 0,
@@ -760,7 +1096,7 @@
         "short": "Type of function performed",
         "definition": "Indicates the type of function performed at the location.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Location.type",
           "min": 0,
@@ -869,9 +1205,9 @@
       {
         "id": "Location.address",
         "path": "Location.address",
-        "short": "Physical location",
-        "definition": "Physical location.",
-        "comment": "Additional addresses should be recorded using another instance of the Location resource, or via the Organization.",
+        "short": "An address expressed using postal conventions (as opposed to GPS or other location definition formats)",
+        "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
+        "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).",
         "requirements": "If locations can be visited, we need to keep track of their address.",
         "min": 0,
         "max": "1",
@@ -882,7 +1218,225 @@
         },
         "type": [
           {
-            "code": "Address"
+            "code": "Address",
+            "profile": [
+              "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "XAD"
+          },
+          {
+            "identity": "rim",
+            "map": "AD"
+          },
+          {
+            "identity": "servd",
+            "map": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.id",
+        "path": "Location.address.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.extension",
+        "path": "Location.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.use",
+        "path": "Location.address.use",
+        "short": "home | work | temp | old | billing - purpose of this address",
+        "definition": "The purpose of this address.",
+        "comment": "Applications can assume that an address is current unless it explicitly says that it is temporary or old.",
+        "requirements": "Allows an appropriate address to be chosen from a list of many.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueCode": "home"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AddressUse"
+            }
+          ],
+          "strength": "required",
+          "description": "The use of an address.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.7"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "servd",
+            "map": "./AddressPurpose"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.type",
+        "path": "Location.address.type",
+        "short": "postal | physical | both",
+        "definition": "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
+        "comment": "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueCode": "both"
           }
         ],
         "constraint": [
@@ -896,11 +1450,480 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AddressType"
+            }
+          ],
+          "strength": "required",
+          "description": "The type of an address (physical / postal).",
+          "valueSet": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
+        },
         "mapping": [
           {
+            "identity": "v2",
+            "map": "XAD.18"
+          },
+          {
             "identity": "rim",
-            "map": ".addr"
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "vcard",
+            "map": "address type parameter"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.text",
+        "path": "Location.address.text",
+        "short": "Text representation of the address",
+        "definition": "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
+        "comment": "Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.",
+        "requirements": "A renderable, unencoded form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "137 Nowhere Street, Erewhon 9132"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+          },
+          {
+            "identity": "rim",
+            "map": "./formatted"
+          },
+          {
+            "identity": "vcard",
+            "map": "address label parameter"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.line",
+        "path": "Location.address.line",
+        "short": "Street name, number, direction & P.O. Box etc.",
+        "definition": "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Address.line",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "The order in which lines should appear in an address label",
+        "example": [
+          {
+            "label": "General",
+            "valueString": "137 Nowhere Street"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = AL]"
+          },
+          {
+            "identity": "vcard",
+            "map": "street"
+          },
+          {
+            "identity": "servd",
+            "map": "./StreetAddress (newline delimitted)"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "address1"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.city",
+        "path": "Location.address.city",
+        "short": "Name of city, town etc.",
+        "definition": "The name of the city, town, suburb, village or other community or delivery center.",
+        "alias": [
+          "Municpality"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.city",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "Erewhon"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.3"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CTY]"
+          },
+          {
+            "identity": "vcard",
+            "map": "locality"
+          },
+          {
+            "identity": "servd",
+            "map": "./Jurisdiction"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "cityVillage"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.district",
+        "path": "Location.address.district",
+        "short": "District name (aka county)",
+        "definition": "The name of the administrative area (county).",
+        "comment": "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.",
+        "alias": [
+          "County"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.district",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "Madison"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.9"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CNT | CPA]"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "countyDistrict"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.state",
+        "path": "Location.address.state",
+        "short": "Sub-unit of country (abbreviations ok)",
+        "definition": "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).",
+        "alias": [
+          "Province",
+          "Territory"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.state",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.4"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = STA]"
+          },
+          {
+            "identity": "vcard",
+            "map": "region"
+          },
+          {
+            "identity": "servd",
+            "map": "./Region"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "stateProvince"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.postalCode",
+        "path": "Location.address.postalCode",
+        "short": "Postal code for area",
+        "definition": "A postal code designating a region defined by the postal service.",
+        "alias": [
+          "Zip"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.postalCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "9132"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.5"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = ZIP]"
+          },
+          {
+            "identity": "vcard",
+            "map": "code"
+          },
+          {
+            "identity": "servd",
+            "map": "./PostalIdentificationCode"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "postalCode"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.country",
+        "path": "Location.address.country",
+        "short": "Country (e.g. can be ISO 3166 2 or 3 letter code)",
+        "definition": "Country - a nation as commonly understood or generally accepted.",
+        "comment": "ISO 3166 3 letter codes can be used in place of a human readable country name.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.country",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.6"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CNT]"
+          },
+          {
+            "identity": "vcard",
+            "map": "country"
+          },
+          {
+            "identity": "servd",
+            "map": "./Country"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "country"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.period",
+        "path": "Location.address.period",
+        "short": "Time period when address was/is in use",
+        "definition": "Time period when address was/is in use.",
+        "requirements": "Allows addresses to be placed in historical context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valuePeriod": {
+              "start": "2010-03-23",
+              "end": "2010-07-01"
+            }
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.12 / XAD.13 + XAD.14"
+          },
+          {
+            "identity": "rim",
+            "map": "./usablePeriod[type=\"IVL<TS>\"]"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
           }
         ]
       },
@@ -911,7 +1934,7 @@
         "definition": "Physical form of the location, e.g. building, room, vehicle, road.",
         "requirements": "For purposes of showing relevant locations in queries, we need to categorize locations.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Location.physicalType",
           "min": 0,
@@ -1162,6 +2185,10 @@
           {
             "identity": "rim",
             "map": "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "longintude"
           }
         ]
       },
@@ -1198,6 +2225,10 @@
           {
             "identity": "rim",
             "map": "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "latitude"
           }
         ]
       },
@@ -1245,7 +2276,7 @@
         "comment": "This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource.",
         "requirements": "Need to know who manages the location.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Location.managingOrganization",
           "min": 0,
@@ -1321,6 +2352,10 @@
           {
             "identity": "rim",
             "map": ".inboundLink[typeCode=PART].source[classCode=SDLC]"
+          },
+          {
+            "identity": "location-Mapping",
+            "map": "parentLocation"
           }
         ]
       },
@@ -1331,7 +2366,7 @@
         "definition": "What days/times during a week is this location usually open.",
         "comment": "This type of information is commonly found published in directories and on websites informing customers when the facility is available.\n\nSpecific services within the location may have their own hours which could be shorter (or longer) than the locations hours.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Location.hoursOfOperation",
           "min": 0,
@@ -1658,7 +2693,7 @@
         "short": "Description of availability exceptions",
         "definition": "A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Location.availabilityExceptions",
           "min": 0,
@@ -1695,7 +2730,7 @@
         "definition": "Technical endpoints providing access to services operated for the location.",
         "requirements": "Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Location.endpoint",
           "min": 0,
@@ -1734,43 +2769,76 @@
     "element": [
       {
         "id": "Location",
-        "path": "Location"
+        "path": "Location",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "OMRS Location",
+            "comment": "This profile maps to Location in OMRS FHIR2"
+          }
+        ]
       },
       {
         "id": "Location.id",
         "path": "Location.id",
-        "min": 1
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "Location.uuid"
+          }
+        ]
+      },
+      {
+        "id": "Location.meta.tag",
+        "path": "Location.meta.tag",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "tags"
+          }
+        ]
+      },
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Location.status",
         "path": "Location.status",
         "min": 1,
-        "patternCode": "active"
-      },
-      {
-        "id": "Location.operationalStatus",
-        "path": "Location.operationalStatus",
-        "max": "0"
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.openmrs.org/fhir/ValueSet/location-status-vs"
+        },
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "retired"
+          }
+        ]
       },
       {
         "id": "Location.name",
         "path": "Location.name",
-        "min": 1
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "name"
+          }
+        ]
       },
       {
-        "id": "Location.alias",
-        "path": "Location.alias",
-        "max": "0"
-      },
-      {
-        "id": "Location.mode",
-        "path": "Location.mode",
-        "max": "0"
-      },
-      {
-        "id": "Location.type",
-        "path": "Location.type",
-        "max": "0"
+        "id": "Location.description",
+        "path": "Location.description",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "description"
+          }
+        ]
       },
       {
         "id": "Location.telecom",
@@ -1786,29 +2854,106 @@
         ]
       },
       {
-        "id": "Location.physicalType",
-        "path": "Location.physicalType",
-        "max": "0"
+        "id": "Location.address",
+        "path": "Location.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address"
+            ]
+          }
+        ]
       },
       {
-        "id": "Location.managingOrganization",
-        "path": "Location.managingOrganization",
-        "max": "0"
+        "id": "Location.address.line",
+        "path": "Location.address.line",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "address1"
+          }
+        ]
       },
       {
-        "id": "Location.hoursOfOperation",
-        "path": "Location.hoursOfOperation",
-        "max": "0"
+        "id": "Location.address.city",
+        "path": "Location.address.city",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "cityVillage"
+          }
+        ]
       },
       {
-        "id": "Location.availabilityExceptions",
-        "path": "Location.availabilityExceptions",
-        "max": "0"
+        "id": "Location.address.district",
+        "path": "Location.address.district",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "countyDistrict"
+          }
+        ]
       },
       {
-        "id": "Location.endpoint",
-        "path": "Location.endpoint",
-        "max": "0"
+        "id": "Location.address.state",
+        "path": "Location.address.state",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "stateProvince"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.postalCode",
+        "path": "Location.address.postalCode",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "postalCode"
+          }
+        ]
+      },
+      {
+        "id": "Location.address.country",
+        "path": "Location.address.country",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "country"
+          }
+        ]
+      },
+      {
+        "id": "Location.position.longitude",
+        "path": "Location.position.longitude",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "longintude"
+          }
+        ]
+      },
+      {
+        "id": "Location.position.latitude",
+        "path": "Location.position.latitude",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "latitude"
+          }
+        ]
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "mapping": [
+          {
+            "identity": "location-Mapping",
+            "map": "parentLocation"
+          }
+        ]
       }
     ]
   }

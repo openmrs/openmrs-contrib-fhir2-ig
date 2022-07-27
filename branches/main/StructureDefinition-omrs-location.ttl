@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "omrs-location"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.id\">id</a><a name=\"Location.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.status\">status</a><a name=\"Location.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">active | suspended | inactive</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">operationalStatus</span><a name=\"Location.operationalStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.name\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of the location as used by humans</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">alias</span><a name=\"Location.alias\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">mode</span><a name=\"Location.mode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">type</span><a name=\"Location.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.telecom\">telecom</a><a name=\"Location.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-location-contact-point.html\" title=\"ContactPoint\">OMRSLocationContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Technology mediated contact point (phone, fax, email, etc.)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">physicalType</span><a name=\"Location.physicalType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">managingOrganization</span><a name=\"Location.managingOrganization\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">hoursOfOperation</span><a name=\"Location.hoursOfOperation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">availabilityExceptions</span><a name=\"Location.availabilityExceptions\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">endpoint</span><a name=\"Location.endpoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.id\">id</a><a name=\"Location.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.meta\">meta</a><a name=\"Location.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.meta.tag\">tag</a><a name=\"Location.meta.tag\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Tags applied to this resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.identifier\">identifier</a><a name=\"Location.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Unique code or number identifying the location to its users</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.status\">status</a><a name=\"Location.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">active | suspended | inactive</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-location-status-vs.html\">Location Status ValueSet</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.name\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of the location as used by humans</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.description\">description</a><a name=\"Location.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional details about the location that could be displayed as further information to identify the location beyond its name</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.telecom\">telecom</a><a name=\"Location.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-location-contact-point.html\" title=\"ContactPoint\">OMRSLocationContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Technology mediated contact point (phone, fax, email, etc.)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address\">address</a><a name=\"Location.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-omrs-address.html\" title=\"Address\">OMRSAddress</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address expressed using postal conventions (as opposed to GPS or other location definition formats)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.line\">line</a><a name=\"Location.address.line\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Street name, number, direction &amp; P.O. Box etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.city\">city</a><a name=\"Location.address.city\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of city, town etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.district\">district</a><a name=\"Location.address.district\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">District name (aka county)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.state\">state</a><a name=\"Location.address.state\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Sub-unit of country (abbreviations ok)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.postalCode\">postalCode</a><a name=\"Location.address.postalCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Postal code for area</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.address.country\">country</a><a name=\"Location.address.country\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Country (e.g. can be ISO 3166 2 or 3 letter code)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position\">position</a><a name=\"Location.position\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position.longitude\">longitude</a><a name=\"Location.position.longitude\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Longitude with WGS84 datum</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.position.latitude\">latitude</a><a name=\"Location.position.latitude\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Latitude with WGS84 datum</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-location-definitions.html#Location.partOf\">partOf</a><a name=\"Location.partOf\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Another Location this one is physically a part of</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OMRSLocation"];
   fhir:StructureDefinition.title [ fhir:value "OpenMRS Location"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-26T21:27:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-27T18:06:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -48,6 +48,12 @@
      fhir:StructureDefinition.mapping.identity [ fhir:value "w5" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/fivews" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "FiveWs Pattern Mapping" ]
+  ], [
+     fhir:index 2;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/3.0/StructureDefinition/Location" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "FHIR HL7 vs OMRS FHIR2" ];
+     fhir:StructureDefinition.mapping.comment [ fhir:value "Location is a FHIR resource that represents details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated. In the current implementation, FHIR Locations are mapped to OpenMRS Location objects." ]
   ];
   fhir:StructureDefinition.kind [ fhir:value "resource"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
@@ -146,6 +152,11 @@
          fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".Role[classCode=SDLC]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OMRS Location" ];
+         fhir:ElementDefinition.mapping.comment [ fhir:value "This profile maps to Location in OMRS FHIR2" ]
        ]
      ], [
        fhir:index 1;
@@ -154,7 +165,7 @@
        fhir:ElementDefinition.short [ fhir:value "Logical id of this artifact" ];
        fhir:ElementDefinition.definition [ fhir:value "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." ];
        fhir:ElementDefinition.comment [ fhir:value "The only time that a resource does not have an id is when it is being submitted to the server using a create operation." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Resource.id" ];
@@ -171,7 +182,12 @@
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Location.uuid" ]
+       ]
      ], [
        fhir:index 2;
        fhir:Element.id [ fhir:value "Location.meta" ];
@@ -205,6 +221,335 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "Location.meta.id" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Location.meta.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "Location.meta.versionId" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.versionId" ];
+       fhir:ElementDefinition.short [ fhir:value "Version specific identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted." ];
+       fhir:ElementDefinition.comment [ fhir:value "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.versionId" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "id" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "Location.meta.lastUpdated" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.lastUpdated" ];
+       fhir:ElementDefinition.short [ fhir:value "When the resource version last changed" ];
+       fhir:ElementDefinition.definition [ fhir:value "When the resource last changed - e.g. when the version changed." ];
+       fhir:ElementDefinition.comment [ fhir:value "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.lastUpdated" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "instant" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "Location.meta.source" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.source" ];
+       fhir:ElementDefinition.short [ fhir:value "Identifies where the resource comes from" ];
+       fhir:ElementDefinition.definition [ fhir:value "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc." ];
+       fhir:ElementDefinition.comment [ fhir:value "In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. \n\nThis element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.source" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "Location.meta.profile" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.profile" ];
+       fhir:ElementDefinition.short [ fhir:value "Profiles this resource claims to conform to" ];
+       fhir:ElementDefinition.definition [ fhir:value "A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://hl7.org/fhir/R4/structuredefinition-definitions.html#StructureDefinition.url)." ];
+       fhir:ElementDefinition.comment [ fhir:value "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.profile" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/StructureDefinition";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/StructureDefinition>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "Location.meta.security" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.security" ];
+       fhir:ElementDefinition.short [ fhir:value "Security Labels applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure." ];
+       fhir:ElementDefinition.comment [ fhir:value "The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.security" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "SecurityLabels" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Security Labels from the Healthcare Privacy and Security Classification System." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/security-labels";
+           fhir:link <http://hl7.org/fhir/ValueSet/security-labels>
+         ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "Location.meta.tag" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.tag" ];
+       fhir:ElementDefinition.short [ fhir:value "Tags applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource." ];
+       fhir:ElementDefinition.comment [ fhir:value "The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Meta.tag" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Tags" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/common-tags";
+           fhir:link <http://hl7.org/fhir/ValueSet/common-tags>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "tags" ]
+       ]
+     ], [
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Location.implicitRules" ];
        fhir:ElementDefinition.path [ fhir:value "Location.implicitRules" ];
        fhir:ElementDefinition.short [ fhir:value "A set of rules under which this content was created" ];
@@ -237,7 +582,7 @@
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Location.language" ];
        fhir:ElementDefinition.path [ fhir:value "Location.language" ];
        fhir:ElementDefinition.short [ fhir:value "Language of the resource content" ];
@@ -293,7 +638,7 @@
          ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "Location.text" ];
        fhir:ElementDefinition.path [ fhir:value "Location.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text summary of the resource, for human interpretation" ];
@@ -343,7 +688,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.text?" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Location.contained" ];
        fhir:ElementDefinition.path [ fhir:value "Location.contained" ];
        fhir:ElementDefinition.short [ fhir:value "Contained, inline Resources" ];
@@ -378,7 +723,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Location.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -433,7 +778,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Location.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -490,14 +835,14 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Location.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Location.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Unique code or number identifying the location to its users" ];
        fhir:ElementDefinition.definition [ fhir:value "Unique code or number identifying the location to its users." ];
        fhir:ElementDefinition.requirements [ fhir:value "Organization label locations in registries, need to keep track of those." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.identifier" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -531,7 +876,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Location.status" ];
        fhir:ElementDefinition.path [ fhir:value "Location.status" ];
        fhir:ElementDefinition.short [ fhir:value "active | suspended | inactive" ];
@@ -547,7 +892,6 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.patternCode [ fhir:value "active" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -564,16 +908,10 @@
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "LocationStatus" ]
-         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Indicates whether the location is still in use." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/location-status|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/location-status|4.0.1>
+           fhir:value "http://fhir.openmrs.org/fhir/ValueSet/location-status-vs";
+           fhir:link <http://fhir.openmrs.org/fhir/ValueSet/location-status-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -584,15 +922,19 @@
          fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".statusCode" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "retired" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Location.operationalStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Location.operationalStatus" ];
        fhir:ElementDefinition.short [ fhir:value "The operational status of the location (typically only for a bed/room)" ];
        fhir:ElementDefinition.definition [ fhir:value "The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.operationalStatus" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -639,7 +981,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Location.name" ];
        fhir:ElementDefinition.path [ fhir:value "Location.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name of the location as used by humans" ];
@@ -674,9 +1016,13 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".name" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "name" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Location.alias" ];
        fhir:ElementDefinition.path [ fhir:value "Location.alias" ];
        fhir:ElementDefinition.short [ fhir:value "A list of alternate names that the location is known as, or was known as, in the past" ];
@@ -684,7 +1030,7 @@
        fhir:ElementDefinition.comment [ fhir:value "There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the location." ];
        fhir:ElementDefinition.requirements [ fhir:value "Over time locations and organizations go through many changes and can be known by different names.\n\nFor searching knowing previous names that the location was known by can be very useful." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.alias" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -714,7 +1060,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".name" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Location.description" ];
        fhir:ElementDefinition.path [ fhir:value "Location.description" ];
        fhir:ElementDefinition.short [ fhir:value "Additional details about the location that could be displayed as further information to identify the location beyond its name" ];
@@ -749,9 +1095,13 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity[classCode=PLC determinerCode=INSTANCE].desc" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "description" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Location.mode" ];
        fhir:ElementDefinition.path [ fhir:value "Location.mode" ];
        fhir:ElementDefinition.short [ fhir:value "instance | kind" ];
@@ -759,7 +1109,7 @@
        fhir:ElementDefinition.comment [ fhir:value "This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood." ];
        fhir:ElementDefinition.requirements [ fhir:value "When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.mode" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -806,13 +1156,13 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity[classCode=PLC].determinerCode" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Location.type" ];
        fhir:ElementDefinition.path [ fhir:value "Location.type" ];
        fhir:ElementDefinition.short [ fhir:value "Type of function performed" ];
        fhir:ElementDefinition.definition [ fhir:value "Indicates the type of function performed at the location." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.type" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -859,7 +1209,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".code" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Location.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Location.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "Details of a Technology mediated contact point (phone, fax, email, etc.)" ];
@@ -926,12 +1276,12 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ContactPoint" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Location.address" ];
        fhir:ElementDefinition.path [ fhir:value "Location.address" ];
-       fhir:ElementDefinition.short [ fhir:value "Physical location" ];
-       fhir:ElementDefinition.definition [ fhir:value "Physical location." ];
-       fhir:ElementDefinition.comment [ fhir:value "Additional addresses should be recorded using another instance of the Location resource, or via the Organization." ];
+       fhir:ElementDefinition.short [ fhir:value "An address expressed using postal conventions (as opposed to GPS or other location definition formats)" ];
+       fhir:ElementDefinition.definition [ fhir:value "An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource)." ];
        fhir:ElementDefinition.requirements [ fhir:value "If locations can be visited, we need to keep track of their address." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -942,7 +1292,16 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Address" ]
+         fhir:ElementDefinition.type.code [ fhir:value "Address" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address";
+           fhir:index 0;
+           fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
@@ -957,21 +1316,707 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Address" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.id [ fhir:value "Location.address.id" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "Location.address.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.id [ fhir:value "Location.address.use" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.use" ];
+       fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | billing - purpose of this address" ];
+       fhir:ElementDefinition.definition [ fhir:value "The purpose of this address." ];
+       fhir:ElementDefinition.comment [ fhir:value "Applications can assume that an address is current unless it explicitly says that it is temporary or old." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Allows an appropriate address to be chosen from a list of many." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.use" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueCode [ fhir:value "home" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "AddressUse" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "The use of an address." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/address-use|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/address-use|4.0.1>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.7" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "unique(./use)" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.id [ fhir:value "Location.address.type" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.type" ];
+       fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
+       fhir:ElementDefinition.definition [ fhir:value "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both." ];
+       fhir:ElementDefinition.comment [ fhir:value "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.type" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueCode [ fhir:value "both" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "AddressType" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "The type of an address (physical / postal)." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/address-type|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/address-type|4.0.1>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.18" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "unique(./use)" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.id [ fhir:value "Location.address.text" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.text" ];
+       fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
+       fhir:ElementDefinition.definition [ fhir:value "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts." ];
+       fhir:ElementDefinition.comment [ fhir:value "Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part." ];
+       fhir:ElementDefinition.requirements [ fhir:value "A renderable, unencoded form." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.text" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "137 Nowhere Street, Erewhon 9132" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.id [ fhir:value "Location.address.line" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.line" ];
+       fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.line" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.orderMeaning [ fhir:value "The order in which lines should appear in an address label" ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "137 Nowhere Street" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = AL]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "street" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "address1" ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.id [ fhir:value "Location.address.city" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.city" ];
+       fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "The name of the city, town, suburb, village or other community or delivery center." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Municpality";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.city" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "Erewhon" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.3" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CTY]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "locality" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "cityVillage" ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.id [ fhir:value "Location.address.district" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.district" ];
+       fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
+       fhir:ElementDefinition.definition [ fhir:value "The name of the administrative area (county)." ];
+       fhir:ElementDefinition.comment [ fhir:value "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "County";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.district" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "Madison" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.9" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "countyDistrict" ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.id [ fhir:value "Location.address.state" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.state" ];
+       fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
+       fhir:ElementDefinition.definition [ fhir:value "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes)." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Province";
+         fhir:index 0
+       ], [
+         fhir:value "Territory";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.state" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.4" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = STA]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "region" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "stateProvince" ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.id [ fhir:value "Location.address.postalCode" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.postalCode" ];
+       fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
+       fhir:ElementDefinition.definition [ fhir:value "A postal code designating a region defined by the postal service." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Zip";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.postalCode" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "9132" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.5" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = ZIP]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "code" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "postalCode" ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.id [ fhir:value "Location.address.country" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.country" ];
+       fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
+       fhir:ElementDefinition.definition [ fhir:value "Country - a nation as commonly understood or generally accepted." ];
+       fhir:ElementDefinition.comment [ fhir:value "ISO 3166 3 letter codes can be used in place of a human readable country name." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.country" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.6" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "vcard" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "country" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "country" ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.id [ fhir:value "Location.address.period" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.period" ];
+       fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
+       fhir:ElementDefinition.definition [ fhir:value "Time period when address was/is in use." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Allows addresses to be placed in historical context." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Address.period" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valuePeriod [
+           fhir:Period.start [ fhir:value "2010-03-23"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2010-07-01"^^xsd:date ]
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "XAD.12 / XAD.13 + XAD.14" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./usablePeriod[type=\"IVL<TS>\"]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
+       ]
+     ], [
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Location.physicalType" ];
        fhir:ElementDefinition.path [ fhir:value "Location.physicalType" ];
        fhir:ElementDefinition.short [ fhir:value "Physical form of the location" ];
        fhir:ElementDefinition.definition [ fhir:value "Physical form of the location, e.g. building, room, vehicle, road." ];
        fhir:ElementDefinition.requirements [ fhir:value "For purposes of showing relevant locations in queries, we need to categorize locations." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.physicalType" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1018,7 +2063,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity [classCode=PLC].code" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Location.position" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position" ];
        fhir:ElementDefinition.short [ fhir:value "The absolute geographic location" ];
@@ -1055,7 +2100,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity [classCode=PLC determinerCode=INSTANCE].positionText" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Location.position.id" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.id" ];
        fhir:ElementDefinition.representation [
@@ -1088,7 +2133,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Location.position.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1143,7 +2188,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Location.position.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1203,7 +2248,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Location.position.longitude" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.longitude" ];
        fhir:ElementDefinition.short [ fhir:value "Longitude with WGS84 datum" ];
@@ -1237,9 +2282,13 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "longintude" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Location.position.latitude" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.latitude" ];
        fhir:ElementDefinition.short [ fhir:value "Latitude with WGS84 datum" ];
@@ -1273,9 +2322,13 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "latitude" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Location.position.altitude" ];
        fhir:ElementDefinition.path [ fhir:value "Location.position.altitude" ];
        fhir:ElementDefinition.short [ fhir:value "Altitude with WGS84 datum" ];
@@ -1311,7 +2364,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Location.managingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "Location.managingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization responsible for provisioning and upkeep" ];
@@ -1319,7 +2372,7 @@
        fhir:ElementDefinition.comment [ fhir:value "This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource." ];
        fhir:ElementDefinition.requirements [ fhir:value "Need to know who manages the location." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.managingOrganization" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1354,7 +2407,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".scopingEntity[classCode=ORG determinerKind=INSTANCE]" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Location.partOf" ];
        fhir:ElementDefinition.path [ fhir:value "Location.partOf" ];
        fhir:ElementDefinition.short [ fhir:value "Another Location this one is physically a part of" ];
@@ -1399,16 +2452,20 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".inboundLink[typeCode=PART].source[classCode=SDLC]" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "parentLocation" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation" ];
        fhir:ElementDefinition.short [ fhir:value "What days/times during a week is this location usually open" ];
        fhir:ElementDefinition.definition [ fhir:value "What days/times during a week is this location usually open." ];
        fhir:ElementDefinition.comment [ fhir:value "This type of information is commonly found published in directories and on websites informing customers when the facility is available.\n\nSpecific services within the location may have their own hours which could be shorter (or longer) than the locations hours." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.hoursOfOperation" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1438,7 +2495,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.id" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.id" ];
        fhir:ElementDefinition.representation [
@@ -1471,7 +2528,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1526,7 +2583,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1586,7 +2643,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.daysOfWeek" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.daysOfWeek" ];
        fhir:ElementDefinition.short [ fhir:value "mon | tue | wed | thu | fri | sat | sun" ];
@@ -1635,7 +2692,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.allDay" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.allDay" ];
        fhir:ElementDefinition.short [ fhir:value "The Location is open all day" ];
@@ -1671,7 +2728,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.openingTime" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.openingTime" ];
        fhir:ElementDefinition.short [ fhir:value "Time that the Location opens" ];
@@ -1707,7 +2764,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Location.hoursOfOperation.closingTime" ];
        fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation.closingTime" ];
        fhir:ElementDefinition.short [ fhir:value "Time that the Location closes" ];
@@ -1743,13 +2800,13 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Location.availabilityExceptions" ];
        fhir:ElementDefinition.path [ fhir:value "Location.availabilityExceptions" ];
        fhir:ElementDefinition.short [ fhir:value "Description of availability exceptions" ];
        fhir:ElementDefinition.definition [ fhir:value "A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.availabilityExceptions" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1779,14 +2836,14 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Location.endpoint" ];
        fhir:ElementDefinition.path [ fhir:value "Location.endpoint" ];
        fhir:ElementDefinition.short [ fhir:value "Technical endpoints providing access to services operated for the location" ];
        fhir:ElementDefinition.definition [ fhir:value "Technical endpoints providing access to services operated for the location." ];
        fhir:ElementDefinition.requirements [ fhir:value "Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Location.endpoint" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1826,45 +2883,75 @@
      fhir:StructureDefinition.differential.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "Location" ];
-       fhir:ElementDefinition.path [ fhir:value "Location" ]
+       fhir:ElementDefinition.path [ fhir:value "Location" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OMRS Location" ];
+         fhir:ElementDefinition.mapping.comment [ fhir:value "This profile maps to Location in OMRS FHIR2" ]
+       ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Location.id" ];
        fhir:ElementDefinition.path [ fhir:value "Location.id" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Location.uuid" ]
+       ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "Location.meta.tag" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.meta.tag" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "tags" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "Location.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Location.status" ];
        fhir:ElementDefinition.path [ fhir:value "Location.status" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.patternCode [ fhir:value "active" ]
-     ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "Location.operationalStatus" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.operationalStatus" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "Location.name" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.name" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://fhir.openmrs.org/fhir/ValueSet/location-status-vs";
+           fhir:link <http://fhir.openmrs.org/fhir/ValueSet/location-status-vs>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "retired" ]
+       ]
      ], [
        fhir:index 5;
-       fhir:Element.id [ fhir:value "Location.alias" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.alias" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.name" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.name" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "name" ]
+       ]
      ], [
        fhir:index 6;
-       fhir:Element.id [ fhir:value "Location.mode" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.mode" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.description" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.description" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "description" ]
+       ]
      ], [
        fhir:index 7;
-       fhir:Element.id [ fhir:value "Location.type" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.type" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
-     ], [
-       fhir:index 8;
        fhir:Element.id [ fhir:value "Location.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Location.telecom" ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -1878,30 +2965,99 @@
          ]
        ]
      ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "Location.address" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Address" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address";
+           fhir:index 0;
+           fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address>
+         ]
+       ]
+     ], [
        fhir:index 9;
-       fhir:Element.id [ fhir:value "Location.physicalType" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.physicalType" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.address.line" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.line" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "address1" ]
+       ]
      ], [
        fhir:index 10;
-       fhir:Element.id [ fhir:value "Location.managingOrganization" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.managingOrganization" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.address.city" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.city" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "cityVillage" ]
+       ]
      ], [
        fhir:index 11;
-       fhir:Element.id [ fhir:value "Location.hoursOfOperation" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.hoursOfOperation" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.address.district" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.district" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "countyDistrict" ]
+       ]
      ], [
        fhir:index 12;
-       fhir:Element.id [ fhir:value "Location.availabilityExceptions" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.availabilityExceptions" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.address.state" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.state" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "stateProvince" ]
+       ]
      ], [
        fhir:index 13;
-       fhir:Element.id [ fhir:value "Location.endpoint" ];
-       fhir:ElementDefinition.path [ fhir:value "Location.endpoint" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:Element.id [ fhir:value "Location.address.postalCode" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.postalCode" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "postalCode" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "Location.address.country" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.address.country" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "country" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "Location.position.longitude" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.position.longitude" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "longintude" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "Location.position.latitude" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.position.latitude" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "latitude" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "Location.partOf" ];
+       fhir:ElementDefinition.path [ fhir:value "Location.partOf" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "location-Mapping" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "parentLocation" ]
+       ]
      ]
   ] .
 

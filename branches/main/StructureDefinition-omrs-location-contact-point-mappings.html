@@ -53,8 +53,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.4"}
-    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.5"}
+    h3,h4,h5,h6{--heading-prefix:"3.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -226,7 +226,7 @@
         
           Active
           
-            as of 2022-07-26
+            as of 2022-07-27
           
         
       </td>
@@ -245,19 +245,30 @@
   <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OMRSLocationContactPoint</b></td></tr>
  <tr><td>ContactPoint</td><td>XTN</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>XTN.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>XTN.1 (or XTN.12)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>XTN.2 - but often indicated by field</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;rank</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>N/A</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OMRSLocationContactPoint</b></td></tr>
  <tr><td>ContactPoint</td><td>n/a, TEL</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>./scheme</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>./url</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>unique(./use)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;rank</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
 </table>
 <a name="servd"> </a><h3>Mappings for ServD (<a href="http://www.omg.org/spec/ServD/1.0/">http://www.omg.org/spec/ServD/1.0/</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OMRSLocationContactPoint</b></td></tr>
  <tr><td>ContactPoint</td><td>ContactPoint</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>./ContactPointType</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>./ContactPointPurpose</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
 </table>
 
 
@@ -313,7 +324,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 26, 2022 21:27+0000">2022-07-26</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 27, 2022 18:06+0000">2022-07-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

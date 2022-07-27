@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-07-26T21:27:45+00:00"/>
+  <date value="2022-07-27T18:06:27+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -215,6 +215,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-address"/>
+      </reference>
+      <name value="OMRS Address"/>
+      <description value="Address profile specifies the geological location details"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -278,6 +289,28 @@
       <name value="OpenMRS Patient Identifier Location"/>
       <description value="OpenMRS location for which this identifier is valid"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/location-status-vs"/>
+      </reference>
+      <name value="Location Status ValueSet"/>
+      <description value="Indicates whether the location is still in use."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LocationExample"/>
+      </reference>
+      <name value="Location Example"/>
+      <description value="Example OMRS location"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
