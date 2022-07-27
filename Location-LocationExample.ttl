@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Location/LocationExample> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "LocationExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"LocationExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>identifier</b>: id: ?ngen-9?</p><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>telecom</b>: (555) 675 5745</p><p><b>address</b>: Kampala Uganda 256 Uganda (HOME)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-25.087541</td><td>8.206053</td></tr></table></div>"
+  ];
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "2daccc0e-654c-4130-9693-a84f328f045e" ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "Outpatient Clinic"];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "e85ab215-a425-4c22-9452-5c8e9f6d1e52" ];
+     fhir:ContactPoint.value [ fhir:value "(555) 675 5745" ]
+  ];
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.city [ fhir:value "Kampala" ];
+     fhir:Address.district [ fhir:value "Mukono" ];
+     fhir:Address.state [ fhir:value "Uganda" ];
+     fhir:Address.postalCode [ fhir:value "256" ];
+     fhir:Address.country [ fhir:value "Uganda" ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-25.087541"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "8.206053"^^xsd:decimal ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Location/LocationExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
