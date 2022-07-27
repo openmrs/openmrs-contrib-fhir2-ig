@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OpenMRS-order-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"/>
+  <version value="0.1.0"/>
+  <name value="OpenMRSOrderCodeVS"/>
+  <title value="OpenMRS Order Code"/>
+  <status value="active"/>
+  <date value="2022-07-27T18:15:49+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="The code for the openmrs requested in the EMR."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+    </include>
+  </compose>
+</ValueSet>
