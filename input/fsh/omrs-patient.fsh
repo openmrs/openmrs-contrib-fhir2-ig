@@ -19,6 +19,7 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * contact 0..0
 * communication 0..0
 * link 0..0
+* managingOrganization 0..1
 
 Profile:      OMRSPatientIdentifier
 Parent:       Identifier
@@ -34,7 +35,7 @@ Title:        "OpenMRS Patient Identifier Location"
 Description:  "OpenMRS location for which this identifier is valid"
 * value[x] only Reference(OMRSLocation)
 
-// OpenMRS Patient  Example
+/** OpenMRS Patient  Example */
 
 Instance: example-openmrs-Patient
 InstanceOf: OMRSPatient
@@ -43,6 +44,10 @@ Title: "Openmrs Patient"
 Description: "Example OMRS Patient Resource"
 * identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
+* identifier.extension.url = "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location"
+* identifier.extension.valueReference.reference = "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+* identifier.extension.valueReference.type = "Location"
+* identifier.extension.valueReference.display = "Inpatient Ward"
 * identifier.type.text = "OpenMRS ID"
 * identifier.value = "1000Y"
 * name.id = "3434gh32-34h3j4-34jk34-3422h"
