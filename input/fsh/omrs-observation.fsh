@@ -31,3 +31,18 @@ Description: "Example OMRS Observation Resource"
 * subject = Reference("Patient/5946f880-b197-400b-9caa-a3c661d23041")
 * subject.type = "Patient"
 * effectiveDateTime = "2014-11-25T22:17:00+11:00"
+
+
+Mapping: ObservationMapping
+Source: OpenMRSObservation
+Target: "http://hl7.org/fhir/3.0/StructureDefinition/Observation"
+Id: Observation-mapping
+Title: "FHIR HL7 vs OMRS FHIR2"
+Description: "FHIR resource that is used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic characteristics As such, Observations have a wide range of uses and show up in a wide range of places"
+* -> "OpenMRSObservation" "FHIR Observations are mapped to OpenMRS Obs objects"
+* id -> "uuid"
+* status -> "obs.status"
+* interpretation -> "obs.interpretation"
+* effectiveDateTime -> "obs.effective"
+* code -> "obs.code"
+
