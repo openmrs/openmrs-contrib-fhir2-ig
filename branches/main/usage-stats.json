@@ -12,10 +12,28 @@
     }
   ],
   "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",
+        "title": "OpenMRS Diagnostic Report"
+      }
+    ],
     "Observation": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation",
         "title": "OpenMRS Observation"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request",
+        "title": "OpenMRS Service Request"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task",
+        "title": "OpenMRS Task"
       }
     ],
     "Location": [
@@ -49,6 +67,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

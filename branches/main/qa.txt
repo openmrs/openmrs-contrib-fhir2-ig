@@ -1,32 +1,53 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 5, warn = 7, info = 0
+err = 10, warn = 24, info = 0
 IG Publisher Version: 1.1.127
-Generated Wed Jul 27 18:06:47 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
- Build Errors : 1 / 0 / 0
- /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 0 / 1
+Generated Wed Jul 27 18:16:20 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 3 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-service-request : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-task : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-address : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Task-example-openmrs-Task : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-status-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-location-status-vs : 0 / 2 / 1
 </table>
 == n/a ==
 ERROR: /github/workspace/output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 993: The link '"Patient/5946f880-b197-400b-9caa-a3c661d23041"' for ""Patient/5946f880-b197-400b-9caa-a3c661d23041"" cannot be resolved
+ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 591: The link 'OMRSPatient' for "OMRSPatient" cannot be resolved
+ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 723: The link 'OMRSPatient' for "OMRSPatient" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[7].description: value should not start or finish with whitespace ' Service...resources'
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/LocationExample: Location.telecom[0]: cpt-2: 'A system is required if a value is provided.' Rule 'A system is required if a value is provided.' Failed
 == fsh-generated/resources/Observation-example-openmrs-Observation.json ==
 ERROR: Observation/example-openmrs-Observation: Observation.text.div: The URL is not valid because '(URL contains Invalid Characters (["]))' : "Patient/5946f880-b197-400b-9caa-a3c661d23041" 
 ERROR: Observation/example-openmrs-Observation: Observation.subject: Unable to resolve resource with reference '"Patient/5946f880-b197-400b-9caa-a3c661d23041"'
+== fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
+== fsh-generated/resources/StructureDefinition-OpenMRS-service-request.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-OpenMRS-task.json ==
+WARNING: OpenMRS Task.Task.status: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs could not be expanded
+WARNING: OpenMRS Task.Task.intent: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs could not be expanded
+ERROR: StructureDefinition/OpenMRS-task: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Task' does not resolve
+WARNING: StructureDefinition/OpenMRS-task: StructureDefinition: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs could not be expanded
+WARNING: StructureDefinition/OpenMRS-task: StructureDefinition: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs could not be expanded
 == fsh-generated/resources/StructureDefinition-omrs-address.json ==
 == fsh-generated/resources/StructureDefinition-omrs-location.json ==
 WARNING: OpenMRS Location.Location.status: Binding http://fhir.openmrs.org/fhir/ValueSet/location-status-vs could not be expanded
@@ -39,6 +60,25 @@ WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/Structure
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/Task-example-openmrs-Task.json ==
+WARNING: Task/example-openmrs-Task: Task.basedOn[0]: A Reference without an actual reference or identifier should have a display
+ERROR: Task/example-openmrs-Task: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
+ERROR: Task/example-openmrs-Task: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)
+ERROR: Task/example-openmrs-Task: Task.for: Unable to resolve resource with reference 'OMRSPatient'
+ERROR: Task/example-openmrs-Task: Task.owner: Unable to resolve resource with reference 'OMRSPatient'
+== fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs.json ==
+WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]: The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[2]: The code diagnostic-report-status-unknown is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[3]: The code diagnostic-report-status-canceled is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[4]: The code diagnostic-report-status-amended is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+== fsh-generated/resources/ValueSet-OpenMRS-order-code-vs.json ==
+== fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs.json ==
+WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'OpenMRS-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
+== fsh-generated/resources/ValueSet-OpenMRS-task-status-vs.json ==
+WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'OpenMRS-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
 == fsh-generated/resources/ValueSet-location-status-vs.json ==
 WARNING: ValueSet/location-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'location-status-vs'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/location-status

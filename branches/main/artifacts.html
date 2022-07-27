@@ -219,11 +219,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-diagnostic-report.html"
+                     title="StructureDefinition/OpenMRS-diagnostic-report">OpenMRS Diagnostic Report</a>
+               </td>
+               <td>
+<p>DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-OpenMRS-observation.html"
                      title="StructureDefinition/OpenMRS-observation">OpenMRS Observation</a>
                </td>
                <td>
 <p>Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-service-request.html"
+                     title="StructureDefinition/OpenMRS-service-request">OpenMRS Service Request</a>
+               </td>
+               <td>
+<p>Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-task.html"
+                     title="StructureDefinition/OpenMRS-task">OpenMRS Task</a>
+               </td>
+               <td>
+<p>A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2</p>
 </td>
             </tr>
          </tbody>
@@ -307,6 +334,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Indicates whether the location is still in use.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-task-intent-vs.html"
+                     title="ValueSet/OpenMRS-task-intent-vs">OpenMRS Intent for Task</a>
+               </td>
+               <td>
+<p>The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-task-status-vs.html"
+                     title="ValueSet/OpenMRS-task-status-vs">OpenMRS Status for Task</a>
+               </td>
+               <td>
+<p>The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-diagnostic-report-status-vs.html"
+                     title="ValueSet/OpenMRS-diagnostic-report-status-vs">OpenMRS Diagnostic Report Status Flag</a>
+               </td>
+               <td>
+<p>The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-order-code-vs.html"
+                     title="ValueSet/OpenMRS-order-code-vs">OpenMRS Order Code</a>
+               </td>
+               <td>
+<p>The code for the openmrs requested in the EMR.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -334,6 +397,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Example OMRS Observation Resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Task-example-openmrs-Task.html" title="Task/example-openmrs-Task">Openmrs Task</a>
+               </td>
+               <td>
+<p>Example OMRS Task Resource</p>
 </td>
             </tr>
          </tbody>
@@ -364,7 +435,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 27, 2022 18:06+0000">2022-07-27</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 27, 2022 18:15+0000">2022-07-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

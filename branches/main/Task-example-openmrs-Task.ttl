@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Task/example-openmrs-Task> a fhir:Task;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-openmrs-Task"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-openmrs-Task\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-task.html\">OpenMRS Task</a></p></div><p><b>identifier</b>: id: e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9</p><p><b>basedOn</b>: <span></span></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"OMRSPatient\">OMRSPatient</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><b>owner</b>: <a href=\"OMRSPatient\">OMRSPatient</a></p></div>"
+  ];
+  fhir:Task.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://fhir.openmrs.org/ext/task/identifier" ];
+     fhir:Identifier.value [ fhir:value "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
+  ];
+  fhir:Task.basedOn [
+     fhir:index 0;
+     fhir:Reference.type [ fhir:value "ServiceRequest" ]
+  ];
+  fhir:Task.status [ fhir:value "completed"];
+  fhir:Task.intent [ fhir:value "order"];
+  fhir:Task.for [
+     fhir:Reference.reference [ fhir:value "OMRSPatient" ]
+  ];
+  fhir:Task.authoredOn [ fhir:value "2021-02-20"^^xsd:date];
+  fhir:Task.lastModified [ fhir:value "2021-02-21"^^xsd:date];
+  fhir:Task.owner [
+     fhir:Reference.reference [ fhir:value "OMRSPatient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Task/example-openmrs-Task.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

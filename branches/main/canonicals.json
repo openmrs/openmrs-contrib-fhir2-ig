@@ -7,11 +7,32 @@
     "name": "OMRSFhir2ImplementationGuide"
   },
   {
+    "id": "OpenMRS-diagnostic-report",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",
+    "version": "0.1.0",
+    "name": "OpenMRSDiagnosticReport"
+  },
+  {
     "id": "OpenMRS-observation",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation",
     "version": "0.1.0",
     "name": "OpenMRSObservation"
+  },
+  {
+    "id": "OpenMRS-service-request",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request",
+    "version": "0.1.0",
+    "name": "OpenMRSServiceRequest"
+  },
+  {
+    "id": "OpenMRS-task",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task",
+    "version": "0.1.0",
+    "name": "OpenMRSTask"
   },
   {
     "id": "omrs-address",
@@ -54,6 +75,34 @@
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location",
     "version": "0.1.0",
     "name": "OMRSPatientIdentifierLocationExtension"
+  },
+  {
+    "id": "OpenMRS-diagnostic-report-status-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
+    "version": "0.1.0",
+    "name": "OpenMRSDiagnosis"
+  },
+  {
+    "id": "OpenMRS-order-code-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs",
+    "version": "0.1.0",
+    "name": "OpenMRSOrderCodeVS"
+  },
+  {
+    "id": "OpenMRS-task-intent-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs",
+    "version": "0.1.0",
+    "name": "OMRSPatientTaskIntentVS"
+  },
+  {
+    "id": "OpenMRS-task-status-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs",
+    "version": "0.1.0",
+    "name": "OMRSPatientTaskStatusVS"
   },
   {
     "id": "location-status-vs",

@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-07-27T18:06:27+00:00",
+  "date": "2022-07-27T18:15:49+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -417,10 +417,52 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/OpenMRS-diagnostic-report"
+        },
+        "name": "OpenMRS Diagnostic Report",
+        "description": "DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/OpenMRS-observation"
         },
         "name": "OpenMRS Observation",
         "description": "Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OpenMRS-service-request"
+        },
+        "name": "OpenMRS Service Request",
+        "description": " Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OpenMRS-task"
+        },
+        "name": "OpenMRS Task",
+        "description": "A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2",
         "exampleBoolean": false
       },
       {
@@ -455,6 +497,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenMRS-task-intent-vs"
+        },
+        "name": "OpenMRS Intent for Task",
+        "description": "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenMRS-task-status-vs"
+        },
+        "name": "OpenMRS Status for Task",
+        "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenMRS-diagnostic-report-status-vs"
+        },
+        "name": "OpenMRS Diagnostic Report Status Flag",
+        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenMRS-order-code-vs"
+        },
+        "name": "OpenMRS Order Code",
+        "description": "The code for the openmrs requested in the EMR.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -478,6 +576,20 @@
         "name": "Openmrs Observation",
         "description": "Example OMRS Observation Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          }
+        ],
+        "reference": {
+          "reference": "Task/example-openmrs-Task"
+        },
+        "name": "Openmrs Task",
+        "description": "Example OMRS Task Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"
       }
     ],
     "page": {
