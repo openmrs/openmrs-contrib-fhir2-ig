@@ -3,15 +3,15 @@ Parent: Practitioner
 Id: omrs-practitioner
 Title: "Openmrs Practitioner"
 Description: "A FHIR Practitioner as understood by OpenMRS"
-* identifier 1..1 MS
-* id 1..1 MS
-* active 1..1 MS
-* name 1..* MS
-* birthDate 1..1 MS
-* gender 1..1 MS
-* address 1..* MS
-* telecom 0..1 MS
-* meta.lastUpdated 0..1 MS
+* identifier 1..1 
+* id 1..1 
+* active 1..1 
+* name 1..* 
+* birthDate 1..1 
+* gender 1..1 
+* address 1..* 
+* telecom 0..1 
+* meta.lastUpdated 0..1 
 
 /** OMRS Practitioner mapping */
 Mapping: PractitionerMapping
