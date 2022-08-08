@@ -47,6 +47,12 @@
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
         "title": "OpenMRS Patient"
       }
+    ],
+    "Person": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person",
+        "title": "OpenMRS Person"
+      }
     ]
   },
   "usage": {

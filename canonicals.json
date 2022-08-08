@@ -77,6 +77,13 @@
     "name": "OMRSPatientIdentifierLocationExtension"
   },
   {
+    "id": "omrs-person",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person",
+    "version": "0.1.0",
+    "name": "OMRSPerson"
+  },
+  {
     "id": "OpenMRS-diagnostic-report-status-vs",
     "type": "ValueSet",
     "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
