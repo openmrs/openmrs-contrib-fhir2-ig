@@ -18,6 +18,15 @@ Description: "DiagnosticReport resource created by a OpenMRS that representing r
 * subject 0..1
 * issued  0..1
 * result  0..*
+* effectiveDateTime 0..1
+* performer 0..*
+* resultsInterpreter 0..*
+* specimen 0..*
+* result 0..*
+* imagingStudy 0..*
+* media 0..*
+* conclusion 0..1
+* presentedForm 0..*
 
 Instance: example-Openmrs-DiagnosticReport
 InstanceOf: OpenMRSDiagnosticReport
@@ -36,6 +45,7 @@ Description: "Example OMRS DiagnosticReport Resource"
 * encounter = Reference("Encounter/6519d653-393b-4118-9c83-a3715b82d4ac")
 * result = Reference("Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669")
 * status = #preliminary
+
 
 Mapping: DiagnosticReportMapping
 Source: OpenMRSDiagnosticReport
