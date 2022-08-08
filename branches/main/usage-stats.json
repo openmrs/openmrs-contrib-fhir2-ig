@@ -62,6 +62,12 @@
     ]
   },
   "usage": {
+    "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location": [
+      "Patient.identifier"
+    ],
+    "http://fhir.openmrs.org/ext/address": [
+      "Patient.address"
+    ],
     "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location": [
       "Identifier"
     ],
