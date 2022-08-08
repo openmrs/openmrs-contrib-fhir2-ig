@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-07-27T18:15:49+00:00",
+  "date": "2022-08-08T14:54:31+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -407,6 +407,20 @@
         },
         "name": "OpenMRS Patient Identifier",
         "description": "Patient Identifers as understood by OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/omrs-person"
+        },
+        "name": "OpenMRS Person",
+        "description": "A FHIR Person as understood by OpenMRS",
         "exampleBoolean": false
       },
       {
