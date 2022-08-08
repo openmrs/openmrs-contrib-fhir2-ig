@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "encounter-status-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://hl7.org/fhir/encounter-status</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>planned</td><td>Planned</td></tr><tr><td>arrived</td><td>Arrived</td></tr><tr><td>triaged</td><td>Triaged</td></tr><tr><td>in-progress</td><td>In Progress</td></tr><tr><td>onleave</td><td>On Leave</td></tr><tr><td>finished</td><td>Finished</td></tr><tr><td>cancelled</td><td>Cancelled</td></tr><tr><td>entered-in-error</td><td>Entered in Error</td></tr><tr><td>unknown</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.openmrs.org/fhir/ValueSet/encounter-status-vs",
+  "version": "0.1.0",
+  "name": "EncounterVs",
+  "title": "EncounterStatus",
+  "status": "active",
+  "date": "2022-08-08T14:58:25+00:00",
+  "contact": [
+    {
+      "name": "OpenMRS, Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://openmrs.org"
+        }
+      ]
+    }
+  ],
+  "description": "Encounter  status ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "https://hl7.org/fhir/encounter-status",
+        "concept": [
+          {
+            "code": "planned",
+            "display": "Planned"
+          },
+          {
+            "code": "arrived",
+            "display": "Arrived"
+          },
+          {
+            "code": "triaged",
+            "display": "Triaged"
+          },
+          {
+            "code": "in-progress",
+            "display": "In Progress"
+          },
+          {
+            "code": "onleave",
+            "display": "On Leave"
+          },
+          {
+            "code": "finished",
+            "display": "Finished"
+          },
+          {
+            "code": "cancelled",
+            "display": "Cancelled"
+          },
+          {
+            "code": "entered-in-error",
+            "display": "Entered in Error"
+          },
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

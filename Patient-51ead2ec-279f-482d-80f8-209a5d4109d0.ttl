@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Patient/51ead2ec-279f-482d-80f8-209a5d4109d0> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "51ead2ec-279f-482d-80f8-209a5d4109d0"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> (no stated gender), DoB Unknown</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Doe" ];
+     fhir:HumanName.given [
+       fhir:value "Jane";
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Patient/51ead2ec-279f-482d-80f8-209a5d4109d0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
