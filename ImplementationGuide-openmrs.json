@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-08-08T14:54:31+00:00",
+  "date": "2022-08-08T14:55:01+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -431,6 +431,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/omrs-practitioner"
+        },
+        "name": "Openmrs Practitioner",
+        "description": "A FHIR Practitioner as understood by OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/OpenMRS-diagnostic-report"
         },
         "name": "OpenMRS Diagnostic Report",
@@ -562,6 +576,20 @@
         "name": "OpenMRS Order Code",
         "description": "The code for the openmrs requested in the EMR.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"
+        },
+        "name": "Practitioner Example",
+        "description": "Practitioner Resource Example",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"
       },
       {
         "extension": [

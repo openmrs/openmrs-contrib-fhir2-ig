@@ -1,0 +1,49 @@
+{
+  "resourceType": "Practitioner",
+  "id": "7a9e2727-11ee-47ae-8af5-1dcf5337f7c2",
+  "meta": {
+    "profile": [
+      "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"7a9e2727-11ee-47ae-8af5-1dcf5337f7c2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-practitioner.html\">Openmrs Practitioner</a></p></div><p><b>identifier</b>: id: 1001</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: (545-243-545-1)</p><p><b>address</b>: 534 Erewhon St PleasantVille Vic (HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "OpenMRS",
+      "value": "1001"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Careful",
+      "given": [
+        "Adam"
+      ],
+      "suffix": [
+        "Dr"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(545-243-545-1)"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "534 Erewhon St"
+      ],
+      "city": "PleasantVille",
+      "state": "Vic"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25"
+}

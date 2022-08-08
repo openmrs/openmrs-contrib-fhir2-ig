@@ -84,6 +84,13 @@
     "name": "OMRSPerson"
   },
   {
+    "id": "omrs-practitioner",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner",
+    "version": "0.1.0",
+    "name": "OMRSPractitioner"
+  },
+  {
     "id": "OpenMRS-diagnostic-report-status-vs",
     "type": "ValueSet",
     "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
