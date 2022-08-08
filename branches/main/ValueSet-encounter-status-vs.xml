@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="encounter-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://hl7.org/fhir/encounter-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>planned</td><td>Planned</td></tr><tr><td>arrived</td><td>Arrived</td></tr><tr><td>triaged</td><td>Triaged</td></tr><tr><td>in-progress</td><td>In Progress</td></tr><tr><td>onleave</td><td>On Leave</td></tr><tr><td>finished</td><td>Finished</td></tr><tr><td>cancelled</td><td>Cancelled</td></tr><tr><td>entered-in-error</td><td>Entered in Error</td></tr><tr><td>unknown</td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/ValueSet/encounter-status-vs"/>
+  <version value="0.1.0"/>
+  <name value="EncounterVs"/>
+  <title value="EncounterStatus"/>
+  <status value="active"/>
+  <date value="2022-08-08T14:58:25+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Encounter  status ValueSet"/>
+  <compose>
+    <include>
+      <system value="https://hl7.org/fhir/encounter-status"/>
+      <concept>
+        <code value="planned"/>
+        <display value="Planned"/>
+      </concept>
+      <concept>
+        <code value="arrived"/>
+        <display value="Arrived"/>
+      </concept>
+      <concept>
+        <code value="triaged"/>
+        <display value="Triaged"/>
+      </concept>
+      <concept>
+        <code value="in-progress"/>
+        <display value="In Progress"/>
+      </concept>
+      <concept>
+        <code value="onleave"/>
+        <display value="On Leave"/>
+      </concept>
+      <concept>
+        <code value="finished"/>
+        <display value="Finished"/>
+      </concept>
+      <concept>
+        <code value="cancelled"/>
+        <display value="Cancelled"/>
+      </concept>
+      <concept>
+        <code value="entered-in-error"/>
+        <display value="Entered in Error"/>
+      </concept>
+      <concept>
+        <code value="unknown"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "51ead2ec-279f-482d-80f8-209a5d4109d0",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> (no stated gender), DoB Unknown</p></div>"
+  },
+  "name": [
+    {
+      "family": "Doe",
+      "given": [
+        "Jane"
+      ]
+    }
+  ]
+}

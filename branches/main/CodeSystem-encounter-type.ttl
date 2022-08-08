@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/CodeSystem/encounter-type> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "encounter-type"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://fhir.openmrs.org/fhir/CodeSystem/encounter-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"encounter-type-discharge\"> </a></td><td>Discharge</td><td>Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon.</td></tr><tr><td style=\"white-space:nowrap\">admission<a name=\"encounter-type-admission\"> </a></td><td>Admission</td><td>Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged.</td></tr><tr><td style=\"white-space:nowrap\">visitNote<a name=\"encounter-type-visitNote\"> </a></td><td>Visit Note</td><td>Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.</td></tr><tr><td style=\"white-space:nowrap\">checkOut<a name=\"encounter-type-checkOut\"> </a></td><td>Check Out</td><td>The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)</td></tr><tr><td style=\"white-space:nowrap\">checkIn<a name=\"encounter-type-checkIn\"> </a></td><td>Check In</td><td>Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"encounter-type-transfer\"> </a></td><td>Transfer</td><td>Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)</td></tr><tr><td style=\"white-space:nowrap\">vitals<a name=\"encounter-type-vitals\"> </a></td><td>Vitals</td><td>For capturing vital signs</td></tr><tr><td style=\"white-space:nowrap\">attachmentUpload<a name=\"encounter-type-attachmentUpload\"> </a></td><td>Attachment Upload</td><td>Encounters used to record uploads of attachments.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://fhir.openmrs.org/fhir/CodeSystem/encounter-type"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "EncounterType"];
+  fhir:CodeSystem.title [ fhir:value "Encounter Type Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-08-08T14:58:25+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Encounter Type Coding System"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "discharge" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discharge" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "admission" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "visitNote" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Visit Note" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "checkOut" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Check Out" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "checkIn" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Check In" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "transfer" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transfer" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "vitals" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vitals" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "For capturing vital signs" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "attachmentUpload" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Attachment Upload" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Encounters used to record uploads of attachments." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/CodeSystem/encounter-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

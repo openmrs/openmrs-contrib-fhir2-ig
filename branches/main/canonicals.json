@@ -1,5 +1,12 @@
 [
   {
+    "id": "encounter-type",
+    "type": "CodeSystem",
+    "url": "http://fhir.openmrs.org/fhir/CodeSystem/encounter-type",
+    "version": "0.1.0",
+    "name": "EncounterType"
+  },
+  {
     "id": "openmrs",
     "type": "ImplementationGuide",
     "url": "http://fhir.openmrs.org/fhir/ImplementationGuide/openmrs",
@@ -40,6 +47,13 @@
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address",
     "version": "0.1.0",
     "name": "OMRSAddress"
+  },
+  {
+    "id": "omrs-encounter",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter",
+    "version": "0.1.0",
+    "name": "OMRSEncounter"
   },
   {
     "id": "omrs-location",
@@ -117,6 +131,13 @@
     "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs",
     "version": "0.1.0",
     "name": "OMRSPatientTaskStatusVS"
+  },
+  {
+    "id": "encounter-status-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/encounter-status-vs",
+    "version": "0.1.0",
+    "name": "EncounterVs"
   },
   {
     "id": "location-status-vs",

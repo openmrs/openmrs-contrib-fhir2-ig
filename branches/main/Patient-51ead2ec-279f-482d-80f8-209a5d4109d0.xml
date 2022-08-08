@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="51ead2ec-279f-482d-80f8-209a5d4109d0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jane Doe </b> (no stated gender), DoB Unknown</p></div>
+  </text>
+  <name>
+    <family value="Doe"/>
+    <given value="Jane"/>
+  </name>
+</Patient>

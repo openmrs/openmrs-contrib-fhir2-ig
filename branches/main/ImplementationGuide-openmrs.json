@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-08-08T14:55:43+00:00",
+  "date": "2022-08-08T14:58:25+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -361,6 +361,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/omrs-encounter"
+        },
+        "name": "Openmrs Encounter",
+        "description": "A FHIR Encounter as understood by OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/omrs-location"
         },
         "name": "OpenMRS Location",
@@ -515,6 +529,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/encounter-status-vs"
+        },
+        "name": "EncounterStatus",
+        "description": "Encounter  status ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/location-status-vs"
         },
         "name": "Location Status ValueSet",
@@ -576,6 +604,48 @@
         "name": "OpenMRS Order Code",
         "description": "The code for the openmrs requested in the EMR.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/encounter-type"
+        },
+        "name": "Encounter Type Code System",
+        "description": "Encounter Type Coding System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/51ead2ec-279f-482d-80f8-209a5d4109d0"
+        },
+        "name": "Encounter Patient Example",
+        "description": "OMRS Encounter Resource Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
+        },
+        "name": "Encounter Resource Example",
+        "description": "Example OMRS Encounter",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"
       },
       {
         "extension": [
