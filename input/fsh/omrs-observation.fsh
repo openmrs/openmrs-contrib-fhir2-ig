@@ -14,6 +14,21 @@ Description: "Observation resource created by a OpenMRS that representing a resu
 * component 0..*
 * encounter 0..1
 * value[x]  0..1
+* partOf 0..*
+* category 0..*
+* subject 0..1
+* focus 0..*
+* performer 0..*
+* dataAbsentReason 0..1
+* note 0..*
+* bodySite 0..1
+* method 0..1
+* specimen 0..1
+* device 0..1
+* referenceRange 0..*
+* hasMember 0..*
+* derivedFrom 0..*
+* component 0..*
 
 // OpenMRS Task  Example
 Instance: example-openmrs-Observation
@@ -45,4 +60,4 @@ Description: "FHIR resource that is used to support diagnosis, monitor progress,
 * interpretation -> "obs.interpretation"
 * effectiveDateTime -> "obs.effective"
 * code -> "obs.code"
-
+* issued -> "obs.dateTime"
