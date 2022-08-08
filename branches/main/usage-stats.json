@@ -53,6 +53,12 @@
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person",
         "title": "OpenMRS Person"
       }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner",
+        "title": "Openmrs Practitioner"
+      }
     ]
   },
   "usage": {
