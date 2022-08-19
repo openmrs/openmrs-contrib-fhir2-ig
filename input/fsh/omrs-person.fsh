@@ -49,6 +49,7 @@ Description: "Person is a FHIR resource that is used to represent demographics a
 * -> "OMRS Person" "This profile maps to Person in OMRS FHIR2"
 * identifier -> "Patient.identifier"
 * id -> "Person.uuid"
+* name -> "Person.name"
 * telecom -> "Person.personAttribute" "The attribute used is determined by the fhir2.personContactPointAttributeTypeUuid global property"
 * gender -> "Person.gender"
 * birthDate -> "Person.birthDate" "Estimated birthdates report month and year for people 5 and under or only year for people older than 5"
