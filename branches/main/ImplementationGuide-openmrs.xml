@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-09-20T21:17:20+00:00"/>
+  <date value="2022-09-20T21:19:27+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -262,6 +262,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/omrs-medication-request"/>
+      </reference>
+      <name value="OpenMRS Medication Request"/>
+      <description value="A FHIR MedicationRequest as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/omrs-patient"/>
       </reference>
       <name value="OpenMRS Patient"/>
@@ -383,6 +394,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/medication-request-intent-vs"/>
+      </reference>
+      <name value="Medication Request Intent Vs"/>
+      <description value="Medication Request Intent ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-request-priority-vs"/>
+      </reference>
+      <name value="Medication Request Priority ValueSet"/>
+      <description value="Openmrs Medication Request Priority ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/OpenMRS-task-intent-vs"/>
       </reference>
       <name value="OpenMRS Intent for Task"/>
@@ -476,6 +509,17 @@
       <name value="Location Example"/>
       <description value="Example OMRS location"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OMRSMedicationRequestExample"/>
+      </reference>
+      <name value="OMRS Medication Request Example"/>
+      <description value="Example of the OMRS medication Request Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

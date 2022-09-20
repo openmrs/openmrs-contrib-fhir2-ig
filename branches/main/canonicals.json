@@ -70,6 +70,13 @@
     "name": "OMRSLocationContactPoint"
   },
   {
+    "id": "omrs-medication-request",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request",
+    "version": "0.1.0",
+    "name": "OMRSMedicationRequest"
+  },
+  {
     "id": "omrs-patient",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
@@ -145,5 +152,19 @@
     "url": "http://fhir.openmrs.org/fhir/ValueSet/location-status-vs",
     "version": "0.1.0",
     "name": "LocationStatusVS"
+  },
+  {
+    "id": "medication-request-intent-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs",
+    "version": "0.1.0",
+    "name": "MedicationRequestIntentVs"
+  },
+  {
+    "id": "medication-request-priority-vs",
+    "type": "ValueSet",
+    "url": "http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs",
+    "version": "0.1.0",
+    "name": "MedicationRequestPriorityVs"
   }
 ]
