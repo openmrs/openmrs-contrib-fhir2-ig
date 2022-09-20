@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "OpenMRSDiagnosis"];
   fhir:ValueSet.title [ fhir:value "OpenMRS Diagnostic Report Status Flag"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-20T21:17:20+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-09-20T21:19:27+00:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];

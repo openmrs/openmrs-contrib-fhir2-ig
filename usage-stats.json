@@ -48,6 +48,12 @@
         "title": "OpenMRS Location"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request",
+        "title": "OpenMRS Medication Request"
+      }
+    ],
     "Patient": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",

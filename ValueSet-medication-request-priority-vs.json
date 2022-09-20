@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-request-priority-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.openmrs.org/fhir/request-priority</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>routine</td><td>Routine</td></tr><tr><td>urgent</td><td>Urgent</td></tr><tr><td>asap</td><td>ASAP</td></tr><tr><td>stat</td><td>STAT</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs",
+  "version": "0.1.0",
+  "name": "MedicationRequestPriorityVs",
+  "title": "Medication Request Priority ValueSet",
+  "status": "active",
+  "date": "2022-09-20T21:19:27+00:00",
+  "contact": [
+    {
+      "name": "OpenMRS, Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://openmrs.org"
+        }
+      ]
+    }
+  ],
+  "description": "Openmrs Medication Request Priority ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.openmrs.org/fhir/request-priority",
+        "concept": [
+          {
+            "code": "routine",
+            "display": "Routine"
+          },
+          {
+            "code": "urgent",
+            "display": "Urgent"
+          },
+          {
+            "code": "asap",
+            "display": "ASAP"
+          },
+          {
+            "code": "stat",
+            "display": "STAT"
+          }
+        ]
+      }
+    ]
+  }
+}

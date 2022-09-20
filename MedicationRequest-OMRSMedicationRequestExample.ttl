@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/MedicationRequest/OMRSMedicationRequestExample> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "OMRSMedicationRequestExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"OMRSMedicationRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"OMRSMedicationRequestExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-medication-request.html\">OpenMRS Medication Request</a></p></div><p><b>identifier</b>: id: ?ngen-9?</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>priority</b>: urgent</p><p><b>medication</b>: Cetirizine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (fhir.openmrs.org)</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> \" JEANNETTE\"</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2022-08-07</p><p><b>requester</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> \" CAREFUL\"</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>1</td><td>Code: 1/day x 7 days/week</td><td>UNKNOWN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (fhir.openmrs.org)</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>0</td><td>10 tab (s)</td></tr></table></div>"
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "c9582307-b812-4acc-b82b-77c4c24ba7bc" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.priority [ fhir:value "urgent"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:Element.id [ fhir:value "485df1f8-1813-42ae-ae81-f892f9562067" ];
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "7bb88c7a-9644-4d87-8a21-686126c8bb38" ];
+       fhir:Coding.system [ fhir:value "http://fhir.openmrs.org" ];
+       fhir:Coding.display [ fhir:value "Cetirizine" ]
+     ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-openmrs-Patient" ]
+  ];
+  fhir:MedicationRequest.encounter [
+     fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb>;
+     fhir:Reference.reference [ fhir:value "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2022-08-07"^^xsd:date];
+  fhir:MedicationRequest.requester [
+     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2>;
+     fhir:Reference.reference [ fhir:value "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.timing [
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "05a3c873-a884-4edd-88de-25622f121d77" ];
+           fhir:Coding.system [ fhir:value "http://fhir.openmrs.org" ];
+           fhir:Coding.display [ fhir:value "1/day x 7 days/week" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "1/day x 7 days/week" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:Element.id [ fhir:value "91753a5c-f3c2-4179-9a1b-35c80df575ce" ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "41c75ba4-a423-4628-9d1d-0d306ab1f250" ];
+         fhir:Coding.system [ fhir:value "http://fhir.openmrs.org" ];
+         fhir:Coding.display [ fhir:value "UNKNOWN" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "UNKNOWN" ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.numberOfRepeatsAllowed [ fhir:value "0"^^xsd:nonNegativeInteger ];
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "tab (s)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/MedicationRequest/OMRSMedicationRequestExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
