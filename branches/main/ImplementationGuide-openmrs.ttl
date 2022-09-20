@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-08T14:58:25+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-20T21:17:20+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -42,7 +42,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -718,18 +718,50 @@
          fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task";
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
        ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Person" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/Person/example-openmrs-person>;
+         fhir:Reference.reference [ fhir:value "Person/example-openmrs-person" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Openmrs Person" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example OMRS Person Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person";
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ];
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
        fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
        fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "changes.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

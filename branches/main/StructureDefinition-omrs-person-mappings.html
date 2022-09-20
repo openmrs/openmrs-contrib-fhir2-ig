@@ -192,6 +192,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-omrs-person-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -226,7 +236,7 @@
         
           Active
           
-            as of 2022-08-08
+            as of 2022-09-20
           
         
       </td>
@@ -272,6 +282,17 @@
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>PID-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>PID-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>PID-11</td> </tr>
+</table>
+<a name="person-mapping"> </a><h3>Mappings for FHIR HL7 vs OMRS  (http://hl7.org/fhir/3.0/StructureDefinition/Person)</h3><p>Person is a FHIR resource that is used to represent demographics and administrative information about a person independent of a specific health-related context. FHIR Persons are mapped to OpenMRS Person objects.</p><table class="grid">
+ <tr><td colspan="3"><b>OMRSPerson</b></td></tr>
+ <tr><td>Person</td><td>OMRS Person</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>Person.uuid</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Patient.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>Person.name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>Person.personAttribute</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>Person.gender</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>Person.birthDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>Person.address</td> </tr>
 </table>
 
 
@@ -327,7 +348,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 8, 2022 14:58+0000">2022-08-08</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 20, 2022 21:17+0000">2022-09-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
