@@ -6,7 +6,7 @@
     <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 1000Y (OFFICIAL))</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 1000Y (OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail:</td><td colspan="3">Washington Washington (HOME)</td></tr></table></div>
   </text>
   <identifier id="53fbd0ef-ae10-46a0-9d0a-387917a66d6e">
     <extension url="http://fhir.openmrs.org/StructureDefinition/patient-identifier-location">

@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-08-08T14:58:25+00:00"/>
+  <date value="2022-09-20T21:17:20+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -26,7 +26,7 @@
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -510,16 +510,36 @@
       <description value="Example OMRS Task Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Person"/>
+      </extension>
+      <reference>
+        <reference value="Person/example-openmrs-person"/>
+      </reference>
+      <name value="Openmrs Person"/>
+      <description value="Example OMRS Person Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"/>
+    </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
         <nameUrl value="changes.html"/>
         <title value="Changes"/>
         <generation value="markdown"/>

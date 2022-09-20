@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-08-08T14:58:25+00:00",
+  "date": "2022-09-20T21:17:20+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -33,7 +33,7 @@
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -716,19 +716,51 @@
         "name": "Openmrs Task",
         "description": "Example OMRS Task Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Person"
+          }
+        ],
+        "reference": {
+          "reference": "Person/example-openmrs-person"
+        },
+        "name": "Openmrs Person",
+        "description": "Example OMRS Person Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "changes.html"
+            }
+          ],
           "nameUrl": "changes.html",
           "title": "Changes",
           "generation": "markdown"

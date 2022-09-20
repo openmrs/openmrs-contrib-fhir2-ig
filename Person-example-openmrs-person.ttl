@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Person/example-openmrs-person> a fhir:Person;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-openmrs-person"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Person</b><a name=\"example-openmrs-person\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Person \"example-openmrs-person\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-person.html\">OpenMRS Person</a></p></div><p><b>identifier</b>: OpenMRS ID: 1000Y (OFFICIAL)</p><p><b>name</b>: Smith John </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 2001-09-08</p><p><b>address</b>: Ntungamo Uganda (HOME)</p><p><b>active</b>: true</p></div>"
+  ];
+  fhir:Person.identifier [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "53fbd0ef-ae10-46a0-9d0a-387917a66d6e" ];
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.text [ fhir:value "OpenMRS ID" ]
+     ];
+     fhir:Identifier.value [ fhir:value "1000Y" ]
+  ];
+  fhir:Person.name [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "915c9146-8bdb-4fad-bc51-4af10d041c86" ];
+     fhir:HumanName.family [ fhir:value "John" ];
+     fhir:HumanName.given [
+       fhir:value "Smith";
+       fhir:index 0
+     ]
+  ];
+  fhir:Person.gender [ fhir:value "male"];
+  fhir:Person.birthDate [ fhir:value "2001-09-08"^^xsd:date];
+  fhir:Person.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://fhir.openmrs.org/ext/address" ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.city [ fhir:value "Ntungamo" ];
+     fhir:Address.district [ fhir:value "Ntungamo" ];
+     fhir:Address.country [ fhir:value "Uganda" ]
+  ];
+  fhir:Person.active [ fhir:value "true"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Person/example-openmrs-person.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

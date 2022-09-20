@@ -20,7 +20,7 @@
   "name": "OpenMRSServiceRequest",
   "title": "OpenMRS Service Request",
   "status": "active",
-  "date": "2022-08-08T14:58:25+00:00",
+  "date": "2022-09-20T21:17:20+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -185,7 +185,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"

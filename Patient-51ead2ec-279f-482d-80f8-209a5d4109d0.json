@@ -3,7 +3,7 @@
   "id": "51ead2ec-279f-482d-80f8-209a5d4109d0",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> (no stated gender), DoB Unknown</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Doe </b> (no stated gender), DoB Unknown</p><hr/></div>"
   },
   "name": [
     {
