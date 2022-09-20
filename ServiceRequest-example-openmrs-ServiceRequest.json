@@ -1,0 +1,53 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "example-openmrs-ServiceRequest",
+  "meta": {
+    "profile": [
+      "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"example-openmrs-ServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"example-openmrs-ServiceRequest\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-service-request.html\">OpenMRS Service Request</a></p></div><p><b>identifier</b>: id: 7d13b03b-58c2-43f5-b34d-08750c51aea9</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Patient education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#311401005)</span></p><p><b>code</b>: Breast self-examination technique education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48023004)</span></p><p><b>subject</b>: <span>: Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe</span></p><p><b>occurrence</b>: 2014-08-16</p><p><b>authoredOn</b>: 2016-08-16</p><p><b>requester</b>: <span>: Angela Care, MD</span></p><p><b>performer</b>: <span>: Pamela Educator, RN</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.openmrs.org/ext/task/identifier",
+      "value": "7d13b03b-58c2-43f5-b34d-08750c51aea9"
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "311401005"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "48023004"
+      }
+    ]
+  },
+  "subject": {
+    "type": "Patient",
+    "display": "Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe"
+  },
+  "occurrenceDateTime": "2014-08-16",
+  "authoredOn": "2016-08-16",
+  "requester": {
+    "display": "Angela Care, MD"
+  },
+  "performer": [
+    {
+      "display": "Pamela Educator, RN"
+    }
+  ]
+}

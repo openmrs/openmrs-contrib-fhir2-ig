@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/ServiceRequest/example-openmrs-ServiceRequest> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-openmrs-ServiceRequest"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"example-openmrs-ServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"example-openmrs-ServiceRequest\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-service-request.html\">OpenMRS Service Request</a></p></div><p><b>identifier</b>: id: 7d13b03b-58c2-43f5-b34d-08750c51aea9</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Patient education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#311401005)</span></p><p><b>code</b>: Breast self-examination technique education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48023004)</span></p><p><b>subject</b>: <span>: Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe</span></p><p><b>occurrence</b>: 2014-08-16</p><p><b>authoredOn</b>: 2016-08-16</p><p><b>requester</b>: <span>: Angela Care, MD</span></p><p><b>performer</b>: <span>: Pamela Educator, RN</span></p></div>"
+  ];
+  fhir:ServiceRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://fhir.openmrs.org/ext/task/identifier" ];
+     fhir:Identifier.value [ fhir:value "7d13b03b-58c2-43f5-b34d-08750c51aea9" ]
+  ];
+  fhir:ServiceRequest.status [ fhir:value "completed"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:311401005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "311401005" ]
+     ]
+  ];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:48023004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "48023004" ]
+     ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:Reference.type [ fhir:value "Patient" ];
+     fhir:Reference.display [ fhir:value "Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe" ]
+  ];
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2014-08-16"^^xsd:date];
+  fhir:ServiceRequest.authoredOn [ fhir:value "2016-08-16"^^xsd:date];
+  fhir:ServiceRequest.requester [
+     fhir:Reference.display [ fhir:value "Angela Care, MD" ]
+  ];
+  fhir:ServiceRequest.performer [
+     fhir:index 0;
+     fhir:Reference.display [ fhir:value "Pamela Educator, RN" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/ServiceRequest/example-openmrs-ServiceRequest.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

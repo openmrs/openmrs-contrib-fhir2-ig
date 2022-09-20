@@ -4,9 +4,13 @@
   <id value="OpenMRS-service-request"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest">ServiceRequest</a><a name="ServiceRequest"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A request for a service to be performed</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.id">id</a><a name="ServiceRequest.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Logical id of this artifact</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.status">status</a><a name="ServiceRequest.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">draft | active | on-hold | revoked | completed | entered-in-error | unknown</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.code">code</a><a name="ServiceRequest.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">What is being requested/ordered</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.code.coding">coding</a><a name="ServiceRequest.code.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-OpenMRS-order-code-vs.html">OpenMRS Order Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.subject">subject</a><a name="ServiceRequest.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-omrs-patient.html">OpenMRS Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Individual or Entity the service is ordered for</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.subject">subject</a><a name="ServiceRequest.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-omrs-patient.html">OpenMRS Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Individual or Entity the service is ordered for</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.requester">requester</a><a name="ServiceRequest.requester"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/organization.html">Organization</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/device.html">Device</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who/what is requesting service</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OpenMRS-service-request-definitions.html#ServiceRequest.performer">performer</a><a name="ServiceRequest.performer"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/organization.html">Organization</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/device.html">Device</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Requested performer</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
@@ -20,7 +24,7 @@
   <name value="OpenMRSServiceRequest"/>
   <title value="OpenMRS Service Request"/>
   <status value="active"/>
-  <date value="2022-09-20T21:19:27+00:00"/>
+  <date value="2022-09-20T21:37:06+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -54,6 +58,12 @@
     <identity value="quick"/>
     <uri value="http://siframework.org/cqf"/>
     <name value="Quality Improvement and Clinical Knowledge (QUICK)"/>
+  </mapping>
+  <mapping>
+    <identity value="ServiceRequest-mapping"/>
+    <uri value="http://hl7.org/fhir/3.0/StructureDefinition/serviceRequest"/>
+    <name value="FHIR HL7 vs OMRS FHIR2"/>
+    <comment value="ServiceRequest is used to represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources."/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -148,6 +158,11 @@
         <identity value="rim"/>
         <map value="Act[moodCode&lt;=INT]"/>
       </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="OpenMRSServiceRequest"/>
+        <comment value="This profile maps to Service Request in OMRS FHIR2"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.id">
       <path value="ServiceRequest.id"/>
@@ -169,6 +184,10 @@
       </type>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="uuid"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.meta">
       <path value="ServiceRequest.meta"/>
@@ -704,6 +723,10 @@
         <identity value="quick"/>
         <map value="Action.currentStatus"/>
       </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.status"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.intent">
       <path value="ServiceRequest.intent"/>
@@ -943,6 +966,10 @@
       <mapping>
         <identity value="quick"/>
         <map value="Procedure.procedureCode"/>
+      </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.concept"/>
       </mapping>
     </element>
     <element id="ServiceRequest.code.id">
@@ -1240,6 +1267,10 @@
         <identity value="w5"/>
         <map value="FiveWs.subject"/>
       </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.subject"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.encounter">
       <path value="ServiceRequest.encounter"/>
@@ -1483,6 +1514,10 @@
         <identity value="quick"/>
         <map value="ClinicalStatement.statementAuthor"/>
       </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.requester"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.performerType">
       <path value="ServiceRequest.performerType"/>
@@ -1584,6 +1619,10 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]"/>
+      </mapping>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequestt.performer"/>
       </mapping>
     </element>
     <element id="ServiceRequest.locationCode">
@@ -2037,10 +2076,33 @@
   <differential>
     <element id="ServiceRequest">
       <path value="ServiceRequest"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="OpenMRSServiceRequest"/>
+        <comment value="This profile maps to Service Request in OMRS FHIR2"/>
+      </mapping>
+    </element>
+    <element id="ServiceRequest.id">
+      <path value="ServiceRequest.id"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="uuid"/>
+      </mapping>
+    </element>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.status"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code"/>
       <min value="1"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.concept"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.code.coding">
       <path value="ServiceRequest.code.coding"/>
@@ -2056,6 +2118,24 @@
         <code value="Reference"/>
         <targetProfile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
       </type>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.subject"/>
+      </mapping>
+    </element>
+    <element id="ServiceRequest.requester">
+      <path value="ServiceRequest.requester"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequest.requester"/>
+      </mapping>
+    </element>
+    <element id="ServiceRequest.performer">
+      <path value="ServiceRequest.performer"/>
+      <mapping>
+        <identity value="ServiceRequest-mapping"/>
+        <map value="ServiceRequestt.performer"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
