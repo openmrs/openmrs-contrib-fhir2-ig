@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 25, warn = 46, info = 3
+err = 27, warn = 45, info = 3
 IG Publisher Version: 1.2.3
-Generated Tue Sep 20 21:20:44 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Tue Sep 20 21:38:19 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 3 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
@@ -15,9 +15,10 @@ Generated Tue Sep 20 21:20:44 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/Person-example-openmrs-person : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-service-request : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-service-request : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-task : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-address : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-encounter : 1 / 0 / 1
@@ -75,11 +76,13 @@ ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: Rule ext-1
 ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
 == fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.json ==
 ERROR: Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Practitioner.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
+ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs ([]))
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
 == fsh-generated/resources/StructureDefinition-OpenMRS-service-request.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition/OpenMRS-service-request: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/serviceRequest' does not resolve
 == fsh-generated/resources/StructureDefinition-OpenMRS-task.json ==
 WARNING: OpenMRS Task.Task.status: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs could not be expanded
 WARNING: OpenMRS Task.Task.intent: Binding http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs could not be expanded

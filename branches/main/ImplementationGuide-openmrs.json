@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-09-20T21:19:27+00:00",
+  "date": "2022-09-20T21:37:06+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -758,6 +758,20 @@
         "name": "Openmrs Patient",
         "description": "Example OMRS Patient Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-openmrs-ServiceRequest"
+        },
+        "name": "Openmrs serviceRequest",
+        "description": "Example OMRS Service Request Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"
       },
       {
         "extension": [

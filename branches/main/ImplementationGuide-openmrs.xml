@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-09-20T21:19:27+00:00"/>
+  <date value="2022-09-20T21:37:06+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -542,6 +542,17 @@
       <name value="Openmrs Patient"/>
       <description value="Example OMRS Patient Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-openmrs-ServiceRequest"/>
+      </reference>
+      <name value="Openmrs serviceRequest"/>
+      <description value="Example OMRS Service Request Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

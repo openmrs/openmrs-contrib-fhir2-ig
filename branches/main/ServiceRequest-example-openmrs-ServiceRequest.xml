@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-openmrs-ServiceRequest"/>
+  <meta>
+    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="example-openmrs-ServiceRequest"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest "example-openmrs-ServiceRequest" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OpenMRS-service-request.html">OpenMRS Service Request</a></p></div><p><b>identifier</b>: id: 7d13b03b-58c2-43f5-b34d-08750c51aea9</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Patient education <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#311401005)</span></p><p><b>code</b>: Breast self-examination technique education <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#48023004)</span></p><p><b>subject</b>: <span>: Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe</span></p><p><b>occurrence</b>: 2014-08-16</p><p><b>authoredOn</b>: 2016-08-16</p><p><b>requester</b>: <span>: Angela Care, MD</span></p><p><b>performer</b>: <span>: Pamela Educator, RN</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://fhir.openmrs.org/ext/task/identifier"/>
+    <value value="7d13b03b-58c2-43f5-b34d-08750c51aea9"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="311401005"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="48023004"/>
+    </coding>
+  </code>
+  <subject>
+    <type value="Patient"/>
+    <display value="Patient/5946f880-b197-400b-9caa-a3c661d23041, Jane Doe"/>
+  </subject>
+  <occurrenceDateTime value="2014-08-16"/>
+  <authoredOn value="2016-08-16"/>
+  <requester>
+    <display value="Angela Care, MD"/>
+  </requester>
+  <performer>
+    <display value="Pamela Educator, RN"/>
+  </performer>
+</ServiceRequest>
