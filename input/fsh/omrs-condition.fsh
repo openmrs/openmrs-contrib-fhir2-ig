@@ -44,4 +44,3 @@ Description: "Condition is an FHIR resource used to record detailed information 
 * recorder -> "condition.creator"
 * recordedDate -> "condition.dateCreated"
 
-
