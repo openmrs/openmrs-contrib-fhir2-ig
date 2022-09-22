@@ -17,10 +17,7 @@ Description: "Observation resource created by a OpenMRS that representing a resu
 * partOf 0..0
 * category 0..0
 * subject 0..0
-* focus 0..0
-* performer 0..0
 * dataAbsentReason 0..0
-* note 0..0
 * bodySite 0..0
 * method 0..0
 * specimen 0..0
@@ -42,7 +39,6 @@ Description: "Example OMRS Observation Resource"
 * code.coding[=].code = #22748-8
 * status = #preliminary
 * effectiveDateTime = "2014-11-25T22:17:00+11:00"
-
 
 Mapping: ObservationMapping
 Source: OpenMRSObservation
