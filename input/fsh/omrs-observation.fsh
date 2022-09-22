@@ -30,7 +30,7 @@ Description: "Observation resource created by a OpenMRS that representing a resu
 * derivedFrom 0..0
 * component 0..0
 
-// OpenMRS Task  Example
+// OpenMRS Observation Example
 Instance: example-openmrs-Observation
 InstanceOf: OpenMRSObservation
 Usage: #example
