@@ -3,11 +3,7 @@ Parent: DiagnosticReport
 Id: OpenMRS-diagnostic-report
 Title: "OpenMRS Diagnostic Report"
 Description: "DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context."
-* identifier 0..*
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier only OMRSPatientIdentifier
+* id 0..1
 * basedOn 0..*
 * code.coding 1..*
 * code.coding from OpenMRSOrderCodeVS
@@ -19,32 +15,22 @@ Description: "DiagnosticReport resource created by a OpenMRS that representing r
 * issued  0..1
 * result  0..*
 * effectiveDateTime 0..1
-* performer 0..*
-* resultsInterpreter 0..*
-* specimen 0..*
 * result 0..*
-* imagingStudy 0..*
-* media 0..*
-* conclusion 0..1
-* presentedForm 0..*
 
 Instance: example-Openmrs-DiagnosticReport
 InstanceOf: OpenMRSDiagnosticReport
 Usage: #example
 Title: "Openmrs DiagnosticReport"
 Description: "Example OMRS DiagnosticReport Resource"
-* identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
-* identifier.use = #official
-* identifier.extension.url = "http://fhir.openmrs.org/StructureDefinition/patient-identifier.diagnosticReport"
-* identifier.extension.valueReference.reference = "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
-* identifier.extension.valueReference.type = "Location"
-* identifier.extension.valueReference.display = "Inpatient Ward"
+* id = "8a849d5e-6011-4279-a124-40ada5a687de"
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #8480-6
+* code.coding[+].display = "Systolic blood pressure"
 * subject = Reference("Patient/5946f880-b197-400b-9caa-a3c661d23041")
 * encounter = Reference("Encounter/6519d653-393b-4118-9c83-a3715b82d4ac")
 * result = Reference("Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669")
-* status = #preliminary
+* issued = "2011-03-04T11:45:33+11:00"
+* status = #final
 
 
 Mapping: DiagnosticReportMapping
