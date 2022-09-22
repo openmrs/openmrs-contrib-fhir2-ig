@@ -5,19 +5,16 @@ Title:    "OpenMRS AllergyIntolerance"
 Description: "A FHIR Allergy as understood by OpenMRS"
 * identifier 0..1
 * code 0..1
-* category 0..*
 * reaction 0..1
 * type  0..1
 * clinicalStatus 0..1
 * verificationStatus 0..1
+* patient 1..1
+* recorder 0..1
+* type 0..1
 * criticality 0..1
-* encounter 0..1
-* onset[x] 0..1
 * recordedDate 0..1
-* asserter 0..1
-* lastOccurrence 0..1
 * note 0..*
-* reaction 0..1
 
 /** OMRS AllergyIntolerance Resource Example **/
 
@@ -57,11 +54,7 @@ Description: "Allergy or Intolerance; a propensity, or a potential risk to an in
 * note -> "allergy.note"
 * recorder -> "allergy.author"
 * recordedDate -> "allergy.recorded"
-* asserter -> "allergy.source"
-* onset[x] -> "allergy.init"
-* category -> "allergy.class"
 * criticality -> "allergy.grade"
 * verificationStatus -> "allergy.status"
 * clinicalStatus -> "allergy.status"
 * type -> "allergy.class"
-
