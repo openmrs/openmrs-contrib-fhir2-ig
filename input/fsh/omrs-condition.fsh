@@ -3,13 +3,7 @@ Parent:       Condition
 Id:           omrs-Condition
 Title:        "OpenMRS condition"
 Description:  "A FHIR Condition as understood by OpenMRS"
-* identifier 0..*
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier only OMRSPatientIdentifier
-* clinicalStatus 0..1
-* verificationStatus 0..1
+* id 1..1 
 * code 0..1
 * subject 1..1
 * subject only Reference(OMRSPatient)
@@ -25,9 +19,6 @@ Usage: #example
 Title: "Condition Resource Example"
 Description: "Example OMRS Condition"
 * id = "a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
-* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
-* clinicalStatus.coding.code = #active
-* clinicalStatus.coding.display = #Active
 * code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 * code.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding.code = #116128
@@ -47,6 +38,10 @@ Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects."
 * -> "OMRS Condition" "This profile maps to Condition in OMRS FHIR2"
 * id -> "condition.id"
-* clinicalStatus -> "Condition.clinicalStatus"
-* verificationStatus -> "Condition.verificationStatus"
+* code -> "condition.code"
+* subject -> "condition.patient"
+* onsetDateTime -> "condition.onsetDate"
+* recorder -> "condition.creator"
+* recordedDate -> "condition.dateCreated"
+
 
