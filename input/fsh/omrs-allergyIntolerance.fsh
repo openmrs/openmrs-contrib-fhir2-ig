@@ -14,6 +14,11 @@ Description: "A FHIR Allergy as understood by OpenMRS"
 * type 0..1
 * criticality 0..1
 * recordedDate 0..1
+* category 0..0
+* encounter 0..0
+* onset[x] 0..0
+* asserter 0..0
+* lastOccurrence 0..0
 * note 0..*
 
 /** OMRS AllergyIntolerance Resource Example **/
@@ -49,6 +54,9 @@ Id: allergyintolerance-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Allergy or Intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance."
 * -> "OMRS Allergy intolerance" "This profile maps to allergy intolerance in OMRS FHIR2"
+* asserter -> "allergy.source"
+* onset[x] -> "allergy.init"
+* category -> "allergy.class"
 * identifier -> "allery.identifier"
 * code -> "allergy.Code"
 * note -> "allergy.note"
