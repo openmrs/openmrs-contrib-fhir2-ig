@@ -10,6 +10,8 @@ Description:  "A FHIR Condition as understood by OpenMRS"
 * onsetDateTime 0..1
 * recorder 0..1 
 * recordedDate 0..1
+* clinicalStatus 0..0
+* verificationStatus 0..0
 
 /** OMRS Condition Resource Example **/
 
