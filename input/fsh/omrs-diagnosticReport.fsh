@@ -15,6 +15,13 @@ Description: "DiagnosticReport resource created by a OpenMRS that representing r
 * issued  0..1
 * result  0..*
 * effectiveDateTime 0..1
+* performer 0..0
+* resultsInterpreter 0..0
+* specimen 0..0
+* imagingStudy 0..0
+* media 0..0
+* conclusion 0..0
+* presentedForm 0..0
 * result 0..*
 
 Instance: example-Openmrs-DiagnosticReport
