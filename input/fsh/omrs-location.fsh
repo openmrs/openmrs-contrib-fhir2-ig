@@ -116,7 +116,6 @@ Description: "Example OMRS location"
 * position[0].latitude = 42.256500
 * position[0].longitude = -83.694710
 
-
 /** location search parameters*/
 
 Instance: location-name
@@ -128,8 +127,9 @@ Title: "Search in Location endpoint basing on location name attribute"
 * description = "Searches based on the name field for the location record"
 * code = #name
 * base[0] = #Location
+* target = #OMRSLocation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?name=Unknown"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?name=Unknown"
 
 Instance: location-address-city
 InstanceOf: SearchParameter
@@ -140,8 +140,9 @@ Title: "Search in Location endpoint basing on location address-city attribute"
 * description = "Searches based on the address-city field for the location record"
 * code = #address-city
 * base[0] = #Location
+* target = #OMRSLocation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-city="
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-city="
 
 Instance: location-address-country
 InstanceOf: SearchParameter
@@ -152,8 +153,9 @@ Title: "Search in Location endpoint basing on location address-country attribute
 * description = "Searches based on the address-country field for the location record"
 * code = #address-country
 * base[0] = #Location
+* target = #OMRSLocation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-country="
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-country="
 
 Instance: location-address-postalcode
 InstanceOf: SearchParameter
@@ -164,8 +166,9 @@ Title: "Search in Location endpoint basing on location address-postalcode attrib
 * description = "Searches based on the address-postalcode field for the location record"
 * code = #address-postalcode
 * base[0] = #Location
+* target = #OMRSLocation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-postalcode="
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-postalcode="
 
 Instance: location-address-state
 InstanceOf: SearchParameter
@@ -176,8 +179,9 @@ Title: "Search in Location endpoint basing on location address-state attribute"
 * description = "Searches based on the address-state field for the location record"
 * code = #address-state
 * base[0] = #Location
+* target = #OMRSLocation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-state="
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-state="
 
 Instance: location-tag
 InstanceOf: SearchParameter
@@ -188,8 +192,9 @@ Title: "Search in Location endpoint basing on location tag attribute"
 * description = "Searches based on the tag field for the location record"
 * code = #tag
 * base[0] = #Location
+* target = #OMRSLocation 
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_tag="
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_tag="
 
 Instance: location-partof
 InstanceOf: SearchParameter
@@ -200,8 +205,9 @@ Title: "Search in Location endpoint basing on location partof attribute"
 * description = "Searches based on the partof field for the location record"
 * code = #partOf
 * base[0] = #Location
+* target = #OMRSLocation 
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof=aff27d58-a15c-49a6-9beb-d30dcfc0c66e"
 * type = #reference
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof=aff27d58-a15c-49a6-9beb-d30dcfc0c66e"
 
 Instance: location-partof-name
 InstanceOf: SearchParameter
@@ -212,8 +218,9 @@ Title: "Search in Location endpoint basing on location partof reference location
 * description = "Searches based on the partof location reference name field for the location record"
 * code = #partOf-name
 * base[0] = #Location
+* target = #OMRSLocation 
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof.name=Amani"
 * type = #reference
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof.name=Amani Hospital"
 
 Instance: location-id
 InstanceOf: SearchParameter
@@ -224,8 +231,9 @@ Title: "Search in Location endpoint basing on location uuid  attribute"
 * description = "Searches based on the location uuid field for the location record"
 * code = #_id
 * base[0] = #Location
+* target = #OMRSLocation 
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_id=7f65d926-57d6-4402-ae10-a5b3bcbf7986"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_id=7f65d926-57d6-4402-ae10-a5b3bcbf7986"
 
 Instance: location-lastUpdated
 InstanceOf: SearchParameter
@@ -236,5 +244,6 @@ Title: "Search in Location endpoint basing on location lastUpdated  attribute"
 * description = "Searches based on the location lastUpdated field for the location record"
 * code = #_lastUpdated
 * base[0] = #Location
+* target = #OMRSLocation 
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_lastUpdated=2017-01-18"
 * type = #date
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_lastUpdated=2017-01-18"
