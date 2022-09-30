@@ -90,9 +90,9 @@ Title: "Search through observation endpoint by date "
 * description = "Searches for observations by the observation date and time"
 * code = #date
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?date=2015-03-10"
 * type = #date
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?date=2015-03-10"
-
 
 Instance: observation-concept-code
 InstanceOf: SearchParameter
@@ -103,9 +103,9 @@ Title: "Search through observation endpoint by concept code "
 * description = "Searches for observations with particular codes (concepts)"
 * code = #code
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?code=5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?code=5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-
 
 Instance: observation-category
 InstanceOf: SearchParameter
@@ -116,9 +116,9 @@ Title: "Search through observation endpoint by category "
 * description = "Searches for observations by the observation category"
 * code = #category
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?category=laboratory"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?category=laboratory"
-
 
 Instance: observation-encounter
 InstanceOf: SearchParameter
@@ -129,9 +129,9 @@ Title: "Search through observation endpoint by encounter "
 * description = "Searches for observations by the observation encounter"
 * code = #encounter
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?encounter.type=CheckIn"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?encounter.type=Check In"
-
 
 Instance: observation-subject
 InstanceOf: SearchParameter
@@ -142,9 +142,9 @@ Title: "Search through observation endpoint by subject uuid"
 * description = "Searches for observations by a given subject"
 * code = #subject
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
 * type = #reference
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
-
 
 Instance: observation-subject-identifier
 InstanceOf: SearchParameter
@@ -155,9 +155,9 @@ Title: "Search through observation endpoint by subject identifier"
 * description = "Searches for observations by the patient identifier"
 * code = #subject.identifier
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.identifier=10009A"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject.identifier=10009A"
-
 
 Instance: observation-subject-given
 InstanceOf: SearchParameter
@@ -168,9 +168,9 @@ Title: "Search through observation endpoint by subject given"
 * description = "Searches for observations based on the patient's given name(s)"
 * code = #subject.given
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.given=john"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject.given=john"
-
 
 Instance: observation-subject-family
 InstanceOf: SearchParameter
@@ -181,9 +181,9 @@ Title: "Search through observation endpoint by subject family"
 * description = "	Searches for observations based on the patient's family name"
 * code = #subject.family
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.family=walker"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject.family=Walker"
-
 
 Instance: observation-subject-name
 InstanceOf: SearchParameter
@@ -194,9 +194,9 @@ Title: "Search through observation endpoint by subject name"
 * description = "Searches for observations based on the patient's full or partial name"
 * code = #subject.name
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.name=walker"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject.name=Walker"
-
 
 Instance: observation-patient
 InstanceOf: SearchParameter
@@ -207,9 +207,9 @@ Title: "Search through observation endpoint by a given patient"
 * description = "Searches for observations by a given patient"
 * code = #patient
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
 * type = #reference
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
-
 
 Instance: observation-patient-identifier
 InstanceOf: SearchParameter
@@ -220,8 +220,9 @@ Title: "Search through observation endpoint by a given patient"
 * description = "Searches for observations by a given patient"
 * code = #patient.identifier
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.identifier=10009A"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.identifier=10009A"
 
 Instance: observation-patient.given
 InstanceOf: SearchParameter
@@ -232,9 +233,9 @@ Title: "Search through observation endpoint by the patient's given name"
 * description = "Searches for observations based on the patient's given name(s)"
 * code = #patient.given
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.given=john"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.given=john"
-
 
 Instance: observation-patient.family
 InstanceOf: SearchParameter
@@ -245,9 +246,9 @@ Title: "Search through observation endpoint by the patient's family name"
 * description = "Searches for observations based on the patient's family name"
 * code = #patient.family
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.family=Walker"
 * type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.family=Walker"
-
 
 Instance: observation-patient.name
 InstanceOf: SearchParameter
@@ -258,8 +259,9 @@ Title: "Search through observation endpoint by the patient's full or partial nam
 * description = "Searches for observations based on the patient's full or partial name"
 * code = #patient.name
 * base[0] = #Observation
-* type = #string
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.name=Walker"
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.name=Walker"
+* type = #string 
 
 Instance: observation-has-member
 InstanceOf: SearchParameter
@@ -270,9 +272,9 @@ Title: "Search through an observation group in the Obervation EndPoint that cont
 * description = "Searches for an observation group that contains a given observation"
 * code = #has-member
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member"
 * type = #reference
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member"
-
 
 Instance: observation-has-member-code
 InstanceOf: SearchParameter
@@ -283,9 +285,9 @@ Title: "Searches for an observation group that contains an observation with the 
 * description = "Searches for an observation group that contains an observation with the provided code"
 * code = #has-member-code
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member.code="
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member.code="
-
 
 Instance: observation-value-concept
 InstanceOf: SearchParameter
@@ -296,9 +298,9 @@ Title: "Searches for an observation whose value is a concept that matches the pr
 * description = "Searches for an observation whose value is a concept that matches the provided concept code"
 * code = #value-concept
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-concept="
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-concept="
-
 
 Instance: observation-value-date
 InstanceOf: SearchParameter
@@ -309,9 +311,9 @@ Title: "Searches for an observation whose value is a date by the specified date 
 * description = "Searches for an observation whose value is a date by the specified date range."
 * code = #value-date
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-date="
 * type = #date
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-date="
-
 
 Instance: observation-id
 InstanceOf: SearchParameter
@@ -322,9 +324,9 @@ Title: "Searches based on the exact UUID of the person record"
 * description = "Searches based on the exact UUID of the person record"
 * code = #_id
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_id=6cac48a0-c187-4d7e-8dc5-f2be75114312"
 * type = #token
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_id=6cac48a0-c187-4d7e-8dc5-f2be75114312"
-
 
 Instance: observation-lastUpdated
 InstanceOf: SearchParameter
@@ -335,5 +337,6 @@ Title: "Searches based on the the dateCreated field for the observation record"
 * description = "Searches based on the the dateCreated field for the observation record"
 * code = #_lastUpdated
 * base[0] = #Observation
+* target = #OpenMRSObservation
+* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_lastUpdated=2017-01-18"
 * type = #date
-* expression = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_lastUpdated=2017-01-18"
