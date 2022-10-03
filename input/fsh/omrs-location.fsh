@@ -124,11 +124,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location name attribute"
 * name = "LocationNameSearchParameter"
 * status = #active
-* description = "Searches based on the name field for the location record"
+* description = "Searches based on the name field for the location record eg) /ws/fhir2/{release}/Location?name={name}"
 * code = #name
 * base[0] = #Location
 * target = #OMRSLocation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?name=Unknown"
 * type = #string
 
 Instance: location-address-city
@@ -137,11 +136,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location address-city attribute"
 * name = "LocationCitySearchParameter"
 * status = #active
-* description = "Searches based on the address-city field for the location record"
+* description = "Searches based on the address-city field for the location record eg) /ws/fhir2/{release}/Location?address-city={city}"
 * code = #address-city
 * base[0] = #Location
 * target = #OMRSLocation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-city="
 * type = #string
 
 Instance: location-address-country
@@ -150,11 +148,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location address-country attribute"
 * name = "LocationCountrySearchParameter"
 * status = #active
-* description = "Searches based on the address-country field for the location record"
+* description = "Searches based on the address-country field for the location record eg) /ws/fhir2/{release}/Location?address-country={country}"
 * code = #address-country
 * base[0] = #Location
 * target = #OMRSLocation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-country="
 * type = #string
 
 Instance: location-address-postalcode
@@ -163,11 +160,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location address-postalcode attribute"
 * name = "LocationPostalCodeSearchParameter"
 * status = #active
-* description = "Searches based on the address-postalcode field for the location record"
+* description = "Searches based on the address-postalcode field for the location record eg) /ws/fhir2/{release}/Location?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Location
 * target = #OMRSLocation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-postalcode="
 * type = #string
 
 Instance: location-address-state
@@ -176,11 +172,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location address-state attribute"
 * name = "LocationStateSearchParameter"
 * status = #active
-* description = "Searches based on the address-state field for the location record"
+* description = "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}"
 * code = #address-state
 * base[0] = #Location
 * target = #OMRSLocation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?address-state="
 * type = #string
 
 Instance: location-tag
@@ -189,11 +184,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location tag attribute"
 * name = "LocationTagSearchParameter"
 * status = #active
-* description = "Searches based on the tag field for the location record"
+* description = "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}"
 * code = #tag
 * base[0] = #Location
 * target = #OMRSLocation 
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_tag="
 * type = #string
 
 Instance: location-partof
@@ -202,11 +196,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location partof attribute"
 * name = "LocationPartOfSearchParameter"
 * status = #active
-* description = "Searches based on the partof field for the location record"
+* description = "Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}"
 * code = #partOf
 * base[0] = #Location
 * target = #OMRSLocation 
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof=aff27d58-a15c-49a6-9beb-d30dcfc0c66e"
 * type = #reference
 
 Instance: location-partof-name
@@ -215,11 +208,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location partof reference location name attribute"
 * name = "LocationPartOfNameSearchParameter"
 * status = #active
-* description = "Searches based on the partof location reference name field for the location record"
+* description = "Searches based on the partof location reference name field for the location record eg) /ws/fhir2/{release}/Location?partof.name={name}"
 * code = #partOf-name
 * base[0] = #Location
 * target = #OMRSLocation 
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?partof.name=Amani"
 * type = #reference
 
 Instance: location-id
@@ -228,11 +220,10 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location uuid  attribute"
 * name = "LocationIdSearchParameter"
 * status = #active
-* description = "Searches based on the location uuid field for the location record"
+* description = "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}"
 * code = #_id
 * base[0] = #Location
 * target = #OMRSLocation 
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_id=7f65d926-57d6-4402-ae10-a5b3bcbf7986"
 * type = #token
 
 Instance: location-lastUpdated
@@ -241,9 +232,8 @@ Usage: #definition
 Title: "Search in Location endpoint basing on location lastUpdated  attribute"
 * name = "LocationLastUpdatedSearchParameter"
 * status = #active
-* description = "Searches based on the location lastUpdated field for the location record"
+* description = "Searches based on the location lastUpdated field for the location record eg) /ws/fhir2/{release}/Location?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #Location
 * target = #OMRSLocation 
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Location?_lastUpdated=2017-01-18"
 * type = #date
