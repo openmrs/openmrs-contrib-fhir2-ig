@@ -64,11 +64,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's full or partial name"
 * name = "personNameSearchParameter"
 * status = #active
-* description = "Searches for Person based on full or partial name"
+* description = "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name} "
 * code = #name
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://dev3.openmrs.org/openmrs/ws/fhir2/R4/Person?name=Walker"
 * type = #string
 
 Instance: person-gender
@@ -77,11 +76,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's gender attribute"
 * name = "personGenderSearchParameter"
 * status = #active
-* description = "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset"
+* description = "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}"
 * code = #gender
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://dev3.openmrs.org/openmrs/ws/fhir2/R4/Person?gender=male"
 * type = #token
 
 Instance: person-birthdate
@@ -90,11 +88,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's birthdate attribute"
 * name = "personBirthdateSearchParameter"
 * status = #active
-* description = "Searches based on the person's birthdate"
+* description = "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}"
 * code = #birthdate
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://dev3.openmrs.org/openmrs/ws/fhir2/R4/Person?birthdate=1943-02-05"
 * type = #date
 
 Instance: person-address-city
@@ -103,11 +100,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's location city"
 * name = "personCitySearchParameter"
 * status = #active
-* description = "Searches based on the person's recorded city/village of address"
+* description = "Searches based on the person's recorded city/village of address eg) /ws/fhir2/{release}/Person?address-city={city}"
 * code = #address-city
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?address-city=City6754"
 * type = #string
 
 Instance: person-address-state
@@ -116,11 +112,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's location state"
 * name = "personStateSearchParameter"
 * status = #active
-* description = "Searches based on the person's recorded state/province of address"
+* description = "Searches based on the person's recorded state/province of address eg) /ws/fhir2/{release}/Person?address-state={state}"
 * code = #address-state
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?address-state=State7001"
 * type = #string
 
 Instance: person-address-postalcode
@@ -129,11 +124,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's location postal code"
 * name = "personPostalCodeSearchParameter"
 * status = #active
-* description = "Searches based on the person's recorded postal code of address"
+* description = "Searches based on the person's recorded postal code of address eg) /ws/fhir2/{release}/Person?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?address-postalcode=47002"
 * type = #string
 
 Instance: person-address-country
@@ -142,11 +136,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's location country"
 * name = "personCountrySearchParameter"
 * status = #active
-* description = "Searches based on the person's recorded country of address"
+* description = "Searches based on the person's recorded country of address eg) /ws/fhir2/{release}/Person?address-country={country}"
 * code = #address-country
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?address-country=Country3018"
 * type = #string
 
 Instance: person-id
@@ -155,11 +148,10 @@ Usage: #definition
 Title: "Search through person endpoint by the person's uuid"
 * name = "personIdSearchParameter"
 * status = #active
-* description = "Searches based on the exact UUID of the person record"
+* description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Person?_id={uuid}"
 * code = #_id
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?_id=9bed23d0-0502-11e3-8ffd-0800200c9a66"
 * type = #token
 
 Instance: person-lastUpdated
@@ -168,9 +160,8 @@ Usage: #definition
 Title: "Search through person endpoint basing on dateCreated or dateUpdated field of the person record"
 * name = "personLastUpdatedSearchParameter"
 * status = #active
-* description = "Searches based on the the dateCreated or dateUpdated field for the person record"
+* description = "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Person
 * target = #OMRSPerson
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Person?_lastUpdated=2017-08-01"
 * type = #date
