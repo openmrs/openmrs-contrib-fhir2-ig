@@ -63,7 +63,7 @@ Description: "Example OMRS Observation Resource"
 
 Mapping: omrs-observation-mapping
 Source: OpenMRSObservation
-Target: "http://hl7.org/fhir/r4/StructureDefinition/observation"
+Target: "http://hl7.org/fhir/{release}/StructureDefinition/observation"
 Id: obs-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Observation is a FHIR resource that is used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic characteristics. As such, Observations have a wide range of uses and show up in a wide range of places. FHIR Observations are mapped to OpenMRS Obs objects."
@@ -87,11 +87,10 @@ Usage: #definition
 Title: "Search through observation endpoint by date "
 * name = "observationDateSearchParameter"
 * status = #active
-* description = "Searches for observations by the observation date and time"
+* description = "Searches for observations by the observation date and time eg) /ws/fhir2/{release}/Observation?date={date}"
 * code = #date
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?date=2015-03-10"
 * type = #date
 
 Instance: observation-concept-code
@@ -100,11 +99,10 @@ Usage: #definition
 Title: "Search through observation endpoint by concept code "
 * name = "observationCodeSearchParameter"
 * status = #active
-* description = "Searches for observations with particular codes (concepts)"
+* description = "Searches for observations with particular codes (concepts) eg) /ws/fhir2/{release}/Observation?code={code}"
 * code = #code
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?code=5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 * type = #token
 
 Instance: observation-category
@@ -113,11 +111,10 @@ Usage: #definition
 Title: "Search through observation endpoint by category "
 * name = "observationCategorySearchParameter"
 * status = #active
-* description = "Searches for observations by the observation category"
+* description = "Searches for observations by the observation category eg) /ws/fhir2/{release}/Observation?category={category}"
 * code = #category
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?category=laboratory"
 * type = #token
 
 Instance: observation-encounter
@@ -126,11 +123,10 @@ Usage: #definition
 Title: "Search through observation endpoint by encounter "
 * name = "observationEncounterSearchParameter"
 * status = #active
-* description = "Searches for observations by the observation encounter"
+* description = "Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}"
 * code = #encounter
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?encounter.type=CheckIn"
 * type = #token
 
 Instance: observation-subject
@@ -139,11 +135,10 @@ Usage: #definition
 Title: "Search through observation endpoint by subject uuid"
 * name = "observationSubjectSearchParameter"
 * status = #active
-* description = "Searches for observations by a given subject"
+* description = "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
 * type = #reference
 
 Instance: observation-subject-identifier
@@ -152,11 +147,10 @@ Usage: #definition
 Title: "Search through observation endpoint by subject identifier"
 * name = "observationSubjectIdentifierSearchParameter"
 * status = #active
-* description = "Searches for observations by the patient identifier"
+* description = "Searches for observations by the patient identifier eg) /ws/fhir2/{release}/Observation?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.identifier=10009A"
 * type = #token
 
 Instance: observation-subject-given
@@ -165,11 +159,10 @@ Usage: #definition
 Title: "Search through observation endpoint by subject given"
 * name = "observationSubjectGivenSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's given name(s)"
+* description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.given=john"
 * type = #string
 
 Instance: observation-subject-family
@@ -178,11 +171,10 @@ Usage: #definition
 Title: "Search through observation endpoint by subject family"
 * name = "observationSubjectfamilySearchParameter"
 * status = #active
-* description = "	Searches for observations based on the patient's family name"
+* description = "	Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.family=walker"
 * type = #string
 
 Instance: observation-subject-name
@@ -191,11 +183,10 @@ Usage: #definition
 Title: "Search through observation endpoint by subject name"
 * name = "observationSubjectNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's full or partial name"
+* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?subject:Patient.name=walker"
 * type = #string
 
 Instance: observation-patient
@@ -204,11 +195,10 @@ Usage: #definition
 Title: "Search through observation endpoint by a given patient"
 * name = "observationPatientSearchParameter"
 * status = #active
-* description = "Searches for observations by a given patient"
+* description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}"
 * code = #patient
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient=1e7e9782-2e97-44a0-ab2e-9d04498d4ca6"
 * type = #reference
 
 Instance: observation-patient-identifier
@@ -217,11 +207,10 @@ Usage: #definition
 Title: "Search through observation endpoint by a given patient"
 * name = "observationPatientIdentifierSearchParameter"
 * status = #active
-* description = "Searches for observations by a given patient"
+* description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.identifier=10009A"
 * type = #token
 
 Instance: observation-patient.given
@@ -230,11 +219,10 @@ Usage: #definition
 Title: "Search through observation endpoint by the patient's given name"
 * name = "observationPatientGivenNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's given name(s)"
+* description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.given=john"
 * type = #string
 
 Instance: observation-patient.family
@@ -243,11 +231,10 @@ Usage: #definition
 Title: "Search through observation endpoint by the patient's family name"
 * name = "observationPatientFamilyNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's family name"
+* description = "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.family=Walker"
 * type = #string
 
 Instance: observation-patient.name
@@ -256,11 +243,10 @@ Usage: #definition
 Title: "Search through observation endpoint by the patient's full or partial name"
 * name = "observationPatientNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's full or partial name"
+* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient.name={name}"
 * code = #patient.name
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?patient.name=Walker"
 * type = #string 
 
 Instance: observation-has-member
@@ -269,11 +255,10 @@ Usage: #definition
 Title: "Search through an observation group in the Obervation EndPoint that contains a given observation"
 * name = "observationHasSearchParameter"
 * status = #active
-* description = "Searches for an observation group that contains a given observation"
+* description = "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member"
 * code = #has-member
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member"
 * type = #reference
 
 Instance: observation-has-member-code
@@ -282,11 +267,10 @@ Usage: #definition
 Title: "Searches for an observation group that contains an observation with the provided code"
 * name = "observationHasCodeSearchParameter"
 * status = #active
-* description = "Searches for an observation group that contains an observation with the provided code"
+* description = "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}"
 * code = #has-member-code
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?has-member.code="
 * type = #token
 
 Instance: observation-value-concept
@@ -295,11 +279,10 @@ Usage: #definition
 Title: "Searches for an observation whose value is a concept that matches the provided concept code"
 * name = "observationValueConceptSearchParameter"
 * status = #active
-* description = "Searches for an observation whose value is a concept that matches the provided concept code"
+* description = "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}"
 * code = #value-concept
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-concept="
 * type = #token
 
 Instance: observation-value-date
@@ -308,11 +291,10 @@ Usage: #definition
 Title: "Searches for an observation whose value is a date by the specified date range."
 * name = "observationValueConceptSearchParameter"
 * status = #active
-* description = "Searches for an observation whose value is a date by the specified date range."
+* description = "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}"
 * code = #value-date
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?value-date="
 * type = #date
 
 Instance: observation-id
@@ -321,11 +303,10 @@ Usage: #definition
 Title: "Searches based on the exact UUID of the person record"
 * name = "observationIdSearchParameter"
 * status = #active
-* description = "Searches based on the exact UUID of the person record"
+* description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}"
 * code = #_id
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_id=6cac48a0-c187-4d7e-8dc5-f2be75114312"
 * type = #token
 
 Instance: observation-lastUpdated
@@ -334,9 +315,8 @@ Usage: #definition
 Title: "Searches based on the the dateCreated field for the observation record"
 * name = "observationLastUpdatedSearchParameter"
 * status = #active
-* description = "Searches based on the the dateCreated field for the observation record"
+* description = "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Observation
 * target = #OpenMRSObservation
-* derivedFrom = "https://demo.openmrs.org/openmrs/ws/fhir2/R4/Observation?_lastUpdated=2017-01-18"
 * type = #date
