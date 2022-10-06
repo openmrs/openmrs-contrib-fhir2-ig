@@ -12,6 +12,13 @@ Description:  "A FHIR Condition as understood by OpenMRS"
 * recordedDate 0..1
 * clinicalStatus 0..0
 * verificationStatus 0..0
+* category 0..0
+* severity 0..0
+* bodySite 0..0
+* encounter 0..0
+* asserter 0..0
+* stage 0..0
+* evidence 0..0
 
 /** OMRS Condition Resource Example **/
 
@@ -45,4 +52,248 @@ Description: "Condition is an FHIR resource used to record detailed information 
 * onsetDateTime -> "condition.onsetDate"
 * recorder -> "condition.creator"
 * recordedDate -> "condition.dateCreated"
+
+/** condition search parameters*/
+
+Instance: condition-patient
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by patient uuid"
+* name = "conditionPatientSearchParameter"
+* status = #active
+* description = "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}"
+* code = #patient
+* base[0] = #condition
+* target = #OMRSCondition
+* type = #reference
+
+
+Instance: condition-patient-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search condition endpoint by patient identifier id"
+* name = "conditionPatientIdentifierSearchParameter"
+* status = #active
+* description = "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"
+* code = #patient.identifier
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #token
+
+Instance: condition-patient.given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condtion endpoint by the patient's given name"
+* name = "conditionPatientGivenNameSearchParameter"
+* status = #active
+* description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}"
+* code = #patient.given
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-patient.family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by the patient's family name"
+* name = "conditionPatientFamilyNameSearchParameter"
+* status = #active
+* description = "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}"
+* code = #patient.family
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-patient.name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by the patient's full or partial name"
+* name = "conditionPatientNameSearchParameter"
+* status = #active
+* description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}"
+* code = #patient.name
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-subject
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by subject uuid"
+* name = "conditionSubjectSearchParameter"
+* status = #active
+* description = "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}"
+* code = #subject
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #reference
+
+
+Instance: condition-subject-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by subject identifier"
+* name = "conditionSubjectIdentifierSearchParameter"
+* status = #active
+* description = "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}"
+* code = #subject.identifier
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #token
+
+Instance: condition-subject-given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by subject given"
+* name = "conditionSubjectGivenSearchParameter"
+* status = #active
+* description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}"
+* code = #subject.given
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-subject-family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condtion endpoint by subject family"
+* name = "conditionSubjectfamilySearchParameter"
+* status = #active
+* description = "	Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}"
+* code = #subject.family
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-subject-name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by subject name"
+* name = "conditionSubjectNameSearchParameter"
+* status = #active
+* description = "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}"
+* code = #subject.name
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-code
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by concept code"
+* name = "conditionCodeSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}"
+* code = #code
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #token
+
+Instance: condition-encounter
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by encounter uuid"
+* name = "conditionEncounterSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"
+* code = #code
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #reference
+
+Instance: condition-requester
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Practitioner uuid"
+* name = "conditionSearchParameter"
+* status = #active
+* description = "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"
+* code = #requester
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #reference
+
+Instance: condition-requester-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Practitioner identifier"
+* name = "conditionRequesterIdentifierSearchParameter"
+* status = #active
+* description = "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"
+* code = #requester.identifier
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #token
+
+Instance: Condition-requester-given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Practitioner given"
+* name = "conditionRequesterGivenSearchParameter"
+* status = #active
+* description = "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"
+* code = #requester.given
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: Condition-requester-family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Practitioner family"
+* name = "conditionRequesterfamilySearchParameter"
+* status = #active
+* description = "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"
+* code = #requester.family
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-requester-name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Practitioner name"
+* name = "conditionRequesterNameSearchParameter"
+* status = #active
+* description = "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"
+* code = #requester.name
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #string
+
+Instance: condition-occurrence
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Occurrence when service should occurance"
+* name = "conditionOccurrenceSearchParameter"
+* status = #active
+* description = "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"
+* code = #occurrence
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #date
+
+Instance: condition-id
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by service Uuid"
+* name = "conditionIdSearchParameter"
+* status = #active
+* description = "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}"
+* code = #_id
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #token
+
+Instance: condition-lastUpdated
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by service lastUpdated field"
+* name = "conditionLastUpdatedSearchParameter"
+* status = #active
+* description = "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}"
+* code = #_lastUpdated
+* base[0] = #Condition
+* target = #OMRSCondition
+* type = #date
 
