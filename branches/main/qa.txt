@@ -1,13 +1,13 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 37, warn = 45, info = 3
+err = 55, warn = 46, info = 3
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 01:52:57 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:02:16 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 3 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
@@ -15,6 +15,24 @@ Generated Sat Oct 08 01:52:57 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/Person-example-openmrs-person : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-id : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-lastUpdated : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-medication : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient-identifier : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient.family : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient.given : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient.name : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor-identifier : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.family : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.given : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.name : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-family : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-given : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-identifier : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-city : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-country : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-postalcode : 1 / 0 / 1
@@ -62,6 +80,7 @@ WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile 
 INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[11].description: value should not start or finish with whitespace ' Service...resources'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[35].name: value should not start or finish with whitespace 'Search...Practitioner '
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/LocationExample: Location.telecom[0]: Rule cpt-2: 'A system is required if a value is provided.' Failed
@@ -86,6 +105,42 @@ ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: Rule ext-1
 ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
 == fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.json ==
 ERROR: Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Practitioner.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/SearchParameter-MedicationRequest-id.json ==
+ERROR: SearchParameter/MedicationRequest-id: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-lastUpdated.json ==
+ERROR: SearchParameter/MedicationRequest-lastUpdated: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-medication.json ==
+ERROR: SearchParameter/MedicationRequest-medication: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.json ==
+ERROR: SearchParameter/MedicationRequest-patient: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient-identifier.json ==
+ERROR: SearchParameter/MedicationRequest-patient-identifier: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.family.json ==
+ERROR: SearchParameter/MedicationRequest-patient.family: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.given.json ==
+ERROR: SearchParameter/MedicationRequest-patient.given: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.name.json ==
+ERROR: SearchParameter/MedicationRequest-patient.name: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.json ==
+ERROR: SearchParameter/MedicationRequest-requestor: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor-identifier.json ==
+ERROR: SearchParameter/MedicationRequest-requestor-identifier: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.family.json ==
+ERROR: SearchParameter/MedicationRequest-requestor.family: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.given.json ==
+ERROR: SearchParameter/MedicationRequest-requestor.given: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.name.json ==
+ERROR: SearchParameter/MedicationRequest-requestor.name: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject.json ==
+ERROR: SearchParameter/MedicationRequest-subject: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-family.json ==
+ERROR: SearchParameter/MedicationRequest-subject-family: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-given.json ==
+ERROR: SearchParameter/MedicationRequest-subject-given: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-identifier.json ==
+ERROR: SearchParameter/MedicationRequest-subject-identifier: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-name.json ==
+ERROR: SearchParameter/MedicationRequest-subject-name: SearchParameter.target[0]: The value provided ('OMRSMedicationRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSMedicationRequest in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-Practitioner-address-city.json ==
 ERROR: SearchParameter/Practitioner-address-city: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-Practitioner-address-country.json ==

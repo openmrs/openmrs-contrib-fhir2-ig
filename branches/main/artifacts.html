@@ -207,6 +207,168 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-id.html"
+                     title="SearchParameter/MedicationRequest-id">Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-lastUpdated.html"
+                     title="SearchParameter/MedicationRequest-lastUpdated">Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-medication.html"
+                     title="SearchParameter/MedicationRequest-medication">Search through MedicationRequest endpoint based on medication reference</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.html"
+                     title="SearchParameter/MedicationRequest-patient">Search through MedicationRequest endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient-identifier.html"
+                     title="SearchParameter/MedicationRequest-patient-identifier">Search through MedicationRequest endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.family.html"
+                     title="SearchParameter/MedicationRequest-patient.family">Search through MedicationRequest endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.given.html"
+                     title="SearchParameter/MedicationRequest-patient.given">Search through MedicationRequest endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.name.html"
+                     title="SearchParameter/MedicationRequest-patient.name">Search through MedicationRequest endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.html"
+                     title="SearchParameter/MedicationRequest-requestor">Search through MedicationRequest endpoint by a given Practitioner </a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor-identifier.html"
+                     title="SearchParameter/MedicationRequest-requestor-identifier">Search through MedicationRequest endpoint by a given Practitioner</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.family.html"
+                     title="SearchParameter/MedicationRequest-requestor.family">Search through MedicationRequest endpoint by the Practitioner's family name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.given.html"
+                     title="SearchParameter/MedicationRequest-requestor.given">Search through MedicationRequest endpoint by the Practitioner's given name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.name.html"
+                     title="SearchParameter/MedicationRequest-requestor.name">Search through MedicationRequest endpoint by the Practitioner's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject.html"
+                     title="SearchParameter/MedicationRequest-subject">Search through MedicationRequest endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-family.html"
+                     title="SearchParameter/MedicationRequest-subject-family">Search through MedicationRequest endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-given.html"
+                     title="SearchParameter/MedicationRequest-subject-given">Search through MedicationRequest endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-identifier.html"
+                     title="SearchParameter/MedicationRequest-subject-identifier">Search through MedicationRequest endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-name.html"
+                     title="SearchParameter/MedicationRequest-subject-name">Search through MedicationRequest endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-Practitioner-address-city.html"
                      title="SearchParameter/Practitioner-address-city">Search in Practitioner endpoint basing on Practitioner's address-city attribute</a>
                </td>
@@ -689,7 +851,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 01:52+0000">2022-10-08</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:01+0000">2022-10-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
