@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OMRSPerson"];
   fhir:StructureDefinition.title [ fhir:value "OpenMRS Person"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:12:18+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:13:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -972,7 +972,7 @@
        ], [
          fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "person-mapping" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Person.link" ]
+         fhir:ElementDefinition.mapping.map [ fhir:value "Person is a Patient? link to Patient : nothing" ]
        ]
      ], [
        fhir:index 19;
@@ -1329,7 +1329,7 @@
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "person-mapping" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Person.link" ]
+         fhir:ElementDefinition.mapping.map [ fhir:value "Person is a Patient? link to Patient : nothing" ]
        ]
      ]
   ] .
