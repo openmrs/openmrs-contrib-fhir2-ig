@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 132, warn = 69, info = 6
+err = 152, warn = 89, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:11:22 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:13:15 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -107,6 +107,26 @@ Generated Sat Oct 08 02:11:22 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-code : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-encounter : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-id : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-lastUpdated : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-occurrence : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient-identifier : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient.family : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient.given : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient.name : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-family : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-given : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-identifier : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-name : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-family : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-given : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-identifier : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-name : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
@@ -395,6 +415,66 @@ ERROR: SearchParameter/location-partof: SearchParameter.target[0]: The value pro
 ERROR: SearchParameter/location-partof-name: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-location-tag.json ==
 ERROR: SearchParameter/location-tag: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-code.json ==
+WARNING: SearchParameter/serviceRequest-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-code: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-encounter.json ==
+WARNING: SearchParameter/serviceRequest-encounter: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-encounter: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-id.json ==
+WARNING: SearchParameter/serviceRequest-id: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-id: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-lastUpdated.json ==
+WARNING: SearchParameter/serviceRequest-lastUpdated: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-lastUpdated: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-occurrence.json ==
+WARNING: SearchParameter/serviceRequest-occurrence: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-occurrence: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.json ==
+WARNING: SearchParameter/serviceRequest-patient: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-patient: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-patient-identifier.json ==
+WARNING: SearchParameter/serviceRequest-patient-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-patient-identifier: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.family.json ==
+WARNING: SearchParameter/serviceRequest-patient.family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-patient.family: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.given.json ==
+WARNING: SearchParameter/serviceRequest-patient.given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-patient.given: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.name.json ==
+WARNING: SearchParameter/serviceRequest-patient.name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-patient.name: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-requester.json ==
+WARNING: SearchParameter/serviceRequest-requester: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-requester: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-family.json ==
+WARNING: SearchParameter/serviceRequest-requester-family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-requester-family: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-given.json ==
+WARNING: SearchParameter/serviceRequest-requester-given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-requester-given: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-identifier.json ==
+WARNING: SearchParameter/serviceRequest-requester-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-requester-identifier: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-name.json ==
+WARNING: SearchParameter/serviceRequest-requester-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-requester-name: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-subject.json ==
+WARNING: SearchParameter/serviceRequest-subject: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-subject: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-family.json ==
+WARNING: SearchParameter/serviceRequest-subject-family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-subject-family: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-given.json ==
+WARNING: SearchParameter/serviceRequest-subject-given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-subject-given: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-identifier.json ==
+WARNING: SearchParameter/serviceRequest-subject-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-subject-identifier: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-name.json ==
+WARNING: SearchParameter/serviceRequest-subject-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/serviceRequest-subject-name: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
 ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==

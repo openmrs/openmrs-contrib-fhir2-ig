@@ -630,6 +630,146 @@
     "name": "LocationTagSearchParameter"
   },
   {
+    "id": "serviceRequest-code",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-code",
+    "version": "0.1.0",
+    "name": "serviceRequestCodeSearchParameter"
+  },
+  {
+    "id": "serviceRequest-encounter",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-encounter",
+    "version": "0.1.0",
+    "name": "serviceRequestEncounterSearchParameter"
+  },
+  {
+    "id": "serviceRequest-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-id",
+    "version": "0.1.0",
+    "name": "serviceRequestIdSearchParameter"
+  },
+  {
+    "id": "serviceRequest-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-lastUpdated",
+    "version": "0.1.0",
+    "name": "serviceRequestLastUpdatedSearchParameter"
+  },
+  {
+    "id": "serviceRequest-occurrence",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-occurrence",
+    "version": "0.1.0",
+    "name": "serviceRequestOccurrenceSearchParameter"
+  },
+  {
+    "id": "serviceRequest-patient",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient",
+    "version": "0.1.0",
+    "name": "serviceRequestPatientSearchParameter"
+  },
+  {
+    "id": "serviceRequest-patient-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient-identifier",
+    "version": "0.1.0",
+    "name": "serviceRequestPatientIdentifierSearchParameter"
+  },
+  {
+    "id": "serviceRequest-patient.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.family",
+    "version": "0.1.0",
+    "name": "serviceRequestPatientFamilyNameSearchParameter"
+  },
+  {
+    "id": "serviceRequest-patient.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.given",
+    "version": "0.1.0",
+    "name": "serviceRequestPatientGivenNameSearchParameter"
+  },
+  {
+    "id": "serviceRequest-patient.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.name",
+    "version": "0.1.0",
+    "name": "serviceRequestPatientNameSearchParameter"
+  },
+  {
+    "id": "serviceRequest-requester",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester",
+    "version": "0.1.0",
+    "name": "serviceRequestRequesterSearchParameter"
+  },
+  {
+    "id": "serviceRequest-requester-family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-family",
+    "version": "0.1.0",
+    "name": "serviceRequestRequesterfamilySearchParameter"
+  },
+  {
+    "id": "serviceRequest-requester-given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-given",
+    "version": "0.1.0",
+    "name": "serviceRequestRequesterGivenSearchParameter"
+  },
+  {
+    "id": "serviceRequest-requester-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-identifier",
+    "version": "0.1.0",
+    "name": "serviceRequestRequesterIdentifierSearchParameter"
+  },
+  {
+    "id": "serviceRequest-requester-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-name",
+    "version": "0.1.0",
+    "name": "serviceRequestRequesterNameSearchParameter"
+  },
+  {
+    "id": "serviceRequest-subject",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject",
+    "version": "0.1.0",
+    "name": "serviceRequestSubjectSearchParameter"
+  },
+  {
+    "id": "serviceRequest-subject-family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-family",
+    "version": "0.1.0",
+    "name": "serviceRequestSubjectfamilySearchParameter"
+  },
+  {
+    "id": "serviceRequest-subject-given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-given",
+    "version": "0.1.0",
+    "name": "serviceRequestSubjectGivenSearchParameter"
+  },
+  {
+    "id": "serviceRequest-subject-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-identifier",
+    "version": "0.1.0",
+    "name": "serviceRequestSubjectIdentifierSearchParameter"
+  },
+  {
+    "id": "serviceRequest-subject-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-name",
+    "version": "0.1.0",
+    "name": "serviceRequestSubjectNameSearchParameter"
+  },
+  {
     "id": "OpenMRS-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",

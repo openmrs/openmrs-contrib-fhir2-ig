@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:10:18+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:12:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -2166,6 +2166,286 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location tag attribute" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by concept code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the serviceRequest concept code eg) /ws/fhir2/{release}/ServiceRequest?code={code}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-encounter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by encounter uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the serviceRequest encounter Uuid eg) /ws/fhir2/{release}/ServiceRequest?encounter={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-id>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by service Uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-lastUpdated>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-lastUpdated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by service lastUpdated field" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-occurrence>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-occurrence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Occurrence when service should occurance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on to occurrent date eg) /ws/fhir2/{release}/ServiceRequest?occurrence={date}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by patient uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-patient-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search serviceRequest endpoint by patient identifier id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.family>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-patient.family" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by the patient's family name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.given>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-patient.given" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by the patient's given name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient.name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-patient.name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by the patient's full or partial name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient.name={name}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-requester" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Practitioner uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-family>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-requester-family" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Practitioner family" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.family={familyName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-given>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-requester-given" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Practitioner given" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.given={givenName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-requester-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Practitioner identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-requester-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by Practitioner name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.name={name}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-subject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by subject uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-family>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-subject-family" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by subject family" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-given>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-subject-given" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by subject given" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.given={givenName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-subject-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by subject identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.identifier={identifier}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/serviceRequest-subject-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through serviceRequest endpoint by subject name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

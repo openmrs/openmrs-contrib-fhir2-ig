@@ -3,13 +3,13 @@
   "id": "Task-lastUpdated",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Task-lastUpdated\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"Task-lastUpdated\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Task-lastUpdated</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: TaskLastUpdatedSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:10:18+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}</p><p><b>code</b>: _lastUpdated</p><p><b>base</b>: Task</p><p><b>type</b>: date</p><p><b>target</b>: OpenMRSTask</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Task-lastUpdated\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"Task-lastUpdated\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Task-lastUpdated</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: TaskLastUpdatedSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:12:18+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}</p><p><b>code</b>: _lastUpdated</p><p><b>base</b>: Task</p><p><b>type</b>: date</p><p><b>target</b>: OpenMRSTask</p></div>"
   },
   "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-lastUpdated",
   "version": "0.1.0",
   "name": "TaskLastUpdatedSearchParameter",
   "status": "active",
-  "date": "2022-10-08T02:10:18+00:00",
+  "date": "2022-10-08T02:12:18+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",

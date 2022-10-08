@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "serviceRequest-patient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"serviceRequest-patient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"serviceRequest-patient\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: serviceRequestPatientSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:12:18+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}</p><p><b>code</b>: patient</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: reference</p><p><b>target</b>: OpenMRSServiceRequest</p></div>"
+  },
+  "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-patient",
+  "version": "0.1.0",
+  "name": "serviceRequestPatientSearchParameter",
+  "status": "active",
+  "date": "2022-10-08T02:12:18+00:00",
+  "contact": [
+    {
+      "name": "OpenMRS, Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://openmrs.org"
+        }
+      ]
+    }
+  ],
+  "description": "Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}",
+  "code": "patient",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "target": [
+    "OpenMRSServiceRequest"
+  ]
+}
