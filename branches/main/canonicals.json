@@ -14,6 +14,76 @@
     "name": "OMRSFhir2ImplementationGuide"
   },
   {
+    "id": "Practitioner-address-city",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-city",
+    "version": "0.1.0",
+    "name": "PractitionerCitySearchParameter"
+  },
+  {
+    "id": "Practitioner-address-country",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-country",
+    "version": "0.1.0",
+    "name": "PractitionerCountrySearchParameter"
+  },
+  {
+    "id": "Practitioner-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-postalcode",
+    "version": "0.1.0",
+    "name": "PractitionerPostalCodeSearchParameter"
+  },
+  {
+    "id": "Practitioner-address-state",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-state",
+    "version": "0.1.0",
+    "name": "PractitionerStateSearchParameter"
+  },
+  {
+    "id": "Practitioner-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-id",
+    "version": "0.1.0",
+    "name": "PractitionerUuidSearchParameter"
+  },
+  {
+    "id": "Practitioner-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-identifier",
+    "version": "0.1.0",
+    "name": "PractitionerIdentifierSearchParameter"
+  },
+  {
+    "id": "Practitioner-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-lastUpdated",
+    "version": "0.1.0",
+    "name": "PractitionerLastUpdatedSearchParameter"
+  },
+  {
+    "id": "Practitioner.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.family",
+    "version": "0.1.0",
+    "name": "PractitionerFamilyNameSearchParameter"
+  },
+  {
+    "id": "Practitioner.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.given",
+    "version": "0.1.0",
+    "name": "PractitionerGivenNameSearchParameter"
+  },
+  {
+    "id": "Practitioner.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.name",
+    "version": "0.1.0",
+    "name": "PractitionerNameSearchParameter"
+  },
+  {
     "id": "OpenMRS-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",

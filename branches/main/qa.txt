@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 27, warn = 45, info = 3
-IG Publisher Version: 1.2.3
-Generated Tue Sep 20 21:38:19 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+err = 37, warn = 45, info = 3
+IG Publisher Version: 1.2.5
+Generated Sat Oct 08 01:52:57 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 3 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
@@ -15,6 +15,16 @@ Generated Tue Sep 20 21:38:19 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/Person-example-openmrs-person : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-city : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-country : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-postalcode : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-state : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-id : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-identifier : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-lastUpdated : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.family : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.given : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
@@ -46,8 +56,8 @@ ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/di
 ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 770: The link 'OMRSPatient' for "OMRSPatient" cannot be resolved
 == fsh-generated/resources/CodeSystem-encounter-type.json ==
 INFORMATION: CodeSystem/encounter-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableValueSet profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
@@ -76,8 +86,28 @@ ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: Rule ext-1
 ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
 == fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.json ==
 ERROR: Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Practitioner.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/SearchParameter-Practitioner-address-city.json ==
+ERROR: SearchParameter/Practitioner-address-city: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-address-country.json ==
+ERROR: SearchParameter/Practitioner-address-country: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-address-postalcode.json ==
+ERROR: SearchParameter/Practitioner-address-postalcode: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-address-state.json ==
+ERROR: SearchParameter/Practitioner-address-state: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-id.json ==
+ERROR: SearchParameter/Practitioner-id: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-identifier.json ==
+ERROR: SearchParameter/Practitioner-identifier: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner-lastUpdated.json ==
+ERROR: SearchParameter/Practitioner-lastUpdated: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner.family.json ==
+ERROR: SearchParameter/Practitioner.family: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner.given.json ==
+ERROR: SearchParameter/Practitioner.given: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Practitioner.name.json ==
+ERROR: SearchParameter/Practitioner.name: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
-ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs ([]))
+ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
@@ -130,26 +160,26 @@ WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet: The ShareableVa
 == fsh-generated/resources/ValueSet-OpenMRS-order-code-vs.json ==
 WARNING: ValueSet/OpenMRS-order-code-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs.json ==
-WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System 'http://hl7.org/fhir/ValueSet/task-intent' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'OpenMRS-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
 == fsh-generated/resources/ValueSet-OpenMRS-task-status-vs.json ==
-WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0]: Unknown System 'http://hl7.org/fhir/ValueSet/task-status' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'OpenMRS-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
 == fsh-generated/resources/ValueSet-encounter-status-vs.json ==
-WARNING: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0]: Unknown System 'https://hl7.org/fhir/encounter-status' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/encounter-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'encounter-status-vs'): Error from server: Unable to provide support for code system https://hl7.org/fhir/encounter-status
 == fsh-generated/resources/ValueSet-location-status-vs.json ==
-WARNING: ValueSet/location-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/location-status-vs: ValueSet.compose[0].include[0]: Unknown System 'https://fhir.openmrs.org/location-status' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/location-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'location-status-vs'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/location-status
 == fsh-generated/resources/ValueSet-medication-request-intent-vs.json ==
-WARNING: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/medication-request-intent-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-intent-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent
 == fsh-generated/resources/ValueSet-medication-request-priority-vs.json ==
-WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/request-priority' specified, so Concepts and Filters cant be checked
 WARNING: ValueSet/medication-request-priority-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-priority-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/request-priority

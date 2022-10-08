@@ -1,11 +1,74 @@
 {
   "resourceType" : "Bundle",
-  "id" : "027a4efa-e0ae-4d9a-a4d6-d848694b5214",
+  "id" : "c7c8b71f-9cbe-4dbf-af05-a9b7bb631d49",
   "meta" : {
-    "lastUpdated" : "2022-09-20T21:37:06.821+00:00"
+    "lastUpdated" : "2022-10-08T01:52:10.596+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OpenMRS-diagnostic-report-status-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">DiagnosticReportStatus v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Partial</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Final</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Canceled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Amended</td></tr></table></div>"
+      },
+      "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
+      "version" : "0.1.0",
+      "name" : "OpenMRSDiagnosis",
+      "title" : "OpenMRS Diagnostic Report Status Flag",
+      "status" : "active",
+      "date" : "2022-10-08T01:52:10+00:00",
+      "contact" : [{
+        "name" : "OpenMRS, Inc.",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://openmrs.org"
+        }]
+      }],
+      "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
+      "expansion" : {
+        "identifier" : "urn:uuid:10aa595a-bfce-425d-9f06-b74c10190f8c",
+        "timestamp" : "2022-10-08T01:52:33+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/diagnostic-report-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-partial",
+          "display" : "Partial"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-final",
+          "display" : "Final"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-canceled",
+          "display" : "Canceled"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-amended",
+          "display" : "Amended"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -19,7 +82,7 @@
       "name" : "OpenMRSOrderCodeVS",
       "title" : "OpenMRS Order Code",
       "status" : "active",
-      "date" : "2022-09-20T21:37:06+00:00",
+      "date" : "2022-10-08T01:52:10+00:00",
       "contact" : [{
         "name" : "OpenMRS, Inc.",
         "telecom" : [{
@@ -33,8 +96,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:e35939aa-36a6-4588-80c0-a064a36703b8",
-        "timestamp" : "2022-09-20T21:37:39+00:00",
+        "identifier" : "urn:uuid:ce4eeb2e-6098-468d-997c-c13e6db3436c",
+        "timestamp" : "2022-10-08T01:52:40+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5047,69 +5110,6 @@
           "system" : "http://loinc.org",
           "code" : "100899-4",
           "display" : "Enterobacteriaceae.extended spectrum beta lactamase resistance phenotype [Identifier] in Specimen by Organism specific culture"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "OpenMRS-diagnostic-report-status-vs",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">DiagnosticReportStatus v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Partial</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Final</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Canceled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>http://hl7.org/fhir/diagnostic-report-status</td><td>Amended</td></tr></table></div>"
-      },
-      "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
-      "version" : "0.1.0",
-      "name" : "OpenMRSDiagnosis",
-      "title" : "OpenMRS Diagnostic Report Status Flag",
-      "status" : "active",
-      "date" : "2022-09-20T21:37:06+00:00",
-      "contact" : [{
-        "name" : "OpenMRS, Inc.",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://openmrs.org"
-        }]
-      }],
-      "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
-      "expansion" : {
-        "identifier" : "urn:uuid:6c6c36e0-785a-48d7-9ee6-5e43a341b60e",
-        "timestamp" : "2022-09-20T21:37:43+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/diagnostic-report-status|4.0.1"
-        }],
-        "contains" : [{
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-partial",
-          "display" : "Partial"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-final",
-          "display" : "Final"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-unknown",
-          "display" : "Unknown"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-canceled",
-          "display" : "Canceled"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-amended",
-          "display" : "Amended"
         }]
       }
     }
