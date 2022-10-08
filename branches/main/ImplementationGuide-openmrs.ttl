@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:09:14+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:10:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -2026,6 +2026,146 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in group endpoint using Managing entity Reference" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for a group  basing on managing entity Reference(Practitioner)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-address-city>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-address-city" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location address-city attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-city field for the location record eg) /ws/fhir2/{release}/Location?address-city={city}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-address-country>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-address-country" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location address-country attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-country field for the location record eg) /ws/fhir2/{release}/Location?address-country={country}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-address-postalcode>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-address-postalcode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location address-postalcode attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-postalcode field for the location record eg) /ws/fhir2/{release}/Location?address-postalcode={postalCode}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-address-state>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-address-state" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location address-state attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-id>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location uuid  attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-lastUpdated>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-lastUpdated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location lastUpdated  attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the location lastUpdated field for the location record eg) /ws/fhir2/{release}/Location?_lastUpdated={date}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location name attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the name field for the location record eg) /ws/fhir2/{release}/Location?name={name}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-partof>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-partof" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location partof attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-partof-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-partof-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location partof reference location name attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the partof location reference name field for the location record eg) /ws/fhir2/{release}/Location?partof.name={name}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/location-tag>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-tag" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Location endpoint basing on location tag attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

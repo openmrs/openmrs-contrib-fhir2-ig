@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 119, warn = 69, info = 6
+err = 132, warn = 69, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:10:11 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:11:22 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -12,7 +12,7 @@ Generated Sat Oct 08 02:10:11 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Group-OMRSGroupExample : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-LocationExample : 5 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0 : 0 / 0 / 1
@@ -97,6 +97,16 @@ Generated Sat Oct 08 02:10:11 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-identifier : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-name : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-group-Search-entity-paramenter : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-city : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-country : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-postalcode : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-state : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-id : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-lastUpdated : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-name : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
@@ -163,7 +173,10 @@ WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[42
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[67].name: value should not start or finish with whitespace 'Search...Practitioner '
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
-ERROR: Location/LocationExample: Location.telecom[0]: Rule cpt-2: 'A system is required if a value is provided.' Failed
+ERROR: Location/LocationExample: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep'
+ERROR: Location/LocationExample: Location.telecom[0].system: The value provided ('Phone') is not in the value set 'ContactPointSystem' (http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/contact-point-system#Phone in http://hl7.org/fhir/contact-point-system)
+ERROR: Location/LocationExample: Location.telecom[1].system: The value provided ('Fax') is not in the value set 'ContactPointSystem' (http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/contact-point-system#Fax in http://hl7.org/fhir/contact-point-system)
+ERROR: Location/LocationExample: Location.telecom[2].system: The value provided ('Email') is not in the value set 'ContactPointSystem' (http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/contact-point-system#Email in http://hl7.org/fhir/contact-point-system)
 == fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample.json ==
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is unknown so the code cannot be validated)
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/request-priority' is unknown so the code cannot be validated)
@@ -362,6 +375,26 @@ WARNING: SearchParameter/condition-subject-name: SearchParameter: Rule spd-0: 'N
 ERROR: SearchParameter/condition-subject-name: SearchParameter.target[0]: The value provided ('OMRSCondition') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSCondition in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-group-Search-entity-paramenter.json ==
 ERROR: SearchParameter/group-Search-entity-paramenter: SearchParameter.base[0]: The value provided ('OMRSGroup') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSGroup in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-address-city.json ==
+ERROR: SearchParameter/location-address-city: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-address-country.json ==
+ERROR: SearchParameter/location-address-country: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-address-postalcode.json ==
+ERROR: SearchParameter/location-address-postalcode: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-address-state.json ==
+ERROR: SearchParameter/location-address-state: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-id.json ==
+ERROR: SearchParameter/location-id: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-lastUpdated.json ==
+ERROR: SearchParameter/location-lastUpdated: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-name.json ==
+ERROR: SearchParameter/location-name: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-partof.json ==
+ERROR: SearchParameter/location-partof: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-partof-name.json ==
+ERROR: SearchParameter/location-partof-name: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-location-tag.json ==
+ERROR: SearchParameter/location-tag: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
 ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==

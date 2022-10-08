@@ -17,30 +17,48 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location \"LocationExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>identifier</b>: id: ?ngen-9?</p><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>telecom</b>: (555) 675 5745</p><p><b>address</b>: Kampala Uganda 256 Uganda (HOME)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-25.087541</td><td>8.206053</td></tr></table></div>"
-  ];
-  fhir:Location.identifier [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "2daccc0e-654c-4130-9693-a84f328f045e" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location \"LocationExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#Sleep)</span></p><p><b>telecom</b>: Illegal syntax: Unknown ContactPointSystem code 'Phone', Illegal syntax: Unknown ContactPointSystem code 'Fax', Illegal syntax: Unknown ContactPointSystem code 'Email'</p><p><b>address</b>: Illegal syntax: Unknown Content value @  START_TAG seen ...&lt;line&gt;\\n    &lt;value value=\"3300 Washtenaw Avenue, Suite 227\"/&gt;... @6:54</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>"
   ];
   fhir:Location.status [ fhir:value "active"];
   fhir:Location.name [ fhir:value "Outpatient Clinic"];
+  fhir:Location.description [ fhir:value "Outpatient Clinic"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "Sleep" ];
+       fhir:Coding.display [ fhir:value "Sleep disorders unit" ]
+     ]
+  ];
   fhir:Location.telecom [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "e85ab215-a425-4c22-9452-5c8e9f6d1e52" ];
-     fhir:ContactPoint.value [ fhir:value "(555) 675 5745" ]
+     fhir:ContactPoint.system [ fhir:value "Phone" ];
+     fhir:ContactPoint.value [ fhir:value "(+1) 734-677-7777" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "Fax" ];
+     fhir:ContactPoint.value [ fhir:value "(+1) 734-677-6622" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "Email" ];
+     fhir:ContactPoint.value [ fhir:value "hq@HL7.org" ]
   ];
   fhir:Location.address [
      fhir:Address.use [ fhir:value "home" ];
-     fhir:Address.city [ fhir:value "Kampala" ];
+     fhir:Address.line [
+       fhir:index 0;
+       fhir:string.value [ fhir:value "3300 Washtenaw Avenue, Suite 227" ]
+     ];
+     fhir:Address.city [ fhir:value "Ann Arbor" ];
      fhir:Address.district [ fhir:value "Mukono" ];
-     fhir:Address.state [ fhir:value "Uganda" ];
-     fhir:Address.postalCode [ fhir:value "256" ];
-     fhir:Address.country [ fhir:value "Uganda" ]
+     fhir:Address.state [ fhir:value "MI" ];
+     fhir:Address.postalCode [ fhir:value "48104" ];
+     fhir:Address.country [ fhir:value "USA" ]
   ];
   fhir:Location.position [
-     fhir:Location.position.longitude [ fhir:value "-25.087541"^^xsd:decimal ];
-     fhir:Location.position.latitude [ fhir:value "8.206053"^^xsd:decimal ]
+     fhir:Location.position.longitude [ fhir:value "-83.69471"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "42.2565"^^xsd:decimal ]
   ] .
 
 # - ontology header ------------------------------------------------------------
