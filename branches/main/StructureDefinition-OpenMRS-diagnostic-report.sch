@@ -10,6 +10,18 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:DiagnosticReport</sch:title>
+    <sch:rule context="f:DiagnosticReport">
+      <sch:assert test="count(f:performer) &lt;= 0">performer: maximum cardinality of 'performer' is 0</sch:assert>
+      <sch:assert test="count(f:resultsInterpreter) &lt;= 0">resultsInterpreter: maximum cardinality of 'resultsInterpreter' is 0</sch:assert>
+      <sch:assert test="count(f:specimen) &lt;= 0">specimen: maximum cardinality of 'specimen' is 0</sch:assert>
+      <sch:assert test="count(f:imagingStudy) &lt;= 0">imagingStudy: maximum cardinality of 'imagingStudy' is 0</sch:assert>
+      <sch:assert test="count(f:media) &lt;= 0">media: maximum cardinality of 'media' is 0</sch:assert>
+      <sch:assert test="count(f:conclusion) &lt;= 0">conclusion: maximum cardinality of 'conclusion' is 0</sch:assert>
+      <sch:assert test="count(f:presentedForm) &lt;= 0">presentedForm: maximum cardinality of 'presentedForm' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>DiagnosticReport.meta</sch:title>
     <sch:rule context="f:DiagnosticReport/f:meta">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -119,6 +131,7 @@
   <sch:pattern>
     <sch:title>DiagnosticReport.effective[x] 1</sch:title>
     <sch:rule context="f:DiagnosticReport/f:effective[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
