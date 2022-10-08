@@ -630,6 +630,83 @@
     "name": "LocationTagSearchParameter"
   },
   {
+    "id": "patient-address-city",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-address-city",
+    "version": "0.1.0",
+    "name": "patientCitySearchParameter"
+  },
+  {
+    "id": "patient-address-country",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-address-country",
+    "version": "0.1.0",
+    "name": "patientCountrySearchParameter"
+  },
+  {
+    "id": "patient-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-address-postalcode",
+    "version": "0.1.0",
+    "name": "patientPostalCodeSearchParameter"
+  },
+  {
+    "id": "patient-address-state",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-address-state",
+    "version": "0.1.0",
+    "name": "patientStateSearchParameter"
+  },
+  {
+    "id": "patient-birthdate",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-birthdate",
+    "version": "0.1.0",
+    "name": "patientBirthdateSearchParameter"
+  },
+  {
+    "id": "patient-death-date",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-death-date",
+    "version": "0.1.0",
+    "name": "patientDeathDateSearchParameter"
+  },
+  {
+    "id": "patient-deceased",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-deceased",
+    "version": "0.1.0",
+    "name": "patientDeathDateSearchParameter"
+  },
+  {
+    "id": "patient-gender",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-gender",
+    "version": "0.1.0",
+    "name": "patientGenderSearchParameter"
+  },
+  {
+    "id": "patient-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-id",
+    "version": "0.1.0",
+    "name": "patientIdSearchParameter"
+  },
+  {
+    "id": "patient-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-lastUpdated",
+    "version": "0.1.0",
+    "name": "patientLastUpdatedSearchParameter"
+  },
+  {
+    "id": "patient-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/patient-name",
+    "version": "0.1.0",
+    "name": "PatientNameSearchParameter"
+  },
+  {
     "id": "person-address-city",
     "type": "SearchParameter",
     "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-address-city",

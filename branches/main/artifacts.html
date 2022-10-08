@@ -998,6 +998,105 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-patient-address-city.html"
+                     title="SearchParameter/patient-address-city">Search through patient endpoint by the patient's location city</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s recorded city/village of address eg) /ws/fhir2/{release}/Patient?address-city={city}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-address-country.html"
+                     title="SearchParameter/patient-address-country">Search through patient endpoint by the patient's location country</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s recorded country of address eg) /ws/fhir2/{release}/Patient?address-country={country}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-address-postalcode.html"
+                     title="SearchParameter/patient-address-postalcode">Search through patient endpoint by the patient's location postal code</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s recorded postal code of address eg) /ws/fhir2/{release}/Patient?address-postalcode={postalCode}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-address-state.html"
+                     title="SearchParameter/patient-address-state">Search through patient endpoint by the patient's location state</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s recorded state/province of addresseg) /ws/fhir2/{release}/Patient?address-state={state}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-birthdate.html"
+                     title="SearchParameter/patient-birthdate">Search through patient endpoint by the patient's birthdate attribute</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-death-date.html"
+                     title="SearchParameter/patient-death-date">Search through patient endpoint by the patient's death-date attribute</a>
+               </td>
+               <td>
+<p>Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-deceased.html"
+                     title="SearchParameter/patient-deceased">Search through patient endpoint checking for those that passed on or still alive</a>
+               </td>
+               <td>
+<p>Searches based on whether a patient is marked as deceased. Acceptable values are true or false eg) /ws/fhir2/{release}/Patient?deceased={boolean}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-gender.html"
+                     title="SearchParameter/patient-gender">Search through patient endpoint by the patient's gender attribute</a>
+               </td>
+               <td>
+<p>Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-id.html"
+                     title="SearchParameter/patient-id">Search through patient endpoint by the patient's uuid</a>
+               </td>
+               <td>
+<p>Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-lastUpdated.html"
+                     title="SearchParameter/patient-lastUpdated">Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record</a>
+               </td>
+               <td>
+<p>Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-name.html"
+                     title="SearchParameter/patient-name">Search through patient endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for patient based on patient’s full or partial name eg) /ws/fhir2/{release}/Patient?name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-person-address-city.html"
                      title="SearchParameter/person-address-city">Search through person endpoint by the person's location city</a>
                </td>
@@ -1722,7 +1821,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:13+0000">2022-10-08</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:14+0000">2022-10-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
