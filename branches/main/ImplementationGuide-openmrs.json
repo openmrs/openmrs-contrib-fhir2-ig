@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:02:45+00:00",
+  "date": "2022-10-08T02:04:28+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -351,6 +351,20 @@
         },
         "name": "OMRS Address",
         "description": "Address profile specifies the geological location details",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/omrs-Condition"
+        },
+        "name": "OpenMRS condition",
+        "description": "A FHIR Condition as understood by OpenMRS",
         "exampleBoolean": false
       },
       {
@@ -744,6 +758,34 @@
         "name": "Openmrs DiagnosticReport",
         "description": "Example OMRS DiagnosticReport Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Condition-requester-family"
+        },
+        "name": "Search through condition endpoint by Practitioner family",
+        "description": "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Condition-requester-given"
+        },
+        "name": "Search through condition endpoint by Practitioner given",
+        "description": "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -1163,6 +1205,272 @@
         },
         "name": "Search through Practitioner endpoint by the Practitioner's full or partial name",
         "description": "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
+        },
+        "name": "Condition Resource Example",
+        "description": "Example OMRS Condition",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-Condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-code"
+        },
+        "name": "Search through condition endpoint by concept code",
+        "description": "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-encounter"
+        },
+        "name": "Search through condition endpoint by encounter uuid",
+        "description": "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-id"
+        },
+        "name": "Search through condition endpoint by service Uuid",
+        "description": "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-lastUpdated"
+        },
+        "name": "Search through condition endpoint by service lastUpdated field",
+        "description": "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-occurrence"
+        },
+        "name": "Search through condition endpoint by Occurrence when service should occurance",
+        "description": "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-patient"
+        },
+        "name": "Search through condition endpoint by patient uuid",
+        "description": "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-patient-identifier"
+        },
+        "name": "Search condition endpoint by patient identifier id",
+        "description": "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-patient.family"
+        },
+        "name": "Search through condition endpoint by the patient's family name",
+        "description": "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-patient.given"
+        },
+        "name": "Search through condtion endpoint by the patient's given name",
+        "description": "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-patient.name"
+        },
+        "name": "Search through condition endpoint by the patient's full or partial name",
+        "description": "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-requester"
+        },
+        "name": "Search through condition endpoint by Practitioner uuid",
+        "description": "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-requester-identifier"
+        },
+        "name": "Search through condition endpoint by Practitioner identifier",
+        "description": "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-requester-name"
+        },
+        "name": "Search through condition endpoint by Practitioner name",
+        "description": "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-subject"
+        },
+        "name": "Search through condition endpoint by subject uuid",
+        "description": "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-subject-family"
+        },
+        "name": "Search through condtion endpoint by subject family",
+        "description": "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-subject-given"
+        },
+        "name": "Search through condition endpoint by subject given",
+        "description": "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-subject-identifier"
+        },
+        "name": "Search through condition endpoint by subject identifier",
+        "description": "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/condition-subject-name"
+        },
+        "name": "Search through condition endpoint by subject name",
+        "description": "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}",
         "exampleBoolean": false
       },
       {

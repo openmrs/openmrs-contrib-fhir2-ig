@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OpenMRSTask"];
   fhir:StructureDefinition.title [ fhir:value "OpenMRS Task"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:02:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:04:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
