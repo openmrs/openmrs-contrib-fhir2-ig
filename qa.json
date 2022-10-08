@@ -3,9 +3,9 @@
   "name": "OMRSFhir2ImplementationGuide",
   "package-id": "openmrs",
   "ig-ver": "0.1.0",
-  "date": "Sat, 08 Oct, 2022 02:06:31 +0000",
-  "errs": 91,
-  "warnings": 69,
+  "date": "Sat, 08 Oct, 2022 02:08:40 +0000",
+  "errs": 95,
+  "warnings": 68,
   "hints": 6,
   "version": "4.0.1",
   "tool": "5.0.0-ballot (3)"

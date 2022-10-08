@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:06:31+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T02:08:40+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -1258,6 +1258,76 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Task-basedOn>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Task-basedOn" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through FhirTask endpoint by the ServiceRequest Reference uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Task-id>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Task-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Task endpoint basing on Task uuid attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Task-lastUpdated>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Task-lastUpdated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Task endpoint basing on Task lastUpdated attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Task-owner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Task-owner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through FhirTask endpoint by the Organization Reference uuid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Task-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Task-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through FhirTask endpoint by FhirTask status in the current state" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1271,7 +1341,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-Condition>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1285,7 +1355,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1299,7 +1369,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1313,7 +1383,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1327,7 +1397,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1341,7 +1411,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1355,7 +1425,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1369,7 +1439,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1383,7 +1453,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1397,7 +1467,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1411,7 +1481,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1425,7 +1495,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1439,7 +1509,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1453,7 +1523,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1467,7 +1537,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1481,7 +1551,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1495,7 +1565,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1509,7 +1579,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1523,7 +1593,24 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84;
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9>;
+         fhir:Reference.reference [ fhir:value "Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Openmrs Task" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example OMRS Task Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task";
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
+       ]
+     ], [
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1540,7 +1627,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation>
        ]
      ], [
-       fhir:index 85;
+       fhir:index 91;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1557,7 +1644,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient>
        ]
      ], [
-       fhir:index 86;
+       fhir:index 92;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1574,24 +1661,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request>
        ]
      ], [
-       fhir:index 87;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Task" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.openmrs.org/fhir/Task/example-openmrs-Task>;
-         fhir:Reference.reference [ fhir:value "Task/example-openmrs-Task" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Openmrs Task" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example OMRS Task Resource" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task";
-         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
-       ]
-     ], [
-       fhir:index 88;
+       fhir:index 93;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1608,7 +1678,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person>
        ]
      ], [
-       fhir:index 89;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

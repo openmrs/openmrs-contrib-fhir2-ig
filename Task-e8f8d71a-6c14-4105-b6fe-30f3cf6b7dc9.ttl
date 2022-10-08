@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9> a fhir:Task;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task \"e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-task.html\">OpenMRS Task</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-example-openmrs-ServiceRequest.html\">ServiceRequest/example-openmrs-ServiceRequest</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> \" JEANNETTE\"</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><b>owner</b>: <a href=\"Organization/1832473e-2fe0-452d-abe9-3cdb9879522f\">Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital</a></p></div>"
+  ];
+  fhir:Task.basedOn [
+     fhir:index 0;
+     fhir:link <http://fhir.openmrs.org/fhir/ServiceRequest/example-openmrs-ServiceRequest>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example-openmrs-ServiceRequest" ]
+  ];
+  fhir:Task.status [ fhir:value "completed"];
+  fhir:Task.intent [ fhir:value "order"];
+  fhir:Task.for [
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-openmrs-Patient" ]
+  ];
+  fhir:Task.encounter [
+     fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb>;
+     fhir:Reference.reference [ fhir:value "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
+  ];
+  fhir:Task.authoredOn [ fhir:value "2021-02-20"^^xsd:date];
+  fhir:Task.lastModified [ fhir:value "2021-02-21"^^xsd:date];
+  fhir:Task.owner [
+     fhir:link <http://fhir.openmrs.org/fhir/Organization/1832473e-2fe0-452d-abe9-3cdb9879522f>;
+     fhir:Reference.reference [ fhir:value "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f" ];
+     fhir:Reference.display [ fhir:value "Clinical Laboratory @ Acme Hospital" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

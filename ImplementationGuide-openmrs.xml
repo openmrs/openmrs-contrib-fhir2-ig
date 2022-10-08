@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-10-08T02:06:31+00:00"/>
+  <date value="2022-10-08T02:08:40+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -930,6 +930,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-basedOn"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by the ServiceRequest Reference uuid"/>
+      <description value="Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-id"/>
+      </reference>
+      <name value="Search in Task endpoint basing on Task uuid attribute"/>
+      <description value="Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-lastUpdated"/>
+      </reference>
+      <name value="Search in Task endpoint basing on Task lastUpdated attribute"/>
+      <description value="Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-owner"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by the Organization Reference uuid"/>
+      <description value="Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-status"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by FhirTask status in the current state"/>
+      <description value="Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1139,6 +1194,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"/>
+      </reference>
+      <name value="Openmrs Task"/>
+      <description value="Example OMRS Task Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1169,17 +1235,6 @@
       <name value="Openmrs serviceRequest"/>
       <description value="Example OMRS Service Request Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/example-openmrs-Task"/>
-      </reference>
-      <name value="Openmrs Task"/>
-      <description value="Example OMRS Task Resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
