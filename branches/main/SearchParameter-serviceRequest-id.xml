@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="serviceRequest-id"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="serviceRequest-id"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter "serviceRequest-id" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-id</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: serviceRequestIdSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:12:18+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}</p><p><b>code</b>: _id</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: token</p><p><b>target</b>: OpenMRSServiceRequest</p></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-id"/>
+  <version value="0.1.0"/>
+  <name value="serviceRequestIdSearchParameter"/>
+  <status value="active"/>
+  <date value="2022-10-08T02:12:18+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}"/>
+  <code value="_id"/>
+  <base value="ServiceRequest"/>
+  <type value="token"/>
+  <target value="OpenMRSServiceRequest"/>
+</SearchParameter>
