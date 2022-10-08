@@ -1,15 +1,16 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 87, warn = 68, info = 5
+err = 91, warn = 69, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:05:28 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:07:40 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 6 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Group-OMRSGroupExample : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
@@ -66,6 +67,7 @@ Generated Sat Oct 08 02:05:28 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-given : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-identifier : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-name : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-group-Search-entity-paramenter : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
@@ -75,6 +77,8 @@ Generated Sat Oct 08 02:05:28 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-Condition : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-address : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-encounter : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group-description-ext : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication-request : 1 / 4 / 1
@@ -121,9 +125,13 @@ ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.e
 ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.result[0]: Unable to resolve resource with reference '"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"'
 == fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
+== fsh-generated/resources/Group-OMRSGroupExample.json ==
+INFORMATION: Group/OMRSGroupExample: Group.extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group
+ERROR: Group/OMRSGroupExample: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group)
+ERROR: Group/OMRSGroupExample: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace ' Service...resources'
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[41].name: value should not start or finish with whitespace 'Search...Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace ' Service...resources'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[43].name: value should not start or finish with whitespace 'Search...Practitioner '
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/LocationExample: Location.telecom[0]: Rule cpt-2: 'A system is required if a value is provided.' Failed
@@ -265,6 +273,8 @@ ERROR: SearchParameter/condition-subject-identifier: SearchParameter.target[0]: 
 == fsh-generated/resources/SearchParameter-condition-subject-name.json ==
 WARNING: SearchParameter/condition-subject-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: SearchParameter/condition-subject-name: SearchParameter.target[0]: The value provided ('OMRSCondition') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSCondition in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-group-Search-entity-paramenter.json ==
+ERROR: SearchParameter/group-Search-entity-paramenter: SearchParameter.base[0]: The value provided ('OMRSGroup') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSGroup in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
 ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs, and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
@@ -286,6 +296,10 @@ ERROR: StructureDefinition/omrs-Condition: StructureDefinition.mapping[6].uri: U
 == fsh-generated/resources/StructureDefinition-omrs-address.json ==
 == fsh-generated/resources/StructureDefinition-omrs-encounter.json ==
 ERROR: StructureDefinition/omrs-encounter: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Encounter' does not resolve
+== fsh-generated/resources/StructureDefinition-omrs-group.json ==
+ERROR: StructureDefinition/omrs-group: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Group' does not resolve
+== fsh-generated/resources/StructureDefinition-omrs-group-description-ext.json ==
+WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-omrs-location.json ==
 WARNING: OpenMRS Location.Location.status: Binding http://fhir.openmrs.org/fhir/ValueSet/location-status-vs could not be expanded
 ERROR: StructureDefinition/omrs-location: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Location' does not resolve

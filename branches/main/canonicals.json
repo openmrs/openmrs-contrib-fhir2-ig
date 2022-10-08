@@ -350,6 +350,13 @@
     "name": "conditionSubjectNameSearchParameter"
   },
   {
+    "id": "group-Search-entity-paramenter",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/group-Search-entity-paramenter",
+    "version": "0.1.0",
+    "name": "GroupManagingEnityReference"
+  },
+  {
     "id": "OpenMRS-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",
@@ -404,6 +411,20 @@
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter",
     "version": "0.1.0",
     "name": "OMRSEncounter"
+  },
+  {
+    "id": "omrs-group",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group",
+    "version": "0.1.0",
+    "name": "OMRSGroup"
+  },
+  {
+    "id": "omrs-group-description-ext",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext",
+    "version": "0.1.0",
+    "name": "OMRSGroupDescriptionExtension"
   },
   {
     "id": "omrs-location",

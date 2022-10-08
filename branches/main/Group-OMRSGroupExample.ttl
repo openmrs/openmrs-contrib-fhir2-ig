@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Group/OMRSGroupExample> a fhir:Group;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "OMRSGroupExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"OMRSGroupExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group \"OMRSGroupExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-group.html\">OMRS Group</a></p></div><p><b>active</b>: true</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: male cohort</p><p><b>quantity</b>: 10</p><p><b>managingEntity</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Super User</a> \" CAREFUL\"</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://fhir.openmrs.org/ext/group/description" ];
+     fhir:Extension.valueString [ fhir:value "Male Patients years that are alive" ]
+  ];
+  fhir:Group.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Group.type [ fhir:value "person"];
+  fhir:Group.actual [ fhir:value "true"^^xsd:boolean];
+  fhir:Group.name [ fhir:value "male cohort"];
+  fhir:Group.quantity [ fhir:value "10"^^xsd:nonNegativeInteger];
+  fhir:Group.managingEntity [
+     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2>;
+     fhir:Reference.reference [ fhir:value "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ];
+     fhir:Reference.type [ fhir:value "Practitioner" ];
+     fhir:Reference.display [ fhir:value "Super User" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Group/OMRSGroupExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
