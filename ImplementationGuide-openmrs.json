@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:13:28+00:00",
+  "date": "2022-10-08T02:14:23+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -2143,6 +2143,160 @@
         },
         "name": "Search in Location endpoint basing on location tag attribute",
         "description": "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-address-city"
+        },
+        "name": "Search through patient endpoint by the patient's location city",
+        "description": "Searches based on the patient's recorded city/village of address eg) /ws/fhir2/{release}/Patient?address-city={city}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-address-country"
+        },
+        "name": "Search through patient endpoint by the patient's location country",
+        "description": "Searches based on the patient's recorded country of address eg) /ws/fhir2/{release}/Patient?address-country={country}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-address-postalcode"
+        },
+        "name": "Search through patient endpoint by the patient's location postal code",
+        "description": "Searches based on the patient's recorded postal code of address eg) /ws/fhir2/{release}/Patient?address-postalcode={postalCode}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-address-state"
+        },
+        "name": "Search through patient endpoint by the patient's location state",
+        "description": "Searches based on the patient's recorded state/province of addresseg) /ws/fhir2/{release}/Patient?address-state={state}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-birthdate"
+        },
+        "name": "Search through patient endpoint by the patient's birthdate attribute",
+        "description": "Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-death-date"
+        },
+        "name": "Search through patient endpoint by the patient's death-date attribute",
+        "description": "Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-deceased"
+        },
+        "name": "Search through patient endpoint checking for those that passed on or still alive",
+        "description": "Searches based on whether a patient is marked as deceased. Acceptable values are true or false eg) /ws/fhir2/{release}/Patient?deceased={boolean}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-gender"
+        },
+        "name": "Search through patient endpoint by the patient's gender attribute",
+        "description": "Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-id"
+        },
+        "name": "Search through patient endpoint by the patient's uuid",
+        "description": "Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-lastUpdated"
+        },
+        "name": "Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record",
+        "description": "Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/patient-name"
+        },
+        "name": "Search through patient endpoint by the patient's full or partial name",
+        "description": "Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}",
         "exampleBoolean": false
       },
       {

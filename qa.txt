@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 161, warn = 98, info = 6
+err = 172, warn = 108, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:14:24 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:15:24 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -107,6 +107,17 @@ Generated Sat Oct 08 02:14:24 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-city : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-country : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-postalcode : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-state : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-birthdate : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-death-date : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-deceased : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-gender : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-id : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-lastUpdated : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-person-address-city : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-person-address-country : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-person-address-postalcode : 1 / 1 / 1
@@ -424,6 +435,38 @@ ERROR: SearchParameter/location-partof: SearchParameter.target[0]: The value pro
 ERROR: SearchParameter/location-partof-name: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-location-tag.json ==
 ERROR: SearchParameter/location-tag: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-address-city.json ==
+WARNING: SearchParameter/patient-address-city: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-address-city: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-address-country.json ==
+WARNING: SearchParameter/patient-address-country: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-address-country: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-address-postalcode.json ==
+WARNING: SearchParameter/patient-address-postalcode: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-address-postalcode: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-address-state.json ==
+WARNING: SearchParameter/patient-address-state: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-address-state: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-birthdate.json ==
+WARNING: SearchParameter/patient-birthdate: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-birthdate: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-death-date.json ==
+WARNING: SearchParameter/patient-death-date: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-death-date: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-deceased.json ==
+WARNING: SearchParameter/patient-deceased: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-deceased: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-gender.json ==
+WARNING: SearchParameter/patient-gender: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-gender: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-id.json ==
+WARNING: SearchParameter/patient-id: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-id: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-lastUpdated.json ==
+WARNING: SearchParameter/patient-lastUpdated: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/patient-lastUpdated: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-patient-name.json ==
+ERROR: SearchParameter/patient-name: SearchParameter.target[0]: The value provided ('OMRSPatient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPatient in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-person-address-city.json ==
 WARNING: SearchParameter/person-address-city: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: SearchParameter/person-address-city: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
@@ -549,7 +592,7 @@ WARNING: StructureDefinition/omrs-medication-request: StructureDefinition: Bindi
 WARNING: StructureDefinition/omrs-medication-request: StructureDefinition: Binding http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs could not be expanded
 == fsh-generated/resources/StructureDefinition-omrs-patient.json ==
 ERROR: StructureDefinition/omrs-patient: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Patient' does not resolve
-WARNING: StructureDefinition/omrs-patient: StructureDefinition.differential.element[11].mapping[0].map: value should not start or finish with whitespace 'Person.personAttribute '
+WARNING: StructureDefinition/omrs-patient: StructureDefinition.differential.element[5].mapping[0].map: value should not start or finish with whitespace 'Person.personAttribute '
 == fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json ==
 == fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location'): The Implementation Guide contains no examples for this extension
