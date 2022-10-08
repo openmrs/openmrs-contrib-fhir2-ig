@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OMRSFhir2ImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenMRS FHIR2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-09-20T21:37:06+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-08T01:52:10+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -731,6 +731,146 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-city>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-address-city" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner's address-city attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-country>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-address-country" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner's address-country attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-postalcode>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-address-postalcode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-state>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-address-state" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner's address-state attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-id>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner uuid attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through Practitioner endpoint by a given Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-lastUpdated>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner-lastUpdated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.family>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner.family" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through Practitioner endpoint by the Practitioner's family name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.given>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner.given" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through Practitioner endpoint by the Practitioner's given name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/Practitioner.name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search through Practitioner endpoint by the Practitioner's full or partial name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -744,7 +884,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -761,7 +901,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -778,7 +918,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -795,7 +935,7 @@
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
