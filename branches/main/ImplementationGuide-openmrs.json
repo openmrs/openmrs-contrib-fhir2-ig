@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:12:18+00:00",
+  "date": "2022-10-08T02:13:28+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -2143,6 +2143,132 @@
         },
         "name": "Search in Location endpoint basing on location tag attribute",
         "description": "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-address-city"
+        },
+        "name": "Search through person endpoint by the person's location city",
+        "description": "Searches based on the person's recorded city/village of address eg) /ws/fhir2/{release}/Person?address-city={city}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-address-country"
+        },
+        "name": "Search through person endpoint by the person's location country",
+        "description": "Searches based on the person's recorded country of address eg) /ws/fhir2/{release}/Person?address-country={country}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-address-postalcode"
+        },
+        "name": "Search through person endpoint by the person's location postal code",
+        "description": "Searches based on the person's recorded postal code of address eg) /ws/fhir2/{release}/Person?address-postalcode={postalCode}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-address-state"
+        },
+        "name": "Search through person endpoint by the person's location state",
+        "description": "Searches based on the person's recorded state/province of address eg) /ws/fhir2/{release}/Person?address-state={state}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-birthdate"
+        },
+        "name": "Search through person endpoint by the person's birthdate attribute",
+        "description": "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-gender"
+        },
+        "name": "Search through person endpoint by the person's gender attribute",
+        "description": "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-id"
+        },
+        "name": "Search through person endpoint by the person's uuid",
+        "description": "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Person?_id={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-lastUpdated"
+        },
+        "name": "Search through person endpoint basing on dateCreated or dateUpdated field of the person record",
+        "description": "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/person-name"
+        },
+        "name": "Search through person endpoint by the person's full or partial name",
+        "description": "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}",
         "exampleBoolean": false
       },
       {

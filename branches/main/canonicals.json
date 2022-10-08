@@ -630,6 +630,69 @@
     "name": "LocationTagSearchParameter"
   },
   {
+    "id": "person-address-city",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-address-city",
+    "version": "0.1.0",
+    "name": "personCitySearchParameter"
+  },
+  {
+    "id": "person-address-country",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-address-country",
+    "version": "0.1.0",
+    "name": "personCountrySearchParameter"
+  },
+  {
+    "id": "person-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-address-postalcode",
+    "version": "0.1.0",
+    "name": "personPostalCodeSearchParameter"
+  },
+  {
+    "id": "person-address-state",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-address-state",
+    "version": "0.1.0",
+    "name": "personStateSearchParameter"
+  },
+  {
+    "id": "person-birthdate",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate",
+    "version": "0.1.0",
+    "name": "personBirthdateSearchParameter"
+  },
+  {
+    "id": "person-gender",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-gender",
+    "version": "0.1.0",
+    "name": "personGenderSearchParameter"
+  },
+  {
+    "id": "person-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-id",
+    "version": "0.1.0",
+    "name": "personIdSearchParameter"
+  },
+  {
+    "id": "person-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-lastUpdated",
+    "version": "0.1.0",
+    "name": "personLastUpdatedSearchParameter"
+  },
+  {
+    "id": "person-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-name",
+    "version": "0.1.0",
+    "name": "personNameSearchParameter"
+  },
+  {
     "id": "serviceRequest-code",
     "type": "SearchParameter",
     "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-code",

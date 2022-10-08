@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 152, warn = 89, info = 6
+err = 161, warn = 98, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:13:15 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Sat Oct 08 02:14:24 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -107,6 +107,15 @@ Generated Sat Oct 08 02:13:15 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-city : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-country : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-postalcode : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-state : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-birthdate : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-gender : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-id : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-lastUpdated : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-name : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-code : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-encounter : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-id : 1 / 1 / 1
@@ -415,6 +424,33 @@ ERROR: SearchParameter/location-partof: SearchParameter.target[0]: The value pro
 ERROR: SearchParameter/location-partof-name: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-location-tag.json ==
 ERROR: SearchParameter/location-tag: SearchParameter.target[0]: The value provided ('OMRSLocation') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSLocation in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-address-city.json ==
+WARNING: SearchParameter/person-address-city: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-address-city: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-address-country.json ==
+WARNING: SearchParameter/person-address-country: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-address-country: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-address-postalcode.json ==
+WARNING: SearchParameter/person-address-postalcode: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-address-postalcode: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-address-state.json ==
+WARNING: SearchParameter/person-address-state: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-address-state: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-birthdate.json ==
+WARNING: SearchParameter/person-birthdate: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-birthdate: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-gender.json ==
+WARNING: SearchParameter/person-gender: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-gender: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-id.json ==
+WARNING: SearchParameter/person-id: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-id: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-lastUpdated.json ==
+WARNING: SearchParameter/person-lastUpdated: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-lastUpdated: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-person-name.json ==
+WARNING: SearchParameter/person-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter/person-name: SearchParameter.target[0]: The value provided ('OMRSPerson') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPerson in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-serviceRequest-code.json ==
 WARNING: SearchParameter/serviceRequest-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: SearchParameter/serviceRequest-code: SearchParameter.target[0]: The value provided ('OpenMRSServiceRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSServiceRequest in http://hl7.org/fhir/resource-types)
