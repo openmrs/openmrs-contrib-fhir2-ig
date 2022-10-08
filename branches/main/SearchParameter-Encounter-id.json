@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "Encounter-id",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Encounter-id\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"Encounter-id\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-id</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterIdSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:09:14+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}</p><p><b>code</b>: _id</p><p><b>base</b>: Encounter</p><p><b>type</b>: token</p><p><b>target</b>: OMRSEncounter</p></div>"
+  },
+  "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-id",
+  "version": "0.1.0",
+  "name": "EncounterIdSearchParameter",
+  "status": "active",
+  "date": "2022-10-08T02:09:14+00:00",
+  "contact": [
+    {
+      "name": "OpenMRS, Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://openmrs.org"
+        }
+      ]
+    }
+  ],
+  "description": "Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}",
+  "code": "_id",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "target": [
+    "OMRSEncounter"
+  ]
+}

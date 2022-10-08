@@ -28,6 +28,174 @@
     "name": "conditionRequesterGivenSearchParameter"
   },
   {
+    "id": "Encounter-address-city",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-city",
+    "version": "0.1.0",
+    "name": "EncounterCitySearchParameter"
+  },
+  {
+    "id": "Encounter-address-country",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-country",
+    "version": "0.1.0",
+    "name": "EncounterCountrySearchParameter"
+  },
+  {
+    "id": "Encounter-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-postalcode",
+    "version": "0.1.0",
+    "name": "EncounterPostalCodeSearchParameter"
+  },
+  {
+    "id": "Encounter-address-state",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-state",
+    "version": "0.1.0",
+    "name": "EncounterStateSearchParameter"
+  },
+  {
+    "id": "Encounter-date",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date",
+    "version": "0.1.0",
+    "name": "EncounterPatientNameSearchParameter"
+  },
+  {
+    "id": "Encounter-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-id",
+    "version": "0.1.0",
+    "name": "EncounterIdSearchParameter"
+  },
+  {
+    "id": "Encounter-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-lastUpdated",
+    "version": "0.1.0",
+    "name": "EncounterLastUpdatedSearchParameter"
+  },
+  {
+    "id": "Encounter-location",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-location",
+    "version": "0.1.0",
+    "name": "EncounterLocationNameSearchParameter"
+  },
+  {
+    "id": "Encounter-participant",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant",
+    "version": "0.1.0",
+    "name": "EncounterParticipantSearchParameter"
+  },
+  {
+    "id": "Encounter-participant-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier",
+    "version": "0.1.0",
+    "name": "EncounterParticipantIdentifierSearchParameter"
+  },
+  {
+    "id": "Encounter-participant.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant.family",
+    "version": "0.1.0",
+    "name": "EncounterParticipantFamilyNameSearchParameter"
+  },
+  {
+    "id": "Encounter-participant.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant.given",
+    "version": "0.1.0",
+    "name": "EncounterParticipantGivenNameSearchParameter"
+  },
+  {
+    "id": "Encounter-participant.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant.name",
+    "version": "0.1.0",
+    "name": "EncounterParticipantNameSearchParameter"
+  },
+  {
+    "id": "Encounter-patient",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-patient",
+    "version": "0.1.0",
+    "name": "EncounterPatientSearchParameter"
+  },
+  {
+    "id": "Encounter-patient-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-patient-identifier",
+    "version": "0.1.0",
+    "name": "EncounterPatientIdentifierSearchParameter"
+  },
+  {
+    "id": "Encounter-patient.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-patient.family",
+    "version": "0.1.0",
+    "name": "EncounterPatientFamilyNameSearchParameter"
+  },
+  {
+    "id": "Encounter-patient.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-patient.given",
+    "version": "0.1.0",
+    "name": "EncounterPatientGivenNameSearchParameter"
+  },
+  {
+    "id": "Encounter-patient.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-patient.name",
+    "version": "0.1.0",
+    "name": "EncounterPatientNameSearchParameter"
+  },
+  {
+    "id": "Encounter-subject",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject",
+    "version": "0.1.0",
+    "name": "EncounterSubjectSearchParameter"
+  },
+  {
+    "id": "Encounter-subject-family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-family",
+    "version": "0.1.0",
+    "name": "EncounterSubjectfamilySearchParameter"
+  },
+  {
+    "id": "Encounter-subject-given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-given",
+    "version": "0.1.0",
+    "name": "EncounterSubjectGivenSearchParameter"
+  },
+  {
+    "id": "Encounter-subject-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-identifier",
+    "version": "0.1.0",
+    "name": "EncounterSubjectIdentifierSearchParameter"
+  },
+  {
+    "id": "Encounter-subject-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-name",
+    "version": "0.1.0",
+    "name": "EncounterSubjectNameSearchParameter"
+  },
+  {
+    "id": "Encounter-type",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-type",
+    "version": "0.1.0",
+    "name": "EncounterTypeSearchParameter"
+  },
+  {
     "id": "MedicationRequest-id",
     "type": "SearchParameter",
     "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-id",
