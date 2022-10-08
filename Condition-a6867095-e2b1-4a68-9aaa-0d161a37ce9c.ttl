@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "a6867095-e2b1-4a68-9aaa-0d161a37ce9c"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-Condition";
+       fhir:index 0;
+       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-Condition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"a6867095-e2b1-4a68-9aaa-0d161a37ce9c\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"a6867095-e2b1-4a68-9aaa-0d161a37ce9c\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-Condition.html\">OpenMRS condition</a></p></div><p><b>code</b>: 116128 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CIEL#116128)</span></p><p><b>subject</b>: <a href=\"&quot;Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5&quot;\">\"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5\": Horatio Hornblower (OpenMRS ID:101-6)</a></p><p><b>recordedDate</b>: 2019-06-18 06:37:26+0300</p></div>"
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://openconceptlab.org/orgs/CIEL/sources/CIEL" ];
+       fhir:Coding.code [ fhir:value "116128" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://fhir.openmrs.org/fhir/"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5">;
+     fhir:Reference.reference [ fhir:value "\"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5\"" ];
+     fhir:Reference.type [ fhir:value "Patient" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ];
+       fhir:Identifier.value [ fhir:value "101-6" ]
+     ];
+     fhir:Reference.display [ fhir:value "Horatio Hornblower (OpenMRS ID:101-6)" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2019-06-18T06:37:26+03:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

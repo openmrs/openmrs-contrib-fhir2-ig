@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "EncounterType"];
   fhir:CodeSystem.title [ fhir:value "Encounter Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-10-08T02:02:45+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-08T02:04:28+00:00"^^xsd:dateTime];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];

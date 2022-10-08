@@ -207,6 +207,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-Condition-requester-family.html"
+                     title="SearchParameter/Condition-requester-family">Search through condition endpoint by Practitioner family</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Condition-requester-given.html"
+                     title="SearchParameter/Condition-requester-given">Search through condition endpoint by Practitioner given</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-MedicationRequest-id.html"
                      title="SearchParameter/MedicationRequest-id">Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute</a>
                </td>
@@ -457,6 +475,168 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Searches for Practitioner based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-code.html"
+                     title="SearchParameter/condition-code">Search through condition endpoint by concept code</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-encounter.html"
+                     title="SearchParameter/condition-encounter">Search through condition endpoint by encounter uuid</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-id.html"
+                     title="SearchParameter/condition-id">Search through condition endpoint by service Uuid</a>
+               </td>
+               <td>
+<p>Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-lastUpdated.html"
+                     title="SearchParameter/condition-lastUpdated">Search through condition endpoint by service lastUpdated field</a>
+               </td>
+               <td>
+<p>Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-occurrence.html"
+                     title="SearchParameter/condition-occurrence">Search through condition endpoint by Occurrence when service should occurance</a>
+               </td>
+               <td>
+<p>Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.html"
+                     title="SearchParameter/condition-patient">Search through condition endpoint by patient uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient-identifier.html"
+                     title="SearchParameter/condition-patient-identifier">Search condition endpoint by patient identifier id</a>
+               </td>
+               <td>
+<p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.family.html"
+                     title="SearchParameter/condition-patient.family">Search through condition endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.given.html"
+                     title="SearchParameter/condition-patient.given">Search through condtion endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.name.html"
+                     title="SearchParameter/condition-patient.name">Search through condition endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the  patient’s full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester.html"
+                     title="SearchParameter/condition-requester">Search through condition endpoint by Practitioner uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester-identifier.html"
+                     title="SearchParameter/condition-requester-identifier">Search through condition endpoint by Practitioner identifier</a>
+               </td>
+               <td>
+<p>Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester-name.html"
+                     title="SearchParameter/condition-requester-name">Search through condition endpoint by Practitioner name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject.html"
+                     title="SearchParameter/condition-subject">Search through condition endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-family.html"
+                     title="SearchParameter/condition-subject-family">Search through condtion endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-given.html"
+                     title="SearchParameter/condition-subject-given">Search through condition endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-identifier.html"
+                     title="SearchParameter/condition-subject-identifier">Search through condition endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-name.html"
+                     title="SearchParameter/condition-subject-name">Search through condition endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -469,6 +649,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-Condition.html"
+                     title="StructureDefinition/omrs-Condition">OpenMRS condition</a>
+               </td>
+               <td>
+<p>A FHIR Condition as understood by OpenMRS</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-omrs-encounter.html"
@@ -808,6 +997,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html"
+                     title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">Condition Resource Example</a>
+               </td>
+               <td>
+<p>Example OMRS Condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-example-openmrs-Observation.html"
                      title="Observation/example-openmrs-Observation">Openmrs Observation</a>
                </td>
@@ -878,7 +1076,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:02+0000">2022-10-08</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:04+0000">2022-10-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
