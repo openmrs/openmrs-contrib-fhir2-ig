@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-10-08T02:02:22+00:00"/>
+  <date value="2022-10-08T02:02:45+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -317,6 +317,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/omrs-AllergyIntolerance"/>
+      </reference>
+      <name value="OpenMRS AllergyIntolerance"/>
+      <description value="A FHIR Allergy as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/OpenMRS-diagnostic-report"/>
       </reference>
       <name value="OpenMRS Diagnostic Report"/>
@@ -476,6 +487,17 @@
       <name value="Encounter Patient Example"/>
       <description value="OMRS Encounter Resource Example"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+      </reference>
+      <name value="Allergy Intolerance Resource Example"/>
+      <description value="Example OMRS Allergy Intolerance"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -238,6 +238,13 @@
     "name": "OpenMRSTask"
   },
   {
+    "id": "omrs-AllergyIntolerance",
+    "type": "StructureDefinition",
+    "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance",
+    "version": "0.1.0",
+    "name": "OpenMRSAllergyIntolerance"
+  },
+  {
     "id": "omrs-address",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address",

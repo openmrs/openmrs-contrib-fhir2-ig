@@ -36,6 +36,12 @@
         "title": "OpenMRS Task"
       }
     ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance",
+        "title": "OpenMRS AllergyIntolerance"
+      }
+    ],
     "Encounter": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter",

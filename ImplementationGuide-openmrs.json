@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:02:22+00:00",
+  "date": "2022-10-08T02:02:45+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -473,6 +473,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/omrs-AllergyIntolerance"
+        },
+        "name": "OpenMRS AllergyIntolerance",
+        "description": "A FHIR Allergy as understood by OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/OpenMRS-diagnostic-report"
         },
         "name": "OpenMRS Diagnostic Report",
@@ -674,6 +688,20 @@
         "name": "Encounter Patient Example",
         "description": "OMRS Encounter Resource Example",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
+        },
+        "name": "Allergy Intolerance Resource Example",
+        "description": "Example OMRS Allergy Intolerance",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance"
       },
       {
         "extension": [

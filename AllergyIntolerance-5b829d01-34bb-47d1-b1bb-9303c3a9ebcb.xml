@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+  <meta>
+    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AllergyIntolerance</b><a name="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AllergyIntolerance "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-AllergyIntolerance.html">OpenMRS AllergyIntolerance</a></p></div><p><b>identifier</b>: id: 35tu-9 (USUAL)</p><p><b>clinicalStatus</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>patient</b>: <a href="Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5">Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5</a></p><p><b>recorder</b>: <a href="Practitioner/c98a1558-e131-11de-babe-001e378eb67e">Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User</a></p><h3>Reactions</h3><table class="grid"><tr><td>-</td><td><b>Substance</b></td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>162298 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (CIEL#162298)</span></td><td>22748-8 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#22748-8)</span></td></tr></table></div>
+  </text>
+  <identifier id="dce9740a-1691-11df-97a5-7038c432aabf">
+    <use value="usual"/>
+    <system value="OpenMRS"/>
+    <value value="35tu-9"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="active"/>
+    </coding>
+  </clinicalStatus>
+  <patient>
+    <reference value="Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"/>
+    <type value="Patient"/>
+  </patient>
+  <recorder>
+    <reference value="Practitioner/c98a1558-e131-11de-babe-001e378eb67e"/>
+    <type value="Practitioner"/>
+    <display value="Super User"/>
+  </recorder>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="https://openconceptlab.org/orgs/CIEL/sources/CIEL"/>
+        <code value="162298"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <code value="22748-8"/>
+      </coding>
+    </manifestation>
+  </reaction>
+</AllergyIntolerance>
