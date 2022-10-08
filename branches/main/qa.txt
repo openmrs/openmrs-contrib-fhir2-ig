@@ -1,10 +1,10 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 91, warn = 69, info = 6
+err = 95, warn = 68, info = 6
 IG Publisher Version: 1.2.5
-Generated Sat Oct 08 02:07:40 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
- Build Errors : 6 / 0 / 0
+Generated Sat Oct 08 02:09:49 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 5 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 2 / 0 / 2
@@ -49,6 +49,11 @@ Generated Sat Oct 08 02:07:40 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.family : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.given : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.name : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-basedOn : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-id : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-lastUpdated : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-owner : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-status : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-code : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-encounter : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-id : 1 / 1 / 1
@@ -87,7 +92,7 @@ Generated Sat Oct 08 02:07:40 UTC 2022. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-person : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-practitioner : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-example-openmrs-Task : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9 : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs : 0 / 6 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs : 0 / 3 / 1
@@ -102,8 +107,7 @@ ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 1014: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
 ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 670: The link '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"' for ""Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5": Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
 ERROR: /github/workspace/output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 1061: The link '"Patient/5946f880-b197-400b-9caa-a3c661d23041"' for ""Patient/5946f880-b197-400b-9caa-a3c661d23041"" cannot be resolved
-ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 638: The link 'OMRSPatient' for "OMRSPatient" cannot be resolved
-ERROR: /github/workspace/output/Task-example-openmrs-Task.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 770: The link 'OMRSPatient' for "OMRSPatient" cannot be resolved
+ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 222, column 1044: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
 == fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.patient: Unable to resolve resource with reference 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5'
@@ -218,6 +222,16 @@ ERROR: SearchParameter/Practitioner.family: SearchParameter.target[0]: The value
 ERROR: SearchParameter/Practitioner.given: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-Practitioner.name.json ==
 ERROR: SearchParameter/Practitioner.name: SearchParameter.target[0]: The value provided ('OMRSPractitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSPractitioner in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Task-basedOn.json ==
+ERROR: SearchParameter/Task-basedOn: SearchParameter.target[0]: The value provided ('OpenMRSTask') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSTask in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Task-id.json ==
+ERROR: SearchParameter/Task-id: SearchParameter.target[0]: The value provided ('OpenMRSTask') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSTask in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Task-lastUpdated.json ==
+ERROR: SearchParameter/Task-lastUpdated: SearchParameter.target[0]: The value provided ('OpenMRSTask') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSTask in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Task-owner.json ==
+ERROR: SearchParameter/Task-owner: SearchParameter.target[0]: The value provided ('OpenMRSTask') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSTask in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/SearchParameter-Task-status.json ==
+ERROR: SearchParameter/Task-status: SearchParameter.target[0]: The value provided ('OpenMRSTask') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OpenMRSTask in http://hl7.org/fhir/resource-types)
 == fsh-generated/resources/SearchParameter-condition-code.json ==
 WARNING: SearchParameter/condition-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: SearchParameter/condition-code: SearchParameter.target[0]: The value provided ('OMRSCondition') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#OMRSCondition in http://hl7.org/fhir/resource-types)
@@ -322,12 +336,10 @@ ERROR: StructureDefinition/omrs-person: StructureDefinition.mapping[3].uri: URL 
 WARNING: StructureDefinition/omrs-person: StructureDefinition.mapping[3].name: value should not start or finish with whitespace 'FHIR...OMRS '
 == fsh-generated/resources/StructureDefinition-omrs-practitioner.json ==
 ERROR: StructureDefinition/omrs-practitioner: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Practitioner' does not resolve
-== fsh-generated/resources/Task-example-openmrs-Task.json ==
-WARNING: Task/example-openmrs-Task: Task.basedOn[0]: A Reference without an actual reference or identifier should have a display
-ERROR: Task/example-openmrs-Task: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
-ERROR: Task/example-openmrs-Task: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)
-ERROR: Task/example-openmrs-Task: Task.for: Unable to resolve resource with reference 'OMRSPatient'
-ERROR: Task/example-openmrs-Task: Task.owner: Unable to resolve resource with reference 'OMRSPatient'
+== fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.json ==
+ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
+ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)
+ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.owner: Unable to resolve resource with reference 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f'
 == fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs.json ==
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]: The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status

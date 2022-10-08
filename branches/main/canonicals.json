@@ -224,6 +224,41 @@
     "name": "PractitionerNameSearchParameter"
   },
   {
+    "id": "Task-basedOn",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-basedOn",
+    "version": "0.1.0",
+    "name": "TaskBasedOnSearchParameter"
+  },
+  {
+    "id": "Task-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-id",
+    "version": "0.1.0",
+    "name": "TaskIdSearchParameter"
+  },
+  {
+    "id": "Task-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-lastUpdated",
+    "version": "0.1.0",
+    "name": "TaskLastUpdatedSearchParameter"
+  },
+  {
+    "id": "Task-owner",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-owner",
+    "version": "0.1.0",
+    "name": "TaskOwnerSearchParameter"
+  },
+  {
+    "id": "Task-status",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/Task-status",
+    "version": "0.1.0",
+    "name": "TaskStatueSearchParameter"
+  },
+  {
     "id": "condition-code",
     "type": "SearchParameter",
     "url": "http://fhir.openmrs.org/fhir/SearchParameter/condition-code",

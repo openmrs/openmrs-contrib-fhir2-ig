@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:06:31+00:00",
+  "date": "2022-10-08T02:08:40+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -1253,6 +1253,76 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Task-basedOn"
+        },
+        "name": "Search through FhirTask endpoint by the ServiceRequest Reference uuid",
+        "description": "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Task-id"
+        },
+        "name": "Search in Task endpoint basing on Task uuid attribute",
+        "description": "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Task-lastUpdated"
+        },
+        "name": "Search in Task endpoint basing on Task lastUpdated attribute",
+        "description": "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Task-owner"
+        },
+        "name": "Search through FhirTask endpoint by the Organization Reference uuid",
+        "description": "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Task-status"
+        },
+        "name": "Search through FhirTask endpoint by FhirTask status in the current state",
+        "description": "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
@@ -1519,6 +1589,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          }
+        ],
+        "reference": {
+          "reference": "Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"
+        },
+        "name": "Openmrs Task",
+        "description": "Example OMRS Task Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -1556,20 +1640,6 @@
         "name": "Openmrs serviceRequest",
         "description": "Example OMRS Service Request Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Task"
-          }
-        ],
-        "reference": {
-          "reference": "Task/example-openmrs-Task"
-        },
-        "name": "Openmrs Task",
-        "description": "Example OMRS Task Resource",
-        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"
       },
       {
         "extension": [

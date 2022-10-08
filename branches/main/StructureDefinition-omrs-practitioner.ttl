@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OMRSPractitioner"];
   fhir:StructureDefinition.title [ fhir:value "Openmrs Practitioner"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:06:31+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-08T02:08:40+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
