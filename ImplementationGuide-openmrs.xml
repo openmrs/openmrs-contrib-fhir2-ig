@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-10-08T02:04:28+00:00"/>
+  <date value="2022-10-08T02:06:31+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -251,6 +251,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/omrs-group"/>
+      </reference>
+      <name value="OMRS Group"/>
+      <description value="A Group Resource is described as Cohort in Fhir2 OMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/omrs-location"/>
       </reference>
       <name value="OpenMRS Location"/>
@@ -376,6 +387,17 @@
       </reference>
       <name value="OpenMRS Task"/>
       <description value="A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-group-description-ext"/>
+      </reference>
+      <name value="Group descriptive extension"/>
+      <description value="Extension for group description"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -776,6 +798,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/OMRSGroupExample"/>
+      </reference>
+      <name value="OMRS Group Example"/>
+      <description value="OMRS Group Resource Example"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -1158,6 +1191,17 @@
       <name value="Openmrs Person"/>
       <description value="Example OMRS Person Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/group-Search-entity-paramenter"/>
+      </reference>
+      <name value="Search in group endpoint using Managing entity Reference"/>
+      <description value="Search for a group  basing on managing entity Reference(Practitioner)"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

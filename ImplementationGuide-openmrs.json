@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:04:28+00:00",
+  "date": "2022-10-08T02:06:31+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -389,6 +389,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/omrs-group"
+        },
+        "name": "OMRS Group",
+        "description": "A Group Resource is described as Cohort in Fhir2 OMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/omrs-location"
         },
         "name": "OpenMRS Location",
@@ -547,6 +561,20 @@
         },
         "name": "OpenMRS Task",
         "description": "A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/omrs-group-description-ext"
+        },
+        "name": "Group descriptive extension",
+        "description": "Extension for group description",
         "exampleBoolean": false
       },
       {
@@ -1057,6 +1085,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Group"
+          }
+        ],
+        "reference": {
+          "reference": "Group/OMRSGroupExample"
+        },
+        "name": "OMRS Group Example",
+        "description": "OMRS Group Resource Example",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -1542,6 +1584,20 @@
         "name": "Openmrs Person",
         "description": "Example OMRS Person Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/group-Search-entity-paramenter"
+        },
+        "name": "Search in group endpoint using Managing entity Reference",
+        "description": "Search for a group  basing on managing entity Reference(Practitioner)",
+        "exampleBoolean": false
       }
     ],
     "page": {

@@ -4,6 +4,64 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext",
+      "title": "Group descriptive extension",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location",
       "title": "OpenMRS Patient Identifier Location",
       "types": [
@@ -54,6 +112,12 @@
         "title": "Openmrs Encounter"
       }
     ],
+    "Group": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group",
+        "title": "OMRS Group"
+      }
+    ],
     "Location": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
@@ -92,6 +156,12 @@
     "http://fhir.openmrs.org/ext/address": [
       "Patient.address",
       "Person.address"
+    ],
+    "http://fhir.openmrs.org/ext/group/description": [
+      "Group"
+    ],
+    "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext": [
+      "Group"
     ],
     "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location": [
       "Identifier"
