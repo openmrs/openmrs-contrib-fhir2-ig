@@ -14,6 +14,132 @@
     "name": "OMRSFhir2ImplementationGuide"
   },
   {
+    "id": "MedicationRequest-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-id",
+    "version": "0.1.0",
+    "name": "MedicationRequestUuidSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-lastUpdated",
+    "version": "0.1.0",
+    "name": "MedicationRequestLastUpdatedSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-medication",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-medication",
+    "version": "0.1.0",
+    "name": "MedicationRequestmedicationSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-patient",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-patient",
+    "version": "0.1.0",
+    "name": "MedicationRequestPatientSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-patient-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-patient-identifier",
+    "version": "0.1.0",
+    "name": "MedicationRequestPatientIdentifierSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-patient.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-patient.family",
+    "version": "0.1.0",
+    "name": "MedicationRequestPatientFamilyNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-patient.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-patient.given",
+    "version": "0.1.0",
+    "name": "MedicationRequestPatientGivenNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-patient.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-patient.name",
+    "version": "0.1.0",
+    "name": "MedicationRequestPatientNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-requestor",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-requestor",
+    "version": "0.1.0",
+    "name": "MedicationRequestRequestorSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-requestor-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-requestor-identifier",
+    "version": "0.1.0",
+    "name": "MedicationRequestRequestorIdentifierSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-requestor.family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-requestor.family",
+    "version": "0.1.0",
+    "name": "MedicationRequestRequestorFamilyNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-requestor.given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-requestor.given",
+    "version": "0.1.0",
+    "name": "MedicationRequestRequestorGivenNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-requestor.name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-requestor.name",
+    "version": "0.1.0",
+    "name": "MedicationRequestRequestorNameSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-subject",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject",
+    "version": "0.1.0",
+    "name": "MedicationRequestSubjectSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-subject-family",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-family",
+    "version": "0.1.0",
+    "name": "MedicationRequestSubjectfamilySearchParameter"
+  },
+  {
+    "id": "MedicationRequest-subject-given",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-given",
+    "version": "0.1.0",
+    "name": "MedicationRequestSubjectGivenSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-subject-identifier",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-identifier",
+    "version": "0.1.0",
+    "name": "MedicationRequestSubjectIdentifierSearchParameter"
+  },
+  {
+    "id": "MedicationRequest-subject-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-name",
+    "version": "0.1.0",
+    "name": "MedicationRequestSubjectNameSearchParameter"
+  },
+  {
     "id": "Practitioner-address-city",
     "type": "SearchParameter",
     "url": "http://fhir.openmrs.org/fhir/SearchParameter/Practitioner-address-city",

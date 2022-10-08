@@ -3,13 +3,13 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="Practitioner.given"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="Practitioner.given"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter "Practitioner.given" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.given</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PractitionerGivenNameSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 01:52:10+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}</p><p><b>code</b>: practitioner.given</p><p><b>base</b>: Practitioner</p><p><b>type</b>: string</p><p><b>target</b>: OMRSPractitioner</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="Practitioner.given"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter "Practitioner.given" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.given</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PractitionerGivenNameSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:01:28+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}</p><p><b>code</b>: practitioner.given</p><p><b>base</b>: Practitioner</p><p><b>type</b>: string</p><p><b>target</b>: OMRSPractitioner</p></div>
   </text>
   <url value="http://fhir.openmrs.org/fhir/SearchParameter/Practitioner.given"/>
   <version value="0.1.0"/>
   <name value="PractitionerGivenNameSearchParameter"/>
   <status value="active"/>
-  <date value="2022-10-08T01:52:10+00:00"/>
+  <date value="2022-10-08T02:01:28+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
