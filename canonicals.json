@@ -560,6 +560,76 @@
     "name": "GroupManagingEnityReference"
   },
   {
+    "id": "location-address-city",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-address-city",
+    "version": "0.1.0",
+    "name": "LocationCitySearchParameter"
+  },
+  {
+    "id": "location-address-country",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-address-country",
+    "version": "0.1.0",
+    "name": "LocationCountrySearchParameter"
+  },
+  {
+    "id": "location-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-address-postalcode",
+    "version": "0.1.0",
+    "name": "LocationPostalCodeSearchParameter"
+  },
+  {
+    "id": "location-address-state",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-address-state",
+    "version": "0.1.0",
+    "name": "LocationStateSearchParameter"
+  },
+  {
+    "id": "location-id",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-id",
+    "version": "0.1.0",
+    "name": "LocationIdSearchParameter"
+  },
+  {
+    "id": "location-lastUpdated",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-lastUpdated",
+    "version": "0.1.0",
+    "name": "LocationLastUpdatedSearchParameter"
+  },
+  {
+    "id": "location-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-name",
+    "version": "0.1.0",
+    "name": "LocationNameSearchParameter"
+  },
+  {
+    "id": "location-partof",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-partof",
+    "version": "0.1.0",
+    "name": "LocationPartOfSearchParameter"
+  },
+  {
+    "id": "location-partof-name",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-partof-name",
+    "version": "0.1.0",
+    "name": "LocationPartOfNameSearchParameter"
+  },
+  {
+    "id": "location-tag",
+    "type": "SearchParameter",
+    "url": "http://fhir.openmrs.org/fhir/SearchParameter/location-tag",
+    "version": "0.1.0",
+    "name": "LocationTagSearchParameter"
+  },
+  {
     "id": "OpenMRS-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",

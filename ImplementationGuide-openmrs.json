@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-10-08T02:09:14+00:00",
+  "date": "2022-10-08T02:10:18+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -2003,6 +2003,146 @@
         },
         "name": "Search in group endpoint using Managing entity Reference",
         "description": "Search for a group  basing on managing entity Reference(Practitioner)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-address-city"
+        },
+        "name": "Search in Location endpoint basing on location address-city attribute",
+        "description": "Searches based on the address-city field for the location record eg) /ws/fhir2/{release}/Location?address-city={city}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-address-country"
+        },
+        "name": "Search in Location endpoint basing on location address-country attribute",
+        "description": "Searches based on the address-country field for the location record eg) /ws/fhir2/{release}/Location?address-country={country}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-address-postalcode"
+        },
+        "name": "Search in Location endpoint basing on location address-postalcode attribute",
+        "description": "Searches based on the address-postalcode field for the location record eg) /ws/fhir2/{release}/Location?address-postalcode={postalCode}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-address-state"
+        },
+        "name": "Search in Location endpoint basing on location address-state attribute",
+        "description": "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-id"
+        },
+        "name": "Search in Location endpoint basing on location uuid  attribute",
+        "description": "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-lastUpdated"
+        },
+        "name": "Search in Location endpoint basing on location lastUpdated  attribute",
+        "description": "Searches based on the location lastUpdated field for the location record eg) /ws/fhir2/{release}/Location?_lastUpdated={date}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-name"
+        },
+        "name": "Search in Location endpoint basing on location name attribute",
+        "description": "Searches based on the name field for the location record eg) /ws/fhir2/{release}/Location?name={name}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-partof"
+        },
+        "name": "Search in Location endpoint basing on location partof attribute",
+        "description": "Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-partof-name"
+        },
+        "name": "Search in Location endpoint basing on location partof reference location name attribute",
+        "description": "Searches based on the partof location reference name field for the location record eg) /ws/fhir2/{release}/Location?partof.name={name}",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/location-tag"
+        },
+        "name": "Search in Location endpoint basing on location tag attribute",
+        "description": "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}",
         "exampleBoolean": false
       }
     ],

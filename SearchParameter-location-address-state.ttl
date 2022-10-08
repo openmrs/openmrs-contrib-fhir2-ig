@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/SearchParameter/location-address-state> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "location-address-state"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"location-address-state\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"location-address-state\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/location-address-state</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: LocationStateSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:10:18+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}</p><p><b>code</b>: address-state</p><p><b>base</b>: Location</p><p><b>type</b>: string</p><p><b>target</b>: OMRSLocation</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://fhir.openmrs.org/fhir/SearchParameter/location-address-state"];
+  fhir:SearchParameter.version [ fhir:value "0.1.0"];
+  fhir:SearchParameter.name [ fhir:value "LocationStateSearchParameter"];
+  fhir:SearchParameter.status [ fhir:value "active"];
+  fhir:SearchParameter.date [ fhir:value "2022-10-08T02:10:18+00:00"^^xsd:dateTime];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}"];
+  fhir:SearchParameter.code [ fhir:value "address-state"];
+  fhir:SearchParameter.base [
+     fhir:value "Location";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "string"];
+  fhir:SearchParameter.target [
+     fhir:value "OMRSLocation";
+     fhir:index 0
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.openmrs.org/fhir/SearchParameter/location-address-state.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

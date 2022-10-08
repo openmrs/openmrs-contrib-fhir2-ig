@@ -6,24 +6,43 @@
     <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="LocationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location "LocationExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-location.html">OpenMRS Location</a></p></div><p><b>identifier</b>: id: ?ngen-9?</p><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>telecom</b>: (555) 675 5745</p><p><b>address</b>: Kampala Uganda 256 Uganda (HOME)</p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-25.087541</td><td>8.206053</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="LocationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location "LocationExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-location.html">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#Sleep)</span></p><p><b>telecom</b>: Illegal syntax: Unknown ContactPointSystem code 'Phone', Illegal syntax: Unknown ContactPointSystem code 'Fax', Illegal syntax: Unknown ContactPointSystem code 'Email'</p><p><b>address</b>: Illegal syntax: Unknown Content value @  START_TAG seen ...&lt;line&gt;\n    &lt;value value="3300 Washtenaw Avenue, Suite 227"/&gt;... @6:54</p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>
   </text>
-  <identifier id="2daccc0e-654c-4130-9693-a84f328f045e"/>
   <status value="active"/>
   <name value="Outpatient Clinic"/>
-  <telecom id="e85ab215-a425-4c22-9452-5c8e9f6d1e52">
-    <value value="(555) 675 5745"/>
+  <description value="Outpatient Clinic"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="Sleep"/>
+      <display value="Sleep disorders unit"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="Phone"/>
+    <value value="(+1) 734-677-7777"/>
+  </telecom>
+  <telecom>
+    <system value="Fax"/>
+    <value value="(+1) 734-677-6622"/>
+  </telecom>
+  <telecom>
+    <system value="Email"/>
+    <value value="hq@HL7.org"/>
   </telecom>
   <address>
     <use value="home"/>
-    <city value="Kampala"/>
+    <line>
+      <value value="3300 Washtenaw Avenue, Suite 227"/>
+    </line>
+    <city value="Ann Arbor"/>
     <district value="Mukono"/>
-    <state value="Uganda"/>
-    <postalCode value="256"/>
-    <country value="Uganda"/>
+    <state value="MI"/>
+    <postalCode value="48104"/>
+    <country value="USA"/>
   </address>
   <position>
-    <longitude value="-25.087541"/>
-    <latitude value="8.206053"/>
+    <longitude value="-83.69471"/>
+    <latitude value="42.2565"/>
   </position>
 </Location>
