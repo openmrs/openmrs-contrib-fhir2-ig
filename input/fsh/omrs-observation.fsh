@@ -38,6 +38,8 @@ Description: "Example OMRS Observation Resource"
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #22748-8
 * status = #preliminary
+* subject = Reference("Patient/5946f880-b197-400b-9caa-a3c661d23041")
+* subject.type = "Patient"
 * effectiveDateTime = "2014-11-25T22:17:00+11:00"
 
 Mapping: ObservationMapping

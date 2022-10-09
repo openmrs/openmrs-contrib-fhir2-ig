@@ -33,7 +33,6 @@ Description: "A FHIR Encounter as understood by OpenMRS"
 * location.location only Reference(OMRSLocation)
 * partOf only Reference(OMRSEncounter)
 
-
 /** Encounter Type code system*/
 CodeSystem: EncounterType
 Id: encounter-type
@@ -47,7 +46,6 @@ Description: "Encounter Type Coding System"
 * #transfer "Transfer" "Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)"
 * #vitals "Vitals" "For capturing vital signs"
 * #attachmentUpload "Attachment Upload" "Encounters used to record uploads of attachments."
-
 
 /**encounter status Value set **/
 
@@ -65,7 +63,6 @@ Description: "Encounter  status ValueSet"
 * $statusVsUrl#cancelled "Cancelled"
 * $statusVsUrl#entered-in-error "Entered in Error"
 * $statusVsUrl#unknown "Unknown"
-
 
 /** OMRS Encounter Resource Example **/
 
@@ -109,3 +106,293 @@ Description: "Encounter is an FHIR resource that is used to represent an Interac
 * subject -> "Encounter.patient"
 * participant -> "Encounter.encounterProvider"
 * location -> "Encounter.location"
+
+/** encounter resource search parameters*/
+
+Instance: Encounter-date
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the date when the encounter was created"
+* name = "EncounterPatientNameSearchParameter"
+* status = #active
+* description = "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"
+* code = #Encounter.period
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #date
+
+Instance: Encounter-location
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint based on location reference"
+* name = "EncounterLocationNameSearchParameter"
+* status = #active
+* description = "Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}"
+* code = #Encounter.location
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #reference
+
+Instance: Encounter-address-city
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on Encounter location address-city attribute"
+* name = "EncounterCitySearchParameter"
+* status = #active
+* description = "Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}"
+* code = #address-city
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-address-country
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on  Encounter location address-country attribute"
+* name = "EncounterCountrySearchParameter"
+* status = #active
+* description = "Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}"
+* code = #address-country
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-address-postalcode
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on Encounter location address-postalcode attribute"
+* name = "EncounterPostalCodeSearchParameter"
+* status = #active
+* description = "Searches based on the address-postalcode field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-postalcode={postalCode}"
+* code = #address-postalcode
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-address-state
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on Encounter location address-state attribute"
+* name = "EncounterStateSearchParameter"
+* status = #active
+* description = "Searches based on the address-state field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-state={state}"
+* code = #address-state
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-subject
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by subject uuid"
+* name = "EncounterSubjectSearchParameter"
+* status = #active
+* description = "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid} "
+* code = #subject
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #reference
+
+Instance: Encounter-subject-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by subject identifier"
+* name = "EncounterSubjectIdentifierSearchParameter"
+* status = #active
+* description = "Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}"
+* code = #subject.identifier
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #token
+
+Instance: Encounter-subject-given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by subject given"
+* name = "EncounterSubjectGivenSearchParameter"
+* status = #active
+* description = "Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}"
+* code = #subject.given
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-subject-family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by subject family"
+* name = "EncounterSubjectfamilySearchParameter"
+* status = #active
+* description = "	Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}"
+* code = #subject.family
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-subject-name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by subject name"
+* name = "EncounterSubjectNameSearchParameter"
+* status = #active
+* description = "Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}"
+* code = #subject.name
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-type
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by encounter type"
+* name = "EncounterTypeSearchParameter"
+* status = #active
+* description = "Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}"
+* code = #encounter.type
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #token
+
+Instance: Encounter-patient
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by a given patient"
+* name = "EncounterPatientSearchParameter"
+* status = #active
+* description = "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}"
+* code = #patient
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #reference
+
+Instance: Encounter-patient-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by a given patient"
+* name = "EncounterPatientIdentifierSearchParameter"
+* status = #active
+* description = "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}"
+* code = #patient.identifier
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #token
+
+Instance: Encounter-patient.given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the patient's given name"
+* name = "EncounterPatientGivenNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}"
+* code = #patient.given
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-patient.family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the patient's family name"
+* name = "EncounterPatientFamilyNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}"
+* code = #patient.family
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-patient.name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the patient's full or partial name"
+* name = "EncounterPatientNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient.name={name}"
+* code = #patient.name
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string 
+
+Instance: Encounter-participant
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by a given Practitioner "
+* name = "EncounterParticipantSearchParameter"
+* status = #active
+* description = "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}"
+* code = #participant
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #reference
+
+Instance: Encounter-participant-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by a given Practitioner"
+* name = "EncounterParticipantIdentifierSearchParameter"
+* status = #active
+* description = "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"
+* code = #participant.identifier
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #token
+
+Instance: Encounter-participant.given
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the Practitioner's given name"
+* name = "EncounterParticipantGivenNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}"
+* code = #participant.given
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-participant.family
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the Practitioner's family name"
+* name = "EncounterParticipantFamilyNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}"
+* code = #participant.family
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string
+
+Instance: Encounter-participant.name
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through Encounter endpoint by the Practitioner's full or partial name"
+* name = "EncounterParticipantNameSearchParameter"
+* status = #active
+* description = "Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}"
+* code = #participant.name
+* base[0] = #Encounter
+* target = #OMRSEncounter
+* type = #string 
+
+Instance: Encounter-id
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on Encounter uuid  attribute"
+* name = "EncounterIdSearchParameter"
+* status = #active
+* description = "Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}"
+* code = #_id
+* base[0] = #Encounter
+* target = #OMRSEncounter 
+* type = #token
+
+Instance: Encounter-lastUpdated
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search in Encounter endpoint basing on Encounter lastUpdated  attribute"
+* name = "EncounterLastUpdatedSearchParameter"
+* status = #active
+* description = "Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}"
+* code = #_lastUpdated
+* base[0] = #Encounter
+* target = #OMRSEncounter 
+* type = #date
