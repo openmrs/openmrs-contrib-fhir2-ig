@@ -7,18 +7,11 @@ Description:  "A FHIR Condition as understood by OpenMRS"
 * code 0..1
 * subject 1..1
 * subject only Reference(OMRSPatient)
-* onsetDateTime 0..1
 * recorder 0..1 
 * recordedDate 0..1
-* clinicalStatus 0..0
-* verificationStatus 0..0
-* category 0..0
-* severity 0..0
-* bodySite 0..0
-* encounter 0..0
-* asserter 0..0
-* stage 0..0
-* evidence 0..0
+* clinicalStatus 0..1
+* verificationStatus 0..1
+* onset[x] 0..1
 
 /** OMRS Condition Resource Example **/
 
@@ -46,7 +39,8 @@ Id: condition-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects."
 * -> "OMRS Condition" "This profile maps to Condition in OMRS FHIR2"
-* id -> "condition.id"
+* id -> "condition.uuid"
+* clinicalStatus -> "Condition.status"
 * code -> "condition.code"
 * subject -> "condition.patient"
 * onsetDateTime -> "condition.onsetDate"
@@ -66,7 +60,6 @@ Title: "Search through condition endpoint by patient uuid"
 * base[0] = #condition
 * target = #OMRSCondition
 * type = #reference
-
 
 Instance: condition-patient-identifier
 InstanceOf: SearchParameter
@@ -128,7 +121,6 @@ Title: "Search through condition endpoint by subject uuid"
 * target = #OMRSCondition
 * type = #reference
 
-
 Instance: condition-subject-identifier
 InstanceOf: SearchParameter
 Usage: #definition
@@ -189,86 +181,50 @@ Title: "Search through condition endpoint by concept code"
 * target = #OMRSCondition
 * type = #token
 
-Instance: condition-encounter
+Instance: condition-clinical-status
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through condition endpoint by encounter uuid"
-* name = "conditionEncounterSearchParameter"
+Title: "Search through condition endpoint by Condition clinical status"
+* name = "conditionClinicalStatusSearchParameter"
 * status = #active
-* description = "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"
-* code = #code
-* base[0] = #Condition
-* target = #OMRSCondition
-* type = #reference
-
-Instance: condition-requester
-InstanceOf: SearchParameter
-Usage: #definition
-Title: "Search through condition endpoint by Practitioner uuid"
-* name = "conditionSearchParameter"
-* status = #active
-* description = "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"
-* code = #requester
-* base[0] = #Condition
-* target = #OMRSCondition
-* type = #reference
-
-Instance: condition-requester-identifier
-InstanceOf: SearchParameter
-Usage: #definition
-Title: "Search through condition endpoint by Practitioner identifier"
-* name = "conditionRequesterIdentifierSearchParameter"
-* status = #active
-* description = "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"
-* code = #requester.identifier
+* description = "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"
+* code = #clinical-status
 * base[0] = #Condition
 * target = #OMRSCondition
 * type = #token
 
-Instance: Condition-requester-given
+Instance: condition-onset-date
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through condition endpoint by Practitioner given"
-* name = "conditionRequesterGivenSearchParameter"
+Title: "Search through condition endpoint by Condition clinical onset date"
+* name = "conditionOnsetdateSearchParameter"
 * status = #active
-* description = "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"
-* code = #requester.given
+* description = "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}"
+* code = #onset-date
 * base[0] = #Condition
 * target = #OMRSCondition
-* type = #string
+* type = #date
 
-Instance: Condition-requester-family
+Instance: condition-onset-age
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through condition endpoint by Practitioner family"
-* name = "conditionRequesterfamilySearchParameter"
+Title: "Search through condition endpoint by Condition clinical onset age"
+* name = "conditionOnsetAgeSearchParameter"
 * status = #active
-* description = "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"
-* code = #requester.family
+* description = "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}"
+* code = #onset-age
 * base[0] = #Condition
 * target = #OMRSCondition
-* type = #string
+* type = #quantity
 
-Instance: condition-requester-name
+Instance: condition-recorded-date
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through condition endpoint by Practitioner name"
-* name = "conditionRequesterNameSearchParameter"
+Title: "Search through condition endpoint by date when the record was created"
+* name = "conditionRecordedDateSearchParameter"
 * status = #active
-* description = "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"
-* code = #requester.name
-* base[0] = #Condition
-* target = #OMRSCondition
-* type = #string
-
-Instance: condition-occurrence
-InstanceOf: SearchParameter
-Usage: #definition
-Title: "Search through condition endpoint by Occurrence when service should occurance"
-* name = "conditionOccurrenceSearchParameter"
-* status = #active
-* description = "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"
-* code = #occurrence
+* description = "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}"
+* code = #recorded-date
 * base[0] = #Condition
 * target = #OMRSCondition
 * type = #date

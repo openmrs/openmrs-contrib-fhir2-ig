@@ -14,21 +14,11 @@ Description: "A FHIR Encounter as understood by OpenMRS"
 * class.code
 * class.system 
 * type 1..*
-* serviceType 0..0
-* priority 0..0
 * subject 1..1
 * subject only Reference(OMRSPatient)
-* episodeOfCare 0..0
-* basedOn 0..0
 * participant 0..*
-* appointment 0..0
 * period 1..1
-* length 0..0
-* reasonCode 0..0
-* reasonReference 0..0
 * diagnosis 0..*
-* account 0..0
-* hospitalization 0..0
 * location.location 1..1
 * location.location only Reference(OMRSLocation)
 * partOf only Reference(OMRSEncounter)

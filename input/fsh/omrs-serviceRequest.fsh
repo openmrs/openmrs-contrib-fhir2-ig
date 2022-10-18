@@ -3,6 +3,7 @@ Parent: ServiceRequest
 Id: OpenMRS-service-request
 Title: "OpenMRS Service Request"
 Description: " Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources"
+* id 1..1
 * code 1..1
 * code.coding 1..*
 * code.coding from OpenMRSOrderCodeVS
@@ -19,28 +20,6 @@ Description: " Service Request Resource is represents a request for some type of
 * basedOn only Reference(OpenMRSServiceRequest)
 * replaces 0..* 
 * replaces only Reference(OpenMRSServiceRequest)
-* requisition 0..0
-* category 0..0
-* priority 0..0
-* instantiatesCanonical 0..0
-* instantiatesUri 0..0
-* doNotPerform 0..0
-* orderDetail 0..0
-* quantity[x] 0..0
-* asNeeded[x] 0..0
-* authoredOn 0..0
-* performerType 0..0
-* locationCode 0..0
-* locationReference 0..0
-* reasonCode 0..0
-* reasonReference 0..0
-* insurance 0..0
-* supportingInfo 0..0
-* specimen 0..0
-* bodySite 0..0
-* note 0..0
-* patientInstruction 0..0
-* relevantHistory 0..0
 
 // OpenMRS Service Request Resource
 
@@ -49,6 +28,7 @@ InstanceOf: OpenMRSServiceRequest
 Usage: #example
 Title: "Openmrs serviceRequest"
 Description: "Example OMRS Service Request Resource"
+* id = "caec0cba-3802-4b70-a6dd-2eb064450763"
 * code.coding[+].system = "http://snomed.info/sct"
 * code.coding[=].code = #48023004
 * status = #completed

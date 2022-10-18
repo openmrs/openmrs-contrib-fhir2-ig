@@ -3,6 +3,7 @@ Parent: Person
 Id: omrs-person
 Title: "OpenMRS Person"
 Description: "A FHIR Person as understood by OpenMRS"
+* id 1..1
 * identifier 0..*
 * name 1..* 
 * telecom 0..* 
@@ -11,9 +12,6 @@ Description: "A FHIR Person as understood by OpenMRS"
 * address 0..* 
 * active 1..1 
 * active = true
-* photo 0..0
-* managingOrganization 0..0
-* link 0..0
 
 //OpenMRS Person Example
 
@@ -22,6 +20,7 @@ InstanceOf: OMRSPerson
 Usage: #example
 Title: "Openmrs Person"
 Description: "Example OMRS Person Resource"
+* id = "68f44d7f-eb5a-40e9-aa4d-0cc0cc522866"
 * identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
 * identifier.type.text = "OpenMRS ID"

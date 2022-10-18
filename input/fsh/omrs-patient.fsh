@@ -3,6 +3,7 @@ Parent:       Patient
 Id:           omrs-patient
 Title:        "OpenMRS Patient"
 Description:  "A FHIR Patient as understood by OpenMRS"
+* id 1..1
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -15,14 +16,6 @@ Description:  "A FHIR Patient as understood by OpenMRS"
 * birthDate 1..1
 * deceased[x] 0..1
 * address 0..*
-* maritalStatus 0..0
-* multipleBirth[x] 0..0
-* photo 0..0
-* contact 0..0
-* communication 0..0
-* link 0..0
-* managingOrganization 0..0
-* generalPractitioner 0..0
 
 Profile:      OMRSPatientIdentifier
 Parent:       Identifier
@@ -45,6 +38,7 @@ InstanceOf: OMRSPatient
 Usage: #example
 Title: "Openmrs Patient"
 Description: "Example OMRS Patient Resource"
+* id = "84db330e-a323-4a46-83c4-f93dfcbd25c4"
 * identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
 * identifier.extension.url = "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location"
