@@ -13,48 +13,27 @@ Description: "A FHIR MedicationRequest as understood by OpenMRS"
 * status 1..1
 * intent 1..1
 * intent from MedicationRequestIntentVs
-* category 0..0
 * priority 1..1
 * priority from MedicationRequestPriorityVs
-* doNotPerform 0..0
-* reported[x] 0..0
 * medication[x] 1..1
 * medicationCodeableConcept 1..1
 * subject 1..1 
 * subject only Reference(OMRSPatient)
 * encounter 1..1
 * encounter only Reference(OMRSEncounter)
-* supportingInformation 0..0
 * authoredOn 0..1
 * requester 1..1
 * requester only Reference(OMRSPractitioner)
-* performer 0..0
-* performerType 0..0
-* recorder 0..0
 * reasonCode 0..*
-* reasonReference 0..0
-* instantiatesCanonical 0..0
-* instantiatesUri 0..0
 * basedOn 0..*
 * basedOn only Reference(OMRSMedicationRequest)
-* groupIdentifier 0..0
-* courseOfTherapyType 0..0
-* insurance 0..0
 * note 0..1
 * dosageInstruction 0..*
 * dispenseRequest 0..1
-* dispenseRequest.initialFill 0..0
-* dispenseRequest.dispenseInterval 0..0
-* dispenseRequest.validityPeriod 0..0
 * dispenseRequest.numberOfRepeatsAllowed 1..1
 * dispenseRequest.quantity 1..1
-* dispenseRequest.expectedSupplyDuration 0..0
-* dispenseRequest.performer 0..0
-* substitution 0..0
 * priorPrescription 0..1
 * priorPrescription only Reference(OMRSMedicationRequest)
-* detectedIssue 0..0
-* eventHistory 0..0
 
 /** Medication request Intent value set*/
 

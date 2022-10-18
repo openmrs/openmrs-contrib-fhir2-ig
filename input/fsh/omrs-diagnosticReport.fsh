@@ -3,26 +3,16 @@ Parent: DiagnosticReport
 Id: OpenMRS-diagnostic-report
 Title: "OpenMRS Diagnostic Report"
 Description: "DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context."
-* id 0..1
-* basedOn 0..*
-* code.coding 1..*
+* id 1..1
+* code 1..1
 * code.coding from OpenMRSOrderCodeVS
+* result  0..*
 * result only Reference(OpenMRSObservation)
 * status 1..1
 * category 0..*
 * encounter 0..1
 * subject 0..1
 * issued  0..1
-* result  0..*
-* effectiveDateTime 0..1
-* performer 0..0
-* resultsInterpreter 0..0
-* specimen 0..0
-* imagingStudy 0..0
-* media 0..0
-* conclusion 0..0
-* presentedForm 0..0
-* result 0..*
 
 Instance: example-Openmrs-DiagnosticReport
 InstanceOf: OpenMRSDiagnosticReport
@@ -39,7 +29,6 @@ Description: "Example OMRS DiagnosticReport Resource"
 * issued = "2011-03-04T11:45:33+11:00"
 * status = #final
 
-
 Mapping: DiagnosticReportMapping
 Source: OpenMRSDiagnosticReport
 Target: "http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport"
@@ -47,7 +36,10 @@ Id: diagnosticReport-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Diagnostic Report resource that is part of the Diagnostic Medicine Module. A DiagnosticReport is used to represent the results of diagnostic tests that are performed in a given clinical context. "
 * -> "OpenMRSDiagnosticReport" "This profile maps to Diagnostic Report in OMRS FHIR2"
-* id -> "uuid"
-* status -> "diagnosticReport.status"
-* code -> "diagnosticReport.code"
-* encounter -> "diagnosticReport.encounter"
+* id -> "Obs.uuid"
+* status -> "Obs.status"
+* code -> "Obs.concept"
+* encounter -> "Obs.encounter"
+* subject -> "Obs.person"
+* issued -> "Obs.dateCreated"
+* result -> "Obs.groupMembers"

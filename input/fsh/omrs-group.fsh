@@ -5,7 +5,7 @@ Parent: Group
 Id: omrs-group
 Title: "OMRS Group"
 Description: "A Group Resource is described as Cohort in Fhir2 OMRS"
-* identifier 0..0
+* id 1..1
 * name 1..1
 * active 1..1
 * type 1..1
@@ -13,10 +13,8 @@ Description: "A Group Resource is described as Cohort in Fhir2 OMRS"
 * quantity 0..1
 * managingEntity 0..1
 * managingEntity only Reference(OMRSPractitioner)
-* characteristic 0..0
 * member 0..*
 * extension contains OMRSGroupDescriptionExtension named description 1..1
-
 
 /*Extension*/
 
@@ -30,13 +28,13 @@ Description: "Extension for group description"
 * extension[description].value[x] only string 
 * extension[url].value[x] only string 
 
-
 /** example group resource */
 Instance: OMRSGroupExample
 InstanceOf: OMRSGroup
 Usage: #example
 Title: "OMRS Group Example"
 Description: "OMRS Group Resource Example"
+* id = "bc572131-c234-436f-9194-00287759a3e4"
 * active = true
 * actual = true
 * name = "male cohort"
@@ -48,8 +46,6 @@ Description: "OMRS Group Resource Example"
 * extension[0].url = "http://fhir.openmrs.org/ext/group/description"
 * extension[0].valueString = "Male Patients years that are alive"
 
-
-
 //OMRS FHIR2 Group Mapping VS HL7 fhir
 
 Mapping: OMRSGroupMapping
@@ -59,12 +55,11 @@ Id: omrs-group-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Mapping of Group Resource between HL7 FHIR vs OMRS Fhir2 module"
 * -> "OMRS Group" "This profile maps to Group in OMRS Fhir2"
-* id -> "id"
+* id -> "Cohort.uuid"
 * active -> "Cohort.voided"
 * name -> "Cohort.name"
 * type -> "Group.GroupType"
 * managingEntity -> "Cohort.creator"
-
 
 /** OMRS fhir2 Group Search Paramenters **/
 
