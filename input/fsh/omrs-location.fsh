@@ -90,7 +90,7 @@ Description: "Example OMRS location"
 * status = #active
 * name = "Outpatient Clinic"
 * description = "Outpatient Clinic"
-* type.coding[0].code = #Sleep
+* type.coding[0].code = #sleep
 * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * type.coding[0].display = "Sleep disorders unit"
 * telecom[+].system = #phone
