@@ -3,13 +3,13 @@
   "id": "person-birthdate",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"person-birthdate\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"person-birthdate\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: personBirthdateSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:14:23+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p><p><b>code</b>: birthdate</p><p><b>base</b>: Person</p><p><b>type</b>: date</p><p><b>target</b>: OMRSPerson</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"person-birthdate\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;person-birthdate&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: personBirthdateSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p><p><b>code</b>: birthdate</p><p><b>base</b>: Person</p><p><b>type</b>: date</p><p><b>target</b>: OMRSPerson</p></div>"
   },
   "url": "http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate",
   "version": "0.1.0",
   "name": "personBirthdateSearchParameter",
   "status": "active",
-  "date": "2022-10-08T02:14:23+00:00",
+  "date": "2022-11-29T17:06:49+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",

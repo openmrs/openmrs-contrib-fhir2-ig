@@ -3,13 +3,13 @@
   "id": "Encounter-address-country",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Encounter-address-country\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"Encounter-address-country\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-country</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterCountrySearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-08 02:14:23+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}</p><p><b>code</b>: address-country</p><p><b>base</b>: Encounter</p><p><b>type</b>: string</p><p><b>target</b>: OMRSEncounter</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Encounter-address-country\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;Encounter-address-country&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-country</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterCountrySearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}</p><p><b>code</b>: address-country</p><p><b>base</b>: Encounter</p><p><b>type</b>: string</p><p><b>target</b>: OMRSEncounter</p></div>"
   },
   "url": "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-address-country",
   "version": "0.1.0",
   "name": "EncounterCountrySearchParameter",
   "status": "active",
-  "date": "2022-10-08T02:14:23+00:00",
+  "date": "2022-11-29T17:06:49+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
