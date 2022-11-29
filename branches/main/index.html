@@ -167,55 +167,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-  <table class="">
-
-    <tr>
-
-
-
-
-
-
-
-      <td colspan="4">
-        
-          
-          
-        
-      </td>
-
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
-    </tr>
-
-
-
-
-  </table>
-
-
-
-
-
-
 
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#summary-" id="markdown-toc-summary-">Summary <a name="summary"></a></a></li>
+  <li><a href="#about-this-implementation-guide-" id="markdown-toc-about-this-implementation-guide-">About This Implementation Guide <a name="about"></a></a></li>
+  <li><a href="#intellectual-property-considerations-" id="markdown-toc-intellectual-property-considerations-">Intellectual Property Considerations <a name="ip"></a></a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+  <li><a href="#credits-and-acknowledgements" id="markdown-toc-credits-and-acknowledgements">Credits and Acknowledgements</a></li>
+</ul>
+
 </div>
-<p>This is the OpenMRS FHIR Module Implementation Guide. It provides an overview of FHIR as it is understood by the OpenMRS FHIR2 Module, at least the default implementation.</p>
+<p>FHIR (Fast Healthcare Interoperability Resources) is an HL7 standard for representing healthcare information electronically.
+It is based on a series of Resources, which define common representations for different kinds of healthcare data. You can
+find the current version of the FHIR specification
+at <a href="https://www.hl7.org/fhir/index.html">https://www.hl7.org/fhir/index.html</a>.</p>
 
-<blockquote class="stu-note">
-  <strong>This documentation and set of artefacts are still undergoing development.</strong>
-  This content is only for demonstrative purposes.
-</blockquote>
+<h3 id="summary-">Summary <a name="summary"></a></h3>
 
-<h3 id="content-">Content <a name="content"></a></h3>
+<p>OpenMRS has recently undertaken a commitment to implement FHIR in order to ensure better interoperability between healthcare
+systems. The
+<a href="https://github.com/openmrs/openmrs-module-fhir2">Openmrs FHIR2 module</a> was developed as part of these efforts. Currently,
+the FHIR module supports the export of the following FHIR Resources</p>
 
-<p><a name="navigation"></a></p>
+<ol>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-patient.html">Patient</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-person.html">Person</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-practitioner.html">practitioner</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-OpenMRS-observation.html">Observation</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-location.html">Location</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-AllergyIntolerance.html">AllergyIntolerance</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-Condition.html">Condition</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-OpenMRS-diagnostic-report.html">DiagnosticReport</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-encounter.html">Encounter</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-medication-request.html">MedicationRequest</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-OpenMRS-service-request.html">ServiceRequest</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-OpenMRS-task.html">Task</a></li>
+  <li><a href="https://fhir.openmrs.org/StructureDefinition-omrs-group.html">Group</a></li>
+</ol>
+
+<h3 id="about-this-implementation-guide-">About This Implementation Guide <a name="about"></a></h3>
+<p>The top menu allows quick navigation to the different sections, and a Table of Contents is provided with the entire content of this Implementation Guide.</p>
+
+<h3 id="intellectual-property-considerations-">Intellectual Property Considerations <a name="ip"></a></h3>
+<p>While this implementation guide and the underlying FHIR are licensed as public domain, this guide may include examples making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+<p>This specification is provided without warranty of completeness or consistency, and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+
+<h3 id="credits-and-acknowledgements">Credits and Acknowledgements</h3>
+<p>This specification is based on FHIR and the FHIR tooling ecosystem and community processes. It has been defined with the support and participation of the following institutions:</p>
+<ol>
+  <li>Google Season of Docs</li>
+  <li>Openmrs Inc</li>
+  <li>Hl7</li>
+</ol>
 
 
 
@@ -243,7 +252,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 8, 2022 02:14+0000">2022-10-08</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 29, 2022 17:06+0000">2022-11-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

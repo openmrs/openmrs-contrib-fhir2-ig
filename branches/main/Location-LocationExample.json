@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location \"LocationExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#Sleep)</span></p><p><b>telecom</b>: Illegal syntax: Unknown ContactPointSystem code 'Phone', Illegal syntax: Unknown ContactPointSystem code 'Fax', Illegal syntax: Unknown ContactPointSystem code 'Email'</p><p><b>address</b>: Illegal syntax: Unknown Content value @  START_TAG seen ...&lt;line&gt;\\n    &lt;value value=\"3300 Washtenaw Avenue, Suite 227\"/&gt;... @6:54</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;LocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#Sleep)</span></p><p><b>telecom</b>: ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, <a href=\"mailto:hq@HL7.org\">hq@HL7.org</a></p><p><b>address</b>: Illegal syntax: Unknown Content value @  START_TAG seen ...&lt;line&gt;\\n    &lt;value value=&quot;3300 Washtenaw Avenue, Suite 227&quot;/&gt;... @6:54</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>"
   },
   "status": "active",
   "name": "Outpatient Clinic",
@@ -26,15 +26,15 @@
   ],
   "telecom": [
     {
-      "system": "Phone",
+      "system": "phone",
       "value": "(+1) 734-677-7777"
     },
     {
-      "system": "Fax",
+      "system": "fax",
       "value": "(+1) 734-677-6622"
     },
     {
-      "system": "Email",
+      "system": "email",
       "value": "hq@HL7.org"
     }
   ],

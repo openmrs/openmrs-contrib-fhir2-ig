@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "OMRSPatientTaskIntentVS"];
   fhir:ValueSet.title [ fhir:value "OpenMRS Intent for Task"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-10-08T02:14:23+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
