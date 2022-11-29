@@ -100,11 +100,11 @@ Description: "Example OMRS location"
 * type.coding[0].code = #Sleep
 * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * type.coding[0].display = "Sleep disorders unit"
-* telecom[+].system = #Phone
+* telecom[+].system = #phone
 * telecom[=].value = "(+1) 734-677-7777"
-* telecom[+].system = #Fax
+* telecom[+].system = #fax
 * telecom[=].value = "(+1) 734-677-6622"
-* telecom[+].system = #Email
+* telecom[+].system = #email
 * telecom[=].value =  "hq@HL7.org"
 * address.use = #home
 * address.line[0].value = "3300 Washtenaw Avenue, Suite 227"
