@@ -36,5 +36,8 @@ This specification is provided without warranty of completeness or consistency, 
 ### Credits and Acknowledgements
 This specification is based on FHIR and the FHIR tooling ecosystem and community processes. It has been defined with the support and participation of the following institutions:
 1. Google Season of Docs
-2. Openmrs Inc
-3. Hl7
+2. OpenMRS Inc
+3. HL7
+
+### Want to Contribute to Our FHIR IG?
+We love hearing from new people, and the only way this FHIR IG can continue to be reliable is if many people help us keep it up-to-date! Please consider sharing your suggestions through a PR on GitHub here: https://github.com/openmrs/openmrs-contrib-fhir2-ig/
