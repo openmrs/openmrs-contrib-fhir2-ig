@@ -67,7 +67,7 @@ Title: "Search through person endpoint by the person's full or partial name"
 * description = "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name} "
 * code = #name
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #string
 
 Instance: person-gender
@@ -79,7 +79,7 @@ Title: "Search through person endpoint by the person's gender attribute"
 * description = "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}"
 * code = #gender
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #token
 
 Instance: person-birthdate
@@ -91,7 +91,7 @@ Title: "Search through person endpoint by the person's birthdate attribute"
 * description = "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}"
 * code = #birthdate
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #date
 
 Instance: person-address-city
@@ -103,7 +103,7 @@ Title: "Search through person endpoint by the person's location city"
 * description = "Searches based on the person's recorded city/village of address eg) /ws/fhir2/{release}/Person?address-city={city}"
 * code = #address-city
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #string
 
 Instance: person-address-state
@@ -115,7 +115,7 @@ Title: "Search through person endpoint by the person's location state"
 * description = "Searches based on the person's recorded state/province of address eg) /ws/fhir2/{release}/Person?address-state={state}"
 * code = #address-state
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #string
 
 Instance: person-address-postalcode
@@ -127,7 +127,7 @@ Title: "Search through person endpoint by the person's location postal code"
 * description = "Searches based on the person's recorded postal code of address eg) /ws/fhir2/{release}/Person?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #string
 
 Instance: person-address-country
@@ -139,7 +139,7 @@ Title: "Search through person endpoint by the person's location country"
 * description = "Searches based on the person's recorded country of address eg) /ws/fhir2/{release}/Person?address-country={country}"
 * code = #address-country
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #string
 
 Instance: person-id
@@ -151,7 +151,7 @@ Title: "Search through person endpoint by the person's uuid"
 * description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Person?_id={uuid}"
 * code = #_id
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #token
 
 Instance: person-lastUpdated
@@ -163,5 +163,5 @@ Title: "Search through person endpoint basing on dateCreated or dateUpdated fiel
 * description = "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Person
-* target = #OMRSPerson
+* target = #Person
 * type = #date

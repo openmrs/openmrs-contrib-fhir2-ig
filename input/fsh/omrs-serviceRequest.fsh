@@ -85,7 +85,7 @@ Title: "Search through serviceRequest endpoint by patient uuid"
 * description = "Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}"
 * code = #patient
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #reference
 
 
@@ -98,7 +98,7 @@ Title: "Search serviceRequest endpoint by patient identifier id"
 * description = "Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #token
 
 
@@ -111,7 +111,7 @@ Title: "Search through serviceRequest endpoint by the patient's given name"
 * description = "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-patient.family
@@ -123,7 +123,7 @@ Title: "Search through serviceRequest endpoint by the patient's family name"
 * description = "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-patient.name
@@ -135,7 +135,7 @@ Title: "Search through serviceRequest endpoint by the patient's full or partial 
 * description = "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient.name={name}"
 * code = #patient.name
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-subject
@@ -147,7 +147,7 @@ Title: "Search through serviceRequest endpoint by subject uuid"
 * description = "Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #reference
 
 Instance: serviceRequest-subject-identifier
@@ -159,7 +159,7 @@ Title: "Search through serviceRequest endpoint by subject identifier"
 * description = "Searches for serviceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #token
 
 Instance: serviceRequest-subject-given
@@ -171,7 +171,7 @@ Title: "Search through serviceRequest endpoint by subject given"
 * description = "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-subject-family
@@ -183,7 +183,7 @@ Title: "Search through serviceRequest endpoint by subject family"
 * description = "	Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-subject-name
@@ -195,7 +195,7 @@ Title: "Search through serviceRequest endpoint by subject name"
 * description = "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-code
@@ -207,7 +207,7 @@ Title: "Search through serviceRequest endpoint by concept code"
 * description = "Searches for serviceRequest based on the serviceRequest concept code eg) /ws/fhir2/{release}/ServiceRequest?code={code}"
 * code = #code
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #token
 
 Instance: serviceRequest-encounter
@@ -219,7 +219,7 @@ Title: "Search through serviceRequest endpoint by encounter uuid"
 * description = "Searches for serviceRequest based on the serviceRequest encounter Uuid eg) /ws/fhir2/{release}/ServiceRequest?encounter={uuid}"
 * code = #code
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #reference
 
 Instance: serviceRequest-requester
@@ -231,7 +231,7 @@ Title: "Search through serviceRequest endpoint by Practitioner uuid"
 * description = "Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}"
 * code = #requester
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #reference
 
 Instance: serviceRequest-requester-identifier
@@ -243,7 +243,7 @@ Title: "Search through serviceRequest endpoint by Practitioner identifier"
 * description = "Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}"
 * code = #requester.identifier
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #token
 
 Instance: serviceRequest-requester-given
@@ -255,7 +255,7 @@ Title: "Search through serviceRequest endpoint by Practitioner given"
 * description = "Searches for serviceRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.given={givenName}"
 * code = #requester.given
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-requester-family
@@ -267,7 +267,7 @@ Title: "Search through serviceRequest endpoint by Practitioner family"
 * description = "Searches for serviceRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.family={familyName}"
 * code = #requester.family
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-requester-name
@@ -279,7 +279,7 @@ Title: "Search through serviceRequest endpoint by Practitioner name"
 * description = "Searches for serviceRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.name={name}"
 * code = #requester.name
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #string
 
 Instance: serviceRequest-occurrence
@@ -291,7 +291,7 @@ Title: "Search through serviceRequest endpoint by Occurrence when service should
 * description = "Searches for serviceRequest based on to occurrent date eg) /ws/fhir2/{release}/ServiceRequest?occurrence={date}"
 * code = #occurrence
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #date
 
 Instance: serviceRequest-id
@@ -303,7 +303,7 @@ Title: "Search through serviceRequest endpoint by service Uuid"
 * description = "Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}"
 * code = #_id
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #token
 
 Instance: serviceRequest-lastUpdated
@@ -315,5 +315,5 @@ Title: "Search through serviceRequest endpoint by service lastUpdated field"
 * description = "Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #ServiceRequest
-* target = #OpenMRSServiceRequest
+* target = #ServiceRequest
 * type = #date
