@@ -5,43 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date> a fhir:SearchParameter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Encounter-date"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Encounter-date\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;Encounter-date&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterPatientNameSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}</p><p><b>code</b>: Encounter.period</p><p><b>base</b>: Encounter</p><p><b>type</b>: date</p><p><b>target</b>: OMRSEncounter</p></div>"
-  ];
-  fhir:SearchParameter.url [ fhir:value "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date"];
-  fhir:SearchParameter.version [ fhir:value "0.1.0"];
-  fhir:SearchParameter.name [ fhir:value "EncounterPatientNameSearchParameter"];
-  fhir:SearchParameter.status [ fhir:value "active"];
-  fhir:SearchParameter.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
-  fhir:SearchParameter.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
-     ]
-  ];
-  fhir:SearchParameter.description [ fhir:value "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"];
-  fhir:SearchParameter.code [ fhir:value "Encounter.period"];
-  fhir:SearchParameter.base [
-     fhir:value "Encounter";
-     fhir:index 0
-  ];
-  fhir:SearchParameter.type [ fhir:value "date"];
-  fhir:SearchParameter.target [
-     fhir:value "OMRSEncounter";
-     fhir:index 0
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Encounter-date"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EncounterPatientNameSearchParameter</h2><p>Parameter <code>Encounter.period</code>:<code>date</code></p><div><p>Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-date"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterPatientNameSearchParameter"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"] ; # 
+  fhir:code [ fhir:v "Encounter.period"] ; # 
+  fhir:base ( [ fhir:v "Encounter"] ) ; # 
+  fhir:type [ fhir:v "date"] ; # 
+  fhir:target ( [ fhir:v "Encounter"] ) . # 
 
 # -------------------------------------------------------------------------------------
 

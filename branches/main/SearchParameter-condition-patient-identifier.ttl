@@ -5,43 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier> a fhir:SearchParameter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "condition-patient-identifier"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"condition-patient-identifier\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;condition-patient-identifier&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: conditionPatientIdentifierSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p><p><b>code</b>: patient.identifier</p><p><b>base</b>: Condition</p><p><b>type</b>: token</p><p><b>target</b>: OMRSCondition</p></div>"
-  ];
-  fhir:SearchParameter.url [ fhir:value "http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier"];
-  fhir:SearchParameter.version [ fhir:value "0.1.0"];
-  fhir:SearchParameter.name [ fhir:value "conditionPatientIdentifierSearchParameter"];
-  fhir:SearchParameter.status [ fhir:value "active"];
-  fhir:SearchParameter.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
-  fhir:SearchParameter.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
-     ]
-  ];
-  fhir:SearchParameter.description [ fhir:value "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"];
-  fhir:SearchParameter.code [ fhir:value "patient.identifier"];
-  fhir:SearchParameter.base [
-     fhir:value "Condition";
-     fhir:index 0
-  ];
-  fhir:SearchParameter.type [ fhir:value "token"];
-  fhir:SearchParameter.target [
-     fhir:value "OMRSCondition";
-     fhir:index 0
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-patient-identifier"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>conditionPatientIdentifierSearchParameter</h2><p>Parameter <code>patient.identifier</code>:<code>token</code></p><div><p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "conditionPatientIdentifierSearchParameter"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"] ; # 
+  fhir:code [ fhir:v "patient.identifier"] ; # 
+  fhir:base ( [ fhir:v "Condition"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:target ( [ fhir:v "Condition"] ) . # 
 
 # -------------------------------------------------------------------------------------
 

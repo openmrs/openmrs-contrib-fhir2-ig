@@ -5,40 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "OpenMRS-order-code-vs"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "OpenMRSOrderCodeVS"];
-  fhir:ValueSet.title [ fhir:value "OpenMRS Order Code"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "The code for the openmrs requested in the EMR."];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OpenMRS-order-code-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OpenMRSOrderCodeVS"] ; # 
+  fhir:title [ fhir:v "OpenMRS Order Code"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The code for the openmrs requested in the EMR."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ]
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -5,68 +5,56 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> a fhir:AllergyIntolerance;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance";
-       fhir:index 0;
+<http://fhir.openmrs.org/fhir/AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance"^^xsd:anyURI ;
        fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"5b829d01-34bb-47d1-b1bb-9303c3a9ebcb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-AllergyIntolerance.html\">OpenMRS AllergyIntolerance</a></p></div><p><b>identifier</b>: id: 35tu-9 (use: USUAL)</p><p><b>clinicalStatus</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>patient</b>: <a href=\"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5\">Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5</a></p><p><b>recorder</b>: <a href=\"Practitioner/c98a1558-e131-11de-babe-001e378eb67e\">Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Substance</b></td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>162298 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CIEL#162298)</span></td><td>22748-8 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#22748-8)</span></td></tr></table></div>"
-  ];
-  fhir:AllergyIntolerance.identifier [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "dce9740a-1691-11df-97a5-7038c432aabf" ];
-     fhir:Identifier.use [ fhir:value "usual" ];
-     fhir:Identifier.system [ fhir:value "OpenMRS" ];
-     fhir:Identifier.value [ fhir:value "35tu-9" ]
-  ];
-  fhir:AllergyIntolerance.clinicalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
-       fhir:Coding.code [ fhir:value "active" ];
-       fhir:Coding.display [ fhir:value "active" ]
-     ]
-  ];
-  fhir:AllergyIntolerance.patient [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5>;
-     fhir:Reference.reference [ fhir:value "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" ];
-     fhir:Reference.type [ fhir:value "Patient" ]
-  ];
-  fhir:AllergyIntolerance.recorder [
-     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/c98a1558-e131-11de-babe-001e378eb67e>;
-     fhir:Reference.reference [ fhir:value "Practitioner/c98a1558-e131-11de-babe-001e378eb67e" ];
-     fhir:Reference.type [ fhir:value "Practitioner" ];
-     fhir:Reference.display [ fhir:value "Super User" ]
-  ];
-  fhir:AllergyIntolerance.reaction [
-     fhir:index 0;
-     fhir:AllergyIntolerance.reaction.substance [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://openconceptlab.org/orgs/CIEL/sources/CIEL" ];
-         fhir:Coding.code [ fhir:value "162298" ]
-       ]
-     ];
-     fhir:AllergyIntolerance.reaction.manifestation [
-       fhir:index 0;
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "22748-8" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"5b829d01-34bb-47d1-b1bb-9303c3a9ebcb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-AllergyIntolerance.html\">OpenMRS AllergyIntolerance</a></p></div><p><b>identifier</b>: id: 35tu-9 (use: USUAL)</p><p><b>clinicalStatus</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>patient</b>: <a href=\"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5\">Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5</a></p><p><b>recorder</b>: <a href=\"Practitioner/c98a1558-e131-11de-babe-001e378eb67e\">Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Substance</b></td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>162298 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CIEL#162298)</span></td><td>22748-8 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#22748-8)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:id [ fhir:v "dce9740a-1691-11df-97a5-7038c432aabf" ] ;
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "OpenMRS"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "35tu-9" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5> ;
+     fhir:reference [ fhir:v "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/c98a1558-e131-11de-babe-001e378eb67e> ;
+     fhir:reference [ fhir:v "Practitioner/c98a1558-e131-11de-babe-001e378eb67e" ] ;
+     fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Super User" ]
+  ] ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openconceptlab.org/orgs/CIEL/sources/CIEL"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "162298" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "22748-8" ]
+       ] )
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -5,73 +5,57 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "medication-request-intent-vs"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>proposal</td><td>Proposal</td></tr><tr><td>plan</td><td>Plan</td></tr><tr><td>order</td><td>Order</td></tr><tr><td>original-order</td><td>Original Order</td></tr><tr><td>reflex-order</td><td>Reflex Order</td></tr><tr><td>filler-order</td><td>Filler Order</td></tr><tr><td>instance-order</td><td>Instance Order</td></tr><tr><td>option</td><td>Option</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "MedicationRequestIntentVs"];
-  fhir:ValueSet.title [ fhir:value "Medication Request Intent Vs"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "Medication Request Intent ValueSet"];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "proposal" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Proposal" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "plan" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plan" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Order" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "original-order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Original Order" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "reflex-order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reflex Order" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "filler-order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Filler Order" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "instance-order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Instance Order" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "option" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Option" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-request-intent-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>proposal</td><td>Proposal</td></tr><tr><td>plan</td><td>Plan</td></tr><tr><td>order</td><td>Order</td></tr><tr><td>original-order</td><td>Original Order</td></tr><tr><td>reflex-order</td><td>Reflex Order</td></tr><tr><td>filler-order</td><td>Filler Order</td></tr><tr><td>instance-order</td><td>Instance Order</td></tr><tr><td>option</td><td>Option</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MedicationRequestIntentVs"] ; # 
+  fhir:title [ fhir:v "Medication Request Intent Vs"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medication Request Intent ValueSet"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "proposal" ] ;
+         fhir:display [ fhir:v "Proposal" ]
+       ] [
+         fhir:code [ fhir:v "plan" ] ;
+         fhir:display [ fhir:v "Plan" ]
+       ] [
+         fhir:code [ fhir:v "order" ] ;
+         fhir:display [ fhir:v "Order" ]
+       ] [
+         fhir:code [ fhir:v "original-order" ] ;
+         fhir:display [ fhir:v "Original Order" ]
+       ] [
+         fhir:code [ fhir:v "reflex-order" ] ;
+         fhir:display [ fhir:v "Reflex Order" ]
+       ] [
+         fhir:code [ fhir:v "filler-order" ] ;
+         fhir:display [ fhir:v "Filler Order" ]
+       ] [
+         fhir:code [ fhir:v "instance-order" ] ;
+         fhir:display [ fhir:v "Instance Order" ]
+       ] [
+         fhir:code [ fhir:v "option" ] ;
+         fhir:display [ fhir:v "Option" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -22,17 +22,12 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-<!--
-  Questionnaire:
--->
-    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
-
-
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -79,7 +74,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -136,12 +137,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-    
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Openmrs Person</b></li>
-          
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -161,11 +162,14 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li>
     <a href="Person-example-openmrs-person.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -197,6 +201,19 @@
 
 
 <h2 id="root">: Openmrs Person - TTL Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="Person-example-openmrs-person.ttl" no-download="true">Raw ttl</a> | <a href="Person-example-openmrs-person.ttl" download>Download</a></p>
 
@@ -213,53 +230,41 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Person;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/person.html#Person.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;example-openmrs-person&quot;];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person&gt;     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Person&lt;/b&gt;&lt;a name=\&quot;example-openmrs-person\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Person &amp;quot;example-openmrs-person&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-omrs-person.html\&quot;&gt;OpenMRS Person&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: OpenMRS ID: 1000Y (use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Smith John &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 2001-09-08&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Ntungamo Uganda (HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.identifier">fhir:Person.identifier</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;53fbd0ef-ae10-46a0-9d0a-387917a66d6e&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;OpenMRS ID&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1000Y&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.name">fhir:Person.name</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;915c9146-8bdb-4fad-bc51-4af10d041c86&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:HumanName.family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Smith&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.gender">fhir:Person.gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;male&quot;];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.birthDate">fhir:Person.birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2001-09-08&quot;^^xsd:date];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.address">fhir:Person.address</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">fhir:Element.extension</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.openmrs.org/ext/address&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">fhir:Address.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;home&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ntungamo&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">fhir:Address.district</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ntungamo&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Uganda&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/person.html#Person.active">fhir:Person.active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean].
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
+ a fhir:Person ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/person.html#Person.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;example-openmrs-person&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Person&lt;/b&gt;&lt;a name=\&quot;example-openmrs-person\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Person &amp;quot;example-openmrs-person&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-omrs-person.html\&quot;&gt;OpenMRS Person&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: OpenMRS ID: 1000Y (use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Smith John &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 2001-09-08&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Ntungamo Uganda (HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;53fbd0ef-ae10-46a0-9d0a-387917a66d6e&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OpenMRS ID&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1000Y&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;915c9146-8bdb-4fad-bc51-4af10d041c86&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;John&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Smith&quot; ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;male&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2001-09-08&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.address">fhir:address</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.openmrs.org/ext/address&quot;^^xsd:anyURI ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;home&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ntungamo&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">fhir:district</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ntungamo&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Uganda&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/person.html#Person.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] . # 
 
 </code></pre>
 
@@ -293,7 +298,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 29, 2022 17:06+0000">2022-11-29</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 9, 2023 17:04+0000">2023-03-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

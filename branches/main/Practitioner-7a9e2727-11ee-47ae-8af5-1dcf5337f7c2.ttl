@@ -5,60 +5,41 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> a fhir:Practitioner;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner";
-       fhir:index 0;
+<http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"^^xsd:anyURI ;
        fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"7a9e2727-11ee-47ae-8af5-1dcf5337f7c2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;7a9e2727-11ee-47ae-8af5-1dcf5337f7c2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-practitioner.html\">Openmrs Practitioner</a></p></div><p><b>identifier</b>: id: 1001</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: (545-243-545-1)</p><p><b>address</b>: 534 Erewhon St PleasantVille Vic (HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>"
-  ];
-  fhir:Practitioner.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "OpenMRS" ];
-     fhir:Identifier.value [ fhir:value "1001" ]
-  ];
-  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
-  fhir:Practitioner.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Careful" ];
-     fhir:HumanName.given [
-       fhir:value "Adam";
-       fhir:index 0
-     ];
-     fhir:HumanName.suffix [
-       fhir:value "Dr";
-       fhir:index 0
-     ]
-  ];
-  fhir:Practitioner.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "(545-243-545-1)" ]
-  ];
-  fhir:Practitioner.address [
-     fhir:index 0;
-     fhir:Address.use [ fhir:value "home" ];
-     fhir:Address.line [
-       fhir:value "534 Erewhon St";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "PleasantVille" ];
-     fhir:Address.state [ fhir:value "Vic" ]
-  ];
-  fhir:Practitioner.gender [ fhir:value "male"];
-  fhir:Practitioner.birthDate [ fhir:value "1974-12-25"^^xsd:date] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"7a9e2727-11ee-47ae-8af5-1dcf5337f7c2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;7a9e2727-11ee-47ae-8af5-1dcf5337f7c2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-practitioner.html\">Openmrs Practitioner</a></p></div><p><b>identifier</b>: id: 1001</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: (545-243-545-1)</p><p><b>address</b>: 534 Erewhon St PleasantVille Vic (HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "OpenMRS"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1001" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Careful" ] ;
+     fhir:given ( [ fhir:v "Adam" ] ) ;
+     fhir:suffix ( [ fhir:v "Dr" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(545-243-545-1)" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "534 Erewhon St" ] ) ;
+     fhir:city [ fhir:v "PleasantVille" ] ;
+     fhir:state [ fhir:v "Vic" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 

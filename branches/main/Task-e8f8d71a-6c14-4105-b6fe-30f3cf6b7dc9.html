@@ -20,15 +20,12 @@
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/openhie.css"/>
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
-  <!-- Questionnaire: -->
-    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
-
-
-
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -73,7 +70,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -127,12 +130,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-    
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Openmrs Task</b></li>
-          
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -153,11 +156,14 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li class="active">
     <a href="#">Narrative Content</a>
   </li>
+
 
 
   
@@ -190,6 +196,19 @@
 
   <h2 id="root">Example Task: Openmrs Task</h2>
 
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 
     <!-- insert intro if present -->
@@ -197,7 +216,9 @@
 
 
 
-  <div><p><b>Generated Narrative: Task</b><a name="e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Task "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OpenMRS-task.html">OpenMRS Task</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-example-openmrs-ServiceRequest.html">ServiceRequest/example-openmrs-ServiceRequest</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="Patient-example-openmrs-Patient.html">Patient/example-openmrs-Patient</a> " JEANNETTE"</p><p><b>encounter</b>: <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><a name="l347">​</a><b>owner</b>: <a href="Organization/1832473e-2fe0-452d-abe9-3cdb9879522f">Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital</a></p></div>
+  <div><p><b>Generated Narrative: Task</b><a name="e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Task "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OpenMRS-task.html">OpenMRS Task</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-example-openmrs-ServiceRequest.html">ServiceRequest/example-openmrs-ServiceRequest</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="Patient-example-openmrs-Patient.html">Patient/example-openmrs-Patient</a> " JEANNETTE"</p><p><b>encounter</b>: <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><a name="l358">​</a><b>owner</b>: <a href="Organization/1832473e-2fe0-452d-abe9-3cdb9879522f">Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital</a></p></div>
+
+  
 
     <!-- insert notes if present -->
   
@@ -227,7 +248,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 29, 2022 17:06+0000">2022-11-29</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 9, 2023 17:04+0000">2023-03-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -5,26 +5,17 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Patient/51ead2ec-279f-482d-80f8-209a5d4109d0> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "51ead2ec-279f-482d-80f8-209a5d4109d0"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Doe </b> (no stated gender), DoB Unknown</p><hr/></div>"
-  ];
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Doe" ];
-     fhir:HumanName.given [
-       fhir:value "Jane";
-       fhir:index 0
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/Patient/51ead2ec-279f-482d-80f8-209a5d4109d0.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/Patient/51ead2ec-279f-482d-80f8-209a5d4109d0> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "51ead2ec-279f-482d-80f8-209a5d4109d0"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Doe </b> (no stated gender), DoB Unknown</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Doe" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -1,33 +1,27 @@
 {
-  "resourceType": "ValueSet",
-  "id": "OpenMRS-order-code-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "OpenMRS-order-code-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   },
-  "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs",
-  "version": "0.1.0",
-  "name": "OpenMRSOrderCodeVS",
-  "title": "OpenMRS Order Code",
-  "status": "active",
-  "date": "2022-11-29T17:06:49+00:00",
-  "contact": [
-    {
-      "name": "OpenMRS, Inc.",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://openmrs.org"
-        }
-      ]
-    }
-  ],
-  "description": "The code for the openmrs requested in the EMR.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://loinc.org"
-      }
-    ]
+  "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs",
+  "version" : "0.1.0",
+  "name" : "OpenMRSOrderCodeVS",
+  "title" : "OpenMRS Order Code",
+  "status" : "active",
+  "date" : "2023-03-09T17:04:20+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "The code for the openmrs requested in the EMR.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
   }
 }

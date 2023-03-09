@@ -5,43 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier> a fhir:SearchParameter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Encounter-participant-identifier"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Encounter-participant-identifier\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;Encounter-participant-identifier&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterParticipantIdentifierSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}</p><p><b>code</b>: participant.identifier</p><p><b>base</b>: Encounter</p><p><b>type</b>: token</p><p><b>target</b>: OMRSEncounter</p></div>"
-  ];
-  fhir:SearchParameter.url [ fhir:value "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier"];
-  fhir:SearchParameter.version [ fhir:value "0.1.0"];
-  fhir:SearchParameter.name [ fhir:value "EncounterParticipantIdentifierSearchParameter"];
-  fhir:SearchParameter.status [ fhir:value "active"];
-  fhir:SearchParameter.date [ fhir:value "2022-11-29T17:06:49+00:00"^^xsd:dateTime];
-  fhir:SearchParameter.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
-     ]
-  ];
-  fhir:SearchParameter.description [ fhir:value "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"];
-  fhir:SearchParameter.code [ fhir:value "participant.identifier"];
-  fhir:SearchParameter.base [
-     fhir:value "Encounter";
-     fhir:index 0
-  ];
-  fhir:SearchParameter.type [ fhir:value "token"];
-  fhir:SearchParameter.target [
-     fhir:value "OMRSEncounter";
-     fhir:index 0
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Encounter-participant-identifier"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EncounterParticipantIdentifierSearchParameter</h2><p>Parameter <code>participant.identifier</code>:<code>token</code></p><div><p>Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterParticipantIdentifierSearchParameter"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"] ; # 
+  fhir:code [ fhir:v "participant.identifier"] ; # 
+  fhir:base ( [ fhir:v "Encounter"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:target ( [ fhir:v "Encounter"] ) . # 
 
 # -------------------------------------------------------------------------------------
 

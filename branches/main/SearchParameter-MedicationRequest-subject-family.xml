@@ -3,13 +3,15 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="MedicationRequest-subject-family"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="MedicationRequest-subject-family"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter &quot;MedicationRequest-subject-family&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-family</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: MedicationRequestSubjectfamilySearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: 	Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}</p><p><b>code</b>: subject.family</p><p><b>base</b>: MedicationRequest</p><p><b>type</b>: string</p><p><b>target</b>: OMRSMedicationRequest</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MedicationRequestSubjectfamilySearchParameter</h2><p>Parameter <code>subject.family</code>:<code>string</code></p><div><pre><code>Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}
+</code></pre>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
   <url value="http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-subject-family"/>
   <version value="0.1.0"/>
   <name value="MedicationRequestSubjectfamilySearchParameter"/>
   <status value="active"/>
-  <date value="2022-11-29T17:06:49+00:00"/>
+  <date value="2023-03-09T17:04:20+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -21,5 +23,5 @@
   <code value="subject.family"/>
   <base value="MedicationRequest"/>
   <type value="string"/>
-  <target value="OMRSMedicationRequest"/>
+  <target value="MedicationRequest"/>
 </SearchParameter>

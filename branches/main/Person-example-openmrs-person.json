@@ -1,48 +1,36 @@
 {
-  "resourceType": "Person",
-  "id": "example-openmrs-person",
-  "meta": {
-    "profile": [
-      "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"
-    ]
+  "resourceType" : "Person",
+  "id" : "example-openmrs-person",
+  "meta" : {
+    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Person</b><a name=\"example-openmrs-person\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Person &quot;example-openmrs-person&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-person.html\">OpenMRS Person</a></p></div><p><b>identifier</b>: OpenMRS ID: 1000Y (use: OFFICIAL)</p><p><b>name</b>: Smith John </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 2001-09-08</p><p><b>address</b>: Ntungamo Uganda (HOME)</p><p><b>active</b>: true</p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Person</b><a name=\"example-openmrs-person\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Person &quot;example-openmrs-person&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-person.html\">OpenMRS Person</a></p></div><p><b>identifier</b>: OpenMRS ID:\u00a01000Y\u00a0(use:\u00a0OFFICIAL)</p><p><b>name</b>: Smith John </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 2001-09-08</p><p><b>address</b>: Ntungamo Uganda (HOME)</p><p><b>active</b>: true</p></div>"
   },
-  "identifier": [
-    {
-      "id": "53fbd0ef-ae10-46a0-9d0a-387917a66d6e",
-      "use": "official",
-      "type": {
-        "text": "OpenMRS ID"
-      },
-      "value": "1000Y"
-    }
-  ],
-  "name": [
-    {
-      "id": "915c9146-8bdb-4fad-bc51-4af10d041c86",
-      "family": "John",
-      "given": [
-        "Smith"
-      ]
-    }
-  ],
-  "gender": "male",
-  "birthDate": "2001-09-08",
-  "address": [
-    {
-      "extension": [
-        {
-          "url": "http://fhir.openmrs.org/ext/address"
-        }
-      ],
-      "use": "home",
-      "city": "Ntungamo",
-      "district": "Ntungamo",
-      "country": "Uganda"
-    }
-  ],
-  "active": true
+  "identifier" : [{
+    "id" : "53fbd0ef-ae10-46a0-9d0a-387917a66d6e",
+    "use" : "official",
+    "type" : {
+      "text" : "OpenMRS ID"
+    },
+    "value" : "1000Y"
+  }],
+  "name" : [{
+    "id" : "915c9146-8bdb-4fad-bc51-4af10d041c86",
+    "family" : "John",
+    "given" : ["Smith"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2001-09-08",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://fhir.openmrs.org/ext/address"
+    }],
+    "use" : "home",
+    "city" : "Ntungamo",
+    "district" : "Ntungamo",
+    "country" : "Uganda"
+  }],
+  "active" : true
 }

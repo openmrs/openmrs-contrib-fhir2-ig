@@ -1,44 +1,36 @@
 {
-  "resourceType": "Encounter",
-  "id": "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb",
-  "meta": {
-    "profile": [
-      "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"
-    ]
+  "resourceType" : "Encounter",
+  "id" : "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb",
+  "meta" : {
+    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"5b829d01-34bb-47d1-b1bb-9303c3a9ebcb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-encounter.html\">Openmrs Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Vitals <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (encounter-type#67a71486-1a54-468f-ac3e-7091a9a79584)</span></p><p><b>subject</b>: <a href=\"Patient-51ead2ec-279f-482d-80f8-209a5d4109d0.html\">Patient/51ead2ec-279f-482d-80f8-209a5d4109d0</a> &quot; DOE&quot;</p><p><b>period</b>: 2022-06-22 --&gt; 2022-06-22</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Outpatient Clinic&quot;</td></tr></table></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"5b829d01-34bb-47d1-b1bb-9303c3a9ebcb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-encounter.html\">Openmrs Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Vitals <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (encounter-type#67a71486-1a54-468f-ac3e-7091a9a79584)</span></p><p><b>subject</b>: <a href=\"Patient-51ead2ec-279f-482d-80f8-209a5d4109d0.html\">Patient/51ead2ec-279f-482d-80f8-209a5d4109d0</a> &quot; DOE&quot;</p><p><b>period</b>: 2022-06-22 --&gt; 2022-06-22</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Outpatient Clinic&quot;</td></tr></table></div>"
   },
-  "status": "unknown",
-  "class": {
-    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "code": "AMB"
+  "status" : "unknown",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB"
   },
-  "type": [
-    {
-      "coding": [
-        {
-          "system": "http://fhir.openmrs.org/code-system/encounter-type",
-          "code": "67a71486-1a54-468f-ac3e-7091a9a79584",
-          "display": "Vitals"
-        }
-      ]
+  "type" : [{
+    "coding" : [{
+      "system" : "http://fhir.openmrs.org/code-system/encounter-type",
+      "code" : "67a71486-1a54-468f-ac3e-7091a9a79584",
+      "display" : "Vitals"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/51ead2ec-279f-482d-80f8-209a5d4109d0",
+    "type" : "Patient"
+  },
+  "period" : {
+    "start" : "2022-06-22",
+    "end" : "2022-06-22"
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/LocationExample"
     }
-  ],
-  "subject": {
-    "reference": "Patient/51ead2ec-279f-482d-80f8-209a5d4109d0",
-    "type": "Patient"
-  },
-  "period": {
-    "start": "2022-06-22",
-    "end": "2022-06-22"
-  },
-  "location": [
-    {
-      "location": {
-        "reference": "Location/LocationExample"
-      }
-    }
-  ]
+  }]
 }
