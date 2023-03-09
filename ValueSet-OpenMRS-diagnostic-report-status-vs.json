@@ -1,55 +1,47 @@
 {
-  "resourceType": "ValueSet",
-  "id": "OpenMRS-diagnostic-report-status-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>Partial</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>Final</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>Unknown</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>Canceled</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>Amended</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "OpenMRS-diagnostic-report-status-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>Partial</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>Final</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>Unknown</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>Canceled</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>Amended</td></tr></table></li></ul></div>"
   },
-  "url": "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
-  "version": "0.1.0",
-  "name": "OpenMRSDiagnosis",
-  "title": "OpenMRS Diagnostic Report Status Flag",
-  "status": "active",
-  "date": "2022-11-29T17:06:49+00:00",
-  "contact": [
-    {
-      "name": "OpenMRS, Inc.",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://openmrs.org"
-        }
-      ]
-    }
-  ],
-  "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
-  "compose": {
-    "include": [
+  "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",
+  "version" : "0.1.0",
+  "name" : "OpenMRSDiagnosis",
+  "title" : "OpenMRS Diagnostic Report Status Flag",
+  "status" : "active",
+  "date" : "2023-03-09T17:04:20+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/diagnostic-report-status",
+      "concept" : [{
+        "code" : "diagnostic-report-status-partial",
+        "display" : "Partial"
+      },
       {
-        "system": "http://hl7.org/fhir/diagnostic-report-status",
-        "concept": [
-          {
-            "code": "diagnostic-report-status-partial",
-            "display": "Partial"
-          },
-          {
-            "code": "diagnostic-report-status-final",
-            "display": "Final"
-          },
-          {
-            "code": "diagnostic-report-status-unknown",
-            "display": "Unknown"
-          },
-          {
-            "code": "diagnostic-report-status-canceled",
-            "display": "Canceled"
-          },
-          {
-            "code": "diagnostic-report-status-amended",
-            "display": "Amended"
-          }
-        ]
-      }
-    ]
+        "code" : "diagnostic-report-status-final",
+        "display" : "Final"
+      },
+      {
+        "code" : "diagnostic-report-status-unknown",
+        "display" : "Unknown"
+      },
+      {
+        "code" : "diagnostic-report-status-canceled",
+        "display" : "Canceled"
+      },
+      {
+        "code" : "diagnostic-report-status-amended",
+        "display" : "Amended"
+      }]
+    }]
   }
 }

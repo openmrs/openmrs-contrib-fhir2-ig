@@ -1,33 +1,25 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "serviceRequest-requester-identifier",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"serviceRequest-requester-identifier\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;serviceRequest-requester-identifier&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-identifier</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: serviceRequestRequesterIdentifierSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}</p><p><b>code</b>: requester.identifier</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: token</p><p><b>target</b>: OpenMRSServiceRequest</p></div>"
+  "resourceType" : "SearchParameter",
+  "id" : "serviceRequest-requester-identifier",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>serviceRequestRequesterIdentifierSearchParameter</h2><p>Parameter <code>requester.identifier</code>:<code>token</code></p><div><p>Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url": "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-identifier",
-  "version": "0.1.0",
-  "name": "serviceRequestRequesterIdentifierSearchParameter",
-  "status": "active",
-  "date": "2022-11-29T17:06:49+00:00",
-  "contact": [
-    {
-      "name": "OpenMRS, Inc.",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://openmrs.org"
-        }
-      ]
-    }
-  ],
-  "description": "Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}",
-  "code": "requester.identifier",
-  "base": [
-    "ServiceRequest"
-  ],
-  "type": "token",
-  "target": [
-    "OpenMRSServiceRequest"
-  ]
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-identifier",
+  "version" : "0.1.0",
+  "name" : "serviceRequestRequesterIdentifierSearchParameter",
+  "status" : "active",
+  "date" : "2023-03-09T17:04:20+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}",
+  "code" : "requester.identifier",
+  "base" : ["ServiceRequest"],
+  "type" : "token",
+  "target" : ["ServiceRequest"]
 }

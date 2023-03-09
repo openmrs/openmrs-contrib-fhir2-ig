@@ -3,13 +3,14 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="Encounter-subject-identifier"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="Encounter-subject-identifier"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter &quot;Encounter-subject-identifier&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-identifier</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: EncounterSubjectIdentifierSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}</p><p><b>code</b>: subject.identifier</p><p><b>base</b>: Encounter</p><p><b>type</b>: token</p><p><b>target</b>: OMRSEncounter</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>EncounterSubjectIdentifierSearchParameter</h2><p>Parameter <code>subject.identifier</code>:<code>token</code></p><div><p>Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
   <url value="http://fhir.openmrs.org/fhir/SearchParameter/Encounter-subject-identifier"/>
   <version value="0.1.0"/>
   <name value="EncounterSubjectIdentifierSearchParameter"/>
   <status value="active"/>
-  <date value="2022-11-29T17:06:49+00:00"/>
+  <date value="2023-03-09T17:04:20+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -21,5 +22,5 @@
   <code value="subject.identifier"/>
   <base value="Encounter"/>
   <type value="token"/>
-  <target value="OMRSEncounter"/>
+  <target value="Encounter"/>
 </SearchParameter>

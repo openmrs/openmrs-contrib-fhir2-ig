@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\Search through person endpoint by the person's birthdate attribute - FHIR v4.0.1</title>
+    <title>OPENMRS\Search through person endpoint by the person&#39;s birthdate attribute - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,17 +20,12 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-<!--
-  Questionnaire:
--->
-    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
-
-
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,7 +72,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -134,12 +135,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-    
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Search through person endpoint by the person's birthdate attribute</b></li>
-          
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -152,8 +153,9 @@
 
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
   
+
+
 
 
 
@@ -165,6 +167,7 @@
   <li class="active">
     <a href="#">Narrative Content</a>
   </li>
+
 
 
   
@@ -191,14 +194,54 @@
 
 </ul>
 
-
   <a name="root"> </a>
 
+  <h2 id="root">SearchParameter: Search through person endpoint by the person&#39;s birthdate attribute
 
-  <h2 id="root">SearchParameter: Search through person endpoint by the person&#39;s birthdate attribute</h2>
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
 
 
-  
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-03-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">personBirthdateSearchParameter</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Searches based on the person’s birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p>
+
+</p>
 
 
   <!-- insert intro if present -->
@@ -206,12 +249,22 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="person-birthdate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter &quot;person-birthdate&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/person-birthdate</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: personBirthdateSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-11-29 05:06:49+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href="https://openmrs.org">https://openmrs.org</a></p><p><b>description</b>: Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p><p><b>code</b>: birthdate</p><p><b>base</b>: Person</p><p><b>type</b>: date</p><p><b>target</b>: OMRSPerson</p></div>
+<!--  <p>
+  Formats: <a href="SearchParameter-person-birthdate.xml.html">XML</a>, <a href="SearchParameter-person-birthdate.json.html">JSON</a>, <a href="SearchParameter-person-birthdate.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>personBirthdateSearchParameter</h2><p>Parameter <code>birthdate</code>:<code>date</code></p><div><p>Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/person.html">Person</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/person.html">Person</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
 
   <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -236,7 +289,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 29, 2022 17:06+0000">2022-11-29</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 9, 2023 17:04+0000">2023-03-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

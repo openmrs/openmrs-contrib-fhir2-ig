@@ -1,56 +1,47 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de> a fhir:DiagnosticReport;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "8a849d5e-6011-4279-a124-40ada5a687de"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report";
-       fhir:index 0;
+<http://fhir.openmrs.org/fhir/DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8a849d5e-6011-4279-a124-40ada5a687de"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report"^^xsd:anyURI ;
        fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2011-03-04 11:45:33+1100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan=\"2\"><i>Observation</i></td></tr></table></div>"
-  ];
-  fhir:DiagnosticReport.status [ fhir:value "final"];
-  fhir:DiagnosticReport.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:8480-6;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "8480-6" ]
-     ], [
-       fhir:index 1;
-       fhir:Coding.display [ fhir:value "Systolic blood pressure" ]
-     ]
-  ];
-  fhir:DiagnosticReport.subject [
-     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041">;
-     fhir:Reference.reference [ fhir:value "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ]
-  ];
-  fhir:DiagnosticReport.encounter [
-     fhir:link <http://fhir.openmrs.org/fhir/"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac">;
-     fhir:Reference.reference [ fhir:value "\"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac\"" ]
-  ];
-  fhir:DiagnosticReport.issued [ fhir:value "2011-03-04T11:45:33+11:00"^^xsd:dateTime];
-  fhir:DiagnosticReport.result [
-     fhir:index 0;
-     fhir:link <http://fhir.openmrs.org/fhir/"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669">;
-     fhir:Reference.reference [ fhir:value "\"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669\"" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2011-03-04 11:45:33+1100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan=\"2\"><i>Observation</i></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8480-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8480-6" ]
+     ] [
+       fhir:display [ fhir:v "Systolic blood pressure" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041"> ;
+     fhir:reference [ fhir:v "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.openmrs.org/fhir/"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"> ;
+     fhir:reference [ fhir:v "\"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac\"" ]
+  ] ; # 
+  fhir:issued [ fhir:v "2011-03-04T11:45:33+11:00"^^xsd:dateTime] ; # 
+  fhir:result ( [
+     fhir:link <http://fhir.openmrs.org/fhir/"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"> ;
+     fhir:reference [ fhir:v "\"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669\"" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

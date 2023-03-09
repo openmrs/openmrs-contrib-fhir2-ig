@@ -1,70 +1,64 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "encounter-type",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.openmrs.org/fhir/CodeSystem/encounter-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"encounter-type-discharge\"> </a></td><td>Discharge</td><td>Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon.</td></tr><tr><td style=\"white-space:nowrap\">admission<a name=\"encounter-type-admission\"> </a></td><td>Admission</td><td>Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged.</td></tr><tr><td style=\"white-space:nowrap\">visitNote<a name=\"encounter-type-visitNote\"> </a></td><td>Visit Note</td><td>Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.</td></tr><tr><td style=\"white-space:nowrap\">checkOut<a name=\"encounter-type-checkOut\"> </a></td><td>Check Out</td><td>The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)</td></tr><tr><td style=\"white-space:nowrap\">checkIn<a name=\"encounter-type-checkIn\"> </a></td><td>Check In</td><td>Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"encounter-type-transfer\"> </a></td><td>Transfer</td><td>Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)</td></tr><tr><td style=\"white-space:nowrap\">vitals<a name=\"encounter-type-vitals\"> </a></td><td>Vitals</td><td>For capturing vital signs</td></tr><tr><td style=\"white-space:nowrap\">attachmentUpload<a name=\"encounter-type-attachmentUpload\"> </a></td><td>Attachment Upload</td><td>Encounters used to record uploads of attachments.</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "encounter-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.openmrs.org/fhir/CodeSystem/encounter-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"encounter-type-discharge\"> </a></td><td>Discharge</td><td>Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon.</td></tr><tr><td style=\"white-space:nowrap\">admission<a name=\"encounter-type-admission\"> </a></td><td>Admission</td><td>Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged.</td></tr><tr><td style=\"white-space:nowrap\">visitNote<a name=\"encounter-type-visitNote\"> </a></td><td>Visit Note</td><td>Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.</td></tr><tr><td style=\"white-space:nowrap\">checkOut<a name=\"encounter-type-checkOut\"> </a></td><td>Check Out</td><td>The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)</td></tr><tr><td style=\"white-space:nowrap\">checkIn<a name=\"encounter-type-checkIn\"> </a></td><td>Check In</td><td>Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"encounter-type-transfer\"> </a></td><td>Transfer</td><td>Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)</td></tr><tr><td style=\"white-space:nowrap\">vitals<a name=\"encounter-type-vitals\"> </a></td><td>Vitals</td><td>For capturing vital signs</td></tr><tr><td style=\"white-space:nowrap\">attachmentUpload<a name=\"encounter-type-attachmentUpload\"> </a></td><td>Attachment Upload</td><td>Encounters used to record uploads of attachments.</td></tr></table></div>"
   },
-  "url": "http://fhir.openmrs.org/fhir/CodeSystem/encounter-type",
-  "version": "0.1.0",
-  "name": "EncounterType",
-  "title": "Encounter Type Code System",
-  "status": "active",
-  "date": "2022-11-29T17:06:49+00:00",
-  "contact": [
-    {
-      "name": "OpenMRS, Inc.",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://openmrs.org"
-        }
-      ]
-    }
-  ],
-  "description": "Encounter Type Coding System",
-  "content": "complete",
-  "count": 8,
-  "concept": [
-    {
-      "code": "discharge",
-      "display": "Discharge",
-      "definition": "Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon."
-    },
-    {
-      "code": "admission",
-      "display": "Admission",
-      "definition": "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
-    },
-    {
-      "code": "visitNote",
-      "display": "Visit Note",
-      "definition": "Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician."
-    },
-    {
-      "code": "checkOut",
-      "display": "Check Out",
-      "definition": "The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)"
-    },
-    {
-      "code": "checkIn",
-      "display": "Check In",
-      "definition": "Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital."
-    },
-    {
-      "code": "transfer",
-      "display": "Transfer",
-      "definition": "Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)"
-    },
-    {
-      "code": "vitals",
-      "display": "Vitals",
-      "definition": "For capturing vital signs"
-    },
-    {
-      "code": "attachmentUpload",
-      "display": "Attachment Upload",
-      "definition": "Encounters used to record uploads of attachments."
-    }
-  ]
+  "url" : "http://fhir.openmrs.org/fhir/CodeSystem/encounter-type",
+  "version" : "0.1.0",
+  "name" : "EncounterType",
+  "title" : "Encounter Type Code System",
+  "status" : "active",
+  "date" : "2023-03-09T17:04:20+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Encounter Type Coding System",
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "discharge",
+    "display" : "Discharge",
+    "definition" : "Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon."
+  },
+  {
+    "code" : "admission",
+    "display" : "Admission",
+    "definition" : "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
+  },
+  {
+    "code" : "visitNote",
+    "display" : "Visit Note",
+    "definition" : "Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician."
+  },
+  {
+    "code" : "checkOut",
+    "display" : "Check Out",
+    "definition" : "The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)"
+  },
+  {
+    "code" : "checkIn",
+    "display" : "Check In",
+    "definition" : "Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital."
+  },
+  {
+    "code" : "transfer",
+    "display" : "Transfer",
+    "definition" : "Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)"
+  },
+  {
+    "code" : "vitals",
+    "display" : "Vitals",
+    "definition" : "For capturing vital signs"
+  },
+  {
+    "code" : "attachmentUpload",
+    "display" : "Attachment Upload",
+    "definition" : "Encounters used to record uploads of attachments."
+  }]
 }

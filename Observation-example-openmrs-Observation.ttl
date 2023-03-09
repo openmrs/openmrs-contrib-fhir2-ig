@@ -1,59 +1,49 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Observation/example-openmrs-Observation> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-openmrs-Observation"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation";
-       fhir:index 0;
+<http://fhir.openmrs.org/fhir/Observation/example-openmrs-Observation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-openmrs-Observation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"^^xsd:anyURI ;
        fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>identifier</b>: id: e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9</p><p><b>status</b>: preliminary</p><p><b>category</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>code</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>subject</b>: <a href=\"&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;\">&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;</a></p><p><b>effective</b>: 2014-11-25 10:17:00+1100</p></div>"
-  ];
-  fhir:Observation.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://fhir.openmrs.org/ext/task/identifier" ];
-     fhir:Identifier.value [ fhir:value "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
-  ];
-  fhir:Observation.status [ fhir:value "preliminary"];
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:22748-8;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "22748-8" ]
-     ]
-  ];
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:22748-8;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "22748-8" ]
-     ]
-  ];
-  fhir:Observation.subject [
-     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041">;
-     fhir:Reference.reference [ fhir:value "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ];
-     fhir:Reference.type [ fhir:value "Patient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2014-11-25T22:17:00+11:00"^^xsd:dateTime] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.openmrs.org/fhir/Observation/example-openmrs-Observation.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>identifier</b>: id: e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9</p><p><b>status</b>: preliminary</p><p><b>category</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>code</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>subject</b>: <a href=\"&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;\">&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;</a></p><p><b>effective</b>: 2014-11-25 22:17:00+1100</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.openmrs.org/ext/task/identifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:22748-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22748-8" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22748-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22748-8" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041"> ;
+     fhir:reference [ fhir:v "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2014-11-25T22:17:00+11:00"^^xsd:dateTime] . # 
 
 # -------------------------------------------------------------------------------------
 

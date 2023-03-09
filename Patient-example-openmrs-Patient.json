@@ -1,59 +1,45 @@
 {
-  "resourceType": "Patient",
-  "id": "example-openmrs-Patient",
-  "meta": {
-    "profile": [
-      "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"
-    ]
+  "resourceType" : "Patient",
+  "id" : "example-openmrs-Patient",
+  "meta" : {
+    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 1000Y (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Washington Washington (HOME)</td></tr></table></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID:\u00a01000Y\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Washington Washington (HOME)</td></tr></table></div>"
   },
-  "identifier": [
-    {
-      "id": "53fbd0ef-ae10-46a0-9d0a-387917a66d6e",
-      "extension": [
-        {
-          "url": "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location",
-          "valueReference": {
-            "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
-            "type": "Location",
-            "display": "Inpatient Ward"
-          }
-        }
-      ],
-      "use": "official",
-      "type": {
-        "text": "OpenMRS ID"
-      },
-      "value": "1000Y"
-    }
-  ],
-  "active": true,
-  "name": [
-    {
-      "id": "3434gh32-34h3j4-34jk34-3422h",
-      "family": "Jeannette",
-      "given": [
-        "Ricky"
-      ]
-    }
-  ],
-  "gender": "male",
-  "birthDate": "1996-12-12",
-  "deceasedBoolean": false,
-  "address": [
-    {
-      "extension": [
-        {
-          "url": "http://fhir.openmrs.org/ext/address"
-        }
-      ],
-      "use": "home",
-      "city": "Washington",
-      "district": "Washington",
-      "country": "Washington"
-    }
-  ]
+  "identifier" : [{
+    "id" : "53fbd0ef-ae10-46a0-9d0a-387917a66d6e",
+    "extension" : [{
+      "url" : "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location",
+      "valueReference" : {
+        "reference" : "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+        "type" : "Location",
+        "display" : "Inpatient Ward"
+      }
+    }],
+    "use" : "official",
+    "type" : {
+      "text" : "OpenMRS ID"
+    },
+    "value" : "1000Y"
+  }],
+  "active" : true,
+  "name" : [{
+    "id" : "3434gh32-34h3j4-34jk34-3422h",
+    "family" : "Jeannette",
+    "given" : ["Ricky"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1996-12-12",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "extension" : [{
+      "url" : "http://fhir.openmrs.org/ext/address"
+    }],
+    "use" : "home",
+    "city" : "Washington",
+    "district" : "Washington",
+    "country" : "Washington"
+  }]
 }
