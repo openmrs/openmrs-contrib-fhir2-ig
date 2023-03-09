@@ -149,7 +149,7 @@ Title: "Search through MedicationRequest endpoint by subject uuid"
 * description = "Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid} "
 * code = #subject
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #reference
 
 Instance: MedicationRequest-subject-identifier
@@ -161,7 +161,7 @@ Title: "Search through MedicationRequest endpoint by subject identifier"
 * description = "Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #token
 
 Instance: MedicationRequest-subject-given
@@ -173,7 +173,7 @@ Title: "Search through MedicationRequest endpoint by subject given"
 * description = "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-subject-family
@@ -185,7 +185,7 @@ Title: "Search through MedicationRequest endpoint by subject family"
 * description = "	Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-subject-name
@@ -197,7 +197,7 @@ Title: "Search through MedicationRequest endpoint by subject name"
 * description = "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-patient
@@ -209,7 +209,7 @@ Title: "Search through MedicationRequest endpoint by a given patient"
 * description = "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}"
 * code = #patient
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #reference
 
 Instance: MedicationRequest-patient-identifier
@@ -221,7 +221,7 @@ Title: "Search through MedicationRequest endpoint by a given patient"
 * description = "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #token
 
 Instance: MedicationRequest-patient.given
@@ -233,7 +233,7 @@ Title: "Search through MedicationRequest endpoint by the patient's given name"
 * description = "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-patient.family
@@ -245,7 +245,7 @@ Title: "Search through MedicationRequest endpoint by the patient's family name"
 * description = "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-patient.name
@@ -257,7 +257,7 @@ Title: "Search through MedicationRequest endpoint by the patient's full or parti
 * description = "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient.name={name}"
 * code = #patient.name
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string 
 
 Instance: MedicationRequest-requestor
@@ -269,7 +269,7 @@ Title: "Search through MedicationRequest endpoint by a given Practitioner "
 * description = "Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}"
 * code = #requestor
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #reference
 
 Instance: MedicationRequest-requestor-identifier
@@ -281,7 +281,7 @@ Title: "Search through MedicationRequest endpoint by a given Practitioner"
 * description = "Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}"
 * code = #requestor.identifier
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #token
 
 Instance: MedicationRequest-requestor.given
@@ -293,7 +293,7 @@ Title: "Search through MedicationRequest endpoint by the Practitioner's given na
 * description = "Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}"
 * code = #requestor.given
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-requestor.family
@@ -305,7 +305,7 @@ Title: "Search through MedicationRequest endpoint by the Practitioner's family n
 * description = "Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}"
 * code = #requestor.family
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string
 
 Instance: MedicationRequest-requestor.name
@@ -317,7 +317,7 @@ Title: "Search through MedicationRequest endpoint by the Practitioner's full or 
 * description = "Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}"
 * code = #requestor.name
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #string 
 
 Instance: MedicationRequest-medication
@@ -329,7 +329,7 @@ Title: "Search through MedicationRequest endpoint based on medication reference"
 * description = "Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}"
 * code = #medication
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest
+* target = #MedicationRequest
 * type = #reference
 
 Instance: MedicationRequest-id
@@ -341,7 +341,7 @@ Title: "Search in MedicationRequest endpoint basing on MedicationRequest uuid  a
 * description = "Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}"
 * code = #_id
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest 
+* target = #MedicationRequest 
 * type = #token
 
 Instance: MedicationRequest-lastUpdated
@@ -353,5 +353,5 @@ Title: "Search in MedicationRequest endpoint basing on MedicationRequest lastUpd
 * description = "Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #MedicationRequest
-* target = #OMRSMedicationRequest 
+* target = #MedicationRequest 
 * type = #date

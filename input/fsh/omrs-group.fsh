@@ -76,6 +76,6 @@ Title: "Search in group endpoint using Managing entity Reference"
 * code = #reference
 * name = "GroupManagingEnityReference"
 * description = "Search for a group  basing on managing entity Reference(Practitioner)"
-* base[0] = #OMRSGroup
+* base[0] = #Group
 * type = #reference
 * expression = "Group.member.entity"

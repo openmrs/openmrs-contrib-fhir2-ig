@@ -96,7 +96,7 @@ Title: "Search through patient endpoint by the patient's full or partial name"
 * description = "Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}"
 * code = #name
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #string
 
 Instance: patient-gender
@@ -108,7 +108,7 @@ Title: "Search through patient endpoint by the patient's gender attribute"
 * description = "Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}"
 * code = #gender
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #token
 
 Instance: patient-birthdate
@@ -120,7 +120,7 @@ Title: "Search through patient endpoint by the patient's birthdate attribute"
 * description = "Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}"
 * code = #birthdate
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #date
 
 Instance: patient-death-date
@@ -132,7 +132,7 @@ Title: "Search through patient endpoint by the patient's death-date attribute"
 * description = "Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}"
 * code = #death-date
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #date
 
 Instance: patient-deceased
@@ -144,7 +144,7 @@ Title: "Search through patient endpoint checking for those that passed on or sti
 * description = "Searches based on whether a patient is marked as deceased. Acceptable values are true or false eg) /ws/fhir2/{release}/Patient?deceased={boolean}"
 * code = #deceased
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #token
 
 Instance: patient-address-city
@@ -156,7 +156,7 @@ Title: "Search through patient endpoint by the patient's location city"
 * description = "Searches based on the patient's recorded city/village of address eg) /ws/fhir2/{release}/Patient?address-city={city}"
 * code = #address-city
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #string
 
 Instance: patient-address-state
@@ -168,7 +168,7 @@ Title: "Search through patient endpoint by the patient's location state"
 * description = "Searches based on the patient's recorded state/province of addresseg) /ws/fhir2/{release}/Patient?address-state={state}"
 * code = #address-state
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #string
 
 Instance: patient-address-postalcode
@@ -180,7 +180,7 @@ Title: "Search through patient endpoint by the patient's location postal code"
 * description = "Searches based on the patient's recorded postal code of address eg) /ws/fhir2/{release}/Patient?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #string
 
 Instance: patient-address-country
@@ -192,7 +192,7 @@ Title: "Search through patient endpoint by the patient's location country"
 * description = "Searches based on the patient's recorded country of address eg) /ws/fhir2/{release}/Patient?address-country={country}"
 * code = #address-country
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #string
 
 Instance: patient-id
@@ -204,7 +204,7 @@ Title: "Search through patient endpoint by the patient's uuid"
 * description = "Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}"
 * code = #_id
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #token
 
 Instance: patient-lastUpdated
@@ -216,5 +216,5 @@ Title: "Search through patient endpoint basing on dateCreated or dateUpdated fie
 * description = "Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Patient
-* target = #OMRSPatient
+* target = #Patient
 * type = #date

@@ -118,7 +118,7 @@ Title: "Search through Encounter endpoint by the date when the encounter was cre
 * description = "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"
 * code = #Encounter.period
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #date
 
 Instance: Encounter-location
@@ -130,7 +130,7 @@ Title: "Search through Encounter endpoint based on location reference"
 * description = "Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}"
 * code = #Encounter.location
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #reference
 
 Instance: Encounter-address-city
@@ -142,7 +142,7 @@ Title: "Search in Encounter endpoint basing on Encounter location address-city a
 * description = "Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}"
 * code = #address-city
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-address-country
@@ -154,7 +154,7 @@ Title: "Search in Encounter endpoint basing on  Encounter location address-count
 * description = "Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}"
 * code = #address-country
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-address-postalcode
@@ -166,7 +166,7 @@ Title: "Search in Encounter endpoint basing on Encounter location address-postal
 * description = "Searches based on the address-postalcode field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-address-state
@@ -178,7 +178,7 @@ Title: "Search in Encounter endpoint basing on Encounter location address-state 
 * description = "Searches based on the address-state field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-state={state}"
 * code = #address-state
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-subject
@@ -190,7 +190,7 @@ Title: "Search through Encounter endpoint by subject uuid"
 * description = "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid} "
 * code = #subject
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #reference
 
 Instance: Encounter-subject-identifier
@@ -202,7 +202,7 @@ Title: "Search through Encounter endpoint by subject identifier"
 * description = "Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #token
 
 Instance: Encounter-subject-given
@@ -214,7 +214,7 @@ Title: "Search through Encounter endpoint by subject given"
 * description = "Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-subject-family
@@ -226,7 +226,7 @@ Title: "Search through Encounter endpoint by subject family"
 * description = "	Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-subject-name
@@ -238,7 +238,7 @@ Title: "Search through Encounter endpoint by subject name"
 * description = "Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-type
@@ -250,7 +250,7 @@ Title: "Search through Encounter endpoint by encounter type"
 * description = "Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}"
 * code = #encounter.type
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #token
 
 Instance: Encounter-patient
@@ -262,7 +262,7 @@ Title: "Search through Encounter endpoint by a given patient"
 * description = "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}"
 * code = #patient
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #reference
 
 Instance: Encounter-patient-identifier
@@ -274,7 +274,7 @@ Title: "Search through Encounter endpoint by a given patient"
 * description = "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #token
 
 Instance: Encounter-patient.given
@@ -286,7 +286,7 @@ Title: "Search through Encounter endpoint by the patient's given name"
 * description = "Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-patient.family
@@ -298,7 +298,7 @@ Title: "Search through Encounter endpoint by the patient's family name"
 * description = "Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-patient.name
@@ -310,7 +310,7 @@ Title: "Search through Encounter endpoint by the patient's full or partial name"
 * description = "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient.name={name}"
 * code = #patient.name
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string 
 
 Instance: Encounter-participant
@@ -322,7 +322,7 @@ Title: "Search through Encounter endpoint by a given Practitioner "
 * description = "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}"
 * code = #participant
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #reference
 
 Instance: Encounter-participant-identifier
@@ -334,7 +334,7 @@ Title: "Search through Encounter endpoint by a given Practitioner"
 * description = "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"
 * code = #participant.identifier
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #token
 
 Instance: Encounter-participant.given
@@ -346,7 +346,7 @@ Title: "Search through Encounter endpoint by the Practitioner's given name"
 * description = "Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}"
 * code = #participant.given
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-participant.family
@@ -358,7 +358,7 @@ Title: "Search through Encounter endpoint by the Practitioner's family name"
 * description = "Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}"
 * code = #participant.family
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string
 
 Instance: Encounter-participant.name
@@ -370,7 +370,7 @@ Title: "Search through Encounter endpoint by the Practitioner's full or partial 
 * description = "Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}"
 * code = #participant.name
 * base[0] = #Encounter
-* target = #OMRSEncounter
+* target = #Encounter
 * type = #string 
 
 Instance: Encounter-id
@@ -382,7 +382,7 @@ Title: "Search in Encounter endpoint basing on Encounter uuid  attribute"
 * description = "Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}"
 * code = #_id
 * base[0] = #Encounter
-* target = #OMRSEncounter 
+* target = #Encounter 
 * type = #token
 
 Instance: Encounter-lastUpdated
@@ -394,5 +394,5 @@ Title: "Search in Encounter endpoint basing on Encounter lastUpdated  attribute"
 * description = "Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #Encounter
-* target = #OMRSEncounter 
+* target = #Encounter 
 * type = #date

@@ -64,7 +64,7 @@ Title: "Search through Practitioner endpoint by the Practitioner's full or parti
 * description = "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}"
 * code = #practitioner.name
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string 
 
 Instance: Practitioner.given
@@ -76,7 +76,7 @@ Title: "Search through Practitioner endpoint by the Practitioner's given name"
 * description = "Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}"
 * code = #practitioner.given
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner.family
@@ -88,7 +88,7 @@ Title: "Search through Practitioner endpoint by the Practitioner's family name"
 * description = "Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}"
 * code = #practitioner.family
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner-identifier
@@ -100,7 +100,7 @@ Title: "Search through Practitioner endpoint by a given Practitioner"
 * description = "Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}"
 * code = #practitioner.identifier
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #token
 
 Instance: Practitioner-address-city
@@ -112,7 +112,7 @@ Title: "Search in Practitioner endpoint basing on Practitioner's address-city at
 * description = "Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}"
 * code = #address-city
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner-address-country
@@ -124,7 +124,7 @@ Title: "Search in Practitioner endpoint basing on Practitioner's address-country
 * description = "Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}"
 * code = #address-country
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner-address-postalcode
@@ -136,7 +136,7 @@ Title: "Search in Practitioner endpoint basing on Practitioner's address-postalc
 * description = "Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner-address-state
@@ -148,7 +148,7 @@ Title: "Search in Practitioner endpoint basing on Practitioner's address-state a
 * description = "Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}"
 * code = #address-state
 * base[0] = #Practitioner
-* target = #OMRSPractitioner
+* target = #Practitioner
 * type = #string
 
 Instance: Practitioner-id
@@ -160,7 +160,7 @@ Title: "Search in Practitioner endpoint basing on Practitioner uuid attribute"
 * description = "Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}"
 * code = #_id
 * base[0] = #Practitioner
-* target = #OMRSPractitioner 
+* target = #Practitioner 
 * type = #token
 
 Instance: Practitioner-lastUpdated
@@ -172,5 +172,5 @@ Title: "Search in Practitioner endpoint basing on Practitioner lastUpdated  attr
 * description = "Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Practitioner
-* target = #OMRSPractitioner 
+* target = #Practitioner 
 * type = #date

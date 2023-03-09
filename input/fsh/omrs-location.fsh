@@ -127,7 +127,7 @@ Title: "Search in Location endpoint basing on location name attribute"
 * description = "Searches based on the name field for the location record eg) /ws/fhir2/{release}/Location?name={name}"
 * code = #name
 * base[0] = #Location
-* target = #OMRSLocation
+* target = #Location
 * type = #string
 
 Instance: location-address-city
@@ -139,7 +139,7 @@ Title: "Search in Location endpoint basing on location address-city attribute"
 * description = "Searches based on the address-city field for the location record eg) /ws/fhir2/{release}/Location?address-city={city}"
 * code = #address-city
 * base[0] = #Location
-* target = #OMRSLocation
+* target = #Location
 * type = #string
 
 Instance: location-address-country
@@ -151,7 +151,7 @@ Title: "Search in Location endpoint basing on location address-country attribute
 * description = "Searches based on the address-country field for the location record eg) /ws/fhir2/{release}/Location?address-country={country}"
 * code = #address-country
 * base[0] = #Location
-* target = #OMRSLocation
+* target = #Location
 * type = #string
 
 Instance: location-address-postalcode
@@ -163,7 +163,7 @@ Title: "Search in Location endpoint basing on location address-postalcode attrib
 * description = "Searches based on the address-postalcode field for the location record eg) /ws/fhir2/{release}/Location?address-postalcode={postalCode}"
 * code = #address-postalcode
 * base[0] = #Location
-* target = #OMRSLocation
+* target = #Location
 * type = #string
 
 Instance: location-address-state
@@ -175,7 +175,7 @@ Title: "Search in Location endpoint basing on location address-state attribute"
 * description = "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}"
 * code = #address-state
 * base[0] = #Location
-* target = #OMRSLocation
+* target = #Location
 * type = #string
 
 Instance: location-tag
@@ -187,7 +187,7 @@ Title: "Search in Location endpoint basing on location tag attribute"
 * description = "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}"
 * code = #tag
 * base[0] = #Location
-* target = #OMRSLocation 
+* target = #Location 
 * type = #string
 
 Instance: location-partof
@@ -199,7 +199,7 @@ Title: "Search in Location endpoint basing on location partof attribute"
 * description = "Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}"
 * code = #partOf
 * base[0] = #Location
-* target = #OMRSLocation 
+* target = #Location 
 * type = #reference
 
 Instance: location-partof-name
@@ -211,7 +211,7 @@ Title: "Search in Location endpoint basing on location partof reference location
 * description = "Searches based on the partof location reference name field for the location record eg) /ws/fhir2/{release}/Location?partof.name={name}"
 * code = #partOf-name
 * base[0] = #Location
-* target = #OMRSLocation 
+* target = #Location 
 * type = #reference
 
 Instance: location-id
@@ -223,7 +223,7 @@ Title: "Search in Location endpoint basing on location uuid  attribute"
 * description = "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}"
 * code = #_id
 * base[0] = #Location
-* target = #OMRSLocation 
+* target = #Location 
 * type = #token
 
 Instance: location-lastUpdated
@@ -235,5 +235,5 @@ Title: "Search in Location endpoint basing on location lastUpdated  attribute"
 * description = "Searches based on the location lastUpdated field for the location record eg) /ws/fhir2/{release}/Location?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #Location
-* target = #OMRSLocation 
+* target = #Location 
 * type = #date

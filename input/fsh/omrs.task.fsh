@@ -90,7 +90,7 @@ Title: "Search through FhirTask endpoint by the ServiceRequest Reference uuid"
 * description = "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}"
 * code = #Task.based-on
 * base[0] = #Task
-* target = #OpenMRSTask
+* target = #Task
 * type = #reference 
 
 Instance: Task-owner
@@ -102,7 +102,7 @@ Title: "Search through FhirTask endpoint by the Organization Reference uuid"
 * description = "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}"
 * code = #Task.owner
 * base[0] = #Task
-* target = #OpenMRSTask
+* target = #Task
 * type = #reference 
 
 Instance: Task-status
@@ -114,7 +114,7 @@ Title: "Search through FhirTask endpoint by FhirTask status in the current state
 * description = "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}"
 * code = #Task.status
 * base[0] = #Task
-* target = #OpenMRSTask
+* target = #Task
 * type = #token 
 
 Instance: Task-id
@@ -126,7 +126,7 @@ Title: "Search in Task endpoint basing on Task uuid attribute"
 * description = "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}"
 * code = #_id
 * base[0] = #Task
-* target = #OpenMRSTask 
+* target = #Task 
 * type = #token
 
 Instance: Task-lastUpdated
@@ -138,5 +138,5 @@ Title: "Search in Task endpoint basing on Task lastUpdated attribute"
 * description = "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #Task
-* target = #OpenMRSTask 
+* target = #Task 
 * type = #date

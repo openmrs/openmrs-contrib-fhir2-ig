@@ -63,8 +63,8 @@ Title: "Search through condition endpoint by patient uuid"
 * status = #active
 * description = "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}"
 * code = #patient
-* base[0] = #condition
-* target = #OMRSCondition
+* base[0] = #Condition
+* target = #Condition
 * type = #reference
 
 
@@ -77,7 +77,7 @@ Title: "Search condition endpoint by patient identifier id"
 * description = "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: condition-patient.given
@@ -89,7 +89,7 @@ Title: "Search through condtion endpoint by the patient's given name"
 * description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-patient.family
@@ -101,7 +101,7 @@ Title: "Search through condition endpoint by the patient's family name"
 * description = "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-patient.name
@@ -113,7 +113,7 @@ Title: "Search through condition endpoint by the patient's full or partial name"
 * description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}"
 * code = #patient.name
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-subject
@@ -125,7 +125,7 @@ Title: "Search through condition endpoint by subject uuid"
 * description = "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #reference
 
 
@@ -138,7 +138,7 @@ Title: "Search through condition endpoint by subject identifier"
 * description = "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: condition-subject-given
@@ -150,7 +150,7 @@ Title: "Search through condition endpoint by subject given"
 * description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-subject-family
@@ -162,7 +162,7 @@ Title: "Search through condtion endpoint by subject family"
 * description = "	Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-subject-name
@@ -174,7 +174,7 @@ Title: "Search through condition endpoint by subject name"
 * description = "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-code
@@ -186,7 +186,7 @@ Title: "Search through condition endpoint by concept code"
 * description = "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}"
 * code = #code
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: condition-encounter
@@ -198,7 +198,7 @@ Title: "Search through condition endpoint by encounter uuid"
 * description = "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"
 * code = #code
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #reference
 
 Instance: condition-requester
@@ -210,7 +210,7 @@ Title: "Search through condition endpoint by Practitioner uuid"
 * description = "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"
 * code = #requester
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #reference
 
 Instance: condition-requester-identifier
@@ -222,7 +222,7 @@ Title: "Search through condition endpoint by Practitioner identifier"
 * description = "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"
 * code = #requester.identifier
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: Condition-requester-given
@@ -234,7 +234,7 @@ Title: "Search through condition endpoint by Practitioner given"
 * description = "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"
 * code = #requester.given
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: Condition-requester-family
@@ -246,7 +246,7 @@ Title: "Search through condition endpoint by Practitioner family"
 * description = "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"
 * code = #requester.family
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-requester-name
@@ -258,7 +258,7 @@ Title: "Search through condition endpoint by Practitioner name"
 * description = "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"
 * code = #requester.name
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #string
 
 Instance: condition-occurrence
@@ -270,7 +270,7 @@ Title: "Search through condition endpoint by Occurrence when service should occu
 * description = "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"
 * code = #occurrence
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #date
 
 Instance: condition-id
@@ -282,7 +282,7 @@ Title: "Search through condition endpoint by service Uuid"
 * description = "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}"
 * code = #_id
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: condition-lastUpdated
@@ -294,6 +294,6 @@ Title: "Search through condition endpoint by service lastUpdated field"
 * description = "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #date
 
