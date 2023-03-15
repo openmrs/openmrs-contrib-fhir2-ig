@@ -3,10 +3,10 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "package-id" : "openmrs",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 15 Mar, 2023 20:24:20 +0000",
-  "errs" : 46,
-  "warnings" : 118,
-  "hints" : 9,
+  "date" : "Wed, 15 Mar, 2023 20:24:19 +0000",
+  "errs" : 44,
+  "warnings" : 113,
+  "hints" : 8,
   "version" : "4.0.1",
   "tool" : "5.0.0-draft-final (3)"
 }

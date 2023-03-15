@@ -10,7 +10,7 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS FHIR2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-15T20:24:20+00:00",
+  "date" : "2023-03-15T20:24:19+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -615,18 +615,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/omrs-immunization"
-      },
-      "name" : "OpenMRS Immunization",
-      "description" : "A FHIR Immunization Resource as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/omrs-location"
       },
       "name" : "OpenMRS Location",
@@ -823,18 +811,6 @@
       },
       "name" : "EncounterStatus",
       "description" : "Encounter  status ValueSet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/valueset-immunization-status"
-      },
-      "name" : "Immunization Status ValueSet",
-      "description" : "Immunization Value Set",
       "exampleBoolean" : false
     },
     {
@@ -1976,18 +1952,6 @@
       "name" : "Search through condition endpoint by subject name",
       "description" : "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Immunization"
-      }],
-      "reference" : {
-        "reference" : "Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"
-      },
-      "name" : "OMRS Immunization Example",
-      "description" : "Example OMRS Immunization Resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"
     },
     {
       "extension" : [{
