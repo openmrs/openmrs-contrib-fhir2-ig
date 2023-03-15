@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OMRSLocation"] ; # 
   fhir:title [ fhir:v "OpenMRS Location"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-15T20:21:30+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [

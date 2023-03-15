@@ -1,10 +1,10 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 40, warn = 112, info = 6
-IG Publisher Version: 1.2.41
-Generated Thu Mar 09 17:05:37 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
- Build Errors : 5 / 4 / 0
+err = 43, warn = 112, info = 7
+IG Publisher Version: 1.2.48
+Generated Wed Mar 15 20:22:42 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 2 / 0 / 2
@@ -13,6 +13,7 @@ Generated Thu Mar 09 17:05:37 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Group-OMRSGroupExample : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0 : 0 / 0 / 1
@@ -166,6 +167,7 @@ Generated Thu Mar 09 17:05:37 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-person : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-practitioner : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrsmedication-dispense : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9 : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs : 0 / 6 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 1 / 1
@@ -180,6 +182,7 @@ Generated Thu Mar 09 17:05:37 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1019: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
 ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 670: The link '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"' for ""Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5": Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 605: The link '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"' for ""Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"" cannot be resolved
 ERROR: /github/workspace/output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1061: The link '"Patient/5946f880-b197-400b-9caa-a3c661d23041"' for ""Patient/5946f880-b197-400b-9caa-a3c661d23041"" cannot be resolved
 ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1044: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -212,12 +215,15 @@ INFORMATION: Group/OMRSGroupExample: Group.extension[0]: This element does not m
 ERROR: Group/OMRSGroupExample: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0)
 ERROR: Group/OMRSGroupExample: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[42].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[67].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[44].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[69].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/LocationExample: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep'
+== fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.json ==
+ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.text.div: The URL is not valid because '(URL contains 2 Invalid Characters (["]))': "Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"
+ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.medication.ofType(Reference): Unable to resolve resource with reference '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"'
 == fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample.json ==
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is unknown so the code cannot be validated)
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/request-priority' is unknown so the code cannot be validated)
@@ -473,6 +479,9 @@ ERROR: StructureDefinition/omrs-person: StructureDefinition.mapping[3].uri: URL 
 WARNING: StructureDefinition/omrs-person: StructureDefinition.mapping[3].name: value should not start or finish with whitespace 'FHIR HL7 vs OMRS '
 == fsh-generated/resources/StructureDefinition-omrs-practitioner.json ==
 ERROR: StructureDefinition/omrs-practitioner: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Practitioner' does not resolve
+== fsh-generated/resources/StructureDefinition-omrsmedication-dispense.json ==
+ERROR: StructureDefinition/omrsmedication-dispense: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense' does not resolve
+INFORMATION: StructureDefinition/omrsmedication-dispense: StructureDefinition.snapshot.element[29].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.json ==
 ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
 ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)

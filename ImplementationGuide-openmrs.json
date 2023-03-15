@@ -10,7 +10,7 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS FHIR2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-09T17:04:20+00:00",
+  "date" : "2023-03-15T20:21:30+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -639,6 +639,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/omrsmedication-dispense"
+      },
+      "name" : "OMRS Medication Dispense",
+      "description" : "Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/omrs-medication-request"
       },
       "name" : "OpenMRS Medication Request",
@@ -884,6 +896,18 @@
       "name" : "Encounter Type Code System",
       "description" : "Encounter Type Coding System",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6"
+      },
+      "name" : "Medication Dispence Example",
+      "description" : "OMRS Medication Dispence Resource Example",
+      "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense"
     },
     {
       "extension" : [{

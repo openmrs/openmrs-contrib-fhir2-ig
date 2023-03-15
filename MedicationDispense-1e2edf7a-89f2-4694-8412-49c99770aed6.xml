@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="1e2edf7a-89f2-4694-8412-49c99770aed6"/>
+  <meta>
+    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationDispense</b><a name="1e2edf7a-89f2-4694-8412-49c99770aed6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationDispense &quot;1e2edf7a-89f2-4694-8412-49c99770aed6&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrsmedication-dispense.html">OMRS Medication Dispense</a></p></div><p><b>status</b>: completed</p><p><b>medication</b>: <a href="&quot;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653&quot;">&quot;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653&quot;</a></p><p><b>subject</b>: <a href="Patient-example-openmrs-Patient.html">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>context</b>: <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> &quot; CAREFUL&quot;</td></tr></table><p><b>location</b>: <a href="Location-LocationExample.html">Location/LocationExample</a> &quot;Outpatient Clinic&quot;</p><p><b>authorizingPrescription</b>: <a href="MedicationRequest-OMRSMedicationRequestExample.html">MedicationRequest/OMRSMedicationRequestExample</a></p><p><b>type</b>: Refill - Part Fill <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a>#RFP)</span></p><p><b>quantity</b>: 50(unit TAB from http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm)<span style="background: LightGoldenRodYellow"> (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code TAB = 'Tablet')</span></p><p><b>whenPrepared</b>: 2022-12-31</p><p><b>whenHandedOver</b>: 2022-12-31</p><h3>DosageInstructions</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td>*</td><td>1</td><td>Take 3 tablets (6mg) once daily</td><td>Once per 1 days</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medicationReference>
+    <reference value="&quot;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653&quot;"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/example-openmrs-Patient"/>
+  </subject>
+  <context>
+    <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+  </context>
+  <performer>
+    <actor>
+      <reference value="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"/>
+    </actor>
+  </performer>
+  <location>
+    <reference value="Location/LocationExample"/>
+  </location>
+  <authorizingPrescription>
+    <reference value="MedicationRequest/OMRSMedicationRequestExample"/>
+  </authorizingPrescription>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="RFP"/>
+      <display value="Refill - Part Fill"/>
+    </coding>
+  </type>
+  <quantity>
+    <value value="50"/>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+    <code value="TAB"/>
+  </quantity>
+  <whenPrepared value="2022-12-31"/>
+  <whenHandedOver value="2022-12-31"/>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <text value="Take 3 tablets (6mg) once daily"/>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+  </dosageInstruction>
+</MedicationDispense>

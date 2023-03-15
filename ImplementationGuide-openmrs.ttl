@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OMRSFhir2ImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenMRS FHIR2 Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-09T17:04:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-15T20:21:30+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -554,6 +554,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrsmedication-dispense" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Medication Dispense" ] ;
+       fhir:description [ fhir:v "Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request> ;
          fhir:reference [ fhir:v "StructureDefinition/omrs-medication-request" ]
        ] ;
@@ -800,6 +812,21 @@
        fhir:name [ fhir:v "Encounter Type Code System" ] ;
        fhir:description [ fhir:v "Encounter Type Coding System" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6> ;
+         fhir:reference [ fhir:v "MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Dispence Example" ] ;
+       fhir:description [ fhir:v "OMRS Medication Dispence Resource Example" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
