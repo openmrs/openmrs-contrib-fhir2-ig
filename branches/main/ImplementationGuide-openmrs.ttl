@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OMRSFhir2ImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenMRS FHIR2 Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-15T20:21:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-15T20:24:20+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -530,6 +530,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-immunization" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Immunization" ] ;
+       fhir:description [ fhir:v "A FHIR Immunization Resource as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location> ;
          fhir:reference [ fhir:v "StructureDefinition/omrs-location" ]
        ] ;
@@ -547,6 +559,18 @@
        ] ;
        fhir:name [ fhir:v "OpenMRS Location Contact Point" ] ;
        fhir:description [ fhir:v "An OpenMRS Location Phone Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-medication" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Medication" ] ;
+       fhir:description [ fhir:v "A FHIR Medication Resource as understood by OpenMRS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -715,6 +739,18 @@
        ] ;
        fhir:name [ fhir:v "EncounterStatus" ] ;
        fhir:description [ fhir:v "Encounter  status ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status> ;
+         fhir:reference [ fhir:v "ValueSet/valueset-immunization-status" ]
+       ] ;
+       fhir:name [ fhir:v "Immunization Status ValueSet" ] ;
+       fhir:description [ fhir:v "Immunization Value Set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1886,6 +1922,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663> ;
+         fhir:reference [ fhir:v "Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Immunization Example" ] ;
+       fhir:description [ fhir:v "Example OMRS Immunization Resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
@@ -1957,6 +2008,21 @@
        fhir:example [
          fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"^^xsd:anyURI ;
          fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/fhir/Medication/f49e4247-528a-4cfd-8856-de161d03fa76> ;
+         fhir:reference [ fhir:v "Medication/f49e4247-528a-4cfd-8856-de161d03fa76" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Resource Example" ] ;
+       fhir:description [ fhir:v "Medication Resource example" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication>
        ]
      ] [
        fhir:extension ( [
