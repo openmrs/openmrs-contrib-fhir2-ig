@@ -980,13 +980,6 @@
     "name" : "OMRSGroupDescriptionExtension"
   },
   {
-    "id" : "omrs-immunization",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization",
-    "version" : "0.1.0",
-    "name" : "OMRSImmunization"
-  },
-  {
     "id" : "omrs-location",
     "type" : "StructureDefinition",
     "url" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
@@ -1111,12 +1104,5 @@
     "url" : "http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs",
     "version" : "0.1.0",
     "name" : "MedicationRequestPriorityVs"
-  },
-  {
-    "id" : "valueset-immunization-status",
-    "type" : "ValueSet",
-    "url" : "http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status",
-    "version" : "0.1.0",
-    "name" : "ImmunizationStatusVs"
   }
 ]

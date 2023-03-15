@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 46, warn = 118, info = 9
+err = 44, warn = 113, info = 8
 IG Publisher Version: 1.2.48
-Generated Wed Mar 15 20:25:36 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -11,7 +11,6 @@ Generated Wed Mar 15 20:25:36 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Group-OMRSGroupExample : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76 : 0 / 1 / 2
@@ -161,7 +160,6 @@ Generated Wed Mar 15 20:25:36 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-encounter : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group-description-ext : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-omrs-immunization : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication : 1 / 0 / 1
@@ -181,7 +179,6 @@ Generated Wed Mar 15 20:25:36 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/ValueSet-location-status-vs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-request-intent-vs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-request-priority-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-valueset-immunization-status : 0 / 3 / 1
 </table>
 == n/a ==
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
@@ -219,13 +216,10 @@ INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].c
 INFORMATION: Group/OMRSGroupExample: Group.extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0
 ERROR: Group/OMRSGroupExample: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0)
 ERROR: Group/OMRSGroupExample: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
-== fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.json ==
-ERROR: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.status: The value provided ('completed') is not in the value set 'Immunization Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is unknown so the code cannot be validated)
-INFORMATION: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.vaccineCode.coding[0]: Code System URI 'https://cielterminology.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[17].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[47].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[72].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[16].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[45].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[70].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
 == fsh-generated/resources/Location-LocationExample.json ==
 ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/LocationExample: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep'
@@ -468,10 +462,6 @@ ERROR: StructureDefinition/omrs-encounter: StructureDefinition.mapping[4].uri: U
 ERROR: StructureDefinition/omrs-group: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Group' does not resolve
 == fsh-generated/resources/StructureDefinition-omrs-group-description-ext.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-omrs-immunization.json ==
-WARNING: OpenMRS Immunization.Immunization.status: Binding http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status could not be expanded
-ERROR: StructureDefinition/omrs-immunization: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Immunization' does not resolve
-WARNING: StructureDefinition/omrs-immunization: StructureDefinition: Binding http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status could not be expanded
 == fsh-generated/resources/StructureDefinition-omrs-location.json ==
 WARNING: OpenMRS Location.Location.status: Binding http://fhir.openmrs.org/fhir/ValueSet/location-status-vs could not be expanded
 ERROR: StructureDefinition/omrs-location: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Location' does not resolve
@@ -536,7 +526,3 @@ WARNING: ValueSet.where(id = 'medication-request-intent-vs'): Error from server:
 WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/request-priority' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://fhir.openmrs.org/fhir/request-priority. Server Error: The code system 'http://fhir.openmrs.org/fhir/request-priority' is not known (encountered paired with code = 'routine'); The code provided (http://fhir.openmrs.org/fhir/request-priority#routine) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet/medication-request-priority-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-priority-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/request-priority
-== fsh-generated/resources/ValueSet-valueset-immunization-status.json ==
-WARNING: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0]: Unknown System 'https://fhir.openmrs.org/fhir/valueset-immunization-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://fhir.openmrs.org/fhir/valueset-immunization-status. Server Error: The code system 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is not known (encountered paired with code = 'completed'); The code provided (https://fhir.openmrs.org/fhir/valueset-immunization-status#completed) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
-WARNING: ValueSet/valueset-immunization-status: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'valueset-immunization-status'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/fhir/valueset-immunization-status

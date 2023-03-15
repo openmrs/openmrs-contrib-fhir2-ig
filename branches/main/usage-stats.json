@@ -118,12 +118,6 @@
         "title": "OMRS Group"
       }
     ],
-    "Immunization": [
-      {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization",
-        "title": "OpenMRS Immunization"
-      }
-    ],
     "Location": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
