@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-15T20:21:30+00:00"/>
+  <date value="2023-03-15T20:24:20+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -465,6 +465,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/omrs-immunization"/>
+      </reference>
+      <name value="OpenMRS Immunization"/>
+      <description value="A FHIR Immunization Resource as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/omrs-location"/>
       </reference>
       <name value="OpenMRS Location"/>
@@ -480,6 +491,17 @@
       </reference>
       <name value="OpenMRS Location Contact Point"/>
       <description value="An OpenMRS Location Phone Number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-medication"/>
+      </reference>
+      <name value="OMRS Medication"/>
+      <description value="A FHIR Medication Resource as understood by OpenMRS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -634,6 +656,17 @@
       </reference>
       <name value="EncounterStatus"/>
       <description value="Encounter  status ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/valueset-immunization-status"/>
+      </reference>
+      <name value="Immunization Status ValueSet"/>
+      <description value="Immunization Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1683,6 +1716,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"/>
+      </reference>
+      <name value="OMRS Immunization Example"/>
+      <description value="Example OMRS Immunization Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Task"/>
       </extension>
       <reference>
@@ -1735,6 +1779,17 @@
       <name value="Openmrs Person"/>
       <description value="Example OMRS Person Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/f49e4247-528a-4cfd-8856-de161d03fa76"/>
+      </reference>
+      <name value="Medication Resource Example"/>
+      <description value="Medication Resource example"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
