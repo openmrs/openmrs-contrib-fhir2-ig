@@ -1036,6 +1036,13 @@
     "name" : "OMRSPractitioner"
   },
   {
+    "id" : "omrsmedication-dispense",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense",
+    "version" : "0.1.0",
+    "name" : "OMRSMedicationDispense"
+  },
+  {
     "id" : "OpenMRS-diagnostic-report-status-vs",
     "type" : "ValueSet",
     "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs",

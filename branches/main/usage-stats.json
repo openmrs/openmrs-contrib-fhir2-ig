@@ -147,6 +147,12 @@
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner",
         "title": "Openmrs Practitioner"
       }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense",
+        "title": "OMRS Medication Dispense"
+      }
     ]
   },
   "usage": {
