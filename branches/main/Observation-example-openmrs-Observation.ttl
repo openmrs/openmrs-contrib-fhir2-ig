@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Arterial blood oxygen saturation (pulse oximeter) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#431314004)</span></p><p><b>subject</b>: <a href=\"Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.html\">Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>value</b>: 25 DEG C</p><p><b>interpretation</b>: High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#H)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>0</td><td>100</td><td>absolute <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (reference-range#absolute)</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Arterial blood oxygen saturation (pulse oximeter) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#431314004)</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>value</b>: 25 DEG C</p><p><b>interpretation</b>: High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#H)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>10</td><td>272</td><td>absolute <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (reference-range#absolute)</span></td></tr></table></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -36,8 +36,8 @@
      fhir:text [ fhir:v "Arterial blood oxygen saturation (pulse oximeter)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4> ;
-     fhir:reference [ fhir:v "Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4" ]
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
   ] ; # 
   fhir:encounter [
      fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
@@ -57,10 +57,10 @@
   ] ) ; # 
   fhir:referenceRange ( [
      fhir:low [
-       fhir:value [ fhir:v "0"^^xsd:decimal ]
+       fhir:value [ fhir:v "10"^^xsd:decimal ]
      ] ;
      fhir:high [
-       fhir:value [ fhir:v "100"^^xsd:decimal ]
+       fhir:value [ fhir:v "272"^^xsd:decimal ]
      ] ;
      fhir:type [
        fhir:coding ( [

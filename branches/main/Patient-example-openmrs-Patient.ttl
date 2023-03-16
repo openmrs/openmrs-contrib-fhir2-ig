@@ -16,16 +16,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 1000Y (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Washington Washington (HOME)</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 4343534 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>+256788232241</li><li>Washington Washington (HOME)</li></ul></td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:id [ fhir:v "53fbd0ef-ae10-46a0-9d0a-387917a66d6e" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "http://fhir.openmrs.org/ext/patient/identifier#location"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Reference ;
-         fhir:link <http://fhir.openmrs.org/fhir/Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f> ;
-         fhir:reference [ fhir:v "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f" ] ;
+         fhir:link <http://fhir.openmrs.org/fhir/Location/b1a8b05e-3542-4037-bbd3-998ee9c40574> ;
+         fhir:reference [ fhir:v "Location/b1a8b05e-3542-4037-bbd3-998ee9c40574" ] ;
          fhir:type [ fhir:v "Location"^^xsd:anyURI ] ;
          fhir:display [ fhir:v "Inpatient Ward" ]
        ]
@@ -34,21 +33,20 @@
      fhir:type [
        fhir:text [ fhir:v "OpenMRS ID" ]
      ] ;
-     fhir:value [ fhir:v "1000Y" ]
+     fhir:value [ fhir:v "4343534" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
-     fhir:id [ fhir:v "3434gh32-34h3j4-34jk34-3422h" ] ;
      fhir:family [ fhir:v "Jeannette" ] ;
      fhir:given ( [ fhir:v "Ricky" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:value [ fhir:v "+256788232241" ]
   ] ) ; # 
   fhir:gender [ fhir:v "male"] ; # 
   fhir:birthDate [ fhir:v "1996-12-12"^^xsd:date] ; # 
   fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:address ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://fhir.openmrs.org/ext/address"^^xsd:anyURI ]
-     ] ) ;
      fhir:use [ fhir:v "home" ] ;
      fhir:city [ fhir:v "Washington" ] ;
      fhir:district [ fhir:v "Washington" ] ;

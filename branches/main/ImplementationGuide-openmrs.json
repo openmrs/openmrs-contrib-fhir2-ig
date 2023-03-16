@@ -10,7 +10,7 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS FHIR2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-16T09:46:21+00:00",
+  "date" : "2023-03-16T13:05:08+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -948,18 +948,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/51ead2ec-279f-482d-80f8-209a5d4109d0"
-      },
-      "name" : "Encounter Patient Example",
-      "description" : "OMRS Encounter Resource Example",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "AllergyIntolerance"
       }],
       "reference" : {
@@ -1004,18 +992,6 @@
       "name" : "Practitioner Example",
       "description" : "Practitioner Resource Example",
       "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4"
-      },
-      "name" : "Openmrs Patient",
-      "description" : "Example OMRS Patient Resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"
     },
     {
       "extension" : [{
@@ -2288,6 +2264,18 @@
       "name" : "Openmrs Observation",
       "description" : "Example OMRS Observation Resource",
       "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-openmrs-Patient"
+      },
+      "name" : "Openmrs Patient",
+      "description" : "Example OMRS Patient Resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"
     },
     {
       "extension" : [{
