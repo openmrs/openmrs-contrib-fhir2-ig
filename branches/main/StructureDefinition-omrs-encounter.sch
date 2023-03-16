@@ -14,18 +14,8 @@
     <sch:rule context="f:Encounter">
       <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:serviceType) &lt;= 0">serviceType: maximum cardinality of 'serviceType' is 0</sch:assert>
-      <sch:assert test="count(f:priority) &lt;= 0">priority: maximum cardinality of 'priority' is 0</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
-      <sch:assert test="count(f:episodeOfCare) &lt;= 0">episodeOfCare: maximum cardinality of 'episodeOfCare' is 0</sch:assert>
-      <sch:assert test="count(f:basedOn) &lt;= 0">basedOn: maximum cardinality of 'basedOn' is 0</sch:assert>
-      <sch:assert test="count(f:appointment) &lt;= 0">appointment: maximum cardinality of 'appointment' is 0</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
-      <sch:assert test="count(f:length) &lt;= 0">length: maximum cardinality of 'length' is 0</sch:assert>
-      <sch:assert test="count(f:reasonCode) &lt;= 0">reasonCode: maximum cardinality of 'reasonCode' is 0</sch:assert>
-      <sch:assert test="count(f:reasonReference) &lt;= 0">reasonReference: maximum cardinality of 'reasonReference' is 0</sch:assert>
-      <sch:assert test="count(f:account) &lt;= 0">account: maximum cardinality of 'account' is 0</sch:assert>
-      <sch:assert test="count(f:hospitalization) &lt;= 0">hospitalization: maximum cardinality of 'hospitalization' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

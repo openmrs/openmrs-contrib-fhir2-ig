@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OMRSCondition"] ; # 
   fhir:title [ fhir:v "OpenMRS condition"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-15T20:24:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-16T09:46:21+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -219,7 +219,7 @@
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "condition-mapping" ] ;
-         fhir:map [ fhir:v "condition.id" ]
+         fhir:map [ fhir:v "condition.uuid" ]
        ] )
      ] [
        fhir:id [ fhir:v "Condition.meta" ] ;
@@ -574,6 +574,9 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Observation ACT\n.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=\"clinicalStatus\", moodCode=EVN].value" ]
+       ] [
+         fhir:identity [ fhir:v "condition-mapping" ] ;
+         fhir:map [ fhir:v "Condition.status" ]
        ] )
      ] [
        fhir:id [ fhir:v "Condition.verificationStatus" ] ;
@@ -1858,12 +1861,16 @@
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "condition-mapping" ] ;
-         fhir:map [ fhir:v "condition.id" ]
+         fhir:map [ fhir:v "condition.uuid" ]
        ] )
      ] [
        fhir:id [ fhir:v "Condition.clinicalStatus" ] ;
        fhir:path [ fhir:v "Condition.clinicalStatus" ] ;
-       fhir:max [ fhir:v "0" ]
+       fhir:max [ fhir:v "0" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "condition-mapping" ] ;
+         fhir:map [ fhir:v "Condition.status" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Condition.verificationStatus" ] ;
        fhir:path [ fhir:v "Condition.verificationStatus" ] ;

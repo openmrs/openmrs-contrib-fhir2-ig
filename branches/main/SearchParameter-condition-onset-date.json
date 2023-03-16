@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "condition-onset-date",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>conditionOnsetdateSearchParameter</h2><p>Parameter <code>onset-date</code>:<code>date</code></p><div><p>Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-onset-date",
+  "version" : "0.1.0",
+  "name" : "conditionOnsetdateSearchParameter",
+  "status" : "active",
+  "date" : "2023-03-16T09:46:21+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}",
+  "code" : "onset-date",
+  "base" : ["Condition"],
+  "type" : "date",
+  "target" : ["Condition"]
+}

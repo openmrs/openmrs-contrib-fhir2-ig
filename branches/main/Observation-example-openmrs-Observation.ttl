@@ -1,7 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -17,33 +17,58 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>identifier</b>: id: e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9</p><p><b>status</b>: preliminary</p><p><b>category</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>code</b>: Cholesterol in LDL [Moles/volume] in Serum or Plasma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22748-8)</span></p><p><b>subject</b>: <a href=\"&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;\">&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;</a></p><p><b>effective</b>: 2014-11-25 22:17:00+1100</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-openmrs-Observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-openmrs-Observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-observation.html\">OpenMRS Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Arterial blood oxygen saturation (pulse oximeter) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#431314004)</span></p><p><b>subject</b>: <a href=\"Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.html\">Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>value</b>: 25 DEG C</p><p><b>interpretation</b>: High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#H)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>0</td><td>100</td><td>absolute <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (reference-range#absolute)</span></td></tr></table></div>"
   ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "http://fhir.openmrs.org/ext/task/identifier"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       a loinc:22748-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "22748-8" ]
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "exam" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       a loinc:22748-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "22748-8" ]
-     ] )
+       a sct:431314004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "431314004" ] ;
+       fhir:display [ fhir:v "Arterial blood oxygen saturation (pulse oximeter)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Arterial blood oxygen saturation (pulse oximeter)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041"> ;
-     fhir:reference [ fhir:v "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ] ;
-     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4> ;
+     fhir:reference [ fhir:v "Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4" ]
   ] ; # 
-  fhir:effective [ fhir:v "2014-11-25T22:17:00+11:00"^^xsd:dateTime] . # 
+  fhir:encounter [
+     fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
+     fhir:reference [ fhir:v "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "DEG C" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H" ] ;
+       fhir:display [ fhir:v "High" ]
+     ] )
+  ] ) ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "0"^^xsd:decimal ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "100"^^xsd:decimal ]
+     ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.openmrs.org/ext/obs/reference-range"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "absolute" ]
+       ] )
+     ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

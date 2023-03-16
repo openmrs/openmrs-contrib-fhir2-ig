@@ -6,7 +6,7 @@
     <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization</b><a name="d48df5c7-605f-4f7b-88b3-f7235b474663"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Immunization &quot;d48df5c7-605f-4f7b-88b3-f7235b474663&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-immunization.html">OpenMRS Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: 116958AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#116958AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)</span></p><p><b>patient</b>: <a href="Patient-example-openmrs-Patient.html">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>occurrence</b>: 2022-12-30</p><p><b>location</b>: <a href="Location-LocationExample.html">Location/LocationExample</a> &quot;Outpatient Clinic&quot;</p><p><b>lotNumber</b>: AAJN11K</p><p><b>expirationDate</b>: 2025-05-07</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> &quot; CAREFUL&quot;</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization</b><a name="d48df5c7-605f-4f7b-88b3-f7235b474663"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Immunization &quot;d48df5c7-605f-4f7b-88b3-f7235b474663&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-immunization.html">OpenMRS Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: 116958AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#116958AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)</span></p><p><b>patient</b>: <a href="Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.html">Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>occurrence</b>: 2022-12-30</p><p><b>location</b>: <a href="Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html">Location/a3b793f0-eb53-4cda-92ce-fe0a77106252</a> &quot;Outpatient Clinic&quot;</p><p><b>lotNumber</b>: AAJN11K</p><p><b>expirationDate</b>: 2025-05-07</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> &quot; CAREFUL&quot;</td></tr></table></div>
   </text>
   <status value="completed"/>
   <vaccineCode>
@@ -16,14 +16,14 @@
     </coding>
   </vaccineCode>
   <patient>
-    <reference value="Patient/example-openmrs-Patient"/>
+    <reference value="Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4"/>
   </patient>
   <encounter>
     <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
   </encounter>
   <occurrenceDateTime value="2022-12-30"/>
   <location>
-    <reference value="Location/LocationExample"/>
+    <reference value="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
   </location>
   <lotNumber value="AAJN11K"/>
   <expirationDate value="2025-05-07"/>

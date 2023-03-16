@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a70dfa16-07a5-4a45-8c85-f509183561a6"/>
+  <id value="7ababca5-357d-4c23-8846-0a7dc0dabe17"/>
   <meta>
-    <lastUpdated value="2023-03-15T20:24:19.654+00:00"/>
+    <lastUpdated value="2023-03-16T09:46:21.085+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="OpenMRS-diagnostic-report-status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Partial</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Final</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Unknown</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Canceled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Amended</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
+        <version value="0.1.0"/>
+        <name value="OpenMRSDiagnosis"/>
+        <title value="OpenMRS Diagnostic Report Status Flag"/>
+        <status value="active"/>
+        <date value="2023-03-16T09:46:21+00:00"/>
+        <contact>
+          <name value="OpenMRS, Inc."/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://openmrs.org"/>
+          </telecom>
+        </contact>
+        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
+        <expansion>
+          <identifier value="urn:uuid:5e697e01-6683-48d0-b6e7-168aeb015b7d"/>
+          <timestamp value="2023-03-16T09:47:05+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-partial"/>
+            <display value="Partial"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-canceled"/>
+            <display value="Canceled"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-amended"/>
+            <display value="Amended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"/>
     <resource>
@@ -8036,7 +8158,7 @@
         <name value="OpenMRSOrderCodeVS"/>
         <title value="OpenMRS Order Code"/>
         <status value="active"/>
-        <date value="2023-03-15T20:24:19+00:00"/>
+        <date value="2023-03-16T09:46:21+00:00"/>
         <contact>
           <name value="OpenMRS, Inc."/>
           <telecom>
@@ -8049,8 +8171,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:de0474a6-d7f5-4e28-9fda-24cc618b3630"/>
-          <timestamp value="2023-03-15T20:25:16+00:00"/>
+          <identifier value="urn:uuid:47dd67a7-7b93-464f-8b47-1d6e9e6fb5f6"/>
+          <timestamp value="2023-03-16T09:47:12+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13063,128 +13185,6 @@
             <system value="http://loinc.org"/>
             <code value="100899-4"/>
             <display value="Enterobacteriaceae.extended spectrum beta lactamase resistance phenotype [Identifier] in Specimen by Organism specific culture"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="OpenMRS-diagnostic-report-status-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
-                </td>
-                <td>http://hl7.org/fhir/diagnostic-report-status</td>
-                <td>Partial</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
-                </td>
-                <td>http://hl7.org/fhir/diagnostic-report-status</td>
-                <td>Final</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
-                </td>
-                <td>http://hl7.org/fhir/diagnostic-report-status</td>
-                <td>Unknown</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
-                </td>
-                <td>http://hl7.org/fhir/diagnostic-report-status</td>
-                <td>Canceled</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
-                </td>
-                <td>http://hl7.org/fhir/diagnostic-report-status</td>
-                <td>Amended</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
-        <version value="0.1.0"/>
-        <name value="OpenMRSDiagnosis"/>
-        <title value="OpenMRS Diagnostic Report Status Flag"/>
-        <status value="active"/>
-        <date value="2023-03-15T20:24:19+00:00"/>
-        <contact>
-          <name value="OpenMRS, Inc."/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://openmrs.org"/>
-          </telecom>
-        </contact>
-        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
-        <expansion>
-          <identifier value="urn:uuid:0013c9a6-b024-4158-a337-ec12db011a0f"/>
-          <timestamp value="2023-03-15T20:25:21+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-partial"/>
-            <display value="Partial"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-final"/>
-            <display value="Final"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-unknown"/>
-            <display value="Unknown"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-canceled"/>
-            <display value="Canceled"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-amended"/>
-            <display value="Amended"/>
           </contains>
         </expansion>
       </ValueSet>

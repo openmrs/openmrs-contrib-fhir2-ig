@@ -1,26 +1,43 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 44, warn = 113, info = 8
+err = 45, warn = 147, info = 10
 IG Publisher Version: 1.2.48
-Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
- Build Errors : 6 / 4 / 0
+Generated Thu Mar 16 09:47:59 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+ Build Errors : 5 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Group-OMRSGroupExample : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/Location-LocationExample : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4 : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 7 / 1
+ /github/workspace/fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76 : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 5 / 1 / 2
- /github/workspace/fsh-generated/resources/Person-example-openmrs-person : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4 : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866 : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-category : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-clinical-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-manifestation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-severity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-name : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Condition-requester-family : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Condition-requester-given : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Encounter-address-city : 0 / 0 / 1
@@ -80,16 +97,20 @@ Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-Task-lastUpdated : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Task-owner : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-Task-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-clinical-status : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-code : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-encounter : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-id : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-lastUpdated : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-occurrence : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-onset-age : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-onset-date : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-patient-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-patient.family : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-patient.given : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-patient.name : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-recorded-date : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-requester : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-requester-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-condition-requester-name : 0 / 1 / 1
@@ -109,6 +130,26 @@ Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-category : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-concept-code : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-date : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-encounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-has-member : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-has-member-code : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-id : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-lastUpdated : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient-identifier : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient.family : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient.given : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient.name : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-family : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-given : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-identifier : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-name : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-value-concept : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-value-date : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-patient-address-city : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-patient-address-country : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-patient-address-postalcode : 0 / 1 / 1
@@ -149,9 +190,9 @@ Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-given : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-name : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-service-request : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-task : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-AllergyIntolerance : 1 / 0 / 1
@@ -160,6 +201,7 @@ Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-encounter : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group-description-ext : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-immunization : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication : 1 / 0 / 1
@@ -179,14 +221,14 @@ Generated Wed Mar 15 20:25:56 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/ValueSet-location-status-vs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-request-intent-vs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-request-priority-vs : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-valueset-immunization-status : 0 / 3 / 1
 </table>
 == n/a ==
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1019: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
 ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 670: The link '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"' for ""Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5": Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 605: The link '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"' for ""Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"" cannot be resolved
-ERROR: /github/workspace/output/Observation-example-openmrs-Observation.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1061: The link '"Patient/5946f880-b197-400b-9caa-a3c661d23041"' for ""Patient/5946f880-b197-400b-9caa-a3c661d23041"" cannot be resolved
-ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1044: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
+ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1082: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -212,17 +254,24 @@ ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.e
 ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.result[0]: Unable to resolve resource with reference '"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"'
 == fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
-== fsh-generated/resources/Group-OMRSGroupExample.json ==
-INFORMATION: Group/OMRSGroupExample: Group.extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0
-ERROR: Group/OMRSGroupExample: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0)
-ERROR: Group/OMRSGroupExample: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
+== fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4.json ==
+INFORMATION: Group/bc572131-c234-436f-9194-00287759a3e4: Group.extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0
+ERROR: Group/bc572131-c234-436f-9194-00287759a3e4: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0)
+ERROR: Group/bc572131-c234-436f-9194-00287759a3e4: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
+== fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.json ==
+ERROR: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.status: The value provided ('completed') is not in the value set 'Immunization Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is unknown so the code cannot be validated)
+INFORMATION: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.vaccineCode.coding[0]: Code System URI 'https://cielterminology.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[16].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[45].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[70].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
-== fsh-generated/resources/Location-LocationExample.json ==
-ERROR: Location/LocationExample: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
-ERROR: Location/LocationExample: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#Sleep'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[17].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[65].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[89].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[156].name: value should not start or finish with whitespace 'Search through observation endpoint by category '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[157].name: value should not start or finish with whitespace 'Search through observation endpoint by concept code '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[158].name: value should not start or finish with whitespace 'Search through observation endpoint by date '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[159].name: value should not start or finish with whitespace 'Search through observation endpoint by encounter '
+== fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.json ==
+ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
+ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep'
 == fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76.json ==
 INFORMATION: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.code.coding[0]: Code System URI 'https://cielterminology.org' is unknown so the code cannot be validated
 WARNING: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.form.coding[0]: The display "Injection Solution (qualifier value)" is not a valid display for the code {http://snomed.info/sct}385219001 - should be one of ['Solution for injection', 'Conventional release solution for injection', 'Conventional release solution for injection (dose form)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#385219001'
@@ -233,23 +282,39 @@ ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispen
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is unknown so the code cannot be validated)
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/request-priority' is unknown so the code cannot be validated)
 == fsh-generated/resources/Observation-example-openmrs-Observation.json ==
-ERROR: Observation/example-openmrs-Observation: Observation.text.div: The URL is not valid because '(URL contains 2 Invalid Characters (["]))': "Patient/5946f880-b197-400b-9caa-a3c661d23041"
-ERROR: Observation/example-openmrs-Observation: Observation.subject: Unable to resolve resource with reference '"Patient/5946f880-b197-400b-9caa-a3c661d23041"'
+WARNING: Observation/example-openmrs-Observation: Observation.code.coding[0]: The display "Arterial blood oxygen saturation (pulse oximeter)" is not a valid display for the code {http://snomed.info/sct}431314004 - should be one of ['Peripheral oxygen saturation (observable entity)', 'SpO2 - saturation of peripheral oxygen', 'Peripheral oxygen saturation'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#431314004'
+INFORMATION: Observation/example-openmrs-Observation: Observation.referenceRange[0].type.coding[0]: Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0.json ==
-== fsh-generated/resources/Patient-example-openmrs-Patient.json ==
-INFORMATION: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0
-ERROR: Patient/example-openmrs-Patient: Patient.identifier[0]: Identifier.extension:location: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0)
-ERROR: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0]: The extension http://fhir.openmrs.org/StructureDefinition/patient-identifier-location is unknown, and not allowed here
-ERROR: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f'
-WARNING: Patient/example-openmrs-Patient: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
-ERROR: Patient/example-openmrs-Patient: Patient.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
-ERROR: Patient/example-openmrs-Patient: Patient.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
-== fsh-generated/resources/Person-example-openmrs-person.json ==
-WARNING: Person/example-openmrs-person: Person.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
-ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
-ERROR: Person/example-openmrs-person: Person.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
+== fsh-generated/resources/Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.json ==
+INFORMATION: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0
+ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0]: Identifier.extension:location: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0)
+ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0]: The extension http://fhir.openmrs.org/StructureDefinition/patient-identifier-location is unknown, and not allowed here
+ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f'
+WARNING: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
+== fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.json ==
+WARNING: Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866: Person.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+ERROR: Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866: Person.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866: Person.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
 == fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.json ==
 ERROR: Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Practitioner.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-category.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-clinical-status.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-id.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-manifestation.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.family.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.given.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.name.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-severity.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-family.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-given.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-name.json ==
 == fsh-generated/resources/SearchParameter-Condition-requester-family.json ==
 WARNING: SearchParameter/Condition-requester-family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-Condition-requester-given.json ==
@@ -311,6 +376,8 @@ WARNING: SearchParameter/Condition-requester-given: SearchParameter: Rule spd-0:
 == fsh-generated/resources/SearchParameter-Task-lastUpdated.json ==
 == fsh-generated/resources/SearchParameter-Task-owner.json ==
 == fsh-generated/resources/SearchParameter-Task-status.json ==
+== fsh-generated/resources/SearchParameter-condition-clinical-status.json ==
+WARNING: SearchParameter/condition-clinical-status: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-code.json ==
 WARNING: SearchParameter/condition-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-encounter.json ==
@@ -321,6 +388,10 @@ WARNING: SearchParameter/condition-id: SearchParameter: Rule spd-0: 'Name should
 WARNING: SearchParameter/condition-lastUpdated: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-occurrence.json ==
 WARNING: SearchParameter/condition-occurrence: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-condition-onset-age.json ==
+WARNING: SearchParameter/condition-onset-age: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-condition-onset-date.json ==
+WARNING: SearchParameter/condition-onset-date: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-patient.json ==
 WARNING: SearchParameter/condition-patient: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-patient-identifier.json ==
@@ -331,6 +402,8 @@ WARNING: SearchParameter/condition-patient.family: SearchParameter: Rule spd-0: 
 WARNING: SearchParameter/condition-patient.given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-patient.name.json ==
 WARNING: SearchParameter/condition-patient.name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-condition-recorded-date.json ==
+WARNING: SearchParameter/condition-recorded-date: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-requester.json ==
 WARNING: SearchParameter/condition-requester: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-condition-requester-identifier.json ==
@@ -358,6 +431,46 @@ WARNING: SearchParameter/condition-subject-name: SearchParameter: Rule spd-0: 'N
 == fsh-generated/resources/SearchParameter-location-partof.json ==
 == fsh-generated/resources/SearchParameter-location-partof-name.json ==
 == fsh-generated/resources/SearchParameter-location-tag.json ==
+== fsh-generated/resources/SearchParameter-observation-category.json ==
+WARNING: SearchParameter/observation-category: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-concept-code.json ==
+WARNING: SearchParameter/observation-concept-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-date.json ==
+WARNING: SearchParameter/observation-date: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-encounter.json ==
+WARNING: SearchParameter/observation-encounter: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-has-member.json ==
+WARNING: SearchParameter/observation-has-member: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-has-member-code.json ==
+WARNING: SearchParameter/observation-has-member-code: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-id.json ==
+WARNING: SearchParameter/observation-id: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-lastUpdated.json ==
+WARNING: SearchParameter/observation-lastUpdated: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-patient.json ==
+WARNING: SearchParameter/observation-patient: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-patient-identifier.json ==
+WARNING: SearchParameter/observation-patient-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-patient.family.json ==
+WARNING: SearchParameter/observation-patient.family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-patient.given.json ==
+WARNING: SearchParameter/observation-patient.given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-patient.name.json ==
+WARNING: SearchParameter/observation-patient.name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-subject.json ==
+WARNING: SearchParameter/observation-subject: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-subject-family.json ==
+WARNING: SearchParameter/observation-subject-family: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-subject-given.json ==
+WARNING: SearchParameter/observation-subject-given: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-subject-identifier.json ==
+WARNING: SearchParameter/observation-subject-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-subject-name.json ==
+WARNING: SearchParameter/observation-subject-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-value-concept.json ==
+WARNING: SearchParameter/observation-value-concept: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-observation-value-date.json ==
+WARNING: SearchParameter/observation-value-date: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-patient-address-city.json ==
 WARNING: SearchParameter/patient-address-city: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-patient-address-country.json ==
@@ -437,12 +550,13 @@ WARNING: SearchParameter/serviceRequest-subject-given: SearchParameter: Rule spd
 WARNING: SearchParameter/serviceRequest-subject-identifier: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-serviceRequest-subject-name.json ==
 WARNING: SearchParameter/serviceRequest-subject-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-== fsh-generated/resources/ServiceRequest-example-openmrs-ServiceRequest.json ==
-ERROR: ServiceRequest/example-openmrs-ServiceRequest: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set 'OpenMRS Order Code' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs|0.1.0), and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
+== fsh-generated/resources/ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.json ==
+ERROR: ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set 'OpenMRS Order Code' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs|0.1.0), and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
 ERROR: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport' does not resolve
 WARNING: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.mapping[4].comment: value should not start or finish with whitespace 'Diagnostic Report resource that is part of the Diagnostic Medicine Module. A DiagnosticReport is used to represent the results of diagnostic tests that are performed in a given clinical context. '
 == fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
+ERROR: StructureDefinition/OpenMRS-observation: StructureDefinition.mapping[6].uri: URL value 'http://hl7.org/fhir/{release}/StructureDefinition/observation' does not resolve
 == fsh-generated/resources/StructureDefinition-OpenMRS-service-request.json ==
 ERROR: StructureDefinition/OpenMRS-service-request: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/serviceRequest' does not resolve
 == fsh-generated/resources/StructureDefinition-OpenMRS-task.json ==
@@ -462,6 +576,10 @@ ERROR: StructureDefinition/omrs-encounter: StructureDefinition.mapping[4].uri: U
 ERROR: StructureDefinition/omrs-group: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Group' does not resolve
 == fsh-generated/resources/StructureDefinition-omrs-group-description-ext.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-omrs-immunization.json ==
+WARNING: OpenMRS Immunization.Immunization.status: Binding http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status could not be expanded
+ERROR: StructureDefinition/omrs-immunization: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Immunization' does not resolve
+WARNING: StructureDefinition/omrs-immunization: StructureDefinition: Binding http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status could not be expanded
 == fsh-generated/resources/StructureDefinition-omrs-location.json ==
 WARNING: OpenMRS Location.Location.status: Binding http://fhir.openmrs.org/fhir/ValueSet/location-status-vs could not be expanded
 ERROR: StructureDefinition/omrs-location: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Location' does not resolve
@@ -526,3 +644,7 @@ WARNING: ValueSet.where(id = 'medication-request-intent-vs'): Error from server:
 WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/request-priority' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://fhir.openmrs.org/fhir/request-priority. Server Error: The code system 'http://fhir.openmrs.org/fhir/request-priority' is not known (encountered paired with code = 'routine'); The code provided (http://fhir.openmrs.org/fhir/request-priority#routine) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet/medication-request-priority-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-priority-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/request-priority
+== fsh-generated/resources/ValueSet-valueset-immunization-status.json ==
+WARNING: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0]: Unknown System 'https://fhir.openmrs.org/fhir/valueset-immunization-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://fhir.openmrs.org/fhir/valueset-immunization-status. Server Error: The code system 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is not known (encountered paired with code = 'completed'); The code provided (https://fhir.openmrs.org/fhir/valueset-immunization-status#completed) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/valueset-immunization-status: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'valueset-immunization-status'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/fhir/valueset-immunization-status

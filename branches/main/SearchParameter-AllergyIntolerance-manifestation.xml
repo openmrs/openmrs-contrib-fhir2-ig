@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="AllergyIntolerance-manifestation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AllergyIntolerancemanifestationSearchParameter</h2><p>Parameter <code>manifestation</code>:<code>token</code></p><div><p>Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-manifestation"/>
+  <version value="0.1.0"/>
+  <name value="AllergyIntolerancemanifestationSearchParameter"/>
+  <status value="active"/>
+  <date value="2023-03-16T09:46:21+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}"/>
+  <code value="manifestation"/>
+  <base value="AllergyIntolerance"/>
+  <type value="token"/>
+  <target value="AllergyIntolerance"/>
+</SearchParameter>
