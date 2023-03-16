@@ -35,6 +35,7 @@ Description: "Example OMRS Allergy Intolerance"
 * recorder.reference = "Practitioner/c98a1558-e131-11de-babe-001e378eb67e"
 * recorder.type = "Practitioner"
 * recorder.display = "Super User"
+* reaction.severity = #mild
 * reaction.substance.coding.code = #162298
 * reaction.substance.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * reaction.manifestation.coding.code = #22748-8
