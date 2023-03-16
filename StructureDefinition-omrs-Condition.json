@@ -10,7 +10,7 @@
   "name" : "OMRSCondition",
   "title" : "OpenMRS condition",
   "status" : "active",
-  "date" : "2023-03-15T20:24:19+00:00",
+  "date" : "2023-03-16T09:46:21+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -206,7 +206,7 @@
       "isSummary" : true,
       "mapping" : [{
         "identity" : "condition-mapping",
-        "map" : "condition.id"
+        "map" : "condition.uuid"
       }]
     },
     {
@@ -550,6 +550,10 @@
       {
         "identity" : "rim",
         "map" : "Observation ACT\n.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=\"clinicalStatus\", moodCode=EVN].value"
+      },
+      {
+        "identity" : "condition-mapping",
+        "map" : "Condition.status"
       }]
     },
     {
@@ -1783,13 +1787,17 @@
       "min" : 1,
       "mapping" : [{
         "identity" : "condition-mapping",
-        "map" : "condition.id"
+        "map" : "condition.uuid"
       }]
     },
     {
       "id" : "Condition.clinicalStatus",
       "path" : "Condition.clinicalStatus",
-      "max" : "0"
+      "max" : "0",
+      "mapping" : [{
+        "identity" : "condition-mapping",
+        "map" : "Condition.status"
+      }]
     },
     {
       "id" : "Condition.verificationStatus",

@@ -14,6 +14,118 @@
     "name" : "OMRSFhir2ImplementationGuide"
   },
   {
+    "id" : "AllergyIntolerance-category",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-category",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceCategorySearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceClinicalStatusSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-id",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-id",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceIdSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-lastUpdated",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-lastUpdated",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceLastUpdatedSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-manifestation",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-manifestation",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancemanifestationSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-patient",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-patient",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancePatientSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-patient-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-patient-identifier",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancePatientIdentifierSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-patient.family",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-patient.family",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancePatientFamilyNameSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-patient.given",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-patient.given",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancePatientGivenNameSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-patient.name",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-patient.name",
+    "version" : "0.1.0",
+    "name" : "AllergyIntolerancePatientNameSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-severity",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-severity",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSeveritySearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-subject",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSubjectSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-subject-family",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-family",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSubjectfamilySearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-subject-given",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-given",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSubjectGivenSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-subject-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-identifier",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSubjectIdentifierSearchParameter"
+  },
+  {
+    "id" : "AllergyIntolerance-subject-name",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-name",
+    "version" : "0.1.0",
+    "name" : "AllergyIntoleranceSubjectNameSearchParameter"
+  },
+  {
     "id" : "Condition-requester-family",
     "type" : "SearchParameter",
     "url" : "http://fhir.openmrs.org/fhir/SearchParameter/Condition-requester-family",
@@ -427,6 +539,13 @@
     "name" : "TaskStatueSearchParameter"
   },
   {
+    "id" : "condition-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-clinical-status",
+    "version" : "0.1.0",
+    "name" : "conditionClinicalStatusSearchParameter"
+  },
+  {
     "id" : "condition-code",
     "type" : "SearchParameter",
     "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-code",
@@ -462,6 +581,20 @@
     "name" : "conditionOccurrenceSearchParameter"
   },
   {
+    "id" : "condition-onset-age",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-onset-age",
+    "version" : "0.1.0",
+    "name" : "conditionOnsetAgeSearchParameter"
+  },
+  {
+    "id" : "condition-onset-date",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-onset-date",
+    "version" : "0.1.0",
+    "name" : "conditionOnsetdateSearchParameter"
+  },
+  {
     "id" : "condition-patient",
     "type" : "SearchParameter",
     "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-patient",
@@ -495,6 +628,13 @@
     "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-patient.name",
     "version" : "0.1.0",
     "name" : "conditionPatientNameSearchParameter"
+  },
+  {
+    "id" : "condition-recorded-date",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-recorded-date",
+    "version" : "0.1.0",
+    "name" : "conditionRecordedDateSearchParameter"
   },
   {
     "id" : "condition-requester",
@@ -628,6 +768,146 @@
     "url" : "http://fhir.openmrs.org/fhir/SearchParameter/location-tag",
     "version" : "0.1.0",
     "name" : "LocationTagSearchParameter"
+  },
+  {
+    "id" : "observation-category",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-category",
+    "version" : "0.1.0",
+    "name" : "observationCategorySearchParameter"
+  },
+  {
+    "id" : "observation-concept-code",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-concept-code",
+    "version" : "0.1.0",
+    "name" : "observationCodeSearchParameter"
+  },
+  {
+    "id" : "observation-date",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-date",
+    "version" : "0.1.0",
+    "name" : "observationDateSearchParameter"
+  },
+  {
+    "id" : "observation-encounter",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-encounter",
+    "version" : "0.1.0",
+    "name" : "observationEncounterSearchParameter"
+  },
+  {
+    "id" : "observation-has-member",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-has-member",
+    "version" : "0.1.0",
+    "name" : "observationHasSearchParameter"
+  },
+  {
+    "id" : "observation-has-member-code",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-has-member-code",
+    "version" : "0.1.0",
+    "name" : "observationHasCodeSearchParameter"
+  },
+  {
+    "id" : "observation-id",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-id",
+    "version" : "0.1.0",
+    "name" : "observationIdSearchParameter"
+  },
+  {
+    "id" : "observation-lastUpdated",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-lastUpdated",
+    "version" : "0.1.0",
+    "name" : "observationLastUpdatedSearchParameter"
+  },
+  {
+    "id" : "observation-patient",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient",
+    "version" : "0.1.0",
+    "name" : "observationPatientSearchParameter"
+  },
+  {
+    "id" : "observation-patient-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient-identifier",
+    "version" : "0.1.0",
+    "name" : "observationPatientIdentifierSearchParameter"
+  },
+  {
+    "id" : "observation-patient.family",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient.family",
+    "version" : "0.1.0",
+    "name" : "observationPatientFamilyNameSearchParameter"
+  },
+  {
+    "id" : "observation-patient.given",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient.given",
+    "version" : "0.1.0",
+    "name" : "observationPatientGivenNameSearchParameter"
+  },
+  {
+    "id" : "observation-patient.name",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient.name",
+    "version" : "0.1.0",
+    "name" : "observationPatientNameSearchParameter"
+  },
+  {
+    "id" : "observation-subject",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject",
+    "version" : "0.1.0",
+    "name" : "observationSubjectSearchParameter"
+  },
+  {
+    "id" : "observation-subject-family",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject-family",
+    "version" : "0.1.0",
+    "name" : "observationSubjectfamilySearchParameter"
+  },
+  {
+    "id" : "observation-subject-given",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject-given",
+    "version" : "0.1.0",
+    "name" : "observationSubjectGivenSearchParameter"
+  },
+  {
+    "id" : "observation-subject-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject-identifier",
+    "version" : "0.1.0",
+    "name" : "observationSubjectIdentifierSearchParameter"
+  },
+  {
+    "id" : "observation-subject-name",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject-name",
+    "version" : "0.1.0",
+    "name" : "observationSubjectNameSearchParameter"
+  },
+  {
+    "id" : "observation-value-concept",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-value-concept",
+    "version" : "0.1.0",
+    "name" : "observationValueConceptSearchParameter"
+  },
+  {
+    "id" : "observation-value-date",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-value-date",
+    "version" : "0.1.0",
+    "name" : "observationValueConceptSearchParameter"
   },
   {
     "id" : "patient-address-city",
@@ -980,6 +1260,13 @@
     "name" : "OMRSGroupDescriptionExtension"
   },
   {
+    "id" : "omrs-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization",
+    "version" : "0.1.0",
+    "name" : "OMRSImmunization"
+  },
+  {
     "id" : "omrs-location",
     "type" : "StructureDefinition",
     "url" : "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
@@ -1104,5 +1391,12 @@
     "url" : "http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs",
     "version" : "0.1.0",
     "name" : "MedicationRequestPriorityVs"
+  },
+  {
+    "id" : "valueset-immunization-status",
+    "type" : "ValueSet",
+    "url" : "http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status",
+    "version" : "0.1.0",
+    "name" : "ImmunizationStatusVs"
   }
 ]

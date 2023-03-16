@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "AllergyIntolerance-subject-identifier",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AllergyIntoleranceSubjectIdentifierSearchParameter</h2><p>Parameter <code>subject.identifier</code>:<code>token</code></p><div><p>Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-identifier",
+  "version" : "0.1.0",
+  "name" : "AllergyIntoleranceSubjectIdentifierSearchParameter",
+  "status" : "active",
+  "date" : "2023-03-16T09:46:21+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}",
+  "code" : "subject.identifier",
+  "base" : ["AllergyIntolerance"],
+  "type" : "token",
+  "target" : ["AllergyIntolerance"]
+}

@@ -12,13 +12,19 @@
   <sch:pattern>
     <sch:title>f:AllergyIntolerance</sch:title>
     <sch:rule context="f:AllergyIntolerance">
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
       <sch:assert test="count(f:encounter) &lt;= 0">encounter: maximum cardinality of 'encounter' is 0</sch:assert>
       <sch:assert test="count(f:onset[x]) &lt;= 0">onset[x]: maximum cardinality of 'onset[x]' is 0</sch:assert>
       <sch:assert test="count(f:asserter) &lt;= 0">asserter: maximum cardinality of 'asserter' is 0</sch:assert>
       <sch:assert test="count(f:lastOccurrence) &lt;= 0">lastOccurrence: maximum cardinality of 'lastOccurrence' is 0</sch:assert>
       <sch:assert test="count(f:reaction) &lt;= 1">reaction: maximum cardinality of 'reaction' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:AllergyIntolerance/f:reaction</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:reaction">
+      <sch:assert test="count(f:severity) &gt;= 1">severity: minimum cardinality of 'severity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

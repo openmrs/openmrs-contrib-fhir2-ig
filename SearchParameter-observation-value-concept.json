@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "observation-value-concept",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>observationValueConceptSearchParameter</h2><p>Parameter <code>value-concept</code>:<code>token</code></p><div><p>Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-value-concept",
+  "version" : "0.1.0",
+  "name" : "observationValueConceptSearchParameter",
+  "status" : "active",
+  "date" : "2023-03-16T09:46:21+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}",
+  "code" : "value-concept",
+  "base" : ["Observation"],
+  "type" : "token",
+  "target" : ["Observation"]
+}

@@ -16,17 +16,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-task.html\">OpenMRS Task</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-example-openmrs-ServiceRequest.html\">ServiceRequest/example-openmrs-ServiceRequest</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><b>owner</b>: <a href=\"Organization/1832473e-2fe0-452d-abe9-3cdb9879522f\">Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-task.html\">OpenMRS Task</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.html\">ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.html\">Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4</a> &quot; JEANNETTE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\">Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>lastModified</b>: 2021-02-21</p><p><b>owner</b>: <a href=\"Organization/1832473e-2fe0-452d-abe9-3cdb9879522f\">Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital</a></p></div>"
   ] ; # 
   fhir:basedOn ( [
-     fhir:link <http://fhir.openmrs.org/fhir/ServiceRequest/example-openmrs-ServiceRequest> ;
-     fhir:reference [ fhir:v "ServiceRequest/example-openmrs-ServiceRequest" ]
+     fhir:link <http://fhir.openmrs.org/fhir/ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763> ;
+     fhir:reference [ fhir:v "ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763" ]
   ] ) ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:intent [ fhir:v "order"] ; # 
   fhir:for [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
-     fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4> ;
+     fhir:reference [ fhir:v "Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4" ]
   ] ; # 
   fhir:encounter [
      fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;

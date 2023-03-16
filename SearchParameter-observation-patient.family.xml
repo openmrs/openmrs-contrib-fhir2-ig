@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="observation-patient.family"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>observationPatientFamilyNameSearchParameter</h2><p>Parameter <code>patient.family</code>:<code>string</code></p><div><p>Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/SearchParameter/observation-patient.family"/>
+  <version value="0.1.0"/>
+  <name value="observationPatientFamilyNameSearchParameter"/>
+  <status value="active"/>
+  <date value="2023-03-16T09:46:21+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"/>
+  <code value="patient.family"/>
+  <base value="Observation"/>
+  <type value="string"/>
+  <target value="Observation"/>
+</SearchParameter>

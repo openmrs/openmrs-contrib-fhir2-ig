@@ -12,30 +12,9 @@
   <sch:pattern>
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
-      <sch:assert test="count(f:instantiatesCanonical) &lt;= 0">instantiatesCanonical: maximum cardinality of 'instantiatesCanonical' is 0</sch:assert>
-      <sch:assert test="count(f:instantiatesUri) &lt;= 0">instantiatesUri: maximum cardinality of 'instantiatesUri' is 0</sch:assert>
-      <sch:assert test="count(f:requisition) &lt;= 0">requisition: maximum cardinality of 'requisition' is 0</sch:assert>
-      <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
-      <sch:assert test="count(f:priority) &lt;= 0">priority: maximum cardinality of 'priority' is 0</sch:assert>
-      <sch:assert test="count(f:doNotPerform) &lt;= 0">doNotPerform: maximum cardinality of 'doNotPerform' is 0</sch:assert>
+      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:orderDetail) &lt;= 0">orderDetail: maximum cardinality of 'orderDetail' is 0</sch:assert>
-      <sch:assert test="count(f:quantity[x]) &lt;= 0">quantity[x]: maximum cardinality of 'quantity[x]' is 0</sch:assert>
-      <sch:assert test="count(f:asNeeded[x]) &lt;= 0">asNeeded[x]: maximum cardinality of 'asNeeded[x]' is 0</sch:assert>
-      <sch:assert test="count(f:authoredOn) &lt;= 0">authoredOn: maximum cardinality of 'authoredOn' is 0</sch:assert>
       <sch:assert test="count(f:requester) &gt;= 1">requester: minimum cardinality of 'requester' is 1</sch:assert>
-      <sch:assert test="count(f:performerType) &lt;= 0">performerType: maximum cardinality of 'performerType' is 0</sch:assert>
-      <sch:assert test="count(f:locationCode) &lt;= 0">locationCode: maximum cardinality of 'locationCode' is 0</sch:assert>
-      <sch:assert test="count(f:locationReference) &lt;= 0">locationReference: maximum cardinality of 'locationReference' is 0</sch:assert>
-      <sch:assert test="count(f:reasonCode) &lt;= 0">reasonCode: maximum cardinality of 'reasonCode' is 0</sch:assert>
-      <sch:assert test="count(f:reasonReference) &lt;= 0">reasonReference: maximum cardinality of 'reasonReference' is 0</sch:assert>
-      <sch:assert test="count(f:insurance) &lt;= 0">insurance: maximum cardinality of 'insurance' is 0</sch:assert>
-      <sch:assert test="count(f:supportingInfo) &lt;= 0">supportingInfo: maximum cardinality of 'supportingInfo' is 0</sch:assert>
-      <sch:assert test="count(f:specimen) &lt;= 0">specimen: maximum cardinality of 'specimen' is 0</sch:assert>
-      <sch:assert test="count(f:bodySite) &lt;= 0">bodySite: maximum cardinality of 'bodySite' is 0</sch:assert>
-      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
-      <sch:assert test="count(f:patientInstruction) &lt;= 0">patientInstruction: maximum cardinality of 'patientInstruction' is 0</sch:assert>
-      <sch:assert test="count(f:relevantHistory) &lt;= 0">relevantHistory: maximum cardinality of 'relevantHistory' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

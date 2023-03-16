@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="AllergyIntolerance-subject-identifier"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AllergyIntoleranceSubjectIdentifierSearchParameter</h2><p>Parameter <code>subject.identifier</code>:<code>token</code></p><div><p>Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  </text>
+  <url value="http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject-identifier"/>
+  <version value="0.1.0"/>
+  <name value="AllergyIntoleranceSubjectIdentifierSearchParameter"/>
+  <status value="active"/>
+  <date value="2023-03-16T09:46:21+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}"/>
+  <code value="subject.identifier"/>
+  <base value="AllergyIntolerance"/>
+  <type value="token"/>
+  <target value="AllergyIntolerance"/>
+</SearchParameter>

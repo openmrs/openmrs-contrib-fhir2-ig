@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "AllergyIntolerance-severity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AllergyIntoleranceSeveritySearchParameter</h2><p>Parameter <code>severity</code>:<code>token</code></p><div><p>Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-severity",
+  "version" : "0.1.0",
+  "name" : "AllergyIntoleranceSeveritySearchParameter",
+  "status" : "active",
+  "date" : "2023-03-16T09:46:21+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}",
+  "code" : "severity",
+  "base" : ["AllergyIntolerance"],
+  "type" : "token",
+  "target" : ["AllergyIntolerance"]
+}
