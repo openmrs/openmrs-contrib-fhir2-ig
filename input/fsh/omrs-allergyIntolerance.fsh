@@ -71,7 +71,7 @@ Title: "Search through AllergyIntolerance endpoint by subject uuid"
 * description = "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid} "
 * code = #subject
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #reference
 
 Instance: AllergyIntolerance-subject-identifier
@@ -83,7 +83,7 @@ Title: "Search through AllergyIntolerance endpoint by subject identifier"
 * description = "Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token
 
 Instance: AllergyIntolerance-subject-given
@@ -95,7 +95,7 @@ Title: "Search through AllergyIntolerance endpoint by subject given"
 * description = "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string
 
 Instance: AllergyIntolerance-subject-family
@@ -107,7 +107,7 @@ Title: "Search through AllergyIntolerance endpoint by subject family"
 * description = "	Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string
 
 Instance: AllergyIntolerance-subject-name
@@ -119,7 +119,7 @@ Title: "Search through AllergyIntolerance endpoint by subject name"
 * description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string
 
 Instance: AllergyIntolerance-patient
@@ -131,7 +131,7 @@ Title: "Search through AllergyIntolerance endpoint by a given patient"
 * description = "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}"
 * code = #patient
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #reference
 
 Instance: AllergyIntolerance-patient-identifier
@@ -143,7 +143,7 @@ Title: "Search through AllergyIntolerance endpoint by a given patient"
 * description = "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token
 
 Instance: AllergyIntolerance-patient.given
@@ -155,7 +155,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's given name"
 * description = "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string
 
 Instance: AllergyIntolerance-patient.family
@@ -167,7 +167,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's family name"
 * description = "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string
 
 Instance: AllergyIntolerance-patient.name
@@ -179,7 +179,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's full or part
 * description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.name={name}"
 * code = #patient.name
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #string 
 
 Instance: AllergyIntolerance-category
@@ -191,7 +191,7 @@ Title: "Search through AllergyIntolerance endpoint by the category"
 * description = "Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}"
 * code = #category
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token 
 
 Instance: AllergyIntolerance-severity
@@ -203,7 +203,7 @@ Title: "Search through AllergyIntolerance endpoint by the severity"
 * description = "Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}"
 * code = #severity
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token 
 
 Instance: AllergyIntolerance-manifestation
@@ -215,7 +215,7 @@ Title: "Search through AllergyIntolerance endpoint by the manifestation"
 * description = "Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}"
 * code = #manifestation
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token 
 
 Instance: AllergyIntolerance-clinical-status
@@ -227,7 +227,7 @@ Title: "Search through AllergyIntolerance endpoint by the clinical-status"
 * description = "Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}"
 * code = #clinical-status
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance
+* target = #AllergyIntolerance
 * type = #token 
 
 Instance: AllergyIntolerance-id
@@ -239,7 +239,7 @@ Title: "Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid 
 * description = "Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}"
 * code = #_id
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance 
+* target = #AllergyIntolerance 
 * type = #token
 
 Instance: AllergyIntolerance-lastUpdated
@@ -251,5 +251,5 @@ Title: "Search in AllergyIntolerance endpoint basing on AllergyIntolerance lastU
 * description = "Searches based on the AllergyIntolerance lastUpdated field for the AllergyIntolerance record eg) /ws/fhir2/{release}/AllergyIntolerance?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #AllergyIntolerance
-* target = #OpenMRSAllergyIntolerance 
+* target = #AllergyIntolerance 
 * type = #date

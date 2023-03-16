@@ -90,7 +90,7 @@ Title: "Search through observation endpoint by date "
 * description = "Searches for observations by the observation date and time eg) /ws/fhir2/{release}/Observation?date={date}"
 * code = #date
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #date
 
 Instance: observation-concept-code
@@ -102,7 +102,7 @@ Title: "Search through observation endpoint by concept code "
 * description = "Searches for observations with particular codes (concepts) eg) /ws/fhir2/{release}/Observation?code={code}"
 * code = #code
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-category
@@ -114,7 +114,7 @@ Title: "Search through observation endpoint by category "
 * description = "Searches for observations by the observation category eg) /ws/fhir2/{release}/Observation?category={category}"
 * code = #category
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-encounter
@@ -126,7 +126,7 @@ Title: "Search through observation endpoint by encounter "
 * description = "Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}"
 * code = #encounter
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-subject
@@ -138,7 +138,7 @@ Title: "Search through observation endpoint by subject uuid"
 * description = "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #reference
 
 Instance: observation-subject-identifier
@@ -150,7 +150,7 @@ Title: "Search through observation endpoint by subject identifier"
 * description = "Searches for observations by the patient identifier eg) /ws/fhir2/{release}/Observation?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-subject-given
@@ -162,7 +162,7 @@ Title: "Search through observation endpoint by subject given"
 * description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?subject:Patient.given={givenName}"
 * code = #subject.given
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string
 
 Instance: observation-subject-family
@@ -174,7 +174,7 @@ Title: "Search through observation endpoint by subject family"
 * description = "	Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}"
 * code = #subject.family
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string
 
 Instance: observation-subject-name
@@ -186,7 +186,7 @@ Title: "Search through observation endpoint by subject name"
 * description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?subject:Patient.name={name}"
 * code = #subject.name
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string
 
 Instance: observation-patient
@@ -198,7 +198,7 @@ Title: "Search through observation endpoint by a given patient"
 * description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}"
 * code = #patient
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #reference
 
 Instance: observation-patient-identifier
@@ -210,7 +210,7 @@ Title: "Search through observation endpoint by a given patient"
 * description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}"
 * code = #patient.identifier
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-patient.given
@@ -222,7 +222,7 @@ Title: "Search through observation endpoint by the patient's given name"
 * description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}"
 * code = #patient.given
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string
 
 Instance: observation-patient.family
@@ -234,7 +234,7 @@ Title: "Search through observation endpoint by the patient's family name"
 * description = "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"
 * code = #patient.family
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string
 
 Instance: observation-patient.name
@@ -246,7 +246,7 @@ Title: "Search through observation endpoint by the patient's full or partial nam
 * description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient.name={name}"
 * code = #patient.name
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #string 
 
 Instance: observation-has-member
@@ -258,7 +258,7 @@ Title: "Search through an observation group in the Obervation EndPoint that cont
 * description = "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member"
 * code = #has-member
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #reference
 
 Instance: observation-has-member-code
@@ -270,7 +270,7 @@ Title: "Searches for an observation group that contains an observation with the 
 * description = "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}"
 * code = #has-member-code
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-value-concept
@@ -282,7 +282,7 @@ Title: "Searches for an observation whose value is a concept that matches the pr
 * description = "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}"
 * code = #value-concept
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-value-date
@@ -294,7 +294,7 @@ Title: "Searches for an observation whose value is a date by the specified date 
 * description = "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}"
 * code = #value-date
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #date
 
 Instance: observation-id
@@ -306,7 +306,7 @@ Title: "Searches based on the exact UUID of the person record"
 * description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}"
 * code = #_id
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #token
 
 Instance: observation-lastUpdated
@@ -318,5 +318,5 @@ Title: "Searches based on the the dateCreated field for the observation record"
 * description = "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}"
 * code = #_lastUpdated
 * base[0] = #Observation
-* target = #OpenMRSObservation
+* target = #Observation
 * type = #date
