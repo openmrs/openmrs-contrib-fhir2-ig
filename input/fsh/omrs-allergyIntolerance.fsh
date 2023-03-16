@@ -12,9 +12,14 @@ Description: "A FHIR Allergy as understood by OpenMRS"
 * verificationStatus 0..1
 * patient 1..1
 * recorder 0..1
+* type 0..1
 * criticality 0..1
 * recordedDate 0..1
-* category 0..1
+* category 0..0
+* encounter 0..0
+* onset[x] 0..0
+* asserter 0..0
+* lastOccurrence 0..0
 * note 0..*
 
 /** OMRS AllergyIntolerance Resource Example **/
@@ -36,7 +41,10 @@ Description: "Example OMRS Allergy Intolerance"
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 * clinicalStatus.coding.code =  #active
 * clinicalStatus.coding.display = #active
-* reaction.severity = #moderate
+* identifier.id = "dce9740a-1691-11df-97a5-7038c432aabf"
+* identifier.use = #usual
+* identifier.system = #OpenMRS
+* identifier.value = #35tu-9
 
 /** Allergy intolerance omrs fhir mapping*/
 
@@ -49,6 +57,7 @@ Description: "Allergy or Intolerance; a propensity, or a potential risk to an in
 * -> "OMRS Allergy intolerance" "This profile maps to allergy intolerance in OMRS FHIR2"
 * id -> "allergy.uuid"
 * category -> "allergy.Category"
+* identifier -> "allery.identifier"
 * code -> "allergy.Code"
 * reaction -> "allergy.concept"
 * note -> "allergy.comment"
@@ -180,7 +189,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's full or part
 * code = #patient.name
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
-* type = #string 
+* type = #string
 
 Instance: AllergyIntolerance-category
 InstanceOf: SearchParameter
@@ -192,7 +201,7 @@ Title: "Search through AllergyIntolerance endpoint by the category"
 * code = #category
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
-* type = #token 
+* type = #token
 
 Instance: AllergyIntolerance-severity
 InstanceOf: SearchParameter
@@ -204,7 +213,7 @@ Title: "Search through AllergyIntolerance endpoint by the severity"
 * code = #severity
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
-* type = #token 
+* type = #token
 
 Instance: AllergyIntolerance-manifestation
 InstanceOf: SearchParameter
@@ -216,7 +225,7 @@ Title: "Search through AllergyIntolerance endpoint by the manifestation"
 * code = #manifestation
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
-* type = #token 
+* type = #token
 
 Instance: AllergyIntolerance-clinical-status
 InstanceOf: SearchParameter
@@ -228,7 +237,7 @@ Title: "Search through AllergyIntolerance endpoint by the clinical-status"
 * code = #clinical-status
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
-* type = #token 
+* type = #token
 
 Instance: AllergyIntolerance-id
 InstanceOf: SearchParameter
@@ -239,7 +248,7 @@ Title: "Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid 
 * description = "Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}"
 * code = #_id
 * base[0] = #AllergyIntolerance
-* target = #AllergyIntolerance 
+* target = #AllergyIntolerance
 * type = #token
 
 Instance: AllergyIntolerance-lastUpdated
@@ -251,5 +260,5 @@ Title: "Search in AllergyIntolerance endpoint basing on AllergyIntolerance lastU
 * description = "Searches based on the AllergyIntolerance lastUpdated field for the AllergyIntolerance record eg) /ws/fhir2/{release}/AllergyIntolerance?_lastUpdated={date}"
 * code = #_lastUpdated
 * base[0] = #AllergyIntolerance
-* target = #AllergyIntolerance 
+* target = #AllergyIntolerance
 * type = #date
