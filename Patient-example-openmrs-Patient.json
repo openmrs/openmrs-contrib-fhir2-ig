@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Patient",
+  "id" : "example-openmrs-Patient",
+  "meta" : {
+    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID:\u00a04343534\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>+256788232241</li><li>Washington Washington (HOME)</li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "extension" : [{
+      "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+      "valueReference" : {
+        "reference" : "Location/b1a8b05e-3542-4037-bbd3-998ee9c40574",
+        "type" : "Location",
+        "display" : "Inpatient Ward"
+      }
+    }],
+    "use" : "official",
+    "type" : {
+      "text" : "OpenMRS ID"
+    },
+    "value" : "4343534"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Jeannette",
+    "given" : ["Ricky"]
+  }],
+  "telecom" : [{
+    "value" : "+256788232241"
+  }],
+  "gender" : "male",
+  "birthDate" : "1996-12-12",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "use" : "home",
+    "city" : "Washington",
+    "district" : "Washington",
+    "country" : "Washington"
+  }]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="example-openmrs-Patient"/>
+  <meta>
+    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID: 4343534 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>+256788232241</li><li>Washington Washington (HOME)</li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <extension url="http://fhir.openmrs.org/ext/patient/identifier#location">
+      <valueReference>
+        <reference value="Location/b1a8b05e-3542-4037-bbd3-998ee9c40574"/>
+        <type value="Location"/>
+        <display value="Inpatient Ward"/>
+      </valueReference>
+    </extension>
+    <use value="official"/>
+    <type>
+      <text value="OpenMRS ID"/>
+    </type>
+    <value value="4343534"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Jeannette"/>
+    <given value="Ricky"/>
+  </name>
+  <telecom>
+    <value value="+256788232241"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1996-12-12"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <city value="Washington"/>
+    <district value="Washington"/>
+    <country value="Washington"/>
+  </address>
+</Patient>

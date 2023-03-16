@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-16T09:46:21+00:00"/>
+  <date value="2023-03-16T13:05:08+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -770,17 +770,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/51ead2ec-279f-482d-80f8-209a5d4109d0"/>
-      </reference>
-      <name value="Encounter Patient Example"/>
-      <description value="OMRS Encounter Resource Example"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
@@ -822,17 +811,6 @@
       <name value="Practitioner Example"/>
       <description value="Practitioner Resource Example"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4"/>
-      </reference>
-      <name value="Openmrs Patient"/>
-      <description value="Example OMRS Patient Resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1999,6 +1977,17 @@
       <name value="Openmrs Observation"/>
       <description value="Example OMRS Observation Resource"/>
       <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-openmrs-Patient"/>
+      </reference>
+      <name value="Openmrs Patient"/>
+      <description value="Example OMRS Patient Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

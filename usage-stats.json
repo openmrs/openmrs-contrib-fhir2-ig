@@ -168,15 +168,14 @@
     ]
   },
   "usage": {
-    "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location": [
-      "Patient.identifier"
-    ],
     "http://fhir.openmrs.org/ext/address": [
-      "Patient.address",
       "Person.address"
     ],
     "http://fhir.openmrs.org/ext/group/description": [
       "Group"
+    ],
+    "http://fhir.openmrs.org/ext/patient/identifier#location": [
+      "Patient.identifier"
     ],
     "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext": [
       "Group"

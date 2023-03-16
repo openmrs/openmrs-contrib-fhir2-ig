@@ -1,9 +1,9 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 45, warn = 147, info = 10
-IG Publisher Version: 1.2.48
-Generated Thu Mar 16 09:47:59 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+err = 44, warn = 147, info = 10
+IG Publisher Version: 1.2.49
+Generated Thu Mar 16 13:06:35 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
@@ -18,8 +18,7 @@ Generated Thu Mar 16 09:47:59 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4 : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 4 / 1 / 2
  /github/workspace/fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866 : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-category : 0 / 0 / 1
@@ -228,7 +227,7 @@ ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1019: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
 ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 670: The link '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"' for ""Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5": Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 605: The link '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"' for ""Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"" cannot be resolved
-ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1082: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
+ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1056: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -263,12 +262,12 @@ ERROR: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.status: T
 INFORMATION: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.vaccineCode.coding[0]: Code System URI 'https://cielterminology.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[17].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[65].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[89].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[156].name: value should not start or finish with whitespace 'Search through observation endpoint by category '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[157].name: value should not start or finish with whitespace 'Search through observation endpoint by concept code '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[158].name: value should not start or finish with whitespace 'Search through observation endpoint by date '
-WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[159].name: value should not start or finish with whitespace 'Search through observation endpoint by encounter '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[63].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[87].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[155].name: value should not start or finish with whitespace 'Search through observation endpoint by category '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[156].name: value should not start or finish with whitespace 'Search through observation endpoint by concept code '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[157].name: value should not start or finish with whitespace 'Search through observation endpoint by date '
+WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[158].name: value should not start or finish with whitespace 'Search through observation endpoint by encounter '
 == fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.json ==
 ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
 ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep'
@@ -284,15 +283,13 @@ ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priorit
 == fsh-generated/resources/Observation-example-openmrs-Observation.json ==
 WARNING: Observation/example-openmrs-Observation: Observation.code.coding[0]: The display "Arterial blood oxygen saturation (pulse oximeter)" is not a valid display for the code {http://snomed.info/sct}431314004 - should be one of ['Peripheral oxygen saturation (observable entity)', 'SpO2 - saturation of peripheral oxygen', 'Peripheral oxygen saturation'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#431314004'
 INFORMATION: Observation/example-openmrs-Observation: Observation.referenceRange[0].type.coding[0]: Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated
-== fsh-generated/resources/Patient-51ead2ec-279f-482d-80f8-209a5d4109d0.json ==
-== fsh-generated/resources/Patient-84db330e-a323-4a46-83c4-f93dfcbd25c4.json ==
-INFORMATION: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0
-ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0]: Identifier.extension:location: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0)
-ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0]: The extension http://fhir.openmrs.org/StructureDefinition/patient-identifier-location is unknown, and not allowed here
-ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f'
-WARNING: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
-ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
-ERROR: Patient/84db330e-a323-4a46-83c4-f93dfcbd25c4: Patient.address[0].extension[0]: The extension http://fhir.openmrs.org/ext/address is unknown, and not allowed here
+== fsh-generated/resources/Patient-example-openmrs-Patient.json ==
+INFORMATION: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0
+ERROR: Patient/example-openmrs-Patient: Patient.identifier[0]: Identifier.extension:location: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0)
+ERROR: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0]: The extension http://fhir.openmrs.org/ext/patient/identifier#location is unknown, and not allowed here
+ERROR: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Location/b1a8b05e-3542-4037-bbd3-998ee9c40574'
+WARNING: Patient/example-openmrs-Patient: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+ERROR: Patient/example-openmrs-Patient: Patient.telecom[0]: Rule cpt-2: 'A system is required if a value is provided.' Failed
 == fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.json ==
 WARNING: Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866: Person.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
 ERROR: Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866: Person.address[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
