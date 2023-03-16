@@ -38,21 +38,18 @@ InstanceOf: OMRSPatient
 Usage: #example
 Title: "Openmrs Patient"
 Description: "Example OMRS Patient Resource"
-* id = "84db330e-a323-4a46-83c4-f93dfcbd25c4"
-* identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
-* identifier.extension.url = "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location"
-* identifier.extension.valueReference.reference = "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+* identifier.extension.url = "http://fhir.openmrs.org/ext/patient/identifier#location"
+* identifier.extension.valueReference.reference = "Location/b1a8b05e-3542-4037-bbd3-998ee9c40574"
 * identifier.extension.valueReference.type = "Location"
 * identifier.extension.valueReference.display = "Inpatient Ward"
 * identifier.type.text = "OpenMRS ID"
-* identifier.value = "1000Y"
-* name.id = "3434gh32-34h3j4-34jk34-3422h"
+* identifier.value = "4343534"
 * name.family = "Jeannette"
 * name.given = "Ricky"
 * gender = #male
 * birthDate = "1996-12-12"
-* address.extension.url = "http://fhir.openmrs.org/ext/address"
+* telecom[0].value = "+256788232241"
 * address.use = #home
 * address.country = "Washington"
 * address.city = "Washington"

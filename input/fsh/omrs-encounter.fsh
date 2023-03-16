@@ -65,7 +65,7 @@ Description: "Example OMRS Encounter"
 * status = #unknown
 * class.code = #AMB
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* subject = Reference(EncounterPatientExample)
+* subject = Reference(example-openmrs-Patient)
 * subject.type = "Patient"
 * type.coding.code = #67a71486-1a54-468f-ac3e-7091a9a79584
 * type.coding.display = "Vitals"
@@ -74,14 +74,6 @@ Description: "Example OMRS Encounter"
 * period[0].end = 2022-06-22
 * location.location = Reference(LocationExample)
 
-Instance: EncounterPatientExample
-InstanceOf: Patient
-Usage: #example
-Title: "Encounter Patient Example"
-Description: "OMRS Encounter Resource Example"
-* id = "51ead2ec-279f-482d-80f8-209a5d4109d0"
-* name.family = "Doe"
-* name.given = "Jane"
 
 /** Encounter FHIR -- Openmrs Mapping*/
 Mapping: EncounterMapping

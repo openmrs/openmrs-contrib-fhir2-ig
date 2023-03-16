@@ -53,8 +53,8 @@ Description: "Example OMRS Observation Resource"
 * interpretation.coding[0].code = #H
 * interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
 * interpretation.coding[0].display = "High"
-* referenceRange.low[0].value = 0.0
-* referenceRange.high[0].value = 100.0
+* referenceRange.low[0].value = 10.0
+* referenceRange.high[0].value = 272.0
 * referenceRange.type.coding[0].system = "http://fhir.openmrs.org/ext/obs/reference-range"
 * referenceRange.type.coding[0].code = #absolute
 
