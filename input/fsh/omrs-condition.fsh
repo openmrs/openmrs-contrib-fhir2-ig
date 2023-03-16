@@ -46,7 +46,8 @@ Id: condition-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects."
 * -> "OMRS Condition" "This profile maps to Condition in OMRS FHIR2"
-* id -> "condition.id"
+* id -> "condition.uuid"
+* clinicalStatus -> "Condition.status"
 * code -> "condition.code"
 * subject -> "condition.patient"
 * onsetDateTime -> "condition.onsetDate"
@@ -201,6 +202,18 @@ Title: "Search through condition endpoint by encounter uuid"
 * target = #Condition
 * type = #reference
 
+Instance: condition-clinical-status
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Condition clinical status"
+* name = "conditionClinicalStatusSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"
+* code = #clinical-status
+* base[0] = #Condition
+* target = #Condition
+* type = #token
+
 Instance: condition-requester
 InstanceOf: SearchParameter
 Usage: #definition
@@ -249,6 +262,18 @@ Title: "Search through condition endpoint by Practitioner family"
 * target = #Condition
 * type = #string
 
+Instance: condition-onset-date
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Condition clinical onset date"
+* name = "conditionOnsetdateSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}"
+* code = #onset-date
+* base[0] = #Condition
+* target = #Condition
+* type = #date
+
 Instance: condition-requester-name
 InstanceOf: SearchParameter
 Usage: #definition
@@ -257,6 +282,18 @@ Title: "Search through condition endpoint by Practitioner name"
 * status = #active
 * description = "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"
 * code = #requester.name
+* base[0] = #Condition
+* target = #Condition
+* type = #string
+
+Instance: condition-onset-age
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by Condition clinical onset age"
+* name = "conditionOnsetAgeSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}"
+* code = #onset-age
 * base[0] = #Condition
 * target = #Condition
 * type = #string
@@ -284,6 +321,18 @@ Title: "Search through condition endpoint by service Uuid"
 * base[0] = #Condition
 * target = #Condition
 * type = #token
+
+Instance: condition-recorded-date
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "Search through condition endpoint by date when the record was created"
+* name = "conditionRecordedDateSearchParameter"
+* status = #active
+* description = "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}"
+* code = #recorded-date
+* base[0] = #Condition
+* target = #Condition
+* type = #date
 
 Instance: condition-lastUpdated
 InstanceOf: SearchParameter

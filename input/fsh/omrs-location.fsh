@@ -5,6 +5,7 @@ Parent:       Location
 Id:           omrs-location
 Title:        "OpenMRS Location"
 Description:  "An OpenMRS location"
+* id 1..1
 * status 0..1 
 * status from LocationStatusVS
 * name 1..1 
@@ -17,15 +18,6 @@ Description:  "An OpenMRS location"
 * telecom only OMRSLocationContactPoint 
 * address only OMRSAddress
 * partOf 0..1
-* alias 0..0
-* mode 0..0
-* operationalStatus 0..0
-* hoursOfOperation 0..0
-* managingOrganization 0..0
-* availabilityExceptions 0..0
-* endpoint 0..0
-* physicalType 0..0
-* managingOrganization 0..0
 
 /** Contact point profile */
 
@@ -94,10 +86,11 @@ InstanceOf: OMRSLocation
 Usage: #example
 Title: "Location Example"
 Description: "Example OMRS location"
+* id = "a3b793f0-eb53-4cda-92ce-fe0a77106252"
 * status = #active
 * name = "Outpatient Clinic"
 * description = "Outpatient Clinic"
-* type.coding[0].code = #Sleep
+* type.coding[0].code = #sleep
 * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * type.coding[0].display = "Sleep disorders unit"
 * telecom[+].system = #phone

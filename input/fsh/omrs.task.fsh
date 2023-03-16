@@ -20,26 +20,7 @@ Description: "A Task resource represent an activity that is to be performed,and 
 * encounter only Reference(OMRSEncounter)
 * owner 0..1
 * owner only Reference(Organization)
-* statusReason 0..0
-* businessStatus 0..0
-* code 0..0
-* description 0..0
-* focus 0..0
-* executionPeriod 0..0
-* performerType 0..0
-* reasonCode 0..0
-* reasonReference 0..0
-* note 0..0
-* restriction 0..0
-* requester 0..0
-* instantiatesCanonical	0..0
-* instantiatesUri 0..0
-* groupIdentifier 0..0
-* partOf 0..0
-* priority 0..0
-* location 0..0
-* insurance 0..0
-* relevantHistory 0..0
+
 
 // OpenMRS Task  Example
 Instance: example-openmrs-Task
