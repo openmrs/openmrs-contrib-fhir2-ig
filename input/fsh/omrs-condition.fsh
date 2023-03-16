@@ -211,7 +211,7 @@ Title: "Search through condition endpoint by Condition clinical status"
 * description = "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"
 * code = #clinical-status
 * base[0] = #Condition
-* target = #OMRSCondition
+* target = #Condition
 * type = #token
 
 Instance: condition-requester
