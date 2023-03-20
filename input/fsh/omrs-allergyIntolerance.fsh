@@ -30,9 +30,9 @@ Usage: #example
 Title: "Allergy Intolerance Resource Example"
 Description: "Example OMRS Allergy Intolerance"
 * id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
-* patient.reference = "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+* patient = Reference(Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5)
 * patient.type = "Patient"
-* recorder.reference = "Practitioner/c98a1558-e131-11de-babe-001e378eb67e"
+* recorder = Reference(Practitioner/c98a1558-e131-11de-babe-001e378eb67e)
 * recorder.type = "Practitioner"
 * recorder.display = "Super User"
 * reaction.severity = #mild

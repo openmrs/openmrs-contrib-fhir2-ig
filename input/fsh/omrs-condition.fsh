@@ -31,7 +31,7 @@ Description: "Example OMRS Condition"
 * code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 * code.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding.code = #116128
-* subject = Reference("Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5")
+* subject = Reference(Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5)
 * subject.type = "Patient"
 * subject.identifier.use = #official
 * subject.identifier.value = #101-6
