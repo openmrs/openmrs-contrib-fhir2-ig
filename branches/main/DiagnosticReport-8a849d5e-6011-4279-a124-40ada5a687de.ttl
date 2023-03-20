@@ -30,17 +30,17 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/"Patient/5946f880-b197-400b-9caa-a3c661d23041"> ;
-     fhir:reference [ fhir:v "\"Patient/5946f880-b197-400b-9caa-a3c661d23041\"" ]
+     fhir:link <http://fhir.openmrs.org/fhir/Patient/5946f880-b197-400b-9caa-a3c661d23041> ;
+     fhir:reference [ fhir:v "Patient/5946f880-b197-400b-9caa-a3c661d23041" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://fhir.openmrs.org/fhir/"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"> ;
-     fhir:reference [ fhir:v "\"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac\"" ]
+     fhir:link <http://fhir.openmrs.org/fhir/Encounter/6519d653-393b-4118-9c83-a3715b82d4ac> ;
+     fhir:reference [ fhir:v "Encounter/6519d653-393b-4118-9c83-a3715b82d4ac" ]
   ] ; # 
   fhir:issued [ fhir:v "2011-03-04T11:45:33+11:00"^^xsd:dateTime] ; # 
   fhir:result ( [
-     fhir:link <http://fhir.openmrs.org/fhir/"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"> ;
-     fhir:reference [ fhir:v "\"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669\"" ]
+     fhir:link <http://fhir.openmrs.org/fhir/Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669> ;
+     fhir:reference [ fhir:v "Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------
