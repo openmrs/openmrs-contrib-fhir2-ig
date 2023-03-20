@@ -19,13 +19,13 @@
     </coding>
   </code>
   <subject>
-    <reference value="&quot;Patient/5946f880-b197-400b-9caa-a3c661d23041&quot;"/>
+    <reference value="Patient/5946f880-b197-400b-9caa-a3c661d23041"/>
   </subject>
   <encounter>
-    <reference value="&quot;Encounter/6519d653-393b-4118-9c83-a3715b82d4ac&quot;"/>
+    <reference value="Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"/>
   </encounter>
   <issued value="2011-03-04T11:45:33+11:00"/>
   <result>
-    <reference value="&quot;Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669&quot;"/>
+    <reference value="Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"/>
   </result>
 </DiagnosticReport>

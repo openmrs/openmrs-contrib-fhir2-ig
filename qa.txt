@@ -1,13 +1,13 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 44, warn = 147, info = 10
-IG Publisher Version: 1.2.49
-Generated Thu Mar 16 13:06:35 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+err = 43, warn = 147, info = 10
+IG Publisher Version: 1.2.53
+Generated Mon Mar 20 20:28:03 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 4 / 0
- /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 3 / 1 / 2
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 4 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4 : 2 / 0 / 2
@@ -15,7 +15,7 @@ Generated Thu Mar 16 13:06:35 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 7 / 1
  /github/workspace/fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76 : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 4 / 1 / 2
@@ -223,10 +223,10 @@ Generated Thu Mar 16 13:06:35 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/ValueSet-valueset-immunization-status : 0 / 3 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
-ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1019: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
-ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 670: The link '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"' for ""Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5": Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 605: The link '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"' for ""Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1029: The link 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e' for "Practitioner/c98a1558-e131-11de-babe-001e378eb67e: Super User" cannot be resolved
+ERROR: /github/workspace/output/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 670: The link 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5: Horatio Hornblower (OpenMRS ID:101-6)" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 605: The link 'Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653' for "Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653" cannot be resolved
 ERROR: /github/workspace/output/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 1056: The link 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f' for "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f: Clinical Laboratory @ Acme Hospital" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -234,7 +234,8 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.patient: Unable to resolve resource with reference 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5'
+ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.patient: Unable to resolve resource with reference 'Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5'
+ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.patient: Invalid Resource target type. Found Patient, but expected one of (Practitioner)
 ERROR: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.recorder: Unable to resolve resource with reference 'Practitioner/c98a1558-e131-11de-babe-001e378eb67e'
 INFORMATION: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.reaction[0].substance.coding[0]: Code System URI 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' is unknown so the code cannot be validated
 WARNING: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: AllergyIntolerance.reaction[0].manifestation[0].coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -243,14 +244,13 @@ INFORMATION: CodeSystem/encounter-type: CodeSystem: CodeSystems SHOULD have a st
 WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.json ==
-ERROR: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.text.div: The URL is not valid because '(URL contains 2 Invalid Characters (["]))': "Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
 INFORMATION: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.code.coding[0]: Code System URI 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' is unknown so the code cannot be validated
-ERROR: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.subject: Unable to resolve resource with reference '"Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"'
+ERROR: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.subject: Unable to resolve resource with reference 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5'
 == fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de.json ==
 WARNING: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.code: The code system '' is not known (encountered paired with code = '') (from http://tx.fhir.org/r4)
-ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.subject: Unable to resolve resource with reference '"Patient/5946f880-b197-400b-9caa-a3c661d23041"'
-ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.encounter: Unable to resolve resource with reference '"Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"'
-ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.result[0]: Unable to resolve resource with reference '"Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"'
+ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/5946f880-b197-400b-9caa-a3c661d23041'
+ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.encounter: Unable to resolve resource with reference 'Encounter/6519d653-393b-4118-9c83-a3715b82d4ac'
+ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.result[0]: Unable to resolve resource with reference 'Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669'
 == fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
 INFORMATION: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0]: Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated
 == fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4.json ==
@@ -275,8 +275,7 @@ ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.type[0].coding[0]
 INFORMATION: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.code.coding[0]: Code System URI 'https://cielterminology.org' is unknown so the code cannot be validated
 WARNING: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.form.coding[0]: The display "Injection Solution (qualifier value)" is not a valid display for the code {http://snomed.info/sct}385219001 - should be one of ['Solution for injection', 'Conventional release solution for injection', 'Conventional release solution for injection (dose form)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#385219001'
 == fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.json ==
-ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.text.div: The URL is not valid because '(URL contains 2 Invalid Characters (["]))': "Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"
-ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.medication.ofType(Reference): Unable to resolve resource with reference '"Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653"'
+ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.medication.ofType(Reference): Unable to resolve resource with reference 'Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653'
 == fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample.json ==
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is unknown so the code cannot be validated)
 ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/request-priority' is unknown so the code cannot be validated)
