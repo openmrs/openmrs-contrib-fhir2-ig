@@ -73,7 +73,7 @@ Title: "Medication Dispence Example"
 Description: "OMRS Medication Dispence Resource Example"
 * id = "1e2edf7a-89f2-4694-8412-49c99770aed6"
 * status = #completed
-* medicationReference = Reference("Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653")
+* medicationReference = Reference(Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653)
 * subject = Reference(example-openmrs-Patient)
 * performer.actor = Reference(PractitionerExample)
 * authorizingPrescription = Reference(OMRSMedicationRequestExample)
