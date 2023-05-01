@@ -2,7 +2,7 @@ id: openmrs
 canonical: http://fhir.openmrs.org/fhir
 version: 0.1.0
 name: OMRSFhir2ImplementationGuide
-title: OpenMRS FHIR2 Implementation Guide
+title: OpenMRS FHIR2 Core Implementation Guide
 status: draft
 publisher: OpenMRS, Inc.
 contact:
