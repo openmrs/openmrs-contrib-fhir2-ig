@@ -76,7 +76,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -156,7 +156,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -238,7 +238,7 @@
         
           Active
           
-            as of 2023-03-20
+            as of 2023-05-01
           
         
       </td>
@@ -408,20 +408,20 @@
 </table>
 <a name="omrs-medication-request-mapping"> </a><h3>Mappings for FHIR  vs OMRS FHIR2 (http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest)</h3><p>MedicationRequest mapping shows how attributes of the FHIR MedicationRequest Resource map to the attributes of the OpenMRS Drug Order object</p><table class="grid">
  <tr><td colspan="3"><b>OMRSMedicationRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td>OMRS MedicationRequest</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>Order.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>MedicationRequestIntent.ORDER</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>Order.Urgency</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Order.Patient</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Order.Encounter</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>Order.Provider</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Order.OrderReason</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Order.PreviousOrder</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Order.commentToFulfiller</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>numRefills</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>Order.PreviousOrder</td> </tr>
+ <tr><td>MedicationRequest</td><td>OMRS MedicationRequest</td><td>This profile maps HL7 FHIR MedicationRequest to OMRS FHIR2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>Order.id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>MedicationRequestIntent.ORDER</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>Order.Urgency</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Order.Patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Order.Encounter</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>Order.Provider</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Order.OrderReason</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Order.PreviousOrder</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Order.commentToFulfiller</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>numRefills</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>quantity</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>Order.PreviousOrder</td><td></td> </tr>
 </table>
 
 
@@ -477,7 +477,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 20, 2023 20:26+0000">2023-03-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

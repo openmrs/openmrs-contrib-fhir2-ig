@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/ImplementationGuide/openmrs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OMRSFhir2ImplementationGuide"] ; # 
-  fhir:title [ fhir:v "OpenMRS FHIR2 Implementation Guide"] ; # 
+  fhir:title [ fhir:v "OpenMRS FHIR2 Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-20T20:26:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-01T15:55:39+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -259,6 +259,9 @@
          fhir:value [ fhir:v "true" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;

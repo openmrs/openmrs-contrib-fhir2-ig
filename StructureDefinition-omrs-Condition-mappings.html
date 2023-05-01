@@ -76,7 +76,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -156,7 +156,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -238,7 +238,7 @@
         
           Active
           
-            as of 2023-03-20
+            as of 2023-05-01
           
         
       </td>
@@ -324,13 +324,13 @@ OR &lt; 272379006 |Event|</td> </tr>
 </table>
 <a name="condition-mapping"> </a><h3>Mappings for FHIR HL7 vs OMRS FHIR2 (http://hl7.org/fhir/3.0/StructureDefinition/Condition)</h3><p>Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects.</p><table class="grid">
  <tr><td colspan="3"><b>OMRSCondition</b></td></tr>
- <tr><td>Condition</td><td>OMRS Condition</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>condition.uuid</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>condition.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>condition.patient</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;onset[x] (onsetDateTime)</td><td>condition.onsetDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recordedDate</td><td>condition.dateCreated</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>condition.creator</td> </tr>
+ <tr><td>Condition</td><td>OMRS Condition</td><td>This profile maps to Condition in OMRS FHIR2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>condition.uuid</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>condition.code</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>condition.patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;onset[x] (onsetDateTime)</td><td>condition.onsetDate</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;recordedDate</td><td>condition.dateCreated</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>condition.creator</td><td></td> </tr>
 </table>
 
 
@@ -386,7 +386,7 @@ OR &lt; 272379006 |Event|</td> </tr>
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 20, 2023 20:26+0000">2023-03-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

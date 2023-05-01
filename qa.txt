@@ -1,18 +1,18 @@
 ﻿OMRSFhir2ImplementationGuide : Validation Results
 =========================================
 
-err = 43, warn = 147, info = 10
-IG Publisher Version: 1.2.53
-Generated Mon Mar 20 20:28:03 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
+err = 49, warn = 148, info = 18
+IG Publisher Version: 1.3.6
+Generated Mon May 01 15:57:14 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (canonical = http://fhir.openmrs.org/fhir)
  Build Errors : 5 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 4 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 1 / 0 / 2
- /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4 : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663 : 1 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 7 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs : 0 / 8 / 1
  /github/workspace/fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76 : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 1 / 0 / 1
@@ -207,20 +207,20 @@ Generated Mon Mar 20 20:28:03 UTC 2023. FHIR version 4.0.1 for openmrs#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication-request : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-person : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrs-practitioner : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-omrsmedication-dispense : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9 : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs : 0 / 6 / 2
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-status-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-encounter-status-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-location-status-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-medication-request-intent-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-medication-request-priority-vs : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-valueset-immunization-status : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-task-status-vs : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-encounter-status-vs : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-location-status-vs : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-medication-request-intent-vs : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-medication-request-priority-vs : 1 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-valueset-immunization-status : 1 / 3 / 2
 </table>
 == n/a ==
 ERROR: /github/workspace/output/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html#/html/body/div/div/div/div/div/div/p/a at Line 224, column 892: The link 'Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5' for "Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5" cannot be resolved
@@ -247,7 +247,6 @@ WARNING: CodeSystem/encounter-type: CodeSystem: The ShareableCodeSystem profile 
 INFORMATION: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.code.coding[0]: Code System URI 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' is unknown so the code cannot be validated
 ERROR: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.subject: Unable to resolve resource with reference 'Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5'
 == fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de.json ==
-WARNING: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.code: The code system '' is not known (encountered paired with code = '') (from http://tx.fhir.org/r4)
 ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/5946f880-b197-400b-9caa-a3c661d23041'
 ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.encounter: Unable to resolve resource with reference 'Encounter/6519d653-393b-4118-9c83-a3715b82d4ac'
 ERROR: DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de: DiagnosticReport.result[0]: Unable to resolve resource with reference 'Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669'
@@ -258,9 +257,10 @@ INFORMATION: Group/bc572131-c234-436f-9194-00287759a3e4: Group.extension[0]: Thi
 ERROR: Group/bc572131-c234-436f-9194-00287759a3e4: Group: Group.extension:description: minimum required = 1, but only found 0 (from http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group|0.1.0)
 ERROR: Group/bc572131-c234-436f-9194-00287759a3e4: Group.extension[0]: The extension http://fhir.openmrs.org/ext/group/description is unknown, and not allowed here
 == fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.json ==
-ERROR: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.status: The value provided ('completed') is not in the value set 'Immunization Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is unknown so the code cannot be validated)
+ERROR: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.status: The value provided ('completed') is not in the value set 'Immunization Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status|0.1.0), and a code is required from this value set) (error message = The CodeSystem https://fhir.openmrs.org/fhir/valueset-immunization-status is unknown; The provided code https://fhir.openmrs.org/fhir/valueset-immunization-status#completed is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/valueset-immunization-status' (from Tx-Server))
 INFORMATION: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.vaccineCode.coding[0]: Code System URI 'https://cielterminology.org/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-openmrs.json ==
+WARNING: /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs: Unknown Parameters: []
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[17].description: value should not start or finish with whitespace ' Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources'
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[63].name: value should not start or finish with whitespace 'Search through Encounter endpoint by a given Practitioner '
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[87].name: value should not start or finish with whitespace 'Search through MedicationRequest endpoint by a given Practitioner '
@@ -269,18 +269,18 @@ WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[15
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[157].name: value should not start or finish with whitespace 'Search through observation endpoint by date '
 WARNING: ImplementationGuide/openmrs: ImplementationGuide.definition.resource[158].name: value should not start or finish with whitespace 'Search through observation endpoint by encounter '
 == fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.json ==
-ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'https://fhir.openmrs.org/location-status' is unknown so the code cannot be validated)
-ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.type[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep'
+ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.status: The value provided ('active') is not in the value set 'Location Status ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/location-status-vs|0.1.0), and a code is required from this value set) (error message = The CodeSystem https://fhir.openmrs.org/location-status is unknown; The provided code https://fhir.openmrs.org/location-status#active is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/location-status-vs' (from Tx-Server))
+ERROR: Location/a3b793f0-eb53-4cda-92ce-fe0a77106252: Location.type[0].coding[0]: Unknown Code 'sleep' in the system 'http://terminology.hl7.org/CodeSystem/v3-RoleCode' for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#sleep'
 == fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76.json ==
 INFORMATION: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.code.coding[0]: Code System URI 'https://cielterminology.org' is unknown so the code cannot be validated
-WARNING: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.form.coding[0]: The display "Injection Solution (qualifier value)" is not a valid display for the code {http://snomed.info/sct}385219001 - should be one of ['Solution for injection', 'Conventional release solution for injection', 'Conventional release solution for injection (dose form)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#385219001'
+WARNING: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.form.coding[0]: Wrong Display Name 'Injection Solution (qualifier value)' for http://snomed.info/sct#385219001 - should be one of 3 choices: 'Solution for injection, "Conventional release solution for injection", "Conventional release solution for injection (dose form)"' for the language(s) '--' (from Tx-Server) for 'http://snomed.info/sct#385219001'
 == fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.json ==
 ERROR: MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6: MedicationDispense.medication.ofType(Reference): Unable to resolve resource with reference 'Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653'
 == fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample.json ==
-ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is unknown so the code cannot be validated)
-ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://fhir.openmrs.org/fhir/request-priority' is unknown so the code cannot be validated)
+ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.intent: The value provided ('order') is not in the value set 'Medication Request Intent Vs' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs|0.1.0), and a code is required from this value set) (error message = The CodeSystem http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent is unknown; The provided code http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent#order is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/medication-request-intent-vs' (from Tx-Server))
+ERROR: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.priority: The value provided ('urgent') is not in the value set 'Medication Request Priority ValueSet' (http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs|0.1.0), and a code is required from this value set) (error message = The CodeSystem http://fhir.openmrs.org/fhir/request-priority is unknown; The provided code http://fhir.openmrs.org/fhir/request-priority#urgent is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/medication-request-priority-vs' (from Tx-Server))
 == fsh-generated/resources/Observation-example-openmrs-Observation.json ==
-WARNING: Observation/example-openmrs-Observation: Observation.code.coding[0]: The display "Arterial blood oxygen saturation (pulse oximeter)" is not a valid display for the code {http://snomed.info/sct}431314004 - should be one of ['Peripheral oxygen saturation (observable entity)', 'SpO2 - saturation of peripheral oxygen', 'Peripheral oxygen saturation'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#431314004'
+WARNING: Observation/example-openmrs-Observation: Observation.code.coding[0]: Wrong Display Name 'Arterial blood oxygen saturation (pulse oximeter)' for http://snomed.info/sct#431314004 - should be one of 3 choices: 'Peripheral oxygen saturation (observable entity), "SpO2 - saturation of peripheral oxygen", "Peripheral oxygen saturation"' for the language(s) '--' (from Tx-Server) for 'http://snomed.info/sct#431314004'
 INFORMATION: Observation/example-openmrs-Observation: Observation.referenceRange[0].type.coding[0]: Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-example-openmrs-Patient.json ==
 INFORMATION: Patient/example-openmrs-Patient: Patient.identifier[0].extension[0]: This element does not match any known slice defined in the profile http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier|0.1.0
@@ -547,7 +547,7 @@ WARNING: SearchParameter/serviceRequest-subject-identifier: SearchParameter: Rul
 == fsh-generated/resources/SearchParameter-serviceRequest-subject-name.json ==
 WARNING: SearchParameter/serviceRequest-subject-name: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.json ==
-ERROR: ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set 'OpenMRS Order Code' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs|0.1.0), and a code is required from this value set.  (error message = Not in value set http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs)
+ERROR: ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763: ServiceRequest.code.coding[0]: The Coding provided (http://snomed.info/sct#48023004) is not in the value set 'OpenMRS Order Code' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs|0.1.0), and a code is required from this value set.  (error message = The provided code http://snomed.info/sct#48023004 is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs')
 == fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
 ERROR: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.mapping[4].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport' does not resolve
 WARNING: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.mapping[4].comment: value should not start or finish with whitespace 'Diagnostic Report resource that is part of the Diagnostic Medicine Module. A DiagnosticReport is used to represent the results of diagnostic tests that are performed in a given clinical context. '
@@ -594,6 +594,7 @@ ERROR: StructureDefinition/omrs-patient: StructureDefinition.mapping[5].uri: URL
 WARNING: StructureDefinition/omrs-patient: StructureDefinition.differential.element[5].mapping[0].map: value should not start or finish with whitespace 'Person.personAttribute '
 == fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json ==
 == fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json ==
+WARNING: StructureDefinition/omrs-patient-identifier-location: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-omrs-person.json ==
 ERROR: StructureDefinition/omrs-person: StructureDefinition.mapping[3].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/Person' does not resolve
@@ -604,11 +605,12 @@ ERROR: StructureDefinition/omrs-practitioner: StructureDefinition.mapping[4].uri
 ERROR: StructureDefinition/omrsmedication-dispense: StructureDefinition.mapping[5].uri: URL value 'http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense' does not resolve
 INFORMATION: StructureDefinition/omrsmedication-dispense: StructureDefinition.snapshot.element[29].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.json ==
-ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
-ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs|0.1.0), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)
+ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.status: The value provided ('completed') is not in the value set 'OpenMRS Status for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs|0.1.0), and a code is required from this value set) (error message = The CodeSystem http://hl7.org/fhir/ValueSet/task-status is unknown; The provided code http://hl7.org/fhir/ValueSet/task-status#completed is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-status-vs' (from Tx-Server))
+ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.intent: The value provided ('order') is not in the value set 'OpenMRS Intent for Task' (http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs|0.1.0), and a code is required from this value set) (error message = The CodeSystem http://hl7.org/fhir/ValueSet/task-intent is unknown; The provided code http://hl7.org/fhir/ValueSet/task-intent#order is not in the value set 'http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs' (from Tx-Server))
 ERROR: Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9: Task.owner: Unable to resolve resource with reference 'Organization/1832473e-2fe0-452d-abe9-3cdb9879522f'
 == fsh-generated/resources/ValueSet-OpenMRS-diagnostic-report-status-vs.json ==
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
+INFORMATION: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: Unknown Code 'diagnostic-report-status-partial' in the system 'http://hl7.org/fhir/diagnostic-report-status'
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]: The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[2]: The code diagnostic-report-status-unknown is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[3]: The code diagnostic-report-status-canceled is not valid in the system http://hl7.org/fhir/diagnostic-report-status
@@ -617,30 +619,43 @@ WARNING: ValueSet/OpenMRS-diagnostic-report-status-vs: ValueSet: The ShareableVa
 == fsh-generated/resources/ValueSet-OpenMRS-order-code-vs.json ==
 WARNING: ValueSet/OpenMRS-order-code-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-OpenMRS-task-intent-vs.json ==
-WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System 'http://hl7.org/fhir/ValueSet/task-intent' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://hl7.org/fhir/ValueSet/task-intent. Server Error: The code system 'http://hl7.org/fhir/ValueSet/task-intent' is not known (encountered paired with code = 'task-intent-order'); The code provided (http://hl7.org/fhir/ValueSet/task-intent#task-intent-order) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0].concept[0]: The code task-intent-order is not valid in the system http://hl7.org/fhir/ValueSet/task-intent
+INFORMATION: ValueSet/OpenMRS-task-intent-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem http://hl7.org/fhir/ValueSet/task-intent is unknown; The provided code http://hl7.org/fhir/ValueSet/task-intent#task-intent-order is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
 WARNING: ValueSet/OpenMRS-task-intent-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'OpenMRS-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
 == fsh-generated/resources/ValueSet-OpenMRS-task-status-vs.json ==
-WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0]: Unknown System 'http://hl7.org/fhir/ValueSet/task-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://hl7.org/fhir/ValueSet/task-status. Server Error: The code system 'http://hl7.org/fhir/ValueSet/task-status' is not known (encountered paired with code = 'task-status-requested'); The code provided (http://hl7.org/fhir/ValueSet/task-status#task-status-requested) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0].concept[0]: The code task-status-requested is not valid in the system http://hl7.org/fhir/ValueSet/task-status
+INFORMATION: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem http://hl7.org/fhir/ValueSet/task-status is unknown; The provided code http://hl7.org/fhir/ValueSet/task-status#task-status-requested is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/OpenMRS-task-status-vs: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/OpenMRS-task-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'OpenMRS-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
 == fsh-generated/resources/ValueSet-encounter-status-vs.json ==
-WARNING: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0]: Unknown System 'https://hl7.org/fhir/encounter-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://hl7.org/fhir/encounter-status. Server Error: The code system 'https://hl7.org/fhir/encounter-status' is not known (encountered paired with code = 'planned'); The code provided (https://hl7.org/fhir/encounter-status#planned) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0].concept[0]: The code planned is not valid in the system https://hl7.org/fhir/encounter-status
+INFORMATION: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem https://hl7.org/fhir/encounter-status is unknown; The provided code https://hl7.org/fhir/encounter-status#planned is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/encounter-status-vs: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/encounter-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'encounter-status-vs'): Error from server: Unable to provide support for code system https://hl7.org/fhir/encounter-status
 == fsh-generated/resources/ValueSet-location-status-vs.json ==
-WARNING: ValueSet/location-status-vs: ValueSet.compose[0].include[0]: Unknown System 'https://fhir.openmrs.org/location-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://fhir.openmrs.org/location-status. Server Error: The code system 'https://fhir.openmrs.org/location-status' is not known (encountered paired with code = 'active'); The code provided (https://fhir.openmrs.org/location-status#active) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/location-status-vs: ValueSet.compose[0].include[0].concept[0]: The code active is not valid in the system https://fhir.openmrs.org/location-status
+INFORMATION: ValueSet/location-status-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem https://fhir.openmrs.org/location-status is unknown; The provided code https://fhir.openmrs.org/location-status#active is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/location-status-vs: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/location-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'location-status-vs'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/location-status
 == fsh-generated/resources/ValueSet-medication-request-intent-vs.json ==
-WARNING: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent. Server Error: The code system 'http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent' is not known (encountered paired with code = 'proposal'); The code provided (http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent#proposal) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0].concept[0]: The code proposal is not valid in the system http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent
+INFORMATION: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent is unknown; The provided code http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent#proposal is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/medication-request-intent-vs: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/medication-request-intent-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-intent-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent
 == fsh-generated/resources/ValueSet-medication-request-priority-vs.json ==
-WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0]: Unknown System 'http://fhir.openmrs.org/fhir/request-priority' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://fhir.openmrs.org/fhir/request-priority. Server Error: The code system 'http://fhir.openmrs.org/fhir/request-priority' is not known (encountered paired with code = 'routine'); The code provided (http://fhir.openmrs.org/fhir/request-priority#routine) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0].concept[0]: The code routine is not valid in the system http://fhir.openmrs.org/fhir/request-priority
+INFORMATION: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0].concept[0]: The CodeSystem http://fhir.openmrs.org/fhir/request-priority is unknown; The provided code http://fhir.openmrs.org/fhir/request-priority#routine is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/medication-request-priority-vs: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/medication-request-priority-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'medication-request-priority-vs'): Error from server: Unable to provide support for code system http://fhir.openmrs.org/fhir/request-priority
 == fsh-generated/resources/ValueSet-valueset-immunization-status.json ==
-WARNING: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0]: Unknown System 'https://fhir.openmrs.org/fhir/valueset-immunization-status' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://fhir.openmrs.org/fhir/valueset-immunization-status. Server Error: The code system 'https://fhir.openmrs.org/fhir/valueset-immunization-status' is not known (encountered paired with code = 'completed'); The code provided (https://fhir.openmrs.org/fhir/valueset-immunization-status#completed) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0].concept[0]: The code completed is not valid in the system https://fhir.openmrs.org/fhir/valueset-immunization-status
+INFORMATION: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0].concept[0]: The CodeSystem https://fhir.openmrs.org/fhir/valueset-immunization-status is unknown; The provided code https://fhir.openmrs.org/fhir/valueset-immunization-status#completed is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+ERROR: ValueSet/valueset-immunization-status: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 WARNING: ValueSet/valueset-immunization-status: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'valueset-immunization-status'): Error from server: Unable to provide support for code system https://fhir.openmrs.org/fhir/valueset-immunization-status
