@@ -42,7 +42,7 @@ Description: "Indicates that a medication product is to be or has been dispensed
 
 Mapping: MedicationDispenseMapping
 Source: OMRSMedicationDispense
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense"
+Target: "http://hl7.org/fhir/R4/StructureDefinition/MedicationDispense"
 Id: medication-dispense-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "MedicationDispense is a FHIR resource that represents a description of the medication product (supply) provided and the instructions for administering the medication and these are mapped to OpenMRS MedicationDispense objects between HL7 FHIR"

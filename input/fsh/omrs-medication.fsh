@@ -17,7 +17,7 @@ Description: "A FHIR Medication Resource as understood by OpenMRS"
 
 Mapping: OMRSMedicationMapping
 Source: OMRSMedication
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Medication"
+Target: "http://hl7.org/fhir/R4/StructureDefinition/Medication"
 Id: medication-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use."
@@ -42,7 +42,7 @@ Description: "Medication Resource example"
 * code.coding[0].display = "Vancomycin"
 * form.coding[+].code = #385219001
 * form.coding[=].system = "http://snomed.info/sct"
-* form.coding[=].display = "Injection Solution (qualifier value)"
+* form.coding[=].display = "Solution for injection"
 * ingredient.itemCodeableConcept[0].coding.code = #66955
 * ingredient.itemCodeableConcept[0].coding.system = "http://www.nlm.nih.gov/research/umls/rxnorm"
 * ingredient.itemCodeableConcept[0].coding.display = "Vancomycin Hydrochloride"

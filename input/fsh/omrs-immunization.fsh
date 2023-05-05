@@ -6,7 +6,7 @@ Description: "A FHIR Immunization Resource as understood by OpenMRS"
 * id 1..1
 * identifier 0..0
 * status 1..1
-* status from ImmunizationStatusVs
+//* status from ImmunizationStatusVs
 * statusReason 0..0
 * vaccineCode 1..1
 * patient 1..1 
@@ -50,6 +50,7 @@ ValueSet: ImmunizationStatusVs
 Id: valueset-immunization-status
 Title: "Immunization Status ValueSet"
 Description: "Immunization Value Set"
+* ^experimental = true
 * $ISVS#completed "completed"
 * $ISVS#entered-in-error "entered-in-error"
 * $ISVS#not-done "not-done"
@@ -58,7 +59,7 @@ Description: "Immunization Value Set"
 // Immunization Mapping 
 Mapping: ImmunizationMapping 
 Source: OMRSImmunization
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Immunization"
+Target: "http://hl7.org/fhir/R4/StructureDefinition/Immunization"
 Id: immunization-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Immunization is a FHIR resource that represents details about the patient's immunization,FHIR Immunizations are mapped to OpenMRS Immunization Objects"

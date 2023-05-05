@@ -28,6 +28,8 @@ CodeSystem: EncounterType
 Id: encounter-type
 Title: "Encounter Type Code System"
 Description: "Encounter Type Coding System"
+* ^experimental = true
+* ^caseSensitive = true
 * #discharge "Discharge" "Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon."
 * #admission "Admission" "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
 * #visitNote "Visit Note" "Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician."
@@ -39,20 +41,21 @@ Description: "Encounter Type Coding System"
 
 /**encounter status Value set **/
 
-Alias: $statusVsUrl = https://hl7.org/fhir/encounter-status
-ValueSet: EncounterVs
-Id: encounter-status-vs
-Title: "EncounterStatus"
-Description: "Encounter  status ValueSet"
-* $statusVsUrl#planned "Planned"
-* $statusVsUrl#arrived "Arrived"
-* $statusVsUrl#triaged "Triaged"
-* $statusVsUrl#in-progress "In Progress"
-* $statusVsUrl#onleave "On Leave"
-* $statusVsUrl#finished "Finished"
-* $statusVsUrl#cancelled "Cancelled"
-* $statusVsUrl#entered-in-error "Entered in Error"
-* $statusVsUrl#unknown "Unknown"
+// Alias: $statusVsUrl = https://hl7.org/fhir/encounter-status
+// ValueSet: EncounterVs
+// Id: encounter-status-vs
+// Title: "EncounterStatus"
+// Description: "Encounter  status ValueSet"
+// * ^experimental = true
+// * #planned "Planned"
+// * $statusVsUrl#arrived "Arrived"
+// * $statusVsUrl#triaged "Triaged"
+// * $statusVsUrl#in-progress "In Progress"
+// * $statusVsUrl#onleave "On Leave"
+// * $statusVsUrl#finished "Finished"
+// * $statusVsUrl#cancelled "Cancelled"
+// * $statusVsUrl#entered-in-error "Entered in Error"
+// * $statusVsUrl#unknown "Unknown"
 
 /** OMRS Encounter Resource Example **/
 
@@ -78,7 +81,7 @@ Description: "Example OMRS Encounter"
 /** Encounter FHIR -- Openmrs Mapping*/
 Mapping: EncounterMapping
 Source: OMRSEncounter
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Encounter"
+Target: "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
 Id: encounter-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Encounter is an FHIR resource that is used to represent an Interaction between a patient and healthcare provider(s)  for the purpose of providing healthcare services or assessing the health status of a patient. Encounter FHIR resources are mapped to both OpenMrs Encounter and Visit Objects."
@@ -169,7 +172,7 @@ Usage: #definition
 Title: "Search through Encounter endpoint by subject uuid"
 * name = "EncounterSubjectSearchParameter"
 * status = #active
-* description = "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid} "
+* description = "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #Encounter
 * target = #Encounter
@@ -298,7 +301,7 @@ Title: "Search through Encounter endpoint by the patient's full or partial name"
 Instance: Encounter-participant
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through Encounter endpoint by a given Practitioner "
+Title: "Search through Encounter endpoint by a given Practitioner"
 * name = "EncounterParticipantSearchParameter"
 * status = #active
 * description = "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}"

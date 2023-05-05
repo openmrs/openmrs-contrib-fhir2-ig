@@ -10,9 +10,9 @@ Description: "A Task resource represent an activity that is to be performed,and 
 * for only Reference(OMRSPatient)
 * authoredOn 1..1
 * status 1..1
-* status from OMRSPatientTaskStatusVS
+//* status from OMRSPatientTaskStatusVS
 * intent 1..1
-* intent from OMRSPatientTaskIntentVS
+//* intent from OMRSPatientTaskIntentVS
 * lastModified 0..1
 * output 0..* 
 * input 0..*
@@ -43,7 +43,7 @@ Description: "Example OMRS Task Resource"
 
 Mapping: TaskMapping
 Source: OpenMRSTask
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Task"
+Target: "http://hl7.org/fhir/R4/StructureDefinition/Task"
 Id: task-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Task is used to represent an activity that is to be performed,and track the completion of said activity."
