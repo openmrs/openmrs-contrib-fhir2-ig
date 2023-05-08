@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "serviceRequest-patient-name",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ServiceRequestPatientNameSearchParameter</h2><p>Parameter <code>patient-name</code>:<code>string</code></p><div><p>Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient-name",
+  "version" : "0.1.0",
+  "name" : "ServiceRequestPatientNameSearchParameter",
+  "status" : "active",
+  "date" : "2023-05-08T19:25:22+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}",
+  "code" : "patient-name",
+  "base" : ["ServiceRequest"],
+  "type" : "string",
+  "target" : ["ServiceRequest"]
+}

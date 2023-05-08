@@ -1,68 +1,17 @@
 {
-  "package": "openmrs",
+  "package": "openmrs.fhir.core",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext",
+      "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext",
       "title": "Group descriptive extension",
       "types": [
-        "string",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
+        "string"
       ]
     },
     {
-      "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location",
+      "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location",
       "title": "OpenMRS Patient Identifier Location",
       "types": [
         "Reference"
@@ -72,116 +21,108 @@
   "profiles": {
     "DiagnosticReport": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report",
         "title": "OpenMRS Diagnostic Report"
       }
     ],
     "Observation": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation",
         "title": "OpenMRS Observation"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request",
         "title": "OpenMRS Service Request"
       }
     ],
     "Task": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task",
         "title": "OpenMRS Task"
       }
     ],
     "AllergyIntolerance": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-AllergyIntolerance",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance",
         "title": "OpenMRS AllergyIntolerance"
       }
     ],
     "Condition": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-Condition",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition",
         "title": "OpenMRS condition"
       }
     ],
     "Encounter": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter",
         "title": "Openmrs Encounter"
       }
     ],
     "Group": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-group",
         "title": "OMRS Group"
       }
     ],
     "Immunization": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization",
         "title": "OpenMRS Immunization"
       }
     ],
     "Location": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-location",
         "title": "OpenMRS Location"
       }
     ],
     "Medication": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication",
         "title": "OMRS Medication"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request",
         "title": "OpenMRS Medication Request"
       }
     ],
     "Patient": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient",
         "title": "OpenMRS Patient"
       }
     ],
     "Person": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-person",
         "title": "OpenMRS Person"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner",
         "title": "Openmrs Practitioner"
       }
     ],
     "MedicationDispense": [
       {
-        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense",
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense",
         "title": "OMRS Medication Dispense"
       }
     ]
   },
   "usage": {
-    "http://fhir.openmrs.org/ext/address": [
-      "Person.address"
-    ],
-    "http://fhir.openmrs.org/ext/group/description": [
+    "http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext": [
       "Group"
     ],
-    "http://fhir.openmrs.org/ext/patient/identifier#location": [
+    "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location": [
+      "Identifier",
       "Patient.identifier"
-    ],
-    "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext": [
-      "Group"
-    ],
-    "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location": [
-      "Identifier"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

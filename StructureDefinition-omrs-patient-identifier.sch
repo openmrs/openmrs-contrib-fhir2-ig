@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Identifier</sch:title>
     <sch:rule context="f:Identifier">
-      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location']) &gt;= 1">extension with URL = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location']) &lt;= 1">extension with URL = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location']) &gt;= 1">extension with URL = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location']) &lt;= 1">extension with URL = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

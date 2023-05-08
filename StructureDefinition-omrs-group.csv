@@ -23,7 +23,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Group.extension:description","Group.extension","description","","",1,1,"","","","Extension {[CanonicalType[http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext]]} {[]}
+"Group.extension:description","Group.extension","description","","",1,1,"","","","Extension {[CanonicalType[http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext]]} {[]}
 ","Group descriptive extension","Extension for group description","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -55,7 +55,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Group.quantity","Group.quantity","","","",0,1,"","","Y","unsignedInt {[]} {[]}
 ","Number of members","A count of the number of resource instances that are part of the group.","Note that the quantity may be less than the number of members if some of the members are not active.","Group size is a common defining characteristic.","","","","","","","",,,,,"",,,,"Group.quantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./quantity"
-"Group.managingEntity","Group.managingEntity","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner]]}
+"Group.managingEntity","Group.managingEntity","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner]]}
 ","Entity that is the custodian of the Group's definition","Entity responsible for defining and maintaining Group characteristics and/or registered members.","This does not strictly align with ownership of a herd or flock, but may suffice to represent that relationship in simple cases. More complex cases will require an extension.","","","","","","","","",,,,,"",,,,"Group.managingEntity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Cohort.creator"
 "Group.characteristic","Group.characteristic","","","",0,*,"","","","BackboneElement {[]} {[]}

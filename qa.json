@@ -1,12 +1,12 @@
 {
-  "url" : "http://fhir.openmrs.org/fhir/ImplementationGuide/openmrs",
+  "url" : "http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core",
   "name" : "OMRSFhir2ImplementationGuide",
-  "package-id" : "openmrs",
+  "package-id" : "openmrs.fhir.core",
   "ig-ver" : "0.1.0",
-  "date" : "Mon, 01 May, 2023 15:55:39 +0000",
-  "errs" : 49,
-  "warnings" : 148,
-  "hints" : 18,
+  "date" : "Mon, 08 May, 2023 19:25:22 +0000",
+  "errs" : 0,
+  "warnings" : 25,
+  "hints" : 11,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)"
 }

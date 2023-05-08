@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\Openmrs DiagnosticReport - JSON Representation - FHIR v4.0.1</title>
+    <title>OPENMRS.FHIR.CORE\Openmrs DiagnosticReport - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.205"}
-    h3,h4,h5,h6{--heading-prefix:"3.205"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.201"}
+    h3,h4,h5,h6{--heading-prefix:"3.201"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -74,7 +74,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS Core FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -154,7 +154,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">OpenMRS Core FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -228,35 +228,33 @@
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a>" : "8a849d5e-6011-4279-a124-40ada5a687de",
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report"
+      "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;&lt;span title=\&quot;Codes: {http://loinc.org 8480-6}\&quot;&gt;Systolic blood pressure&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;Unable to get Patient Details&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Reported&lt;/td&gt;&lt;td&gt;2011-03-04 11:45:33+1100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;i&gt;Observation&lt;/i&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;&lt;span title=\&quot;Codes: {http://loinc.org 8480-6}\&quot;&gt;Systolic blood pressure&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ricky Jeannette &lt;/b&gt; male, DoB: 1996-12-12 ( OpenMRS ID:\u00a04343534\u00a0(use:\u00a0OFFICIAL))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Reported&lt;/td&gt;&lt;td&gt;2011-03-04 11:45:33+1100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reference Range&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Flags&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-example-openmrs-Observation.html\&quot;&gt;&lt;span title=\&quot;Codes: {http://snomed.info/sct 431314004}\&quot;&gt;Arterial blood oxygen saturation (pulse oximeter)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;25 DEG C&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {http://fhir.openmrs.org/ext/obs/reference-range absolute}\&quot;&gt;absolute&lt;/span&gt;: 10 - 272&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\&quot;&gt;High&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a>" : "final",
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8480-6"
-      },
-      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8480-6",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Systolic blood pressure"
       }
     ]
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/5946f880-b197-400b-9caa-a3c661d23041"
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/example-openmrs-Patient"
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.encounter">encounter</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.issued">issued</a>" : "2011-03-04T11:45:33+11:00",
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/example-openmrs-Observation"
     }
   ]
 }</code></pre>
@@ -290,13 +288,13 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 19:25+0000">2023-05-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/core/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

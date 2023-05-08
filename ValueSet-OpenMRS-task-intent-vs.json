@@ -5,12 +5,13 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-intent</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>task-intent-order</td><td>Order</td></tr></table></li></ul></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-task-intent-vs",
+  "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-intent-vs",
   "version" : "0.1.0",
   "name" : "OMRSPatientTaskIntentVS",
   "title" : "OpenMRS Intent for Task",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "experimental" : true,
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

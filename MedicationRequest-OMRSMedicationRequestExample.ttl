@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/MedicationRequest/OMRSMedicationRequestExample> a fhir:MedicationRequest ;
+<http://fhir.openmrs.org/core/MedicationRequest/OMRSMedicationRequestExample> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "OMRSMedicationRequestExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request>
      ] )
   ] ; # 
   fhir:text [
@@ -34,16 +34,16 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
      fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
+     fhir:link <http://fhir.openmrs.org/core/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
      fhir:reference [ fhir:v "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
   ] ; # 
   fhir:authoredOn [ fhir:v "2022-08-07"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
+     fhir:link <http://fhir.openmrs.org/core/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
      fhir:reference [ fhir:v "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ]
   ] ; # 
   fhir:dosageInstruction ( [

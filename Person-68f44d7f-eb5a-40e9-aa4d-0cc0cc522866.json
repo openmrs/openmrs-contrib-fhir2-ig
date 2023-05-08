@@ -2,7 +2,7 @@
   "resourceType" : "Person",
   "id" : "68f44d7f-eb5a-40e9-aa4d-0cc0cc522866",
   "meta" : {
-    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"]
+    "profile" : ["http://fhir.openmrs.org/core/StructureDefinition/omrs-person"]
   },
   "text" : {
     "status" : "generated",
@@ -12,6 +12,10 @@
     "id" : "53fbd0ef-ae10-46a0-9d0a-387917a66d6e",
     "use" : "official",
     "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR"
+      }],
       "text" : "OpenMRS ID"
     },
     "value" : "1000Y"
@@ -24,9 +28,6 @@
   "gender" : "male",
   "birthDate" : "2001-09-08",
   "address" : [{
-    "extension" : [{
-      "url" : "http://fhir.openmrs.org/ext/address"
-    }],
     "use" : "home",
     "city" : "Ntungamo",
     "district" : "Ntungamo",

@@ -2,7 +2,7 @@
   "resourceType" : "Encounter",
   "id" : "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb",
   "meta" : {
-    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"]
+    "profile" : ["http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"]
   },
   "text" : {
     "status" : "generated",

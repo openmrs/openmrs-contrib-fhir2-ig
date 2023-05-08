@@ -3,13 +3,13 @@
   "id" : "condition-patient.family",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>conditionPatientFamilyNameSearchParameter</h2><p>Parameter <code>patient.family</code>:<code>string</code></p><div><p>Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ConditionPatientFamilyNameSearchParameter</h2><p>Parameter <code>patient.family</code>:<code>string</code></p><div><p>Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/condition-patient.family",
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/condition-patient.family",
   "version" : "0.1.0",
-  "name" : "conditionPatientFamilyNameSearchParameter",
+  "name" : "ConditionPatientFamilyNameSearchParameter",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

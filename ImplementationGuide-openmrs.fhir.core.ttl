@@ -1,0 +1,3150 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "openmrs.fhir.core"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OMRSFhir2ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core</pre><div><p>An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OMRSFhir2ImplementationGuide"] ; # 
+  fhir:title [ fhir:v "OpenMRS Core FHIR Implementation Guide"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-08T19:25:22+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "OpenMRS, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openmrs.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR"] ; # 
+  fhir:packageId [ fhir:v "openmrs.fhir.core"] ; # 
+  fhir:license [ fhir:v "CC-BY-SA-4.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2021+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.openmrs.org/core/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2021+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.openmrs.org/core/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-address" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Address" ] ;
+       fhir:description [ fhir:v "Address profile specifies the geological location details" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-Condition" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS condition" ] ;
+       fhir:description [ fhir:v "A FHIR Condition as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Openmrs Encounter" ] ;
+       fhir:description [ fhir:v "A FHIR Encounter as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-group" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Group" ] ;
+       fhir:description [ fhir:v "A Group Resource is described as Cohort in Fhir2 OMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-immunization" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Immunization" ] ;
+       fhir:description [ fhir:v "A FHIR Immunization Resource as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-location" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Location" ] ;
+       fhir:description [ fhir:v "An OpenMRS location" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-location-contact-point> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-location-contact-point" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Location Contact Point" ] ;
+       fhir:description [ fhir:v "An OpenMRS Location Phone Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-medication" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Medication" ] ;
+       fhir:description [ fhir:v "A FHIR Medication Resource as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrsmedication-dispense" ]
+       ] ;
+       fhir:name [ fhir:v "OMRS Medication Dispense" ] ;
+       fhir:description [ fhir:v "Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-medication-request" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Medication Request" ] ;
+       fhir:description [ fhir:v "A FHIR MedicationRequest as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-patient" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Patient" ] ;
+       fhir:description [ fhir:v "A FHIR Patient as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Patient Identifier" ] ;
+       fhir:description [ fhir:v "Patient Identifers as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-person> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-person" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Person" ] ;
+       fhir:description [ fhir:v "A FHIR Person as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Openmrs Practitioner" ] ;
+       fhir:description [ fhir:v "A FHIR Practitioner as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-AllergyIntolerance" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "A FHIR Allergy as understood by OpenMRS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/OpenMRS-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Diagnostic Report" ] ;
+       fhir:description [ fhir:v "DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/OpenMRS-observation" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Observation" ] ;
+       fhir:description [ fhir:v "Observation resource created in OpenMRS representing a result for an order submitted by an EMR System" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/OpenMRS-service-request" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Service Request" ] ;
+       fhir:description [ fhir:v "Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task> ;
+         fhir:reference [ fhir:v "StructureDefinition/OpenMRS-task" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Task" ] ;
+       fhir:description [ fhir:v "A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-group-description-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Group descriptive extension" ] ;
+       fhir:description [ fhir:v "Extension for group description" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-patient-identifier-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/omrs-patient-identifier-location" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Patient Identifier Location" ] ;
+       fhir:description [ fhir:v "OpenMRS location for which this identifier is valid" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ValueSet/medication-request-intent-vs> ;
+         fhir:reference [ fhir:v "ValueSet/medication-request-intent-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Request Intent Vs" ] ;
+       fhir:description [ fhir:v "Medication Request Intent ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ValueSet/medication-request-priority-vs> ;
+         fhir:reference [ fhir:v "ValueSet/medication-request-priority-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Request Priority ValueSet" ] ;
+       fhir:description [ fhir:v "Openmrs Medication Request Priority ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-intent-vs> ;
+         fhir:reference [ fhir:v "ValueSet/OpenMRS-task-intent-vs" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Intent for Task" ] ;
+       fhir:description [ fhir:v "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/OpenMRS-task-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Status for Task" ] ;
+       fhir:description [ fhir:v "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/OpenMRS-order-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Order Code" ] ;
+       fhir:description [ fhir:v "The code for the openmrs requested in the EMR." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/CodeSystem/encounter-type> ;
+         fhir:reference [ fhir:v "CodeSystem/encounter-type" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Type Code System" ] ;
+       fhir:description [ fhir:v "Encounter Type Coding System" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6> ;
+         fhir:reference [ fhir:v "MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Medication Dispense Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Medication Dispense resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AllergyIntolerance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc> ;
+         fhir:reference [ fhir:v "AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Allergy Intolerance Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Allergy Intolerance resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
+         fhir:reference [ fhir:v "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Encounter Resource Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Encounter resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Person" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866> ;
+         fhir:reference [ fhir:v "Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Person Example" ] ;
+       fhir:description [ fhir:v "Example OMRS Person resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-person"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
+         fhir:reference [ fhir:v "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Practitioner Example" ] ;
+       fhir:description [ fhir:v "Practitioner Resource Example" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de> ;
+         fhir:reference [ fhir:v "DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de" ]
+       ] ;
+       fhir:name [ fhir:v "Openmrs DiagnosticReport" ] ;
+       fhir:description [ fhir:v "Example OMRS DiagnosticReport Resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-category> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-category" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the category" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-clinical-status> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-clinical-status" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the clinical-status" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-id> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in AllergyIntolerance endpoint basing on AllergyIntolerance lastUpdated  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the AllergyIntolerance lastUpdated field for the AllergyIntolerance record eg) /ws/fhir2/{release}/AllergyIntolerance?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-manifestation> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-manifestation" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the manifestation" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-patient-family> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-patient-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-severity> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-severity" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by the severity" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/AllergyIntolerance-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through AllergyIntolerance endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Condition-requester-family> ;
+         fhir:reference [ fhir:v "SearchParameter/Condition-requester-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Practitioner family" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Condition-requester-given> ;
+         fhir:reference [ fhir:v "SearchParameter/Condition-requester-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Practitioner given" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-address-city> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-address-city" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on Encounter location address-city attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-address-country> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-address-country" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on  Encounter location address-country attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-address-postalcode> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-address-postalcode" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on Encounter location address-postalcode attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-postalcode field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-postalcode={postalCode}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-address-state> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-address-state" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on Encounter location address-state attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-state field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-state={state}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-date> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-date" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the date when the encounter was created" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-id> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on Encounter uuid  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Encounter endpoint basing on Encounter lastUpdated  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-location> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-location" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint based on location reference" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-participant> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-participant" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by a given Practitioner" ] ;
+       fhir:description [ fhir:v "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-participant-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-participant-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by a given Practitioner" ] ;
+       fhir:description [ fhir:v "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-participant.family> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-participant.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the Practitioner's family name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-participant.given> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-participant.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the Practitioner's given name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-participant.name> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-participant.name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the Practitioner's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-patient.family> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-patient.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Encounter-type> ;
+         fhir:reference [ fhir:v "SearchParameter/Encounter-type" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Encounter endpoint by encounter type" ] ;
+       fhir:description [ fhir:v "Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-id> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-medication> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-medication" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint based on medication reference" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-patient.family> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-requestor> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-requestor" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by a given Practitioner" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-requestor-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-requestor-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by a given Practitioner" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-requestor.family> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-requestor.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the Practitioner's family name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-requestor.given> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-requestor.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the Practitioner's given name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-requestor.name> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-requestor.name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by the Practitioner's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through MedicationRequest endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/MedicationRequest/OMRSMedicationRequestExample> ;
+         fhir:reference [ fhir:v "MedicationRequest/OMRSMedicationRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Medication Request Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Medication Request resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-address-city> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-address-city" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner's address-city attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-address-country> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-address-country" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner's address-country attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-address-postalcode> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-address-postalcode" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-address-state> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-address-state" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner's address-state attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-id> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner uuid attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Practitioner endpoint by a given Practitioner" ] ;
+       fhir:description [ fhir:v "Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner.family> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Practitioner endpoint by the Practitioner's family name" ] ;
+       fhir:description [ fhir:v "Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner.given> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Practitioner endpoint by the Practitioner's given name" ] ;
+       fhir:description [ fhir:v "Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Practitioner.name> ;
+         fhir:reference [ fhir:v "SearchParameter/Practitioner.name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through Practitioner endpoint by the Practitioner's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Task-basedOn> ;
+         fhir:reference [ fhir:v "SearchParameter/Task-basedOn" ]
+       ] ;
+       fhir:name [ fhir:v "Search through FhirTask endpoint by the ServiceRequest Reference uuid" ] ;
+       fhir:description [ fhir:v "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Task-id> ;
+         fhir:reference [ fhir:v "SearchParameter/Task-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Task endpoint basing on Task uuid attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Task-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/Task-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Task endpoint basing on Task lastUpdated attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Task-owner> ;
+         fhir:reference [ fhir:v "SearchParameter/Task-owner" ]
+       ] ;
+       fhir:name [ fhir:v "Search through FhirTask endpoint by the Organization Reference uuid" ] ;
+       fhir:description [ fhir:v "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/Task-status> ;
+         fhir:reference [ fhir:v "SearchParameter/Task-status" ]
+       ] ;
+       fhir:name [ fhir:v "Search through FhirTask endpoint by FhirTask status in the current state" ] ;
+       fhir:description [ fhir:v "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
+         fhir:reference [ fhir:v "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252" ]
+       ] ;
+       fhir:name [ fhir:v "Location Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Location resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-location"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c> ;
+         fhir:reference [ fhir:v "Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Condition Resource Example" ] ;
+       fhir:description [ fhir:v "Example OMRS Condition resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Group/bc572131-c234-436f-9194-00287759a3e4> ;
+         fhir:reference [ fhir:v "Group/bc572131-c234-436f-9194-00287759a3e4" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Group Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Group resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-group"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763> ;
+         fhir:reference [ fhir:v "ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS ServiceRequest Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Service Request resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-clinical-status> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-clinical-status" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Condition clinical status" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-code> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-code" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by concept code" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-encounter> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by encounter uuid" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-id> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by service Uuid" ] ;
+       fhir:description [ fhir:v "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by service lastUpdated field" ] ;
+       fhir:description [ fhir:v "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-occurrence> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-occurrence" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Occurrence when service should occurance" ] ;
+       fhir:description [ fhir:v "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-onset-age> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-onset-age" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Condition clinical onset age" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-onset-date> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-onset-date" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Condition clinical onset date" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by patient uuid" ] ;
+       fhir:description [ fhir:v "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search condition endpoint by patient identifier id" ] ;
+       fhir:description [ fhir:v "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-patient.family> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-patient.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condtion endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-recorded-date> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-recorded-date" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by date when the record was created" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-requester> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-requester" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Practitioner uuid" ] ;
+       fhir:description [ fhir:v "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-requester-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-requester-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Practitioner identifier" ] ;
+       fhir:description [ fhir:v "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-requester-name> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-requester-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by Practitioner name" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condtion endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/condition-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/condition-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through condition endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663> ;
+         fhir:reference [ fhir:v "Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Immunization Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Immunization Resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Organization/e05c3693-4bcf-4e14-8900-86582265c659> ;
+         fhir:reference [ fhir:v "Organization/e05c3693-4bcf-4e14-8900-86582265c659" ]
+       ] ;
+       fhir:name [ fhir:v "Organization example" ] ;
+       fhir:description [ fhir:v "Example organization performing a task" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9> ;
+         fhir:reference [ fhir:v "Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Task" ] ;
+       fhir:description [ fhir:v "Example OMRS Task resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Observation/example-openmrs-Observation> ;
+         fhir:reference [ fhir:v "Observation/example-openmrs-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Observation Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Observation resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
+         fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Patient Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Patient resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/Medication/f49e4247-528a-4cfd-8856-de161d03fa76> ;
+         fhir:reference [ fhir:v "Medication/f49e4247-528a-4cfd-8856-de161d03fa76" ]
+       ] ;
+       fhir:name [ fhir:v "OpenMRS Medication Example" ] ;
+       fhir:description [ fhir:v "Example OpenMRS Medication resource" ] ;
+       fhir:example [
+         fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"^^xsd:anyURI ;
+         fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-medication>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/group-Search-entity-paramenter> ;
+         fhir:reference [ fhir:v "SearchParameter/group-Search-entity-paramenter" ]
+       ] ;
+       fhir:name [ fhir:v "Search in group endpoint using Managing entity Reference" ] ;
+       fhir:description [ fhir:v "Search for a group  basing on managing entity Reference(Practitioner)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-address-city> ;
+         fhir:reference [ fhir:v "SearchParameter/location-address-city" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location address-city attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-city field for the location record eg) /ws/fhir2/{release}/Location?address-city={city}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-address-country> ;
+         fhir:reference [ fhir:v "SearchParameter/location-address-country" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location address-country attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-country field for the location record eg) /ws/fhir2/{release}/Location?address-country={country}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-address-postalcode> ;
+         fhir:reference [ fhir:v "SearchParameter/location-address-postalcode" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location address-postalcode attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-postalcode field for the location record eg) /ws/fhir2/{release}/Location?address-postalcode={postalCode}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-address-state> ;
+         fhir:reference [ fhir:v "SearchParameter/location-address-state" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location address-state attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-id> ;
+         fhir:reference [ fhir:v "SearchParameter/location-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location uuid  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/location-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location lastUpdated  attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the location lastUpdated field for the location record eg) /ws/fhir2/{release}/Location?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-name> ;
+         fhir:reference [ fhir:v "SearchParameter/location-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location name attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the name field for the location record eg) /ws/fhir2/{release}/Location?name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-partof> ;
+         fhir:reference [ fhir:v "SearchParameter/location-partof" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location partof attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-partof-name> ;
+         fhir:reference [ fhir:v "SearchParameter/location-partof-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location partof reference location name attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the partof location reference name field for the location record eg) /ws/fhir2/{release}/Location?partof.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/location-tag> ;
+         fhir:reference [ fhir:v "SearchParameter/location-tag" ]
+       ] ;
+       fhir:name [ fhir:v "Search in Location endpoint basing on location tag attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the tag field for the location record eg) /ws/fhir2/{release}/Location?_tag={tag}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-category> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-category" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by category" ] ;
+       fhir:description [ fhir:v "Searches for observations by the observation category eg) /ws/fhir2/{release}/Observation?category={category}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-concept-code> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-concept-code" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by concept code" ] ;
+       fhir:description [ fhir:v "Searches for observations with particular codes (concepts) eg) /ws/fhir2/{release}/Observation?code={code}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-date> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-date" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by date" ] ;
+       fhir:description [ fhir:v "Searches for observations by the observation date and time eg) /ws/fhir2/{release}/Observation?date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-encounter> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by encounter" ] ;
+       fhir:description [ fhir:v "Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-has-member> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-has-member" ]
+       ] ;
+       fhir:name [ fhir:v "Search through an observation group in the Obervation EndPoint that contains a given observation" ] ;
+       fhir:description [ fhir:v "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-has-member-code> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-has-member-code" ]
+       ] ;
+       fhir:name [ fhir:v "Searches for an observation group that contains an observation with the provided code" ] ;
+       fhir:description [ fhir:v "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-id> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-id" ]
+       ] ;
+       fhir:name [ fhir:v "Searches based on the exact UUID of the person record" ] ;
+       fhir:description [ fhir:v "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Searches based on the the dateCreated field for the observation record" ] ;
+       fhir:description [ fhir:v "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by a given patient" ] ;
+       fhir:description [ fhir:v "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-patient.family> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-patient.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for observations by the patient identifier eg) /ws/fhir2/{release}/Observation?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through observation endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-value-concept> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-value-concept" ]
+       ] ;
+       fhir:name [ fhir:v "Searches for an observation whose value is a concept that matches the provided concept code" ] ;
+       fhir:description [ fhir:v "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/observation-value-date> ;
+         fhir:reference [ fhir:v "SearchParameter/observation-value-date" ]
+       ] ;
+       fhir:name [ fhir:v "Searches for an observation whose value is a date by the specified date range." ] ;
+       fhir:description [ fhir:v "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-address-city> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-address-city" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's location city" ] ;
+       fhir:description [ fhir:v "Searches based on the patient's recorded city/village of address eg) /ws/fhir2/{release}/Patient?address-city={city}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-address-country> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-address-country" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's location country" ] ;
+       fhir:description [ fhir:v "Searches based on the patient's recorded country of address eg) /ws/fhir2/{release}/Patient?address-country={country}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-address-postalcode> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-address-postalcode" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's location postal code" ] ;
+       fhir:description [ fhir:v "Searches based on the patient's recorded postal code of address eg) /ws/fhir2/{release}/Patient?address-postalcode={postalCode}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-address-state> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-address-state" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's location state" ] ;
+       fhir:description [ fhir:v "Searches based on the patient's recorded state/province of addresseg) /ws/fhir2/{release}/Patient?address-state={state}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-birthdate> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-birthdate" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's birthdate attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-death-date> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-death-date" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's death-date attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-deceased> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-deceased" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint checking for those that passed on or still alive" ] ;
+       fhir:description [ fhir:v "Searches based on whether a patient is marked as deceased. Acceptable values are true or false eg) /ws/fhir2/{release}/Patient?deceased={boolean}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-gender> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-gender" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's gender attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-id> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's uuid" ] ;
+       fhir:description [ fhir:v "Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record" ] ;
+       fhir:description [ fhir:v "Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through patient endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-address-city> ;
+         fhir:reference [ fhir:v "SearchParameter/person-address-city" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's location city" ] ;
+       fhir:description [ fhir:v "Searches based on the person's recorded city/village of address eg) /ws/fhir2/{release}/Person?address-city={city}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-address-country> ;
+         fhir:reference [ fhir:v "SearchParameter/person-address-country" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's location country" ] ;
+       fhir:description [ fhir:v "Searches based on the person's recorded country of address eg) /ws/fhir2/{release}/Person?address-country={country}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-address-postalcode> ;
+         fhir:reference [ fhir:v "SearchParameter/person-address-postalcode" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's location postal code" ] ;
+       fhir:description [ fhir:v "Searches based on the person's recorded postal code of address eg) /ws/fhir2/{release}/Person?address-postalcode={postalCode}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-address-state> ;
+         fhir:reference [ fhir:v "SearchParameter/person-address-state" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's location state" ] ;
+       fhir:description [ fhir:v "Searches based on the person's recorded state/province of address eg) /ws/fhir2/{release}/Person?address-state={state}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-birthdate> ;
+         fhir:reference [ fhir:v "SearchParameter/person-birthdate" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's birthdate attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-gender> ;
+         fhir:reference [ fhir:v "SearchParameter/person-gender" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's gender attribute" ] ;
+       fhir:description [ fhir:v "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-id> ;
+         fhir:reference [ fhir:v "SearchParameter/person-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's uuid" ] ;
+       fhir:description [ fhir:v "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Person?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/person-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint basing on dateCreated or dateUpdated field of the person record" ] ;
+       fhir:description [ fhir:v "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/person-name> ;
+         fhir:reference [ fhir:v "SearchParameter/person-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through person endpoint by the person's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-code> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-code" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by concept code" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the serviceRequest concept code eg) /ws/fhir2/{release}/ServiceRequest?code={code}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-encounter> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by encounter uuid" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the serviceRequest encounter Uuid eg) /ws/fhir2/{release}/ServiceRequest?encounter={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-id> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by service Uuid" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by service lastUpdated field" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-occurrence> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-occurrence" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Occurrence when service should occurance" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on to occurrent date eg) /ws/fhir2/{release}/ServiceRequest?occurrence={date}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by patient uuid" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search serviceRequest endpoint by patient identifier id" ] ;
+       fhir:description [ fhir:v "Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by the patient's full or partial name" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient.family> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-patient.family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by the patient's family name" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-patient.given> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-patient.given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by the patient's given name" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-requester" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Practitioner uuid" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-family> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-requester-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Practitioner family" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-given> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-requester-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Practitioner given" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-requester-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Practitioner identifier" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest by the Practitioner identifier eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-name> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-requester-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by Practitioner name" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-subject" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by subject uuid" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject-family> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-subject-family" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by subject family" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject-given> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-subject-given" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by subject given" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.given={givenName}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-subject-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by subject identifier" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.identifier={identifier}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject-name> ;
+         fhir:reference [ fhir:v "SearchParameter/serviceRequest-subject-name" ]
+       ] ;
+       fhir:name [ fhir:v "Search through serviceRequest endpoint by subject name" ] ;
+       fhir:description [ fhir:v "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "changes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Changes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -3,13 +3,13 @@
   "id" : "serviceRequest-requester-name",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>serviceRequestRequesterNameSearchParameter</h2><p>Parameter <code>requester.name</code>:<code>string</code></p><div><p>Searches for serviceRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.name={name}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ServiceRequestRequesterNameSearchParameter</h2><p>Parameter <code>requester.name</code>:<code>string</code></p><div><p>Searches for serviceRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.name={name}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-name",
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-name",
   "version" : "0.1.0",
-  "name" : "serviceRequestRequesterNameSearchParameter",
+  "name" : "ServiceRequestRequesterNameSearchParameter",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

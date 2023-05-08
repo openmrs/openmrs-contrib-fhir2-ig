@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/observation-patient-identifier> a fhir:SearchParameter ;
+<http://fhir.openmrs.org/core/SearchParameter/observation-patient-identifier> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-patient-identifier"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>observationPatientIdentifierSearchParameter</h2><p>Parameter <code>patient.identifier</code>:<code>token</code></p><div><p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ObservationPatientIdentifierSearchParameter</h2><p>Parameter <code>patient.identifier</code>:<code>token</code></p><div><p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/observation-patient-identifier"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/core/SearchParameter/observation-patient-identifier"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "observationPatientIdentifierSearchParameter"] ; # 
+  fhir:name [ fhir:v "ObservationPatientIdentifierSearchParameter"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-01T15:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T19:25:22+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
