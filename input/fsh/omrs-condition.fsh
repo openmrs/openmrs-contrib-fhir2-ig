@@ -25,13 +25,13 @@ Description:  "A FHIR Condition as understood by OpenMRS"
 Instance: ConditionExample
 InstanceOf: OMRSCondition 
 Usage: #example
-Title: "Condition Resource Example"
-Description: "Example OMRS Condition"
+Title: "OpenMRS Condition Resource Example"
+Description: "Example OMRS Condition resource"
 * id = "a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
 * code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 * code.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding.code = #116128
-* subject = Reference(Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5)
+* subject = Reference(example-openmrs-Patient)
 * subject.type = "Patient"
 * subject.identifier.use = #official
 * subject.identifier.value = #101-6
@@ -41,7 +41,7 @@ Description: "Example OMRS Condition"
 /** Condition FHIR -- Openmrs Mapping*/
 Mapping: ConditionMapping
 Source: OMRSCondition
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Condition"
+Target: "Condition"
 Id: condition-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects."
@@ -60,7 +60,7 @@ Instance: condition-patient
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by patient uuid"
-* name = "conditionPatientSearchParameter"
+* name = "ConditionPatientSearchParameter"
 * status = #active
 * description = "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}"
 * code = #patient
@@ -73,7 +73,7 @@ Instance: condition-patient-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search condition endpoint by patient identifier id"
-* name = "conditionPatientIdentifierSearchParameter"
+* name = "ConditionPatientIdentifierSearchParameter"
 * status = #active
 * description = "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"
 * code = #patient.identifier
@@ -85,7 +85,7 @@ Instance: condition-patient.given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condtion endpoint by the patient's given name"
-* name = "conditionPatientGivenNameSearchParameter"
+* name = "ConditionPatientGivenNameSearchParameter"
 * status = #active
 * description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}"
 * code = #patient.given
@@ -97,7 +97,7 @@ Instance: condition-patient.family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by the patient's family name"
-* name = "conditionPatientFamilyNameSearchParameter"
+* name = "ConditionPatientFamilyNameSearchParameter"
 * status = #active
 * description = "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}"
 * code = #patient.family
@@ -105,14 +105,14 @@ Title: "Search through condition endpoint by the patient's family name"
 * target = #Condition
 * type = #string
 
-Instance: condition-patient.name
+Instance: condition-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by the patient's full or partial name"
-* name = "conditionPatientNameSearchParameter"
+* name = "ConditionPatientNameSearchParameter"
 * status = #active
-* description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}"
-* code = #patient.name
+* description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}"
+* code = #patient-name
 * base[0] = #Condition
 * target = #Condition
 * type = #string
@@ -121,7 +121,7 @@ Instance: condition-subject
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by subject uuid"
-* name = "conditionSubjectSearchParameter"
+* name = "ConditionSubjectSearchParameter"
 * status = #active
 * description = "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}"
 * code = #subject
@@ -134,7 +134,7 @@ Instance: condition-subject-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by subject identifier"
-* name = "conditionSubjectIdentifierSearchParameter"
+* name = "ConditionSubjectIdentifierSearchParameter"
 * status = #active
 * description = "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
@@ -146,7 +146,7 @@ Instance: condition-subject-given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by subject given"
-* name = "conditionSubjectGivenSearchParameter"
+* name = "ConditionSubjectGivenSearchParameter"
 * status = #active
 * description = "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}"
 * code = #subject.given
@@ -158,7 +158,7 @@ Instance: condition-subject-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condtion endpoint by subject family"
-* name = "conditionSubjectfamilySearchParameter"
+* name = "ConditionSubjectfamilySearchParameter"
 * status = #active
 * description = "	Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}"
 * code = #subject.family
@@ -170,7 +170,7 @@ Instance: condition-subject-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by subject name"
-* name = "conditionSubjectNameSearchParameter"
+* name = "ConditionSubjectNameSearchParameter"
 * status = #active
 * description = "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}"
 * code = #subject.name
@@ -182,7 +182,7 @@ Instance: condition-code
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by concept code"
-* name = "conditionCodeSearchParameter"
+* name = "ConditionCodeSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}"
 * code = #code
@@ -194,7 +194,7 @@ Instance: condition-encounter
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by encounter uuid"
-* name = "conditionEncounterSearchParameter"
+* name = "ConditionEncounterSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"
 * code = #code
@@ -206,7 +206,7 @@ Instance: condition-clinical-status
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Condition clinical status"
-* name = "conditionClinicalStatusSearchParameter"
+* name = "ConditionClinicalStatusSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"
 * code = #clinical-status
@@ -218,7 +218,7 @@ Instance: condition-requester
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Practitioner uuid"
-* name = "conditionSearchParameter"
+* name = "ConditionSearchParameter"
 * status = #active
 * description = "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"
 * code = #requester
@@ -230,7 +230,7 @@ Instance: condition-requester-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Practitioner identifier"
-* name = "conditionRequesterIdentifierSearchParameter"
+* name = "ConditionRequesterIdentifierSearchParameter"
 * status = #active
 * description = "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"
 * code = #requester.identifier
@@ -242,7 +242,7 @@ Instance: Condition-requester-given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Practitioner given"
-* name = "conditionRequesterGivenSearchParameter"
+* name = "ConditionRequesterGivenSearchParameter"
 * status = #active
 * description = "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"
 * code = #requester.given
@@ -254,7 +254,7 @@ Instance: Condition-requester-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Practitioner family"
-* name = "conditionRequesterfamilySearchParameter"
+* name = "ConditionRequesterfamilySearchParameter"
 * status = #active
 * description = "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"
 * code = #requester.family
@@ -266,7 +266,7 @@ Instance: condition-onset-date
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Condition clinical onset date"
-* name = "conditionOnsetdateSearchParameter"
+* name = "ConditionOnsetdateSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}"
 * code = #onset-date
@@ -278,7 +278,7 @@ Instance: condition-requester-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Practitioner name"
-* name = "conditionRequesterNameSearchParameter"
+* name = "ConditionRequesterNameSearchParameter"
 * status = #active
 * description = "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"
 * code = #requester.name
@@ -290,7 +290,7 @@ Instance: condition-onset-age
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Condition clinical onset age"
-* name = "conditionOnsetAgeSearchParameter"
+* name = "ConditionOnsetAgeSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}"
 * code = #onset-age
@@ -302,7 +302,7 @@ Instance: condition-occurrence
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by Occurrence when service should occurance"
-* name = "conditionOccurrenceSearchParameter"
+* name = "ConditionOccurrenceSearchParameter"
 * status = #active
 * description = "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"
 * code = #occurrence
@@ -314,7 +314,7 @@ Instance: condition-id
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by service Uuid"
-* name = "conditionIdSearchParameter"
+* name = "ConditionIdSearchParameter"
 * status = #active
 * description = "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}"
 * code = #_id
@@ -326,7 +326,7 @@ Instance: condition-recorded-date
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by date when the record was created"
-* name = "conditionRecordedDateSearchParameter"
+* name = "ConditionRecordedDateSearchParameter"
 * status = #active
 * description = "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}"
 * code = #recorded-date
@@ -338,7 +338,7 @@ Instance: condition-lastUpdated
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by service lastUpdated field"
-* name = "conditionLastUpdatedSearchParameter"
+* name = "ConditionLastUpdatedSearchParameter"
 * status = #active
 * description = "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}"
 * code = #_lastUpdated

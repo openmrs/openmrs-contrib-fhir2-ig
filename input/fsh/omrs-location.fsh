@@ -7,7 +7,7 @@ Title:        "OpenMRS Location"
 Description:  "An OpenMRS location"
 * id 1..1
 * status 0..1 
-* status from LocationStatusVS
+//* status from LocationStatusVS
 * name 1..1 
 * description 1..1
 * type 0..*
@@ -44,22 +44,23 @@ Description: "Address profile specifies the geological location details"
 * postalCode 0..1 
 * country 0..1 
 
-Alias: $SCT = https://fhir.openmrs.org/location-status
+Alias: $SCT = http://snomed.info/sct
 
-/** location status value set  **/
-ValueSet: LocationStatusVS
-Id: location-status-vs
-Title: "Location Status ValueSet"
-Description: "Indicates whether the location is still in use."
-* $SCT#active "Active" 
-* $SCT#inactive "Inactive" 
-* $SCT#suspended "Suspended"
+// /** location status value set  **/
+// ValueSet: LocationStatusVS
+// Id: location-status-vs
+// Title: "Location Status ValueSet"
+// Description: "Indicates whether the location is still in use."
+// * ^experimental = true
+// * $SCT#active "Active" 
+// * $SCT#inactive "Inactive" 
+// * $SCT#suspended "Suspended"
 
 /** Location Resource Mapping */
 
 Mapping: LocationMapping
 Source: OMRSLocation
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Location"
+Target: "Location"
 Id: location-Mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Location is a FHIR resource that represents details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated. In the current implementation, FHIR Locations are mapped to OpenMRS Location objects."
@@ -85,12 +86,12 @@ Instance: LocationExample
 InstanceOf: OMRSLocation
 Usage: #example
 Title: "Location Example"
-Description: "Example OMRS location"
+Description: "Example OpenMRS Location resource"
 * id = "a3b793f0-eb53-4cda-92ce-fe0a77106252"
 * status = #active
 * name = "Outpatient Clinic"
 * description = "Outpatient Clinic"
-* type.coding[0].code = #sleep
+* type.coding[0].code = #SLEEP
 * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * type.coding[0].display = "Sleep disorders unit"
 * telecom[+].system = #phone
@@ -100,7 +101,7 @@ Description: "Example OMRS location"
 * telecom[+].system = #email
 * telecom[=].value =  "hq@HL7.org"
 * address.use = #home
-* address.line[0].value = "3300 Washtenaw Avenue, Suite 227"
+* address.line[0] = "3300 Washtenaw Avenue, Suite 227"
 * address[0].city = "Ann Arbor"
 * address[0].district = "Mukono"
 * address[0].state = "MI"

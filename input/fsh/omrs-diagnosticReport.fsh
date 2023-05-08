@@ -20,21 +20,21 @@ Usage: #example
 Title: "Openmrs DiagnosticReport"
 Description: "Example OMRS DiagnosticReport Resource"
 * id = "8a849d5e-6011-4279-a124-40ada5a687de"
-* code.coding[+].system = "http://loinc.org"
-* code.coding[=].code = #8480-6
-* code.coding[+].display = "Systolic blood pressure"
-* subject = Reference(Patient/5946f880-b197-400b-9caa-a3c661d23041)
-* encounter = Reference(Encounter/6519d653-393b-4118-9c83-a3715b82d4ac)
-* result = Reference(Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669)
+//* code.coding[+].system = "http://loinc.org"
+* code.coding[+] = LOINC#8480-6
+* code.coding[=].display = "Systolic blood pressure"
+* subject = Reference(example-openmrs-Patient)
+* encounter = Reference(EncounterExample)
+* result = Reference(example-openmrs-Observation)
 * issued = "2011-03-04T11:45:33+11:00"
 * status = #final
 
 Mapping: DiagnosticReportMapping
 Source: OpenMRSDiagnosticReport
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport"
+Target: "DiagnosticReport"
 Id: diagnosticReport-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
-Description: "Diagnostic Report resource that is part of the Diagnostic Medicine Module. A DiagnosticReport is used to represent the results of diagnostic tests that are performed in a given clinical context. "
+Description: "Diagnostic Report resource that is part of the Diagnostic Medicine Module. A DiagnosticReport is used to represent the results of diagnostic tests that are performed in a given clinical context."
 * -> "OpenMRSDiagnosticReport" "This profile maps to Diagnostic Report in OMRS FHIR2"
 * id -> "Obs.uuid"
 * status -> "Obs.status"

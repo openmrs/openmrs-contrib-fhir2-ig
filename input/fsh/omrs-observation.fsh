@@ -37,13 +37,13 @@ Description: "Observation resource created in OpenMRS representing a result for 
 Instance: example-openmrs-Observation
 InstanceOf: OpenMRSObservation
 Usage: #example
-Title: "Openmrs Observation"
-Description: "Example OMRS Observation Resource"
+Title: "OpenMRS Observation Example"
+Description: "Example OpenMRS Observation resource"
 * category.coding[+].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding[=].code = #exam
 * code.coding[+].code = #431314004
 * code.coding[=].system = "http://snomed.info/sct"
-* code.coding[=].display = "Arterial blood oxygen saturation (pulse oximeter)"
+* code.coding[=].display = "SpO2 - saturation of peripheral oxygen"
 * code.text = "Arterial blood oxygen saturation (pulse oximeter)"
 * status = #final
 * subject = Reference(example-openmrs-Patient)
@@ -63,7 +63,7 @@ Description: "Example OMRS Observation Resource"
 
 Mapping: omrs-observation-mapping
 Source: OpenMRSObservation
-Target: "http://hl7.org/fhir/{release}/StructureDefinition/observation"
+Target: "Observation"
 Id: obs-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Observation is a FHIR resource that is used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic characteristics. As such, Observations have a wide range of uses and show up in a wide range of places. FHIR Observations are mapped to OpenMRS Obs objects."
@@ -84,8 +84,8 @@ Description: "Observation is a FHIR resource that is used to support diagnosis, 
 Instance: observation-date
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through observation endpoint by date "
-* name = "observationDateSearchParameter"
+Title: "Search through observation endpoint by date"
+* name = "ObservationDateSearchParameter"
 * status = #active
 * description = "Searches for observations by the observation date and time eg) /ws/fhir2/{release}/Observation?date={date}"
 * code = #date
@@ -96,8 +96,8 @@ Title: "Search through observation endpoint by date "
 Instance: observation-concept-code
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through observation endpoint by concept code "
-* name = "observationCodeSearchParameter"
+Title: "Search through observation endpoint by concept code"
+* name = "ObservationCodeSearchParameter"
 * status = #active
 * description = "Searches for observations with particular codes (concepts) eg) /ws/fhir2/{release}/Observation?code={code}"
 * code = #code
@@ -108,8 +108,8 @@ Title: "Search through observation endpoint by concept code "
 Instance: observation-category
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through observation endpoint by category "
-* name = "observationCategorySearchParameter"
+Title: "Search through observation endpoint by category"
+* name = "ObservationCategorySearchParameter"
 * status = #active
 * description = "Searches for observations by the observation category eg) /ws/fhir2/{release}/Observation?category={category}"
 * code = #category
@@ -120,8 +120,8 @@ Title: "Search through observation endpoint by category "
 Instance: observation-encounter
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search through observation endpoint by encounter "
-* name = "observationEncounterSearchParameter"
+Title: "Search through observation endpoint by encounter"
+* name = "ObservationEncounterSearchParameter"
 * status = #active
 * description = "Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}"
 * code = #encounter
@@ -133,7 +133,7 @@ Instance: observation-subject
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by subject uuid"
-* name = "observationSubjectSearchParameter"
+* name = "ObservationSubjectSearchParameter"
 * status = #active
 * description = "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}"
 * code = #subject
@@ -145,7 +145,7 @@ Instance: observation-subject-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by subject identifier"
-* name = "observationSubjectIdentifierSearchParameter"
+* name = "ObservationSubjectIdentifierSearchParameter"
 * status = #active
 * description = "Searches for observations by the patient identifier eg) /ws/fhir2/{release}/Observation?subject:Patient.identifier={identifier}"
 * code = #subject.identifier
@@ -157,7 +157,7 @@ Instance: observation-subject-given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by subject given"
-* name = "observationSubjectGivenSearchParameter"
+* name = "ObservationSubjectGivenSearchParameter"
 * status = #active
 * description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?subject:Patient.given={givenName}"
 * code = #subject.given
@@ -169,7 +169,7 @@ Instance: observation-subject-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by subject family"
-* name = "observationSubjectfamilySearchParameter"
+* name = "ObservationSubjectfamilySearchParameter"
 * status = #active
 * description = "	Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}"
 * code = #subject.family
@@ -181,7 +181,7 @@ Instance: observation-subject-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by subject name"
-* name = "observationSubjectNameSearchParameter"
+* name = "ObservationSubjectNameSearchParameter"
 * status = #active
 * description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?subject:Patient.name={name}"
 * code = #subject.name
@@ -193,7 +193,7 @@ Instance: observation-patient
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by a given patient"
-* name = "observationPatientSearchParameter"
+* name = "ObservationPatientSearchParameter"
 * status = #active
 * description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}"
 * code = #patient
@@ -205,7 +205,7 @@ Instance: observation-patient-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by a given patient"
-* name = "observationPatientIdentifierSearchParameter"
+* name = "ObservationPatientIdentifierSearchParameter"
 * status = #active
 * description = "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}"
 * code = #patient.identifier
@@ -217,7 +217,7 @@ Instance: observation-patient.given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by the patient's given name"
-* name = "observationPatientGivenNameSearchParameter"
+* name = "ObservationPatientGivenNameSearchParameter"
 * status = #active
 * description = "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}"
 * code = #patient.given
@@ -229,7 +229,7 @@ Instance: observation-patient.family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by the patient's family name"
-* name = "observationPatientFamilyNameSearchParameter"
+* name = "ObservationPatientFamilyNameSearchParameter"
 * status = #active
 * description = "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"
 * code = #patient.family
@@ -237,14 +237,14 @@ Title: "Search through observation endpoint by the patient's family name"
 * target = #Observation
 * type = #string
 
-Instance: observation-patient.name
+Instance: observation-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by the patient's full or partial name"
-* name = "observationPatientNameSearchParameter"
+* name = "ObservationPatientNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient.name={name}"
-* code = #patient.name
+* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}"
+* code = #patient-name
 * base[0] = #Observation
 * target = #Observation
 * type = #string 
@@ -253,7 +253,7 @@ Instance: observation-has-member
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through an observation group in the Obervation EndPoint that contains a given observation"
-* name = "observationHasSearchParameter"
+* name = "ObservationHasSearchParameter"
 * status = #active
 * description = "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member"
 * code = #has-member
@@ -265,7 +265,7 @@ Instance: observation-has-member-code
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Searches for an observation group that contains an observation with the provided code"
-* name = "observationHasCodeSearchParameter"
+* name = "ObservationHasCodeSearchParameter"
 * status = #active
 * description = "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}"
 * code = #has-member-code
@@ -277,7 +277,7 @@ Instance: observation-value-concept
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Searches for an observation whose value is a concept that matches the provided concept code"
-* name = "observationValueConceptSearchParameter"
+* name = "ObservationValueConceptSearchParameter"
 * status = #active
 * description = "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}"
 * code = #value-concept
@@ -289,7 +289,7 @@ Instance: observation-value-date
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Searches for an observation whose value is a date by the specified date range."
-* name = "observationValueConceptSearchParameter"
+* name = "ObservationValueConceptSearchParameter"
 * status = #active
 * description = "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}"
 * code = #value-date
@@ -301,7 +301,7 @@ Instance: observation-id
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Searches based on the exact UUID of the person record"
-* name = "observationIdSearchParameter"
+* name = "ObservationIdSearchParameter"
 * status = #active
 * description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}"
 * code = #_id
@@ -313,7 +313,7 @@ Instance: observation-lastUpdated
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Searches based on the the dateCreated field for the observation record"
-* name = "observationLastUpdatedSearchParameter"
+* name = "ObservationLastUpdatedSearchParameter"
 * status = #active
 * description = "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}"
 * code = #_lastUpdated

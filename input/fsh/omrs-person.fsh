@@ -18,11 +18,12 @@ Description: "A FHIR Person as understood by OpenMRS"
 Instance: example-openmrs-person
 InstanceOf: OMRSPerson 
 Usage: #example
-Title: "Openmrs Person"
-Description: "Example OMRS Person Resource"
+Title: "OpenMRS Person Example"
+Description: "Example OMRS Person resource"
 * id = "68f44d7f-eb5a-40e9-aa4d-0cc0cc522866"
 * identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * identifier.type.text = "OpenMRS ID"
 * identifier.value = "1000Y"
 * name.id = "915c9146-8bdb-4fad-bc51-4af10d041c86"
@@ -30,7 +31,8 @@ Description: "Example OMRS Person Resource"
 * name.given = "Smith"
 * gender = #male
 * birthDate = "2001-09-08"
-* address.extension.url = "http://fhir.openmrs.org/ext/address"
+//* address.extension
+//  * url = "http://fhir.openmrs.org/ext/address"
 * address.use = #home
 * address.country = "Uganda"
 * address.city = "Ntungamo"
@@ -41,9 +43,9 @@ Description: "Example OMRS Person Resource"
 
 Mapping: PersonMapping
 Source: OMRSPerson
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Person"
+Target: "Person"
 Id: person-mapping
-Title: "FHIR HL7 vs OMRS "
+Title: "FHIR HL7 vs OMRS"
 Description: "Person is a FHIR resource that is used to represent demographics and administrative information about a person independent of a specific health-related context. FHIR Persons are mapped to OpenMRS Person objects."
 * -> "OMRS Person" "This profile maps to Person in OMRS FHIR2"
 * identifier -> "Patient.identifier"
@@ -61,9 +63,9 @@ Instance: person-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's full or partial name"
-* name = "personNameSearchParameter"
+* name = "PersonNameSearchParameter"
 * status = #active
-* description = "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name} "
+* description = "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}"
 * code = #name
 * base[0] = #Person
 * target = #Person
@@ -73,7 +75,7 @@ Instance: person-gender
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's gender attribute"
-* name = "personGenderSearchParameter"
+* name = "PersonGenderSearchParameter"
 * status = #active
 * description = "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}"
 * code = #gender
@@ -85,7 +87,7 @@ Instance: person-birthdate
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's birthdate attribute"
-* name = "personBirthdateSearchParameter"
+* name = "PersonBirthdateSearchParameter"
 * status = #active
 * description = "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}"
 * code = #birthdate
@@ -97,7 +99,7 @@ Instance: person-address-city
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's location city"
-* name = "personCitySearchParameter"
+* name = "PersonCitySearchParameter"
 * status = #active
 * description = "Searches based on the person's recorded city/village of address eg) /ws/fhir2/{release}/Person?address-city={city}"
 * code = #address-city
@@ -109,7 +111,7 @@ Instance: person-address-state
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's location state"
-* name = "personStateSearchParameter"
+* name = "PersonStateSearchParameter"
 * status = #active
 * description = "Searches based on the person's recorded state/province of address eg) /ws/fhir2/{release}/Person?address-state={state}"
 * code = #address-state
@@ -121,7 +123,7 @@ Instance: person-address-postalcode
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's location postal code"
-* name = "personPostalCodeSearchParameter"
+* name = "PersonPostalCodeSearchParameter"
 * status = #active
 * description = "Searches based on the person's recorded postal code of address eg) /ws/fhir2/{release}/Person?address-postalcode={postalCode}"
 * code = #address-postalcode
@@ -133,7 +135,7 @@ Instance: person-address-country
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's location country"
-* name = "personCountrySearchParameter"
+* name = "PersonCountrySearchParameter"
 * status = #active
 * description = "Searches based on the person's recorded country of address eg) /ws/fhir2/{release}/Person?address-country={country}"
 * code = #address-country
@@ -145,7 +147,7 @@ Instance: person-id
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint by the person's uuid"
-* name = "personIdSearchParameter"
+* name = "PersonIdSearchParameter"
 * status = #active
 * description = "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Person?_id={uuid}"
 * code = #_id
@@ -157,7 +159,7 @@ Instance: person-lastUpdated
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through person endpoint basing on dateCreated or dateUpdated field of the person record"
-* name = "personLastUpdatedSearchParameter"
+* name = "PersonLastUpdatedSearchParameter"
 * status = #active
 * description = "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}"
 * code = #_lastUpdated

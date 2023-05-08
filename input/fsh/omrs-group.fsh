@@ -23,17 +23,15 @@ Id: omrs-group-description-ext
 Title: "Group descriptive extension"
 Description: "Extension for group description"
 * ^context[0].type = #element
-* ^context[0].expression = "Group Description"
-* extension contains description 1..1 and url 1..1
-* extension[description].value[x] only string 
-* extension[url].value[x] only string 
+* ^context[0].expression = "Group"
+* value[x] only string 
 
 /** example group resource */
 Instance: OMRSGroupExample
 InstanceOf: OMRSGroup
 Usage: #example
-Title: "OMRS Group Example"
-Description: "OMRS Group Resource Example"
+Title: "OpenMRS Group Example"
+Description: "Example OpenMRS Group resource"
 * id = "bc572131-c234-436f-9194-00287759a3e4"
 * active = true
 * actual = true
@@ -43,14 +41,13 @@ Description: "OMRS Group Resource Example"
 * managingEntity = Reference(PractitionerExample)
 * managingEntity.type = "Practitioner"
 * managingEntity.display = "Super User"
-* extension[0].url = "http://fhir.openmrs.org/ext/group/description"
-* extension[0].valueString = "Male Patients years that are alive"
+* extension[description].valueString = "Male Patients years that are alive"
 
 //OMRS FHIR2 Group Mapping VS HL7 fhir
 
 Mapping: OMRSGroupMapping
 Source: OMRSGroup
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Group"
+Target: "Group"
 Id: omrs-group-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Mapping of Group Resource between HL7 FHIR vs OMRS Fhir2 module"

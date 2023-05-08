@@ -27,31 +27,31 @@ Description: "A FHIR Allergy as understood by OpenMRS"
 Instance: AllergyIntoleranceExample
 InstanceOf: OpenMRSAllergyIntolerance
 Usage: #example
-Title: "Allergy Intolerance Resource Example"
-Description: "Example OMRS Allergy Intolerance"
-* id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
-* patient = Reference(Practitioner/da7f524f-27ce-4bb2-86d6-6d1d05312bd5)
+Title: "OpenMRS Allergy Intolerance Example"
+Description: "Example OpenMRS Allergy Intolerance resource"
+* id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebc"
+* patient = Reference(example-openmrs-Patient)
 * patient.type = "Patient"
-* recorder = Reference(Practitioner/c98a1558-e131-11de-babe-001e378eb67e)
+* recorder = Reference(PractitionerExample)
 * recorder.type = "Practitioner"
 * recorder.display = "Super User"
 * reaction.severity = #mild
 * reaction.substance.coding.code = #162298
 * reaction.substance.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
-* reaction.manifestation.coding.code = #22748-8
+* reaction.manifestation = LOINC#22748-8
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 * clinicalStatus.coding.code =  #active
 * clinicalStatus.coding.display = #active
-* identifier.id = "dce9740a-1691-11df-97a5-7038c432aabf"
-* identifier.use = #usual
-* identifier.system = #OpenMRS
-* identifier.value = #35tu-9
+//* identifier.id = "dce9740a-1691-11df-97a5-7038c432aabf"
+//* identifier.use = #usual
+* identifier.system = "http://fhir.openmrs.org/code-system/allergyID"
+* identifier.value = #dce9740a-1691-11df-97a5-7038c432aabf
 
 /** Allergy intolerance omrs fhir mapping*/
 
 Mapping: AllergyIntoleranceMapping
 Source: OpenMRSAllergyIntolerance
-Target: "http://hl7.org/fhir/3.0/StructureDefinition/Allergyintolerance"
+Target: "AllergyIntolerance"
 Id: allergyintolerance-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Allergy or Intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance."
@@ -78,7 +78,7 @@ Usage: #definition
 Title: "Search through AllergyIntolerance endpoint by subject uuid"
 * name = "AllergyIntoleranceSubjectSearchParameter"
 * status = #active
-* description = "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid} "
+* description = "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}"
 * code = #subject
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
@@ -168,7 +168,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's given name"
 * target = #AllergyIntolerance
 * type = #string
 
-Instance: AllergyIntolerance-patient.family
+Instance: AllergyIntolerance-patient-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through AllergyIntolerance endpoint by the patient's family name"
@@ -180,14 +180,14 @@ Title: "Search through AllergyIntolerance endpoint by the patient's family name"
 * target = #AllergyIntolerance
 * type = #string
 
-Instance: AllergyIntolerance-patient.name
+Instance: AllergyIntolerance-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through AllergyIntolerance endpoint by the patient's full or partial name"
 * name = "AllergyIntolerancePatientNameSearchParameter"
 * status = #active
-* description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.name={name}"
-* code = #patient.name
+* description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}"
+* code = #patient-name
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
 * type = #string
