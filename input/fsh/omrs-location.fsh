@@ -60,7 +60,7 @@ Alias: $SCT = http://snomed.info/sct
 
 Mapping: LocationMapping
 Source: OMRSLocation
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Location"
+Target: "Location"
 Id: location-Mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Location is a FHIR resource that represents details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated. In the current implementation, FHIR Locations are mapped to OpenMRS Location objects."
@@ -86,7 +86,7 @@ Instance: LocationExample
 InstanceOf: OMRSLocation
 Usage: #example
 Title: "Location Example"
-Description: "Example OMRS location"
+Description: "Example OpenMRS Location resource"
 * id = "a3b793f0-eb53-4cda-92ce-fe0a77106252"
 * status = #active
 * name = "Outpatient Clinic"

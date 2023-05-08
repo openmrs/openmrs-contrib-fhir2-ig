@@ -25,13 +25,13 @@ Description:  "A FHIR Condition as understood by OpenMRS"
 Instance: ConditionExample
 InstanceOf: OMRSCondition 
 Usage: #example
-Title: "Condition Resource Example"
-Description: "Example OMRS Condition"
+Title: "OpenMRS Condition Resource Example"
+Description: "Example OMRS Condition resource"
 * id = "a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
 * code.coding = #116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 * code.coding.system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding.code = #116128
-* subject = Reference(Patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5)
+* subject = Reference(example-openmrs-Patient)
 * subject.type = "Patient"
 * subject.identifier.use = #official
 * subject.identifier.value = #101-6
@@ -41,7 +41,7 @@ Description: "Example OMRS Condition"
 /** Condition FHIR -- Openmrs Mapping*/
 Mapping: ConditionMapping
 Source: OMRSCondition
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Condition"
+Target: "Condition"
 Id: condition-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects."
@@ -105,14 +105,14 @@ Title: "Search through condition endpoint by the patient's family name"
 * target = #Condition
 * type = #string
 
-Instance: condition-patient.name
+Instance: condition-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through condition endpoint by the patient's full or partial name"
 * name = "ConditionPatientNameSearchParameter"
 * status = #active
-* description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}"
-* code = #patient.name
+* description = "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}"
+* code = #patient-name
 * base[0] = #Condition
 * target = #Condition
 * type = #string

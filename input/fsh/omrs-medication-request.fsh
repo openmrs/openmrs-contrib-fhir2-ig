@@ -68,7 +68,7 @@ Description: "Openmrs Medication Request Priority ValueSet"
 
 Mapping: MedicationRequestMapping   
 Source: OMRSMedicationRequest
-Target: "http://hl7.org/fhir/R4/StructureDefinition/MedicationRequest"
+Target: "MedicationRequest"
 Id: omrs-medication-request-mapping
 Title: "FHIR  vs OMRS FHIR2"
 Description: "MedicationRequest mapping shows how attributes of the FHIR MedicationRequest Resource map to the attributes of the OpenMRS Drug Order object"
@@ -91,8 +91,8 @@ Description: "MedicationRequest mapping shows how attributes of the FHIR Medicat
 Instance: OMRSMedicationRequestExample
 InstanceOf: OMRSMedicationRequest
 Usage: #example
-Title: "OMRS Medication Request Example"
-Description: "Example of the OMRS medication Request Resource"
+Title: "OpenMRS Medication Request Example"
+Description: "Example OpenMRS Medication Request resource"
 * identifier.id = "c9582307-b812-4acc-b82b-77c4c24ba7bc"
 * status = #active
 * intent = #order
@@ -229,14 +229,14 @@ Title: "Search through MedicationRequest endpoint by the patient's family name"
 * target = #MedicationRequest
 * type = #string
 
-Instance: MedicationRequest-patient.name
+Instance: MedicationRequest-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through MedicationRequest endpoint by the patient's full or partial name"
 * name = "MedicationRequestPatientNameSearchParameter"
 * status = #active
-* description = "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient.name={name}"
-* code = #patient.name
+* description = "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}"
+* code = #patient-name
 * base[0] = #MedicationRequest
 * target = #MedicationRequest
 * type = #string 

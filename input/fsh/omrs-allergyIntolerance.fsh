@@ -27,9 +27,9 @@ Description: "A FHIR Allergy as understood by OpenMRS"
 Instance: AllergyIntoleranceExample
 InstanceOf: OpenMRSAllergyIntolerance
 Usage: #example
-Title: "Allergy Intolerance Resource Example"
-Description: "Example OMRS Allergy Intolerance"
-* id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebcd"
+Title: "OpenMRS Allergy Intolerance Example"
+Description: "Example OpenMRS Allergy Intolerance resource"
+* id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebc"
 * patient = Reference(example-openmrs-Patient)
 * patient.type = "Patient"
 * recorder = Reference(PractitionerExample)
@@ -51,7 +51,7 @@ Description: "Example OMRS Allergy Intolerance"
 
 Mapping: AllergyIntoleranceMapping
 Source: OpenMRSAllergyIntolerance
-Target: "http://hl7.org/fhir/R4/StructureDefinition/AllergyIntolerance"
+Target: "AllergyIntolerance"
 Id: allergyintolerance-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Allergy or Intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance."
@@ -168,7 +168,7 @@ Title: "Search through AllergyIntolerance endpoint by the patient's given name"
 * target = #AllergyIntolerance
 * type = #string
 
-Instance: AllergyIntolerance-patient.family
+Instance: AllergyIntolerance-patient-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through AllergyIntolerance endpoint by the patient's family name"
@@ -180,14 +180,14 @@ Title: "Search through AllergyIntolerance endpoint by the patient's family name"
 * target = #AllergyIntolerance
 * type = #string
 
-Instance: AllergyIntolerance-patient.name
+Instance: AllergyIntolerance-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through AllergyIntolerance endpoint by the patient's full or partial name"
 * name = "AllergyIntolerancePatientNameSearchParameter"
 * status = #active
-* description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.name={name}"
-* code = #patient.name
+* description = "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}"
+* code = #patient-name
 * base[0] = #AllergyIntolerance
 * target = #AllergyIntolerance
 * type = #string

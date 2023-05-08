@@ -16,7 +16,7 @@ Description: "A FHIR Practitioner as understood by OpenMRS"
 /** OMRS Practitioner mapping */
 Mapping: PractitionerMapping
 Source: OMRSPractitioner
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+Target: "Practitioner"
 Id: practitioner-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Practitioner resource represents a person who is directly or indirectly involved in the provisioning of healthcare. Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities."
@@ -35,7 +35,7 @@ Description: "Practitioner resource represents a person who is directly or indir
 Instance: PractitionerExample
 InstanceOf: OMRSPractitioner
 Usage: #example
-Title: "Practitioner Example"
+Title: "OpenMRS Practitioner Example"
 Description: "Practitioner Resource Example"
 * id = "7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"
 //* identifier[0].system = #OpenMRS

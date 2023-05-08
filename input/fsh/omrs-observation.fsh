@@ -37,8 +37,8 @@ Description: "Observation resource created in OpenMRS representing a result for 
 Instance: example-openmrs-Observation
 InstanceOf: OpenMRSObservation
 Usage: #example
-Title: "Openmrs Observation"
-Description: "Example OMRS Observation Resource"
+Title: "OpenMRS Observation Example"
+Description: "Example OpenMRS Observation resource"
 * category.coding[+].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding[=].code = #exam
 * code.coding[+].code = #431314004
@@ -63,7 +63,7 @@ Description: "Example OMRS Observation Resource"
 
 Mapping: omrs-observation-mapping
 Source: OpenMRSObservation
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+Target: "Observation"
 Id: obs-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Observation is a FHIR resource that is used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic characteristics. As such, Observations have a wide range of uses and show up in a wide range of places. FHIR Observations are mapped to OpenMRS Obs objects."
@@ -237,14 +237,14 @@ Title: "Search through observation endpoint by the patient's family name"
 * target = #Observation
 * type = #string
 
-Instance: observation-patient.name
+Instance: observation-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through observation endpoint by the patient's full or partial name"
 * name = "ObservationPatientNameSearchParameter"
 * status = #active
-* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient.name={name}"
-* code = #patient.name
+* description = "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}"
+* code = #patient-name
 * base[0] = #Observation
 * target = #Observation
 * type = #string 

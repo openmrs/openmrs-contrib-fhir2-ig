@@ -26,8 +26,8 @@ Description: "A Task resource represent an activity that is to be performed,and 
 Instance: example-openmrs-Task
 InstanceOf: OpenMRSTask
 Usage: #example
-Title: "Openmrs Task"
-Description: "Example OMRS Task Resource"
+Title: "OpenMRS Task"
+Description: "Example OMRS Task resource"
 * id = "e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"
 * status = #completed
 * basedOn = Reference(example-openmrs-ServiceRequest)
@@ -35,7 +35,7 @@ Description: "Example OMRS Task Resource"
 * for = Reference(example-openmrs-Patient)
 * authoredOn =  "2021-02-20"
 * lastModified = "2021-02-21"
-* owner.reference = "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f"
+* owner = Reference(example-openmrs-Organization)
 * owner.display = "Clinical Laboratory @ Acme Hospital"
 * encounter = Reference(EncounterExample)
 
@@ -43,7 +43,7 @@ Description: "Example OMRS Task Resource"
 
 Mapping: TaskMapping
 Source: OpenMRSTask
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Task"
+Target: "Task"
 Id: task-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Task is used to represent an activity that is to be performed,and track the completion of said activity."

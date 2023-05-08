@@ -30,8 +30,8 @@ Description: "Extension for group description"
 Instance: OMRSGroupExample
 InstanceOf: OMRSGroup
 Usage: #example
-Title: "OMRS Group Example"
-Description: "OMRS Group Resource Example"
+Title: "OpenMRS Group Example"
+Description: "Example OpenMRS Group resource"
 * id = "bc572131-c234-436f-9194-00287759a3e4"
 * active = true
 * actual = true
@@ -47,7 +47,7 @@ Description: "OMRS Group Resource Example"
 
 Mapping: OMRSGroupMapping
 Source: OMRSGroup
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Group"
+Target: "Group"
 Id: omrs-group-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Mapping of Group Resource between HL7 FHIR vs OMRS Fhir2 module"

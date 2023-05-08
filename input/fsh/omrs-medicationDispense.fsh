@@ -42,7 +42,7 @@ Description: "Indicates that a medication product is to be or has been dispensed
 
 Mapping: MedicationDispenseMapping
 Source: OMRSMedicationDispense
-Target: "http://hl7.org/fhir/R4/StructureDefinition/MedicationDispense"
+Target: "MedicationDispense"
 Id: medication-dispense-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "MedicationDispense is a FHIR resource that represents a description of the medication product (supply) provided and the instructions for administering the medication and these are mapped to OpenMRS MedicationDispense objects between HL7 FHIR"
@@ -66,14 +66,14 @@ Description: "MedicationDispense is a FHIR resource that represents a descriptio
 
 //Medication Dispense resource Example
 
-Instance: MedicationDispenceExample
+Instance: MedicationDispenseExample
 InstanceOf: OMRSMedicationDispense 
 Usage: #example
-Title: "Medication Dispence Example"
-Description: "OMRS Medication Dispence Resource Example"
+Title: "OpenMRS Medication Dispense Example"
+Description: "Example OpenMRS Medication Dispense resource"
 * id = "1e2edf7a-89f2-4694-8412-49c99770aed6"
 * status = #completed
-* medicationReference = Reference(Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653)
+* medicationReference = Reference(MedicationExample)
 * subject = Reference(example-openmrs-Patient)
 * performer.actor = Reference(PractitionerExample)
 * authorizingPrescription = Reference(OMRSMedicationRequestExample)

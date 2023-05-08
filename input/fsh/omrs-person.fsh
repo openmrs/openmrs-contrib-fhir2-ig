@@ -18,8 +18,8 @@ Description: "A FHIR Person as understood by OpenMRS"
 Instance: example-openmrs-person
 InstanceOf: OMRSPerson 
 Usage: #example
-Title: "Openmrs Person"
-Description: "Example OMRS Person Resource"
+Title: "OpenMRS Person Example"
+Description: "Example OMRS Person resource"
 * id = "68f44d7f-eb5a-40e9-aa4d-0cc0cc522866"
 * identifier.id = "53fbd0ef-ae10-46a0-9d0a-387917a66d6e"
 * identifier.use = #official
@@ -43,7 +43,7 @@ Description: "Example OMRS Person Resource"
 
 Mapping: PersonMapping
 Source: OMRSPerson
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Person"
+Target: "Person"
 Id: person-mapping
 Title: "FHIR HL7 vs OMRS"
 Description: "Person is a FHIR resource that is used to represent demographics and administrative information about a person independent of a specific health-related context. FHIR Persons are mapped to OpenMRS Person objects."

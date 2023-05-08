@@ -62,12 +62,12 @@ Description: "Encounter Type Coding System"
 Instance: EncounterExample
 InstanceOf: OMRSEncounter 
 Usage: #example
-Title: "Encounter Resource Example"
-Description: "Example OMRS Encounter"
+Title: "OpenMRS Encounter Resource Example"
+Description: "Example OpenMRS Encounter resource"
 * id = "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
 * status = #unknown
-* class.code = #AMB
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+//* class.code = 
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 * subject = Reference(example-openmrs-Patient)
 * subject.type = "Patient"
 * type.coding.code = #67a71486-1a54-468f-ac3e-7091a9a79584
@@ -81,7 +81,7 @@ Description: "Example OMRS Encounter"
 /** Encounter FHIR -- Openmrs Mapping*/
 Mapping: EncounterMapping
 Source: OMRSEncounter
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+Target: "Encounter"
 Id: encounter-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Encounter is an FHIR resource that is used to represent an Interaction between a patient and healthcare provider(s)  for the purpose of providing healthcare services or assessing the health status of a patient. Encounter FHIR resources are mapped to both OpenMrs Encounter and Visit Objects."
@@ -286,14 +286,14 @@ Title: "Search through Encounter endpoint by the patient's family name"
 * target = #Encounter
 * type = #string
 
-Instance: Encounter-patient.name
+Instance: Encounter-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through Encounter endpoint by the patient's full or partial name"
 * name = "EncounterPatientNameSearchParameter"
 * status = #active
-* description = "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient.name={name}"
-* code = #patient.name
+* description = "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}"
+* code = #patient-name
 * base[0] = #Encounter
 * target = #Encounter
 * type = #string 

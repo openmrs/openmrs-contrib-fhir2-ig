@@ -26,8 +26,8 @@ Description: "Service Request Resource is represents a request for some type of 
 Instance: example-openmrs-ServiceRequest
 InstanceOf: OpenMRSServiceRequest
 Usage: #example
-Title: "Openmrs serviceRequest"
-Description: "Example OMRS Service Request Resource"
+Title: "OpenMRS ServiceRequest Example"
+Description: "Example OpenMRS Service Request resource"
 * id = "caec0cba-3802-4b70-a6dd-2eb064450763"
 * code = LOINC#75622-1
 * status = #completed
@@ -39,7 +39,7 @@ Description: "Example OMRS Service Request Resource"
 
 Mapping: ServiceRequestMapping
 Source: OpenMRSServiceRequest
-Target: "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"
+Target: "ServiceRequest"
 Id: ServiceRequest-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "ServiceRequest is used to represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources."
@@ -105,14 +105,14 @@ Title: "Search through serviceRequest endpoint by the patient's family name"
 * target = #ServiceRequest
 * type = #string
 
-Instance: serviceRequest-patient.name
+Instance: serviceRequest-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search through serviceRequest endpoint by the patient's full or partial name"
 * name = "ServiceRequestPatientNameSearchParameter"
 * status = #active
-* description = "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient.name={name}"
-* code = #patient.name
+* description = "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}"
+* code = #patient-name
 * base[0] = #ServiceRequest
 * target = #ServiceRequest
 * type = #string

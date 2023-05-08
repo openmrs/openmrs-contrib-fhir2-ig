@@ -38,11 +38,10 @@ Description:  "OpenMRS location for which this identifier is valid"
 Instance: example-openmrs-Patient
 InstanceOf: OMRSPatient
 Usage: #example
-Title: "Openmrs Patient"
-Description: "Example OMRS Patient Resource"
+Title: "OpenMRS Patient Example"
+Description: "Example OpenMRS Patient resource"
 * identifier.use = #official
-* identifier.extension[OMRSPatientIdentifierLocationExtension].valueReference
-  * reference = "Location/b1a8b05e-3542-4037-bbd3-998ee9c40574"
+* identifier.extension[OMRSPatientIdentifierLocationExtension].valueReference = Reference(LocationExample)
   * type = "Location"
   * display = "Inpatient Ward"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -64,7 +63,7 @@ Description: "Example OMRS Patient Resource"
 /** OMRS Patient mapping */
 Mapping: PatientMapping
 Source: OMRSPatient
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+Target: "Patient"
 Id: patient-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "FHIR resource that is used to represent a patient receiving care or other health-related services"

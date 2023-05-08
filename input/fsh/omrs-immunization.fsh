@@ -46,20 +46,20 @@ Description: "A FHIR Immunization Resource as understood by OpenMRS"
 // Immunization status valueSet
 Alias: $ISVS = https://fhir.openmrs.org/fhir/valueset-immunization-status
 
-ValueSet: ImmunizationStatusVs
-Id: valueset-immunization-status
-Title: "Immunization Status ValueSet"
-Description: "Immunization Value Set"
-* ^experimental = true
-* $ISVS#completed "completed"
-* $ISVS#entered-in-error "entered-in-error"
-* $ISVS#not-done "not-done"
+// ValueSet: ImmunizationStatusVs
+// Id: valueset-immunization-status
+// Title: "Immunization Status ValueSet"
+// Description: "Immunization Value Set"
+// * ^experimental = true
+// * $ISVS#completed "completed"
+// * $ISVS#entered-in-error "entered-in-error"
+// * $ISVS#not-done "not-done"
 
 
 // Immunization Mapping 
 Mapping: ImmunizationMapping 
 Source: OMRSImmunization
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Immunization"
+Target: "Immunization"
 Id: immunization-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "Immunization is a FHIR resource that represents details about the patient's immunization,FHIR Immunizations are mapped to OpenMRS Immunization Objects"
@@ -82,8 +82,8 @@ Description: "Immunization is a FHIR resource that represents details about the 
 Instance: OMRSImmunizationExample
 InstanceOf: OMRSImmunization
 Usage: #example
-Title:  "OMRS Immunization Example"
-Description: "Example OMRS Immunization Resource"
+Title:  "OpenMRS Immunization Example"
+Description: "Example OpenMRS Immunization Resource"
 * id = "d48df5c7-605f-4f7b-88b3-f7235b474663"
 * status = #completed
 * vaccineCode.coding.code = #116958AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

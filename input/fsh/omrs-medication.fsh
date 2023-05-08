@@ -17,7 +17,7 @@ Description: "A FHIR Medication Resource as understood by OpenMRS"
 
 Mapping: OMRSMedicationMapping
 Source: OMRSMedication
-Target: "http://hl7.org/fhir/R4/StructureDefinition/Medication"
+Target: "Medication"
 Id: medication-mapping
 Title: "FHIR HL7 vs OMRS FHIR2"
 Description: "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use."
@@ -33,8 +33,8 @@ Description: "This resource is primarily used for the identification and definit
 Instance: MedicationExample
 InstanceOf: OMRSMedication
 Usage: #example
-Title: "Medication Resource Example"
-Description: "Medication Resource example"
+Title: "OpenMRS Medication Example"
+Description: "Example OpenMRS Medication resource"
 * id = "f49e4247-528a-4cfd-8856-de161d03fa76"
 * status = #active
 * code.coding[0].code = #86082
