@@ -1,25 +1,25 @@
-Alias: TS = http://hl7.org/fhir/ValueSet/task-status
-Alias: TI = http://hl7.org/fhir/ValueSet/task-intent
+//Alias: TS = http://hl7.org/fhir/ValueSet/task-status
+//Alias: TI = http://hl7.org/fhir/ValueSet/task-intent
 Alias: DS = http://hl7.org/fhir/diagnostic-report-status
 Alias: LOINC = http://loinc.org
 Alias: SCT = http://snomed.info/SCT
 
-ValueSet:   OMRSPatientTaskStatusVS
-Id: OpenMRS-task-status-vs
-Title: "OpenMRS Status for Task"
-Description:  "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
-* ^experimental = true
-* TS#task-status-requested "Requested"
-* TS#task-status-rejected "Rejected"
-* TS#task-status-accepted "Accepted"
-* TS#task-status-completed "Completed"
+// ValueSet:   OMRSPatientTaskStatusVS
+// Id: OpenMRS-task-status-vs
+// Title: "OpenMRS Status for Task"
+// Description:  "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
+// * ^experimental = true
+// * TS#task-status-requested "Requested"
+// * TS#task-status-rejected "Rejected"
+// * TS#task-status-accepted "Accepted"
+// * TS#task-status-completed "Completed"
 
-ValueSet:   OMRSPatientTaskIntentVS
-Id: OpenMRS-task-intent-vs
-Title: "OpenMRS Intent for Task"
-Description:  "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
-* ^experimental = true
-* TI#task-intent-order "Order"
+// ValueSet:   OMRSPatientTaskIntentVS
+// Id: OpenMRS-task-intent-vs
+// Title: "OpenMRS Intent for Task"
+// Description:  "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
+// * ^experimental = true
+// * TI#task-intent-order "Order"
 
 ValueSet: OpenMRSOrderCodeVS
 Id: OpenMRS-order-code-vs
