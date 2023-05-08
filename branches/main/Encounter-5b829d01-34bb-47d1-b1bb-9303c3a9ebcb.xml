@@ -3,7 +3,7 @@
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
   <meta>
-    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"/>
+    <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-encounter.html">Openmrs Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Vitals <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (encounter-type#67a71486-1a54-468f-ac3e-7091a9a79584)</span></p><p><b>subject</b>: <a href="Patient-example-openmrs-Patient.html">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>period</b>: 2022-06-22 --&gt; 2022-06-22</p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href="Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html">Location/a3b793f0-eb53-4cda-92ce-fe0a77106252</a> &quot;Outpatient Clinic&quot;</td></tr></table></div>

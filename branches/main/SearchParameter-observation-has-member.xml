@@ -3,14 +3,14 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="observation-has-member"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>observationHasSearchParameter</h2><p>Parameter <code>has-member</code>:<code>reference</code></p><div><p>Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ObservationHasSearchParameter</h2><p>Parameter <code>has-member</code>:<code>reference</code></p><div><p>Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://fhir.openmrs.org/fhir/SearchParameter/observation-has-member"/>
+  <url value="http://fhir.openmrs.org/core/SearchParameter/observation-has-member"/>
   <version value="0.1.0"/>
-  <name value="observationHasSearchParameter"/>
+  <name value="ObservationHasSearchParameter"/>
   <status value="active"/>
-  <date value="2023-05-01T15:55:39+00:00"/>
+  <date value="2023-05-08T19:25:22+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>

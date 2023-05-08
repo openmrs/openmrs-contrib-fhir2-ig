@@ -1,73 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="51798749-4f07-48d8-93f5-17ca198937be"/>
+  <id value="da557fbc-3b2b-4ddc-a618-ee1671b6fe8e"/>
   <meta>
-    <lastUpdated value="2023-05-01T15:55:39.445+00:00"/>
+    <lastUpdated value="2023-05-08T19:25:22.225+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-diagnostic-report-status-vs"/>
-        <version value="0.1.0"/>
-        <name value="OpenMRSDiagnosis"/>
-        <title value="OpenMRS Diagnostic Report Status Flag"/>
-        <status value="active"/>
-        <date value="2023-05-01T15:55:39+00:00"/>
-        <contact>
-          <name value="OpenMRS, Inc."/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://openmrs.org"/>
-          </telecom>
-        </contact>
-        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
-        <expansion>
-          <identifier value="urn:uuid:bd9279ff-ca82-4e01-b2a9-3f39278feb4b"/>
-          <timestamp value="2023-05-01T15:56:11.549Z"/>
-          <total value="0"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"/>
+    <fullUrl value="http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -119,6 +66,22 @@
                 </td>
                 <td>http://loinc.org</td>
                 <td>R wave duration in lead AVR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-100000-9"> </a>  
+                  <a href="https://loinc.org/100000-9/">100000-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Health informatics pioneer and the father of LOINC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-100001-7"> </a>  
+                  <a href="https://loinc.org/100001-7/">100001-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Health informatics pioneer and cofounder of LOINC</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -7982,7 +7945,7 @@
                   <a href="https://loinc.org/100888-7/">100888-7</a>
                 </td>
                 <td>http://loinc.org</td>
-                <td>West African monkeypox virus DNA [Presence] in Specimen by NAA with probe detection</td>
+                <td>Monkeypox virus clade II DNA [Presence] in Specimen by NAA with probe detection</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -7990,7 +7953,7 @@
                   <a href="https://loinc.org/100889-5/">100889-5</a>
                 </td>
                 <td>http://loinc.org</td>
-                <td>Congo Basin monkeypox virus DNA [Presence] in Specimen by NAA with probe detection</td>
+                <td>Monkeypox virus clade I DNA [Presence] in Specimen by NAA with probe detection</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -8064,31 +8027,16 @@
                 <td>http://loinc.org</td>
                 <td>Staphylococcus aureus [Presence] in Specimen by Organism specific culture</td>
               </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-100898-6"> </a>  
-                  <a href="https://loinc.org/100898-6/">100898-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Lipid panel - Serum or Plasma</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-100899-4"> </a>  
-                  <a href="https://loinc.org/100899-4/">100899-4</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Enterobacteriaceae.extended spectrum beta lactamase resistance phenotype [Identifier] in Specimen by Organism specific culture</td>
-              </tr>
             </table>
           </div>
         </text>
-        <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"/>
+        <url value="http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs"/>
         <version value="0.1.0"/>
         <name value="OpenMRSOrderCodeVS"/>
         <title value="OpenMRS Order Code"/>
         <status value="active"/>
-        <date value="2023-05-01T15:55:39+00:00"/>
+        <experimental value="true"/>
+        <date value="2023-05-08T19:25:22+00:00"/>
         <contact>
           <name value="OpenMRS, Inc."/>
           <telecom>
@@ -8101,8 +8049,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:53c69a9f-9087-4f2f-aa0f-4bf61339ec71"/>
-          <timestamp value="2023-05-01T15:56:16+00:00"/>
+          <identifier value="urn:uuid:85d94fa8-00f6-4dd7-8b19-eb7a83cb2c04"/>
+          <timestamp value="2023-05-08T19:25:57+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8114,7 +8062,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.73"/>
+            <valueUri value="http://loinc.org|2.74"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -8140,6 +8088,16 @@
             <system value="http://loinc.org"/>
             <code value="10000-8"/>
             <display value="R wave duration in lead AVR"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100000-9"/>
+            <display value="Health informatics pioneer and the father of LOINC"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100001-7"/>
+            <display value="Health informatics pioneer and cofounder of LOINC"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -13054,12 +13012,12 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="100888-7"/>
-            <display value="West African monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"/>
+            <display value="Monkeypox virus clade II DNA [Presence] in Specimen by NAA with probe detection"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="100889-5"/>
-            <display value="Congo Basin monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"/>
+            <display value="Monkeypox virus clade I DNA [Presence] in Specimen by NAA with probe detection"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -13105,16 +13063,6 @@
             <system value="http://loinc.org"/>
             <code value="100897-8"/>
             <display value="Staphylococcus aureus [Presence] in Specimen by Organism specific culture"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="100898-6"/>
-            <display value="Lipid panel - Serum or Plasma"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="100899-4"/>
-            <display value="Enterobacteriaceae.extended spectrum beta lactamase resistance phenotype [Identifier] in Specimen by Organism specific culture"/>
           </contains>
         </expansion>
       </ValueSet>

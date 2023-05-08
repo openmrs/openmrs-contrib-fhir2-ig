@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\Artifacts Summary - FHIR v4.0.1</title>
+    <title>OPENMRS.FHIR.CORE\Artifacts Summary - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -72,7 +72,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS Core FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -159,7 +159,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenMRS Core FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -262,6 +262,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient-family.html"
+                     title="SearchParameter/AllergyIntolerance-patient-family">Search through AllergyIntolerance endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-AllergyIntolerance-patient-identifier.html"
                      title="SearchParameter/AllergyIntolerance-patient-identifier">Search through AllergyIntolerance endpoint by a given patient</a>
                </td>
@@ -271,11 +280,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient.family.html"
-                     title="SearchParameter/AllergyIntolerance-patient.family">Search through AllergyIntolerance endpoint by the patient's family name</a>
+                  <a href="SearchParameter-AllergyIntolerance-patient-name.html"
+                     title="SearchParameter/AllergyIntolerance-patient-name">Search through AllergyIntolerance endpoint by the patient's full or partial name</a>
                </td>
                <td>
-<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}</p>
+<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}</p>
 </td>
             </tr>
             <tr>
@@ -285,15 +294,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for AllergyIntolerance based on the patient’s given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient.name.html"
-                     title="SearchParameter/AllergyIntolerance-patient.name">Search through AllergyIntolerance endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -443,7 +443,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-Encounter-participant.html"
-                     title="SearchParameter/Encounter-participant">Search through Encounter endpoint by a given Practitioner </a>
+                     title="SearchParameter/Encounter-participant">Search through Encounter endpoint by a given Practitioner</a>
                </td>
                <td>
 <p>Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}</p>
@@ -505,6 +505,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient-name.html"
+                     title="SearchParameter/Encounter-patient-name">Search through Encounter endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-Encounter-patient.family.html"
                      title="SearchParameter/Encounter-patient.family">Search through Encounter endpoint by the patient's family name</a>
                </td>
@@ -519,15 +528,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for Encounters based on the patient’s given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient.name.html"
-                     title="SearchParameter/Encounter-patient.name">Search through Encounter endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -631,6 +631,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient-name.html"
+                     title="SearchParameter/MedicationRequest-patient-name">Search through MedicationRequest endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-MedicationRequest-patient.family.html"
                      title="SearchParameter/MedicationRequest-patient.family">Search through MedicationRequest endpoint by the patient's family name</a>
                </td>
@@ -649,17 +658,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient.name.html"
-                     title="SearchParameter/MedicationRequest-patient.name">Search through MedicationRequest endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-MedicationRequest-requestor.html"
-                     title="SearchParameter/MedicationRequest-requestor">Search through MedicationRequest endpoint by a given Practitioner </a>
+                     title="SearchParameter/MedicationRequest-requestor">Search through MedicationRequest endpoint by a given Practitioner</a>
                </td>
                <td>
 <p>Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}</p>
@@ -972,6 +972,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient-name.html"
+                     title="SearchParameter/condition-patient-name">Search through condition endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the  patient’s full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-condition-patient.family.html"
                      title="SearchParameter/condition-patient.family">Search through condition endpoint by the patient's family name</a>
                </td>
@@ -986,15 +995,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient.name.html"
-                     title="SearchParameter/condition-patient.name">Search through condition endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the  patient’s full or partial name eg) /ws/fhir2/{release}/Condition?patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -1180,7 +1180,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-observation-category.html"
-                     title="SearchParameter/observation-category">Search through observation endpoint by category </a>
+                     title="SearchParameter/observation-category">Search through observation endpoint by category</a>
                </td>
                <td>
 <p>Searches for observations by the observation category eg) /ws/fhir2/{release}/Observation?category={category}</p>
@@ -1189,7 +1189,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-observation-concept-code.html"
-                     title="SearchParameter/observation-concept-code">Search through observation endpoint by concept code </a>
+                     title="SearchParameter/observation-concept-code">Search through observation endpoint by concept code</a>
                </td>
                <td>
 <p>Searches for observations with particular codes (concepts) eg) /ws/fhir2/{release}/Observation?code={code}</p>
@@ -1198,7 +1198,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-observation-date.html"
-                     title="SearchParameter/observation-date">Search through observation endpoint by date </a>
+                     title="SearchParameter/observation-date">Search through observation endpoint by date</a>
                </td>
                <td>
 <p>Searches for observations by the observation date and time eg) /ws/fhir2/{release}/Observation?date={date}</p>
@@ -1207,7 +1207,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-observation-encounter.html"
-                     title="SearchParameter/observation-encounter">Search through observation endpoint by encounter </a>
+                     title="SearchParameter/observation-encounter">Search through observation endpoint by encounter</a>
                </td>
                <td>
 <p>Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}</p>
@@ -1269,6 +1269,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-observation-patient-name.html"
+                     title="SearchParameter/observation-patient-name">Search through observation endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for observations based on the patient’s full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-observation-patient.family.html"
                      title="SearchParameter/observation-patient.family">Search through observation endpoint by the patient's family name</a>
                </td>
@@ -1283,15 +1292,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for observations based on the patient’s given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient.name.html"
-                     title="SearchParameter/observation-patient.name">Search through observation endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for observations based on the patient’s full or partial name eg) /ws/fhir2/{release}/Observation?patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -1601,6 +1601,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-patient-name.html"
+                     title="SearchParameter/serviceRequest-patient-name">Search through serviceRequest endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-serviceRequest-patient.family.html"
                      title="SearchParameter/serviceRequest-patient.family">Search through serviceRequest endpoint by the patient's family name</a>
                </td>
@@ -1615,15 +1624,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for serviceRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-patient.name.html"
-                     title="SearchParameter/serviceRequest-patient.name">Search through serviceRequest endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -1955,33 +1955,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-encounter-status-vs.html"
-                     title="ValueSet/encounter-status-vs">EncounterStatus</a>
-               </td>
-               <td>
-<p>Encounter  status ValueSet</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-valueset-immunization-status.html"
-                     title="ValueSet/valueset-immunization-status">Immunization Status ValueSet</a>
-               </td>
-               <td>
-<p>Immunization Value Set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-location-status-vs.html"
-                     title="ValueSet/location-status-vs">Location Status ValueSet</a>
-               </td>
-               <td>
-<p>Indicates whether the location is still in use.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-medication-request-intent-vs.html"
                      title="ValueSet/medication-request-intent-vs">Medication Request Intent Vs</a>
                </td>
@@ -2014,15 +1987,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-OpenMRS-diagnostic-report-status-vs.html"
-                     title="ValueSet/OpenMRS-diagnostic-report-status-vs">OpenMRS Diagnostic Report Status Flag</a>
-               </td>
-               <td>
-<p>The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html</p>
 </td>
             </tr>
             <tr>
@@ -2069,43 +2033,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html"
-                     title="MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6">Medication Dispence Example</a>
+                     title="MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6">OpenMRS Medication Dispense Example</a>
                </td>
                <td>
-<p>OMRS Medication Dispence Resource Example</p>
+<p>Example OpenMRS Medication Dispense resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
-                     title="AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">Allergy Intolerance Resource Example</a>
+                  <a href="AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc.html"
+                     title="AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc">OpenMRS Allergy Intolerance Example</a>
                </td>
                <td>
-<p>Example OMRS Allergy Intolerance</p>
+<p>Example OpenMRS Allergy Intolerance resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
-                     title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">Encounter Resource Example</a>
+                     title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">OpenMRS Encounter Resource Example</a>
                </td>
                <td>
-<p>Example OMRS Encounter</p>
+<p>Example OpenMRS Encounter resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.html"
-                     title="Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866">Openmrs Person</a>
+                     title="Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866">OpenMRS Person Example</a>
                </td>
                <td>
-<p>Example OMRS Person Resource</p>
+<p>Example OMRS Person resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html"
-                     title="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2">Practitioner Example</a>
+                     title="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2">OpenMRS Practitioner Example</a>
                </td>
                <td>
 <p>Practitioner Resource Example</p>
@@ -2123,10 +2087,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-OMRSMedicationRequestExample.html"
-                     title="MedicationRequest/OMRSMedicationRequestExample">OMRS Medication Request Example</a>
+                     title="MedicationRequest/OMRSMedicationRequestExample">OpenMRS Medication Request Example</a>
                </td>
                <td>
-<p>Example of the OMRS medication Request Resource</p>
+<p>Example OpenMRS Medication Request resource</p>
 </td>
             </tr>
             <tr>
@@ -2135,79 +2099,88 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252">Location Example</a>
                </td>
                <td>
-<p>Example OMRS location</p>
+<p>Example OpenMRS Location resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html"
-                     title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">Condition Resource Example</a>
+                     title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">OpenMRS Condition Resource Example</a>
                </td>
                <td>
-<p>Example OMRS Condition</p>
+<p>Example OMRS Condition resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Group-bc572131-c234-436f-9194-00287759a3e4.html"
-                     title="Group/bc572131-c234-436f-9194-00287759a3e4">OMRS Group Example</a>
+                     title="Group/bc572131-c234-436f-9194-00287759a3e4">OpenMRS Group Example</a>
                </td>
                <td>
-<p>OMRS Group Resource Example</p>
+<p>Example OpenMRS Group resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.html"
-                     title="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763">Openmrs serviceRequest</a>
+                     title="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763">OpenMRS ServiceRequest Example</a>
                </td>
                <td>
-<p>Example OMRS Service Request Resource</p>
+<p>Example OpenMRS Service Request resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.html"
-                     title="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663">OMRS Immunization Example</a>
+                     title="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663">OpenMRS Immunization Example</a>
                </td>
                <td>
-<p>Example OMRS Immunization Resource</p>
+<p>Example OpenMRS Immunization Resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-e05c3693-4bcf-4e14-8900-86582265c659.html"
+                     title="Organization/e05c3693-4bcf-4e14-8900-86582265c659">Organization example</a>
+               </td>
+               <td>
+<p>Example organization performing a task</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html"
-                     title="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9">Openmrs Task</a>
+                     title="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9">OpenMRS Task</a>
                </td>
                <td>
-<p>Example OMRS Task Resource</p>
+<p>Example OMRS Task resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-example-openmrs-Observation.html"
-                     title="Observation/example-openmrs-Observation">Openmrs Observation</a>
+                     title="Observation/example-openmrs-Observation">OpenMRS Observation Example</a>
                </td>
                <td>
-<p>Example OMRS Observation Resource</p>
+<p>Example OpenMRS Observation resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-example-openmrs-Patient.html"
-                     title="Patient/example-openmrs-Patient">Openmrs Patient</a>
+                     title="Patient/example-openmrs-Patient">OpenMRS Patient Example</a>
                </td>
                <td>
-<p>Example OMRS Patient Resource</p>
+<p>Example OpenMRS Patient resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Medication-f49e4247-528a-4cfd-8856-de161d03fa76.html"
-                     title="Medication/f49e4247-528a-4cfd-8856-de161d03fa76">Medication Resource Example</a>
+                     title="Medication/f49e4247-528a-4cfd-8856-de161d03fa76">OpenMRS Medication Example</a>
                </td>
                <td>
-<p>Medication Resource example</p>
+<p>Example OpenMRS Medication resource</p>
 </td>
             </tr>
          </tbody>
@@ -2238,13 +2211,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 19:25+0000">2023-05-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/core/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

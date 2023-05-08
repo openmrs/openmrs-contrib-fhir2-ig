@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>EncounterParticipantIdentifierSearchParameter</h2><p>Parameter <code>participant.identifier</code>:<code>token</code></p><div><p>Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://fhir.openmrs.org/fhir/SearchParameter/Encounter-participant-identifier"/>
+  <url value="http://fhir.openmrs.org/core/SearchParameter/Encounter-participant-identifier"/>
   <version value="0.1.0"/>
   <name value="EncounterParticipantIdentifierSearchParameter"/>
   <status value="active"/>
-  <date value="2023-05-01T15:55:39+00:00"/>
+  <date value="2023-05-08T19:25:22+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>

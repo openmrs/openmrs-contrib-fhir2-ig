@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-family> a fhir:SearchParameter ;
+<http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-family> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "serviceRequest-requester-family"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>serviceRequestRequesterfamilySearchParameter</h2><p>Parameter <code>requester.family</code>:<code>string</code></p><div><p>Searches for serviceRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.family={familyName}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ServiceRequestRequesterfamilySearchParameter</h2><p>Parameter <code>requester.family</code>:<code>string</code></p><div><p>Searches for serviceRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner.family={familyName}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-requester-family"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/core/SearchParameter/serviceRequest-requester-family"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "serviceRequestRequesterfamilySearchParameter"] ; # 
+  fhir:name [ fhir:v "ServiceRequestRequesterfamilySearchParameter"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-01T15:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T19:25:22+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [

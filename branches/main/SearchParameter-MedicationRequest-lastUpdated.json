@@ -5,11 +5,11 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicationRequestLastUpdatedSearchParameter</h2><p>Parameter <code>_lastUpdated</code>:<code>date</code></p><div><p>Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/MedicationRequest-lastUpdated",
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/MedicationRequest-lastUpdated",
   "version" : "0.1.0",
   "name" : "MedicationRequestLastUpdatedSearchParameter",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

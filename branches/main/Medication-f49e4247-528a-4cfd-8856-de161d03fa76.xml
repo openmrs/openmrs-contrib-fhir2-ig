@@ -3,10 +3,10 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="f49e4247-528a-4cfd-8856-de161d03fa76"/>
   <meta>
-    <profile value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication"/>
+    <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="f49e4247-528a-4cfd-8856-de161d03fa76"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;f49e4247-528a-4cfd-8856-de161d03fa76&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-medication.html">OMRS Medication</a></p></div><p><b>code</b>: Vancomycin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cielterminology.org#86082)</span></p><p><b>status</b>: active</p><p><b>form</b>: Injection Solution (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#385219001)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>Vancomycin Hydrochloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#66955)</span></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="f49e4247-528a-4cfd-8856-de161d03fa76"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;f49e4247-528a-4cfd-8856-de161d03fa76&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-medication.html">OMRS Medication</a></p></div><p><b>code</b>: Vancomycin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cielterminology.org#86082)</span></p><p><b>status</b>: active</p><p><b>form</b>: Solution for injection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#385219001)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>Vancomycin Hydrochloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#66955)</span></td></tr></table></div>
   </text>
   <code>
     <coding>
@@ -20,7 +20,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="385219001"/>
-      <display value="Injection Solution (qualifier value)"/>
+      <display value="Solution for injection"/>
     </coding>
   </form>
   <ingredient>

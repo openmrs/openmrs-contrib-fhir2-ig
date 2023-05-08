@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\Medication Dispence Example - TTL Representation - FHIR v4.0.1</title>
+    <title>OPENMRS.FHIR.CORE\OpenMRS Medication Dispense Example - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.200"}
-    h3,h4,h5,h6{--heading-prefix:"3.200"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.196"}
+    h3,h4,h5,h6{--heading-prefix:"3.196"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -74,7 +74,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS Core FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -141,7 +141,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medication Dispence Example</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OpenMRS Medication Dispense Example</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -154,7 +154,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">OpenMRS Core FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -200,7 +200,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Medication Dispence Example - TTL Representation</h2>
+<h2 id="root">: OpenMRS Medication Dispense Example - TTL Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -235,17 +235,17 @@
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;1e2edf7a-89f2-4694-8412-49c99770aed6&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.openmrs.org/fhir/StructureDefinition/omrsmedication-dispense&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicationDispense&lt;/b&gt;&lt;a name=\&quot;1e2edf7a-89f2-4694-8412-49c99770aed6\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MedicationDispense &amp;quot;1e2edf7a-89f2-4694-8412-49c99770aed6&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-omrsmedication-dispense.html\&quot;&gt;OMRS Medication Dispense&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=\&quot;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653\&quot;&gt;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example-openmrs-Patient.html\&quot;&gt;Patient/example-openmrs-Patient&lt;/a&gt; &amp;quot; JEANNETTE&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;context&lt;/b&gt;: &lt;a href=\&quot;Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\&quot;&gt;Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\&quot;&gt;Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2&lt;/a&gt; &amp;quot; CAREFUL&amp;quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html\&quot;&gt;Location/a3b793f0-eb53-4cda-92ce-fe0a77106252&lt;/a&gt; &amp;quot;Outpatient Clinic&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authorizingPrescription&lt;/b&gt;: &lt;a href=\&quot;MedicationRequest-OMRSMedicationRequestExample.html\&quot;&gt;MedicationRequest/OMRSMedicationRequestExample&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Refill - Part Fill &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\&quot;&gt;ActCode&lt;/a&gt;#RFP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 50(unit TAB from http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code TAB = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenPrepared&lt;/b&gt;: 2022-12-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenHandedOver&lt;/b&gt;: 2022-12-31&lt;/p&gt;&lt;h3&gt;DosageInstructions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timing&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Take 3 tablets (6mg) once daily&lt;/td&gt;&lt;td&gt;Once per 1 days&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicationDispense&lt;/b&gt;&lt;a name=\&quot;1e2edf7a-89f2-4694-8412-49c99770aed6\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MedicationDispense &amp;quot;1e2edf7a-89f2-4694-8412-49c99770aed6&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-omrsmedication-dispense.html\&quot;&gt;OMRS Medication Dispense&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=\&quot;Medication-f49e4247-528a-4cfd-8856-de161d03fa76.html\&quot;&gt;Medication/f49e4247-528a-4cfd-8856-de161d03fa76&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example-openmrs-Patient.html\&quot;&gt;Patient/example-openmrs-Patient&lt;/a&gt; &amp;quot; JEANNETTE&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;context&lt;/b&gt;: &lt;a href=\&quot;Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html\&quot;&gt;Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\&quot;&gt;Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2&lt;/a&gt; &amp;quot; CAREFUL&amp;quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html\&quot;&gt;Location/a3b793f0-eb53-4cda-92ce-fe0a77106252&lt;/a&gt; &amp;quot;Outpatient Clinic&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authorizingPrescription&lt;/b&gt;: &lt;a href=\&quot;MedicationRequest-OMRSMedicationRequestExample.html\&quot;&gt;MedicationRequest/OMRSMedicationRequestExample&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Refill - Part Fill &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\&quot;&gt;ActCode&lt;/a&gt;#RFP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 50(unit TAB from http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code TAB = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenPrepared&lt;/b&gt;: 2022-12-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenHandedOver&lt;/b&gt;: 2022-12-31&lt;/p&gt;&lt;h3&gt;DosageInstructions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timing&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Take 3 tablets (6mg) once daily&lt;/td&gt;&lt;td&gt;Once per 1 days&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;completed&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.medication[x]">fhir:medication</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/b7bc2734-e48e-4076-b079-cd0f828aa653&quot; ]
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Medication/f49e4247-528a-4cfd-8856-de161d03fa76&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.subject">fhir:subject</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/example-openmrs-Patient&quot; ]
@@ -318,13 +318,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 19:25+0000">2023-05-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/core/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

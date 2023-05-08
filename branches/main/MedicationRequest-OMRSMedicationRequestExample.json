@@ -2,7 +2,7 @@
   "resourceType" : "MedicationRequest",
   "id" : "OMRSMedicationRequestExample",
   "meta" : {
-    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request"]
+    "profile" : ["http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"]
   },
   "text" : {
     "status" : "generated",

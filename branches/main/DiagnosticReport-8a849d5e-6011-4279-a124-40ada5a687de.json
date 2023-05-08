@@ -2,30 +2,28 @@
   "resourceType" : "DiagnosticReport",
   "id" : "8a849d5e-6011-4279-a124-40ada5a687de",
   "meta" : {
-    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report"]
+    "profile" : ["http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2011-03-04 11:45:33+1100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan=\"2\"><i>Observation</i></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Ricky Jeannette </b> male, DoB: 1996-12-12 ( OpenMRS ID:\u00a04343534\u00a0(use:\u00a0OFFICIAL))</td></tr><tr><td>Reported</td><td>2011-03-04 11:45:33+1100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-example-openmrs-Observation.html\"><span title=\"Codes: {http://snomed.info/sct 431314004}\">Arterial blood oxygen saturation (pulse oximeter)</span></a></td><td>25 DEG C</td><td><span title=\"Codes: {http://fhir.openmrs.org/ext/obs/reference-range absolute}\">absolute</span>: 10 - 272</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td></tr></table></div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "8480-6"
-    },
-    {
+      "code" : "8480-6",
       "display" : "Systolic blood pressure"
     }]
   },
   "subject" : {
-    "reference" : "Patient/5946f880-b197-400b-9caa-a3c661d23041"
+    "reference" : "Patient/example-openmrs-Patient"
   },
   "encounter" : {
-    "reference" : "Encounter/6519d653-393b-4118-9c83-a3715b82d4ac"
+    "reference" : "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
   },
   "issued" : "2011-03-04T11:45:33+11:00",
   "result" : [{
-    "reference" : "Observation/6f16bb57-12bc-4077-9f49-ceaa9b928669"
+    "reference" : "Observation/example-openmrs-Observation"
   }]
 }

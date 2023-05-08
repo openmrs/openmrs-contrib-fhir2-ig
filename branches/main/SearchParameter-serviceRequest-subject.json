@@ -3,13 +3,13 @@
   "id" : "serviceRequest-subject",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>serviceRequestSubjectSearchParameter</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ServiceRequestSubjectSearchParameter</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/serviceRequest-subject",
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/serviceRequest-subject",
   "version" : "0.1.0",
-  "name" : "serviceRequestSubjectSearchParameter",
+  "name" : "ServiceRequestSubjectSearchParameter",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

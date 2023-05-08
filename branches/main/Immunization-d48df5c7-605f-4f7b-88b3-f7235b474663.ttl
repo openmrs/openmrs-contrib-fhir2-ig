@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663> a fhir:Immunization ;
+<http://fhir.openmrs.org/core/Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663> a fhir:Immunization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "d48df5c7-605f-4f7b-88b3-f7235b474663"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization>
      ] )
   ] ; # 
   fhir:text [
@@ -26,23 +26,23 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
      fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
+     fhir:link <http://fhir.openmrs.org/core/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> ;
      fhir:reference [ fhir:v "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2022-12-30"^^xsd:date] ; # 
   fhir:location [
-     fhir:link <http://fhir.openmrs.org/fhir/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
+     fhir:link <http://fhir.openmrs.org/core/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
      fhir:reference [ fhir:v "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252" ]
   ] ; # 
   fhir:lotNumber [ fhir:v "AAJN11K"] ; # 
   fhir:expirationDate [ fhir:v "2025-05-07"^^xsd:date] ; # 
   fhir:performer ( [
      fhir:actor [
-       fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
+       fhir:link <http://fhir.openmrs.org/core/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
        fhir:reference [ fhir:v "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ]
      ]
   ] ) . # 

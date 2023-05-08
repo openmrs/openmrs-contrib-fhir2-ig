@@ -3,14 +3,14 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="condition-patient-identifier"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>conditionPatientIdentifierSearchParameter</h2><p>Parameter <code>patient.identifier</code>:<code>token</code></p><div><p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ConditionPatientIdentifierSearchParameter</h2><p>Parameter <code>patient.identifier</code>:<code>token</code></p><div><p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://fhir.openmrs.org/fhir/SearchParameter/condition-patient-identifier"/>
+  <url value="http://fhir.openmrs.org/core/SearchParameter/condition-patient-identifier"/>
   <version value="0.1.0"/>
-  <name value="conditionPatientIdentifierSearchParameter"/>
+  <name value="ConditionPatientIdentifierSearchParameter"/>
   <status value="active"/>
-  <date value="2023-05-01T15:55:39+00:00"/>
+  <date value="2023-05-08T19:25:22+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>

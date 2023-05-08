@@ -3,13 +3,13 @@
   "id" : "observation-subject",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>observationSubjectSearchParameter</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ObservationSubjectSearchParameter</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/observation-subject",
+  "url" : "http://fhir.openmrs.org/core/SearchParameter/observation-subject",
   "version" : "0.1.0",
-  "name" : "observationSubjectSearchParameter",
+  "name" : "ObservationSubjectSearchParameter",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

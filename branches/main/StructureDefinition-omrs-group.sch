@@ -13,8 +13,8 @@
     <sch:title>f:Group</sch:title>
     <sch:rule context="f:Group">
       <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext']) &gt;= 1">extension with URL = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext']) &lt;= 1">extension with URL = 'http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group-description-ext': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext']) &gt;= 1">extension with URL = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext']) &lt;= 1">extension with URL = 'http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
     </sch:rule>

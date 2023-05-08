@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\Encounter Type Code System - XML Representation - FHIR v4.0.1</title>
+    <title>OPENMRS.FHIR.CORE\Encounter Type Code System - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.199"}
-    h3,h4,h5,h6{--heading-prefix:"3.199"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.195"}
+    h3,h4,h5,h6{--heading-prefix:"3.195"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -74,7 +74,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Core Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS Core FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -154,7 +154,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Core Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">OpenMRS Core FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -208,7 +208,7 @@
         
           Active
           
-            as of 2023-05-01
+            as of 2023-05-08
           
         
       </td>
@@ -230,14 +230,15 @@
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;encounter-type&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://fhir.openmrs.org/fhir/CodeSystem/encounter-type&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;discharge&lt;a name=&quot;encounter-type-discharge&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discharge&lt;/td&gt;&lt;td&gt;Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;admission&lt;a name=&quot;encounter-type-admission&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Admission&lt;/td&gt;&lt;td&gt;Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;visitNote&lt;a name=&quot;encounter-type-visitNote&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Visit Note&lt;/td&gt;&lt;td&gt;Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;checkOut&lt;a name=&quot;encounter-type-checkOut&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Check Out&lt;/td&gt;&lt;td&gt;The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;checkIn&lt;a name=&quot;encounter-type-checkIn&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Check In&lt;/td&gt;&lt;td&gt;Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;transfer&lt;a name=&quot;encounter-type-transfer&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transfer&lt;/td&gt;&lt;td&gt;Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vitals&lt;a name=&quot;encounter-type-vitals&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vitals&lt;/td&gt;&lt;td&gt;For capturing vital signs&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;attachmentUpload&lt;a name=&quot;encounter-type-attachmentUpload&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Attachment Upload&lt;/td&gt;&lt;td&gt;Encounters used to record uploads of attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://fhir.openmrs.org/core/CodeSystem/encounter-type&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;discharge&lt;a name=&quot;encounter-type-discharge&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discharge&lt;/td&gt;&lt;td&gt;Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;admission&lt;a name=&quot;encounter-type-admission&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Admission&lt;/td&gt;&lt;td&gt;Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;visitNote&lt;a name=&quot;encounter-type-visitNote&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Visit Note&lt;/td&gt;&lt;td&gt;Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;checkOut&lt;a name=&quot;encounter-type-checkOut&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Check Out&lt;/td&gt;&lt;td&gt;The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;checkIn&lt;a name=&quot;encounter-type-checkIn&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Check In&lt;/td&gt;&lt;td&gt;Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;transfer&lt;a name=&quot;encounter-type-transfer&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transfer&lt;/td&gt;&lt;td&gt;Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vitals&lt;a name=&quot;encounter-type-vitals&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vitals&lt;/td&gt;&lt;td&gt;For capturing vital signs&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;attachmentUpload&lt;a name=&quot;encounter-type-attachmentUpload&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Attachment Upload&lt;/td&gt;&lt;td&gt;Encounters used to record uploads of attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.openmrs.org/fhir/CodeSystem/encounter-type&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.openmrs.org/core/CodeSystem/encounter-type&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EncounterType&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter Type Code System&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-05-01T15:55:39+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-05-08T19:25:22+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;OpenMRS, Inc.&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -246,6 +247,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Encounter Type Coding System&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;8&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
@@ -325,13 +327,13 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 1, 2023 15:55+0000">2023-05-01</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 19:25+0000">2023-05-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/core/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

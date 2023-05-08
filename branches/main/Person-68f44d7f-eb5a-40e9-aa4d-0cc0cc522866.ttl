@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866> a fhir:Person ;
+<http://fhir.openmrs.org/core/Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866> a fhir:Person ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "68f44d7f-eb5a-40e9-aa4d-0cc0cc522866"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-person"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-person>
      ] )
   ] ; # 
   fhir:text [
@@ -22,6 +22,10 @@
      fhir:id [ fhir:v "53fbd0ef-ae10-46a0-9d0a-387917a66d6e" ] ;
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] ) ;
        fhir:text [ fhir:v "OpenMRS ID" ]
      ] ;
      fhir:value [ fhir:v "1000Y" ]
@@ -34,9 +38,6 @@
   fhir:gender [ fhir:v "male"] ; # 
   fhir:birthDate [ fhir:v "2001-09-08"^^xsd:date] ; # 
   fhir:address ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://fhir.openmrs.org/ext/address"^^xsd:anyURI ]
-     ] ) ;
      fhir:use [ fhir:v "home" ] ;
      fhir:city [ fhir:v "Ntungamo" ] ;
      fhir:district [ fhir:v "Ntungamo" ] ;

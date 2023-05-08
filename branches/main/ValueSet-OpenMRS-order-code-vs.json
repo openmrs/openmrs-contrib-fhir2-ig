@@ -5,12 +5,13 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   },
-  "url" : "http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs",
+  "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs",
   "version" : "0.1.0",
   "name" : "OpenMRSOrderCodeVS",
   "title" : "OpenMRS Order Code",
   "status" : "active",
-  "date" : "2023-05-01T15:55:39+00:00",
+  "experimental" : true,
+  "date" : "2023-05-08T19:25:22+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{

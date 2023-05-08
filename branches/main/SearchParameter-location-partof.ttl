@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/SearchParameter/location-partof> a fhir:SearchParameter ;
+<http://fhir.openmrs.org/core/SearchParameter/location-partof> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "location-partof"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>LocationPartOfSearchParameter</h2><p>Parameter <code>partOf</code>:<code>reference</code></p><div><p>Searches based on the partof field for the location record eg) /ws/fhir2/{release}/Location?partof={reference}</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.openmrs.org/fhir/SearchParameter/location-partof"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://fhir.openmrs.org/core/SearchParameter/location-partof"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "LocationPartOfSearchParameter"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-01T15:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T19:25:22+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [

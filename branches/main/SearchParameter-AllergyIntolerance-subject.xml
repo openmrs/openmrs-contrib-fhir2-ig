@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AllergyIntoleranceSubjectSearchParameter</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://fhir.openmrs.org/fhir/SearchParameter/AllergyIntolerance-subject"/>
+  <url value="http://fhir.openmrs.org/core/SearchParameter/AllergyIntolerance-subject"/>
   <version value="0.1.0"/>
   <name value="AllergyIntoleranceSubjectSearchParameter"/>
   <status value="active"/>
-  <date value="2023-05-01T15:55:39+00:00"/>
+  <date value="2023-05-08T19:25:22+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="https://openmrs.org"/>
     </telecom>
   </contact>
-  <description value="Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid} "/>
+  <description value="Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}"/>
   <code value="subject"/>
   <base value="AllergyIntolerance"/>
   <type value="reference"/>

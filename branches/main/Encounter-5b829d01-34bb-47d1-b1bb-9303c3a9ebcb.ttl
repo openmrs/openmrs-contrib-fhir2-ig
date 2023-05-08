@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> a fhir:Encounter ;
+<http://fhir.openmrs.org/core/Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter>
      ] )
   ] ; # 
   fhir:text [
@@ -31,7 +31,7 @@
      ] )
   ] ) ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
      fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ] ;
      fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
   ] ; # 
@@ -41,7 +41,7 @@
   ] ; # 
   fhir:location ( [
      fhir:location [
-       fhir:link <http://fhir.openmrs.org/fhir/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
+       fhir:link <http://fhir.openmrs.org/core/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> ;
        fhir:reference [ fhir:v "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252" ]
      ]
   ] ) . # 

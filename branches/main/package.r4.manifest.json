@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
-  "date" : "20230501155502",
+  "date" : "20230508192444",
   "notForPublication" : true,
-  "name" : "openmrs.r4"
+  "name" : "openmrs.fhir.core.r4"
 }

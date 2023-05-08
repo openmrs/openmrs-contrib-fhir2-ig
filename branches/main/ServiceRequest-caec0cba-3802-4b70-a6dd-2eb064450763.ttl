@@ -1,44 +1,44 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763> a fhir:ServiceRequest ;
+<http://fhir.openmrs.org/core/ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "caec0cba-3802-4b70-a6dd-2eb064450763"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"caec0cba-3802-4b70-a6dd-2eb064450763\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;caec0cba-3802-4b70-a6dd-2eb064450763&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-service-request.html\">OpenMRS Service Request</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>code</b>: Breast self-examination technique education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48023004)</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>occurrence</b>: 2014-08-16</p><p><b>requester</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> &quot; CAREFUL&quot;</p><p><b>performer</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"caec0cba-3802-4b70-a6dd-2eb064450763\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;caec0cba-3802-4b70-a6dd-2eb064450763&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OpenMRS-service-request.html\">OpenMRS Service Request</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>code</b>: HIV 1 and 2 tests - Meaningful Use set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75622-1)</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p><p><b>occurrence</b>: 2014-08-16</p><p><b>requester</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</a> &quot; CAREFUL&quot;</p><p><b>performer</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient</a> &quot; JEANNETTE&quot;</p></div>"
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:intent [ fhir:v "order"] ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:48023004 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "48023004" ]
+       a loinc:75622-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "75622-1" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
      fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2014-08-16"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
+     fhir:link <http://fhir.openmrs.org/core/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
      fhir:reference [ fhir:v "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ]
   ] ; # 
   fhir:performer ( [
-     fhir:link <http://fhir.openmrs.org/fhir/Patient/example-openmrs-Patient> ;
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
      fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
   ] ) . # 
 

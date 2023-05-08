@@ -2,7 +2,7 @@
   "resourceType" : "Immunization",
   "id" : "d48df5c7-605f-4f7b-88b3-f7235b474663",
   "meta" : {
-    "profile" : ["http://fhir.openmrs.org/fhir/StructureDefinition/omrs-immunization"]
+    "profile" : ["http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"]
   },
   "text" : {
     "status" : "generated",

@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Group/bc572131-c234-436f-9194-00287759a3e4> a fhir:Group ;
+<http://fhir.openmrs.org/core/Group/bc572131-c234-436f-9194-00287759a3e4> a fhir:Group ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "bc572131-c234-436f-9194-00287759a3e4"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-group>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-group"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-group>
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"bc572131-c234-436f-9194-00287759a3e4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;bc572131-c234-436f-9194-00287759a3e4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-group.html\">OMRS Group</a></p></div><p><b>active</b>: true</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: male cohort</p><p><b>quantity</b>: 10</p><p><b>managingEntity</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Super User</a> &quot; CAREFUL&quot;</p></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"bc572131-c234-436f-9194-00287759a3e4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;bc572131-c234-436f-9194-00287759a3e4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-group.html\">OMRS Group</a></p></div><p><b>Group descriptive extension</b>: Male Patients years that are alive</p><p><b>active</b>: true</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: male cohort</p><p><b>quantity</b>: 10</p><p><b>managingEntity</b>: <a href=\"Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html\">Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2: Super User</a> &quot; CAREFUL&quot;</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://fhir.openmrs.org/ext/group/description"^^xsd:anyURI ] ;
+     fhir:url [ fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-group-description-ext"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "Male Patients years that are alive" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
@@ -28,7 +28,7 @@
   fhir:name [ fhir:v "male cohort"] ; # 
   fhir:quantity [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
   fhir:managingEntity [
-     fhir:link <http://fhir.openmrs.org/fhir/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
+     fhir:link <http://fhir.openmrs.org/core/Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2> ;
      fhir:reference [ fhir:v "Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2" ] ;
      fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Super User" ]

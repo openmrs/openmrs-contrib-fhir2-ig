@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.openmrs.org/fhir/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> a fhir:Location ;
+<http://fhir.openmrs.org/core/Location/a3b793f0-eb53-4cda-92ce-fe0a77106252> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "a3b793f0-eb53-4cda-92ce-fe0a77106252"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location"^^xsd:anyURI ;
-       fhir:link <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location>
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-location>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"a3b793f0-eb53-4cda-92ce-fe0a77106252\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;a3b793f0-eb53-4cda-92ce-fe0a77106252&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#sleep)</span></p><p><b>telecom</b>: ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, <a href=\"mailto:hq@HL7.org\">hq@HL7.org</a></p><p><b>address</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: Unknown Content value @  START_TAG seen ...&lt;line&gt;\\n    &lt;value value=&quot;3300 Washtenaw Avenue, Suite 227&quot;/&gt;... @6:54</b></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"a3b793f0-eb53-4cda-92ce-fe0a77106252\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;a3b793f0-eb53-4cda-92ce-fe0a77106252&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-location.html\">OpenMRS Location</a></p></div><p><b>status</b>: active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: Sleep disorders unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#SLEEP)</span></p><p><b>telecom</b>: ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, <a href=\"mailto:hq@HL7.org\">hq@HL7.org</a></p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Ann Arbor MI 48104 USA (HOME)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-83.69471</td><td>42.2565</td></tr></table></div>"
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:name [ fhir:v "Outpatient Clinic"] ; # 
@@ -24,7 +24,7 @@
   fhir:type ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "sleep" ] ;
+       fhir:code [ fhir:v "SLEEP" ] ;
        fhir:display [ fhir:v "Sleep disorders unit" ]
      ] )
   ] ) ; # 
@@ -40,9 +40,7 @@
   ] ) ; # 
   fhir:address [
      fhir:use [ fhir:v "home" ] ;
-     fhir:line ( [
-       fhir:value [ fhir:v "3300 Washtenaw Avenue, Suite 227" ]
-     ] ) ;
+     fhir:line ( [ fhir:v "3300 Washtenaw Avenue, Suite 227" ] ) ;
      fhir:city [ fhir:v "Ann Arbor" ] ;
      fhir:district [ fhir:v "Mukono" ] ;
      fhir:state [ fhir:v "MI" ] ;
