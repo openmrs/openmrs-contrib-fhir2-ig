@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OMRSFhir2ImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenMRS Core FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-08T19:25:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-09T05:52:21+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -730,54 +730,6 @@
        ] ;
        fhir:name [ fhir:v "OpenMRS Patient Identifier Location" ] ;
        fhir:description [ fhir:v "OpenMRS location for which this identifier is valid" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.openmrs.org/core/ValueSet/medication-request-intent-vs> ;
-         fhir:reference [ fhir:v "ValueSet/medication-request-intent-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Medication Request Intent Vs" ] ;
-       fhir:description [ fhir:v "Medication Request Intent ValueSet" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.openmrs.org/core/ValueSet/medication-request-priority-vs> ;
-         fhir:reference [ fhir:v "ValueSet/medication-request-priority-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Medication Request Priority ValueSet" ] ;
-       fhir:description [ fhir:v "Openmrs Medication Request Priority ValueSet" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-intent-vs> ;
-         fhir:reference [ fhir:v "ValueSet/OpenMRS-task-intent-vs" ]
-       ] ;
-       fhir:name [ fhir:v "OpenMRS Intent for Task" ] ;
-       fhir:description [ fhir:v "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-status-vs> ;
-         fhir:reference [ fhir:v "ValueSet/OpenMRS-task-status-vs" ]
-       ] ;
-       fhir:name [ fhir:v "OpenMRS Status for Task" ] ;
-       fhir:description [ fhir:v "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

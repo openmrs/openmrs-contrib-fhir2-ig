@@ -1342,33 +1342,5 @@
     "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs",
     "version" : "0.1.0",
     "name" : "OpenMRSOrderCodeVS"
-  },
-  {
-    "id" : "OpenMRS-task-intent-vs",
-    "type" : "ValueSet",
-    "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-intent-vs",
-    "version" : "0.1.0",
-    "name" : "OMRSPatientTaskIntentVS"
-  },
-  {
-    "id" : "OpenMRS-task-status-vs",
-    "type" : "ValueSet",
-    "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-task-status-vs",
-    "version" : "0.1.0",
-    "name" : "OMRSPatientTaskStatusVS"
-  },
-  {
-    "id" : "medication-request-intent-vs",
-    "type" : "ValueSet",
-    "url" : "http://fhir.openmrs.org/core/ValueSet/medication-request-intent-vs",
-    "version" : "0.1.0",
-    "name" : "MedicationRequestIntentVs"
-  },
-  {
-    "id" : "medication-request-priority-vs",
-    "type" : "ValueSet",
-    "url" : "http://fhir.openmrs.org/core/ValueSet/medication-request-priority-vs",
-    "version" : "0.1.0",
-    "name" : "MedicationRequestPriorityVs"
   }
 ]

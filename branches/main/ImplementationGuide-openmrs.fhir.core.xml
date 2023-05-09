@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS Core FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2023-05-08T19:25:22+00:00"/>
+  <date value="2023-05-09T05:52:21+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -648,50 +648,6 @@
       </reference>
       <name value="OpenMRS Patient Identifier Location"/>
       <description value="OpenMRS location for which this identifier is valid"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/medication-request-intent-vs"/>
-      </reference>
-      <name value="Medication Request Intent Vs"/>
-      <description value="Medication Request Intent ValueSet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/medication-request-priority-vs"/>
-      </reference>
-      <name value="Medication Request Priority ValueSet"/>
-      <description value="Openmrs Medication Request Priority ValueSet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenMRS-task-intent-vs"/>
-      </reference>
-      <name value="OpenMRS Intent for Task"/>
-      <description value="The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenMRS-task-status-vs"/>
-      </reference>
-      <name value="OpenMRS Status for Task"/>
-      <description value="The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
