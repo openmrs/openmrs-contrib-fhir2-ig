@@ -1,6 +1,6 @@
-Alias: MedicPriorityVs = http://fhir.openmrs.org/fhir/request-priority
+//Alias: MedicPriorityVs = http://fhir.openmrs.org/fhir/request-priority
 Alias: $systemUrl = http://fhir.openmrs.org
-Alias: MedicIntentVs = http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent
+//Alias: MedicIntentVs = http://fhir.openmrs.org/fhir/CodeSystem/medicationrequest-intent
 
 /** medication request resource profile*/
 
@@ -37,31 +37,31 @@ Description: "A FHIR MedicationRequest as understood by OpenMRS"
 
 /** Medication request Intent value set*/
 
-ValueSet: MedicationRequestIntentVs
-Id: medication-request-intent-vs
-Title: "Medication Request Intent Vs"
-Description: "Medication Request Intent ValueSet"
-* ^experimental = true
-* MedicIntentVs#proposal "Proposal"
-* MedicIntentVs#plan "Plan"
-* MedicIntentVs#order "Order"
-* MedicIntentVs#original-order "Original Order"
-* MedicIntentVs#reflex-order "Reflex Order"
-* MedicIntentVs#filler-order "Filler Order"
-* MedicIntentVs#instance-order "Instance Order"
-* MedicIntentVs#option "Option"
+// ValueSet: MedicationRequestIntentVs
+// Id: medication-request-intent-vs
+// Title: "Medication Request Intent Vs"
+// Description: "Medication Request Intent ValueSet"
+// * ^experimental = true
+// * MedicIntentVs#proposal "Proposal"
+// * MedicIntentVs#plan "Plan"
+// * MedicIntentVs#order "Order"
+// * MedicIntentVs#original-order "Original Order"
+// * MedicIntentVs#reflex-order "Reflex Order"
+// * MedicIntentVs#filler-order "Filler Order"
+// * MedicIntentVs#instance-order "Instance Order"
+// * MedicIntentVs#option "Option"
 
 
 
-ValueSet: MedicationRequestPriorityVs
-Id: medication-request-priority-vs
-Title: "Medication Request Priority ValueSet"
-Description: "Openmrs Medication Request Priority ValueSet"
-* ^experimental = true
-* MedicPriorityVs#routine "Routine"
-* MedicPriorityVs#urgent "Urgent"
-* MedicPriorityVs#asap "ASAP"
-* MedicPriorityVs#stat "STAT"
+// ValueSet: MedicationRequestPriorityVs
+// Id: medication-request-priority-vs
+// Title: "Medication Request Priority ValueSet"
+// Description: "Openmrs Medication Request Priority ValueSet"
+// * ^experimental = true
+// * MedicPriorityVs#routine "Routine"
+// * MedicPriorityVs#urgent "Urgent"
+// * MedicPriorityVs#asap "ASAP"
+// * MedicPriorityVs#stat "STAT"
 
 
 /** MedicationRequest OMRS VS FHIR Mapping*/
