@@ -10,7 +10,7 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS Core FHIR Implementation Guide",
   "status" : "active",
-  "date" : "2023-05-08T19:25:22+00:00",
+  "date" : "2023-05-09T05:52:21+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -815,54 +815,6 @@
       },
       "name" : "OpenMRS Patient Identifier Location",
       "description" : "OpenMRS location for which this identifier is valid",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/medication-request-intent-vs"
-      },
-      "name" : "Medication Request Intent Vs",
-      "description" : "Medication Request Intent ValueSet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/medication-request-priority-vs"
-      },
-      "name" : "Medication Request Priority ValueSet",
-      "description" : "Openmrs Medication Request Priority ValueSet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenMRS-task-intent-vs"
-      },
-      "name" : "OpenMRS Intent for Task",
-      "description" : "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenMRS-task-status-vs"
-      },
-      "name" : "OpenMRS Status for Task",
-      "description" : "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html",
       "exampleBoolean" : false
     },
     {
