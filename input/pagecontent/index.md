@@ -21,10 +21,11 @@ the FHIR module supports the export of the following FHIR Resources
 9. [Encounter](https://fhir.openmrs.org/StructureDefinition-omrs-encounter.html)
 10. [Medication](https://fhir.openmrs.org/StructureDefinition-omrs-medication.html)
 11. [MedicationRequest](https://fhir.openmrs.org/StructureDefinition-omrs-medication-request.html)
-12. [ServiceRequest](https://fhir.openmrs.org/StructureDefinition-OpenMRS-service-request.html)
-13. [Task](https://fhir.openmrs.org/StructureDefinition-OpenMRS-task.html)
-14. [Group](https://fhir.openmrs.org/StructureDefinition-omrs-group.html)
-15. [Immunization](https://fhir.openmrs.org/StructureDefinition-omrs-immunization.html)
+12. [MedicationDispense](https://fhir.openmrs.org/StructureDefinition-omrsmedication-dispense.html)
+13. [ServiceRequest](https://fhir.openmrs.org/StructureDefinition-OpenMRS-service-request.html)
+14. [Task](https://fhir.openmrs.org/StructureDefinition-OpenMRS-task.html)
+15. [Group](https://fhir.openmrs.org/StructureDefinition-omrs-group.html)
+16. [Immunization](https://fhir.openmrs.org/StructureDefinition-omrs-immunization.html)
 
 ### About This Implementation Guide <a name="about"/>
 The top menu allows quick navigation to the different sections, and a Table of Contents is provided with the entire content of this Implementation Guide.
