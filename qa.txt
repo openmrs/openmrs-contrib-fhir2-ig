@@ -2,9 +2,9 @@
 =========================================
 
 err = 0, warn = 4, info = 7
-IG Publisher Version: 1.3.11
-Generated Wed May 17 15:12:27 UTC 2023. FHIR version 4.0.1 for openmrs.fhir.core#0.1.0 (canonical = http://fhir.openmrs.org/core)
- Build Errors : 0 / 4 / 0
+IG Publisher Version: 1.3.18
+Generated Thu Jun 22 11:18:55 UTC 2023. FHIR version 4.0.1 for openmrs.fhir.core#0.1.0 (canonical = http://fhir.openmrs.org/core)
+ Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 0 / 0 / 2
@@ -216,6 +216,12 @@ Generated Wed May 17 15:12:27 UTC 2023. FHIR version 4.0.1 for openmrs.fhir.core
  /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 410, column 512: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 717, column 273: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 386, column 2495: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 455, column 2479: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 706, column 2495: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 775, column 2479: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide

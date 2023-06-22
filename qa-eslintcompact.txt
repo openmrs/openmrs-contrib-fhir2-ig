@@ -1,0 +1,14 @@
+﻿/github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc.json: line 23, col 12, Info - Code System URI 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.json: line 11, col 8, Info - Code System URI 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json: line 21, col 10, Info - Code System URI 'http://fhir.openmrs.org/code-system/encounter-type' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.json: line 12, col 8, Info - Code System URI 'https://cielterminology.org/' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76.json: line 12, col 8, Info - Code System URI 'https://cielterminology.org' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation.json: line 61, col 12, Info - Code System URI 'http://fhir.openmrs.org/ext/obs/reference-range' is unknown so the code cannot be validated (UNKNOWN)
+/github/workspace/fsh-generated/resources/StructureDefinition-omrsmedication-dispense.json: line 1, col 102411, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+
+OMRSFhir2ImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 4, info = 7
+IG Publisher Version: 1.3.18
+Generated Thu Jun 22 11:18:55 UTC 2023. FHIR version 4.0.1 for openmrs.fhir.core#0.1.0 (canonical = http://fhir.openmrs.org/core)

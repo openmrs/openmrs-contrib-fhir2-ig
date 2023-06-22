@@ -38,18 +38,18 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.177"}
-    h3,h4,h5,h6{--heading-prefix:"3.177"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.180"}
+    h3,h4,h5,h6{--heading-prefix:"3.180"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -238,7 +238,7 @@
         
           Active
           
-            as of 2023-05-17
+            as of 2023-06-22
           
         
       </td>
@@ -320,6 +320,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </span></td></tr>
@@ -341,8 +342,7 @@
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)<br/><b title="Formal Invariant Identifier">ext-1</b>: <span style='color:DarkGray'>Must have either extensions or value[x], not both</span> (: <span style='color:DarkGray'>extension.exists() != value.exists()</span>)</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Patient.identifier"> </a><span style="color: grey">5.</span> <b>Patient.identifier</b><a href="#key_Patient.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.</p>
-<span style='color:DarkGray;text-decoration:line-through'><p>An identifier for this patient.</p>
+  <tr><td>Definition</td><td><span style='color:DarkGray'><p>An identifier for this patient.</p>
 </span></td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
@@ -362,6 +362,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Need to be able to mark a patient record as not to be used because it was created in error.</p>
 </span></td></tr>
@@ -402,6 +403,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></span><br/><span style='color:DarkGray'><p>The gender of a person used for administrative purposes.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Needed for identification of the individual, in combination with (at least) name and birth date.</p>
 </span></td></tr>
@@ -414,6 +416,7 @@ Many systems use this property to mark as non-current patients, such as those th
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Age of the individual drives many clinical processes.</p>
 </span></td></tr>
@@ -429,6 +432,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.</p>
 </span></td></tr>
@@ -497,6 +501,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-link-type.html">LinkType</a></span><br/><span style='color:DarkGray'><p>The type of link between this patient resource and another patient resource.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
@@ -535,6 +540,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </td></tr>
@@ -546,8 +552,9 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
 A human language
-<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
@@ -600,7 +607,7 @@ A human language
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Patient.identifier"> </a><span style="color: grey">10.</span> <b>Patient.identifier</b><a href="#Patient.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.</p>
+  <tr><td>Definition</td><td><p>An identifier for this patient.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
@@ -620,6 +627,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to mark a patient record as not to be used because it was created in error.</p>
 </td></tr>
@@ -661,6 +669,7 @@ Many systems use this property to mark as non-current patients, such as those th
 The gender of a person used for administrative purposes
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Needed for identification of the individual, in combination with (at least) name and birth date.</p>
 </td></tr>
@@ -673,6 +682,7 @@ The gender of a person used for administrative purposes
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Age of the individual drives many clinical processes.</p>
 </td></tr>
@@ -688,6 +698,7 @@ The gender of a person used for administrative purposes
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.</p>
 </td></tr>
@@ -726,6 +737,7 @@ The domestic partnership status of a person
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.</p>
 </td></tr>
@@ -755,6 +767,7 @@ The domestic partnership status of a person
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td>Obligations</td><td><table class="grid"><tr><td style="font-size: 11px"><b>Obligations</b></td></tr><tr><td style="font-size: 11px"><span title="No Obligation Code?">??</span></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Need to track people you can contact about the patient.</p>
 </td></tr>
@@ -848,6 +861,7 @@ The nature of the relationship between a patient and a contact person for that p
 The gender of a person used for administrative purposes
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Needed to address the person correctly.</p>
 </td></tr>
@@ -922,7 +936,7 @@ The gender of a person used for administrative purposes
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
 A human language
-<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.</p>
@@ -936,6 +950,7 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.</p>
 </td></tr>
@@ -1036,6 +1051,7 @@ Multiple GPs may be recorded against the patient for various reasons, such as a 
 The type of link between this patient resource and another patient resource
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -1096,7 +1112,7 @@ The type of link between this patient resource and another patient resource
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 17, 2023 15:10+0000">2023-05-17</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 22, 2023 11:16+0000">2023-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

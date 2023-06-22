@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS Core FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2023-05-17T15:10:06+00:00"/>
+  <date value="2023-06-22T11:16:34+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -429,6 +429,39 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/encounter-type"/>
+      </reference>
+      <name value="Encounter Type Code System"/>
+      <description value="Encounter Type Coding System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-group-description-ext"/>
+      </reference>
+      <name value="Group descriptive extension"/>
+      <description value="Extension for group description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
+      </reference>
+      <name value="Location Example"/>
+      <description value="Example OpenMRS Location resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -443,65 +476,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/omrs-Condition"/>
-      </reference>
-      <name value="OpenMRS condition"/>
-      <description value="A FHIR Condition as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-encounter"/>
-      </reference>
-      <name value="Openmrs Encounter"/>
-      <description value="A FHIR Encounter as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/omrs-group"/>
       </reference>
       <name value="OMRS Group"/>
       <description value="A Group Resource is described as Cohort in Fhir2 OMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-immunization"/>
-      </reference>
-      <name value="OpenMRS Immunization"/>
-      <description value="A FHIR Immunization Resource as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-location"/>
-      </reference>
-      <name value="OpenMRS Location"/>
-      <description value="An OpenMRS location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-location-contact-point"/>
-      </reference>
-      <name value="OpenMRS Location Contact Point"/>
-      <description value="An OpenMRS Location Phone Number"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -528,58 +506,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/omrs-medication-request"/>
+        <reference value="AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc"/>
       </reference>
-      <name value="OpenMRS Medication Request"/>
-      <description value="A FHIR MedicationRequest as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-patient"/>
-      </reference>
-      <name value="OpenMRS Patient"/>
-      <description value="A FHIR Patient as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-patient-identifier"/>
-      </reference>
-      <name value="OpenMRS Patient Identifier"/>
-      <description value="Patient Identifers as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-person"/>
-      </reference>
-      <name value="OpenMRS Person"/>
-      <description value="A FHIR Person as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/omrs-practitioner"/>
-      </reference>
-      <name value="Openmrs Practitioner"/>
-      <description value="A FHIR Practitioner as understood by OpenMRS"/>
-      <exampleBoolean value="false"/>
+      <name value="OpenMRS Allergy Intolerance Example"/>
+      <description value="Example OpenMRS Allergy Intolerance resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -597,6 +531,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/omrs-Condition"/>
+      </reference>
+      <name value="OpenMRS condition"/>
+      <description value="A FHIR Condition as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c"/>
+      </reference>
+      <name value="OpenMRS Condition Resource Example"/>
+      <description value="Example OMRS Condition resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/OpenMRS-diagnostic-report"/>
       </reference>
       <name value="OpenMRS Diagnostic Report"/>
@@ -605,79 +561,90 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OpenMRS-observation"/>
+        <reference value="DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de"/>
       </reference>
-      <name value="OpenMRS Observation"/>
-      <description value="Observation resource created in OpenMRS representing a result for an order submitted by an EMR System"/>
-      <exampleBoolean value="false"/>
+      <name value="Openmrs DiagnosticReport"/>
+      <description value="Example OMRS DiagnosticReport Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OpenMRS-service-request"/>
+        <reference value="StructureDefinition/omrs-encounter"/>
       </reference>
-      <name value="OpenMRS Service Request"/>
-      <description value="Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources"/>
+      <name value="Openmrs Encounter"/>
+      <description value="A FHIR Encounter as understood by OpenMRS"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+      </reference>
+      <name value="OpenMRS Encounter Resource Example"/>
+      <description value="Example OpenMRS Encounter resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/bc572131-c234-436f-9194-00287759a3e4"/>
+      </reference>
+      <name value="OpenMRS Group Example"/>
+      <description value="Example OpenMRS Group resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-group"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OpenMRS-task"/>
+        <reference value="StructureDefinition/omrs-immunization"/>
       </reference>
-      <name value="OpenMRS Task"/>
-      <description value="A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2"/>
+      <name value="OpenMRS Immunization"/>
+      <description value="A FHIR Immunization Resource as understood by OpenMRS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Immunization"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/omrs-group-description-ext"/>
+        <reference value="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"/>
       </reference>
-      <name value="Group descriptive extension"/>
-      <description value="Extension for group description"/>
+      <name value="OpenMRS Immunization Example"/>
+      <description value="Example OpenMRS Immunization Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-location"/>
+      </reference>
+      <name value="OpenMRS Location"/>
+      <description value="An OpenMRS location"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/omrs-patient-identifier-location"/>
+        <reference value="StructureDefinition/omrs-location-contact-point"/>
       </reference>
-      <name value="OpenMRS Patient Identifier Location"/>
-      <description value="OpenMRS location for which this identifier is valid"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenMRS-order-code-vs"/>
-      </reference>
-      <name value="OpenMRS Order Code"/>
-      <description value="The code for the openmrs requested in the EMR."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/encounter-type"/>
-      </reference>
-      <name value="Encounter Type Code System"/>
-      <description value="Encounter Type Coding System"/>
+      <name value="OpenMRS Location Contact Point"/>
+      <description value="An OpenMRS Location Phone Number"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,25 +660,124 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
+        <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc"/>
+        <reference value="Medication/f49e4247-528a-4cfd-8856-de161d03fa76"/>
       </reference>
-      <name value="OpenMRS Allergy Intolerance Example"/>
-      <description value="Example OpenMRS Allergy Intolerance resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance"/>
+      <name value="OpenMRS Medication Example"/>
+      <description value="Example OpenMRS Medication resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+        <reference value="StructureDefinition/omrs-medication-request"/>
       </reference>
-      <name value="OpenMRS Encounter Resource Example"/>
-      <description value="Example OpenMRS Encounter resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"/>
+      <name value="OpenMRS Medication Request"/>
+      <description value="A FHIR MedicationRequest as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OMRSMedicationRequestExample"/>
+      </reference>
+      <name value="OpenMRS Medication Request Example"/>
+      <description value="Example OpenMRS Medication Request resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-observation"/>
+      </reference>
+      <name value="OpenMRS Observation"/>
+      <description value="Observation resource created in OpenMRS representing a result for an order submitted by an EMR System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-openmrs-Observation"/>
+      </reference>
+      <name value="OpenMRS Observation Example"/>
+      <description value="Example OpenMRS Observation resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenMRS-order-code-vs"/>
+      </reference>
+      <name value="OpenMRS Order Code"/>
+      <description value="The code for the openmrs requested in the EMR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-patient"/>
+      </reference>
+      <name value="OpenMRS Patient"/>
+      <description value="A FHIR Patient as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-openmrs-Patient"/>
+      </reference>
+      <name value="OpenMRS Patient Example"/>
+      <description value="Example OpenMRS Patient resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-patient-identifier"/>
+      </reference>
+      <name value="OpenMRS Patient Identifier"/>
+      <description value="Patient Identifers as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-patient-identifier-location"/>
+      </reference>
+      <name value="OpenMRS Patient Identifier Location"/>
+      <description value="OpenMRS location for which this identifier is valid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-person"/>
+      </reference>
+      <name value="OpenMRS Person"/>
+      <description value="A FHIR Person as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -726,6 +792,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-practitioner"/>
+      </reference>
+      <name value="Openmrs Practitioner"/>
+      <description value="A FHIR Practitioner as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -737,46 +814,68 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DiagnosticReport"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de"/>
+        <reference value="StructureDefinition/OpenMRS-service-request"/>
       </reference>
-      <name value="Openmrs DiagnosticReport"/>
-      <description value="Example OMRS DiagnosticReport Resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-category"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by the category"/>
-      <description value="Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}"/>
+      <name value="OpenMRS Service Request"/>
+      <description value="Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/AllergyIntolerance-clinical-status"/>
+        <reference value="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763"/>
       </reference>
-      <name value="Search through AllergyIntolerance endpoint by the clinical-status"/>
-      <description value="Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}"/>
+      <name value="OpenMRS ServiceRequest Example"/>
+      <description value="Example OpenMRS Service Request resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-task"/>
+      </reference>
+      <name value="OpenMRS Task"/>
+      <description value="A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"/>
+      </reference>
+      <name value="OpenMRS Task"/>
+      <description value="Example OMRS Task resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/e05c3693-4bcf-4e14-8900-86582265c659"/>
+      </reference>
+      <name value="Organization example"/>
+      <description value="Example organization performing a task"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/AllergyIntolerance-id"/>
+        <reference value="SearchParameter/condition-patient-identifier"/>
       </reference>
-      <name value="Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute"/>
-      <description value="Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}"/>
+      <name value="Search condition endpoint by patient identifier id"/>
+      <description value="Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -795,164 +894,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/AllergyIntolerance-manifestation"/>
+        <reference value="SearchParameter/AllergyIntolerance-id"/>
       </reference>
-      <name value="Search through AllergyIntolerance endpoint by the manifestation"/>
-      <description value="Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-patient"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by a given patient"/>
-      <description value="Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-patient-family"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by the patient's family name"/>
-      <description value="Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-patient-identifier"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by a given patient"/>
-      <description value="Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-patient-name"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by the patient's full or partial name"/>
-      <description value="Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-patient.given"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by the patient's given name"/>
-      <description value="Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-severity"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by the severity"/>
-      <description value="Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-subject"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by subject uuid"/>
-      <description value="Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-subject-family"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by subject family"/>
-      <description value="Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-subject-given"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by subject given"/>
-      <description value="Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-subject-identifier"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by subject identifier"/>
-      <description value="Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/AllergyIntolerance-subject-name"/>
-      </reference>
-      <name value="Search through AllergyIntolerance endpoint by subject name"/>
-      <description value="Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Condition-requester-family"/>
-      </reference>
-      <name value="Search through condition endpoint by Practitioner family"/>
-      <description value="Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Condition-requester-given"/>
-      </reference>
-      <name value="Search through condition endpoint by Practitioner given"/>
-      <description value="Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-address-city"/>
-      </reference>
-      <name value="Search in Encounter endpoint basing on Encounter location address-city attribute"/>
-      <description value="Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}"/>
+      <name value="Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute"/>
+      <description value="Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -964,6 +909,28 @@
       </reference>
       <name value="Search in Encounter endpoint basing on  Encounter location address-country attribute"/>
       <description value="Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-lastUpdated"/>
+      </reference>
+      <name value="Search in Encounter endpoint basing on Encounter lastUpdated  attribute"/>
+      <description value="Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-address-city"/>
+      </reference>
+      <name value="Search in Encounter endpoint basing on Encounter location address-city attribute"/>
+      <description value="Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -993,946 +960,11 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/Encounter-date"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the date when the encounter was created"/>
-      <description value="Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/Encounter-id"/>
       </reference>
       <name value="Search in Encounter endpoint basing on Encounter uuid  attribute"/>
       <description value="Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-lastUpdated"/>
-      </reference>
-      <name value="Search in Encounter endpoint basing on Encounter lastUpdated  attribute"/>
-      <description value="Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-location"/>
-      </reference>
-      <name value="Search through Encounter endpoint based on location reference"/>
-      <description value="Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-participant"/>
-      </reference>
-      <name value="Search through Encounter endpoint by a given Practitioner"/>
-      <description value="Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-participant-identifier"/>
-      </reference>
-      <name value="Search through Encounter endpoint by a given Practitioner"/>
-      <description value="Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-participant.family"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the Practitioner's family name"/>
-      <description value="Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-participant.given"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the Practitioner's given name"/>
-      <description value="Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-participant.name"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the Practitioner's full or partial name"/>
-      <description value="Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-patient"/>
-      </reference>
-      <name value="Search through Encounter endpoint by a given patient"/>
-      <description value="Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-patient-identifier"/>
-      </reference>
-      <name value="Search through Encounter endpoint by a given patient"/>
-      <description value="Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-patient-name"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the patient's full or partial name"/>
-      <description value="Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-patient.family"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the patient's family name"/>
-      <description value="Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-patient.given"/>
-      </reference>
-      <name value="Search through Encounter endpoint by the patient's given name"/>
-      <description value="Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-subject"/>
-      </reference>
-      <name value="Search through Encounter endpoint by subject uuid"/>
-      <description value="Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-subject-family"/>
-      </reference>
-      <name value="Search through Encounter endpoint by subject family"/>
-      <description value="Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-subject-given"/>
-      </reference>
-      <name value="Search through Encounter endpoint by subject given"/>
-      <description value="Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-subject-identifier"/>
-      </reference>
-      <name value="Search through Encounter endpoint by subject identifier"/>
-      <description value="Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-subject-name"/>
-      </reference>
-      <name value="Search through Encounter endpoint by subject name"/>
-      <description value="Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Encounter-type"/>
-      </reference>
-      <name value="Search through Encounter endpoint by encounter type"/>
-      <description value="Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-id"/>
-      </reference>
-      <name value="Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute"/>
-      <description value="Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-lastUpdated"/>
-      </reference>
-      <name value="Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute"/>
-      <description value="Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-medication"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint based on medication reference"/>
-      <description value="Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-patient"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by a given patient"/>
-      <description value="Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-patient-identifier"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by a given patient"/>
-      <description value="Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-patient-name"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the patient's full or partial name"/>
-      <description value="Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-patient.family"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the patient's family name"/>
-      <description value="Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-patient.given"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the patient's given name"/>
-      <description value="Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-requestor"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by a given Practitioner"/>
-      <description value="Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-requestor-identifier"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by a given Practitioner"/>
-      <description value="Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-requestor.family"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the Practitioner's family name"/>
-      <description value="Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-requestor.given"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the Practitioner's given name"/>
-      <description value="Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-requestor.name"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by the Practitioner's full or partial name"/>
-      <description value="Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-subject"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by subject uuid"/>
-      <description value="Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-subject-family"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by subject family"/>
-      <description value="Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-subject-given"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by subject given"/>
-      <description value="Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-subject-identifier"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by subject identifier"/>
-      <description value="Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/MedicationRequest-subject-name"/>
-      </reference>
-      <name value="Search through MedicationRequest endpoint by subject name"/>
-      <description value="Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/OMRSMedicationRequestExample"/>
-      </reference>
-      <name value="OpenMRS Medication Request Example"/>
-      <description value="Example OpenMRS Medication Request resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-address-city"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner's address-city attribute"/>
-      <description value="Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-address-country"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner's address-country attribute"/>
-      <description value="Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-address-postalcode"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute"/>
-      <description value="Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-address-state"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner's address-state attribute"/>
-      <description value="Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-id"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner uuid attribute"/>
-      <description value="Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-identifier"/>
-      </reference>
-      <name value="Search through Practitioner endpoint by a given Practitioner"/>
-      <description value="Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner-lastUpdated"/>
-      </reference>
-      <name value="Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute"/>
-      <description value="Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner.family"/>
-      </reference>
-      <name value="Search through Practitioner endpoint by the Practitioner's family name"/>
-      <description value="Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner.given"/>
-      </reference>
-      <name value="Search through Practitioner endpoint by the Practitioner's given name"/>
-      <description value="Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practitioner.name"/>
-      </reference>
-      <name value="Search through Practitioner endpoint by the Practitioner's full or partial name"/>
-      <description value="Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Task-basedOn"/>
-      </reference>
-      <name value="Search through FhirTask endpoint by the ServiceRequest Reference uuid"/>
-      <description value="Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Task-id"/>
-      </reference>
-      <name value="Search in Task endpoint basing on Task uuid attribute"/>
-      <description value="Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Task-lastUpdated"/>
-      </reference>
-      <name value="Search in Task endpoint basing on Task lastUpdated attribute"/>
-      <description value="Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Task-owner"/>
-      </reference>
-      <name value="Search through FhirTask endpoint by the Organization Reference uuid"/>
-      <description value="Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Task-status"/>
-      </reference>
-      <name value="Search through FhirTask endpoint by FhirTask status in the current state"/>
-      <description value="Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"/>
-      </reference>
-      <name value="Location Example"/>
-      <description value="Example OpenMRS Location resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-location"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c"/>
-      </reference>
-      <name value="OpenMRS Condition Resource Example"/>
-      <description value="Example OMRS Condition resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Group"/>
-      </extension>
-      <reference>
-        <reference value="Group/bc572131-c234-436f-9194-00287759a3e4"/>
-      </reference>
-      <name value="OpenMRS Group Example"/>
-      <description value="Example OpenMRS Group resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-group"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763"/>
-      </reference>
-      <name value="OpenMRS ServiceRequest Example"/>
-      <description value="Example OpenMRS Service Request resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-clinical-status"/>
-      </reference>
-      <name value="Search through condition endpoint by Condition clinical status"/>
-      <description value="Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-code"/>
-      </reference>
-      <name value="Search through condition endpoint by concept code"/>
-      <description value="Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-encounter"/>
-      </reference>
-      <name value="Search through condition endpoint by encounter uuid"/>
-      <description value="Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-id"/>
-      </reference>
-      <name value="Search through condition endpoint by service Uuid"/>
-      <description value="Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-lastUpdated"/>
-      </reference>
-      <name value="Search through condition endpoint by service lastUpdated field"/>
-      <description value="Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-occurrence"/>
-      </reference>
-      <name value="Search through condition endpoint by Occurrence when service should occurance"/>
-      <description value="Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-onset-age"/>
-      </reference>
-      <name value="Search through condition endpoint by Condition clinical onset age"/>
-      <description value="Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-onset-date"/>
-      </reference>
-      <name value="Search through condition endpoint by Condition clinical onset date"/>
-      <description value="Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-patient"/>
-      </reference>
-      <name value="Search through condition endpoint by patient uuid"/>
-      <description value="Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-patient-identifier"/>
-      </reference>
-      <name value="Search condition endpoint by patient identifier id"/>
-      <description value="Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-patient-name"/>
-      </reference>
-      <name value="Search through condition endpoint by the patient's full or partial name"/>
-      <description value="Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-patient.family"/>
-      </reference>
-      <name value="Search through condition endpoint by the patient's family name"/>
-      <description value="Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-patient.given"/>
-      </reference>
-      <name value="Search through condtion endpoint by the patient's given name"/>
-      <description value="Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-recorded-date"/>
-      </reference>
-      <name value="Search through condition endpoint by date when the record was created"/>
-      <description value="Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-requester"/>
-      </reference>
-      <name value="Search through condition endpoint by Practitioner uuid"/>
-      <description value="Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-requester-identifier"/>
-      </reference>
-      <name value="Search through condition endpoint by Practitioner identifier"/>
-      <description value="Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-requester-name"/>
-      </reference>
-      <name value="Search through condition endpoint by Practitioner name"/>
-      <description value="Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-subject"/>
-      </reference>
-      <name value="Search through condition endpoint by subject uuid"/>
-      <description value="Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-subject-family"/>
-      </reference>
-      <name value="Search through condtion endpoint by subject family"/>
-      <description value="Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-subject-given"/>
-      </reference>
-      <name value="Search through condition endpoint by subject given"/>
-      <description value="Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-subject-identifier"/>
-      </reference>
-      <name value="Search through condition endpoint by subject identifier"/>
-      <description value="Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/condition-subject-name"/>
-      </reference>
-      <name value="Search through condition endpoint by subject name"/>
-      <description value="Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"/>
-      </reference>
-      <name value="OpenMRS Immunization Example"/>
-      <description value="Example OpenMRS Immunization Resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/e05c3693-4bcf-4e14-8900-86582265c659"/>
-      </reference>
-      <name value="Organization example"/>
-      <description value="Example organization performing a task"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"/>
-      </reference>
-      <name value="OpenMRS Task"/>
-      <description value="Example OMRS Task resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/example-openmrs-Observation"/>
-      </reference>
-      <name value="OpenMRS Observation Example"/>
-      <description value="Example OpenMRS Observation resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example-openmrs-Patient"/>
-      </reference>
-      <name value="OpenMRS Patient Example"/>
-      <description value="Example OpenMRS Patient resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/f49e4247-528a-4cfd-8856-de161d03fa76"/>
-      </reference>
-      <name value="OpenMRS Medication Example"/>
-      <description value="Example OpenMRS Medication resource"/>
-      <exampleCanonical value="http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1987,17 +1019,6 @@
       </reference>
       <name value="Search in Location endpoint basing on location address-state attribute"/>
       <description value="Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-id"/>
-      </reference>
-      <name value="Search in Location endpoint basing on location uuid  attribute"/>
-      <description value="Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2060,6 +1081,985 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/location-id"/>
+      </reference>
+      <name value="Search in Location endpoint basing on location uuid  attribute"/>
+      <description value="Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-lastUpdated"/>
+      </reference>
+      <name value="Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute"/>
+      <description value="Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-id"/>
+      </reference>
+      <name value="Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute"/>
+      <description value="Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-lastUpdated"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute"/>
+      <description value="Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-id"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner uuid attribute"/>
+      <description value="Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-address-city"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner's address-city attribute"/>
+      <description value="Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-address-country"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner's address-country attribute"/>
+      <description value="Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-address-postalcode"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute"/>
+      <description value="Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner-address-state"/>
+      </reference>
+      <name value="Search in Practitioner endpoint basing on Practitioner's address-state attribute"/>
+      <description value="Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-lastUpdated"/>
+      </reference>
+      <name value="Search in Task endpoint basing on Task lastUpdated attribute"/>
+      <description value="Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-id"/>
+      </reference>
+      <name value="Search in Task endpoint basing on Task uuid attribute"/>
+      <description value="Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-patient-identifier"/>
+      </reference>
+      <name value="Search serviceRequest endpoint by patient identifier id"/>
+      <description value="Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-patient"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by a given patient"/>
+      <description value="Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-patient-identifier"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by a given patient"/>
+      <description value="Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-subject-family"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by subject family"/>
+      <description value="Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-subject-given"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by subject given"/>
+      <description value="Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-subject-identifier"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by subject identifier"/>
+      <description value="Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-subject-name"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by subject name"/>
+      <description value="Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-subject"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by subject uuid"/>
+      <description value="Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-category"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the category"/>
+      <description value="Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-clinical-status"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the clinical-status"/>
+      <description value="Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-manifestation"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the manifestation"/>
+      <description value="Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-patient-family"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the patient's family name"/>
+      <description value="Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-patient-name"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the patient's full or partial name"/>
+      <description value="Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-patient.given"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the patient's given name"/>
+      <description value="Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/AllergyIntolerance-severity"/>
+      </reference>
+      <name value="Search through AllergyIntolerance endpoint by the severity"/>
+      <description value="Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-has-member"/>
+      </reference>
+      <name value="Search through an observation group in the Obervation EndPoint that contains a given observation"/>
+      <description value="Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-code"/>
+      </reference>
+      <name value="Search through condition endpoint by concept code"/>
+      <description value="Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-onset-age"/>
+      </reference>
+      <name value="Search through condition endpoint by Condition clinical onset age"/>
+      <description value="Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-onset-date"/>
+      </reference>
+      <name value="Search through condition endpoint by Condition clinical onset date"/>
+      <description value="Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-clinical-status"/>
+      </reference>
+      <name value="Search through condition endpoint by Condition clinical status"/>
+      <description value="Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-recorded-date"/>
+      </reference>
+      <name value="Search through condition endpoint by date when the record was created"/>
+      <description value="Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-encounter"/>
+      </reference>
+      <name value="Search through condition endpoint by encounter uuid"/>
+      <description value="Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-occurrence"/>
+      </reference>
+      <name value="Search through condition endpoint by Occurrence when service should occurance"/>
+      <description value="Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-patient"/>
+      </reference>
+      <name value="Search through condition endpoint by patient uuid"/>
+      <description value="Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Condition-requester-family"/>
+      </reference>
+      <name value="Search through condition endpoint by Practitioner family"/>
+      <description value="Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Condition-requester-given"/>
+      </reference>
+      <name value="Search through condition endpoint by Practitioner given"/>
+      <description value="Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-requester-identifier"/>
+      </reference>
+      <name value="Search through condition endpoint by Practitioner identifier"/>
+      <description value="Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-requester-name"/>
+      </reference>
+      <name value="Search through condition endpoint by Practitioner name"/>
+      <description value="Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-requester"/>
+      </reference>
+      <name value="Search through condition endpoint by Practitioner uuid"/>
+      <description value="Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-lastUpdated"/>
+      </reference>
+      <name value="Search through condition endpoint by service lastUpdated field"/>
+      <description value="Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-id"/>
+      </reference>
+      <name value="Search through condition endpoint by service Uuid"/>
+      <description value="Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-subject-given"/>
+      </reference>
+      <name value="Search through condition endpoint by subject given"/>
+      <description value="Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-subject-identifier"/>
+      </reference>
+      <name value="Search through condition endpoint by subject identifier"/>
+      <description value="Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-subject-name"/>
+      </reference>
+      <name value="Search through condition endpoint by subject name"/>
+      <description value="Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-subject"/>
+      </reference>
+      <name value="Search through condition endpoint by subject uuid"/>
+      <description value="Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-patient.family"/>
+      </reference>
+      <name value="Search through condition endpoint by the patient's family name"/>
+      <description value="Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-patient-name"/>
+      </reference>
+      <name value="Search through condition endpoint by the patient's full or partial name"/>
+      <description value="Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-subject-family"/>
+      </reference>
+      <name value="Search through condtion endpoint by subject family"/>
+      <description value="Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/condition-patient.given"/>
+      </reference>
+      <name value="Search through condtion endpoint by the patient's given name"/>
+      <description value="Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-location"/>
+      </reference>
+      <name value="Search through Encounter endpoint based on location reference"/>
+      <description value="Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-patient"/>
+      </reference>
+      <name value="Search through Encounter endpoint by a given patient"/>
+      <description value="Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-patient-identifier"/>
+      </reference>
+      <name value="Search through Encounter endpoint by a given patient"/>
+      <description value="Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-participant"/>
+      </reference>
+      <name value="Search through Encounter endpoint by a given Practitioner"/>
+      <description value="Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-participant-identifier"/>
+      </reference>
+      <name value="Search through Encounter endpoint by a given Practitioner"/>
+      <description value="Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-type"/>
+      </reference>
+      <name value="Search through Encounter endpoint by encounter type"/>
+      <description value="Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-subject-family"/>
+      </reference>
+      <name value="Search through Encounter endpoint by subject family"/>
+      <description value="Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-subject-given"/>
+      </reference>
+      <name value="Search through Encounter endpoint by subject given"/>
+      <description value="Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-subject-identifier"/>
+      </reference>
+      <name value="Search through Encounter endpoint by subject identifier"/>
+      <description value="Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-subject-name"/>
+      </reference>
+      <name value="Search through Encounter endpoint by subject name"/>
+      <description value="Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-subject"/>
+      </reference>
+      <name value="Search through Encounter endpoint by subject uuid"/>
+      <description value="Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-date"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the date when the encounter was created"/>
+      <description value="Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-patient.family"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the patient's family name"/>
+      <description value="Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-patient-name"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the patient's full or partial name"/>
+      <description value="Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-patient.given"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the patient's given name"/>
+      <description value="Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-participant.family"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the Practitioner's family name"/>
+      <description value="Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-participant.name"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the Practitioner's full or partial name"/>
+      <description value="Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Encounter-participant.given"/>
+      </reference>
+      <name value="Search through Encounter endpoint by the Practitioner's given name"/>
+      <description value="Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-status"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by FhirTask status in the current state"/>
+      <description value="Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-owner"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by the Organization Reference uuid"/>
+      <description value="Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Task-basedOn"/>
+      </reference>
+      <name value="Search through FhirTask endpoint by the ServiceRequest Reference uuid"/>
+      <description value="Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-medication"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint based on medication reference"/>
+      <description value="Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-patient"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by a given patient"/>
+      <description value="Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-patient-identifier"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by a given patient"/>
+      <description value="Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-requestor"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by a given Practitioner"/>
+      <description value="Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-requestor-identifier"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by a given Practitioner"/>
+      <description value="Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-subject-family"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by subject family"/>
+      <description value="Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-subject-given"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by subject given"/>
+      <description value="Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-subject-identifier"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by subject identifier"/>
+      <description value="Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-subject-name"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by subject name"/>
+      <description value="Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-subject"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by subject uuid"/>
+      <description value="Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-patient.family"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the patient's family name"/>
+      <description value="Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-patient-name"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the patient's full or partial name"/>
+      <description value="Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-patient.given"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the patient's given name"/>
+      <description value="Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-requestor.family"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the Practitioner's family name"/>
+      <description value="Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-requestor.name"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the Practitioner's full or partial name"/>
+      <description value="Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/MedicationRequest-requestor.given"/>
+      </reference>
+      <name value="Search through MedicationRequest endpoint by the Practitioner's given name"/>
+      <description value="Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-patient"/>
+      </reference>
+      <name value="Search through observation endpoint by a given patient"/>
+      <description value="Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-patient-identifier"/>
+      </reference>
+      <name value="Search through observation endpoint by a given patient"/>
+      <description value="Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/observation-category"/>
       </reference>
       <name value="Search through observation endpoint by category"/>
@@ -2097,116 +2097,6 @@
       </reference>
       <name value="Search through observation endpoint by encounter"/>
       <description value="Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-has-member"/>
-      </reference>
-      <name value="Search through an observation group in the Obervation EndPoint that contains a given observation"/>
-      <description value="Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-has-member-code"/>
-      </reference>
-      <name value="Searches for an observation group that contains an observation with the provided code"/>
-      <description value="Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-id"/>
-      </reference>
-      <name value="Searches based on the exact UUID of the person record"/>
-      <description value="Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-lastUpdated"/>
-      </reference>
-      <name value="Searches based on the the dateCreated field for the observation record"/>
-      <description value="Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-patient"/>
-      </reference>
-      <name value="Search through observation endpoint by a given patient"/>
-      <description value="Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-patient-identifier"/>
-      </reference>
-      <name value="Search through observation endpoint by a given patient"/>
-      <description value="Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-patient-name"/>
-      </reference>
-      <name value="Search through observation endpoint by the patient's full or partial name"/>
-      <description value="Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-patient.family"/>
-      </reference>
-      <name value="Search through observation endpoint by the patient's family name"/>
-      <description value="Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-patient.given"/>
-      </reference>
-      <name value="Search through observation endpoint by the patient's given name"/>
-      <description value="Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/observation-subject"/>
-      </reference>
-      <name value="Search through observation endpoint by subject uuid"/>
-      <description value="Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2258,10 +2148,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/observation-value-concept"/>
+        <reference value="SearchParameter/observation-subject"/>
       </reference>
-      <name value="Searches for an observation whose value is a concept that matches the provided concept code"/>
-      <description value="Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}"/>
+      <name value="Search through observation endpoint by subject uuid"/>
+      <description value="Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2269,10 +2159,87 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/observation-value-date"/>
+        <reference value="SearchParameter/observation-patient.family"/>
       </reference>
-      <name value="Searches for an observation whose value is a date by the specified date range."/>
-      <description value="Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}"/>
+      <name value="Search through observation endpoint by the patient's family name"/>
+      <description value="Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-patient-name"/>
+      </reference>
+      <name value="Search through observation endpoint by the patient's full or partial name"/>
+      <description value="Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-patient.given"/>
+      </reference>
+      <name value="Search through observation endpoint by the patient's given name"/>
+      <description value="Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/patient-lastUpdated"/>
+      </reference>
+      <name value="Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record"/>
+      <description value="Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/patient-birthdate"/>
+      </reference>
+      <name value="Search through patient endpoint by the patient's birthdate attribute"/>
+      <description value="Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/patient-death-date"/>
+      </reference>
+      <name value="Search through patient endpoint by the patient's death-date attribute"/>
+      <description value="Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/patient-name"/>
+      </reference>
+      <name value="Search through patient endpoint by the patient's full or partial name"/>
+      <description value="Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/patient-gender"/>
+      </reference>
+      <name value="Search through patient endpoint by the patient's gender attribute"/>
+      <description value="Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2324,21 +2291,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/patient-birthdate"/>
+        <reference value="SearchParameter/patient-id"/>
       </reference>
-      <name value="Search through patient endpoint by the patient's birthdate attribute"/>
-      <description value="Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/patient-death-date"/>
-      </reference>
-      <name value="Search through patient endpoint by the patient's death-date attribute"/>
-      <description value="Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}"/>
+      <name value="Search through patient endpoint by the patient's uuid"/>
+      <description value="Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2357,10 +2313,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/patient-gender"/>
+        <reference value="SearchParameter/person-lastUpdated"/>
       </reference>
-      <name value="Search through patient endpoint by the patient's gender attribute"/>
-      <description value="Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}"/>
+      <name value="Search through person endpoint basing on dateCreated or dateUpdated field of the person record"/>
+      <description value="Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2368,10 +2324,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/patient-id"/>
+        <reference value="SearchParameter/person-birthdate"/>
       </reference>
-      <name value="Search through patient endpoint by the patient's uuid"/>
-      <description value="Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}"/>
+      <name value="Search through person endpoint by the person's birthdate attribute"/>
+      <description value="Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2379,10 +2335,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/patient-lastUpdated"/>
+        <reference value="SearchParameter/person-name"/>
       </reference>
-      <name value="Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record"/>
-      <description value="Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}"/>
+      <name value="Search through person endpoint by the person's full or partial name"/>
+      <description value="Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2390,10 +2346,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/patient-name"/>
+        <reference value="SearchParameter/person-gender"/>
       </reference>
-      <name value="Search through patient endpoint by the patient's full or partial name"/>
-      <description value="Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}"/>
+      <name value="Search through person endpoint by the person's gender attribute"/>
+      <description value="Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2445,28 +2401,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/person-birthdate"/>
-      </reference>
-      <name value="Search through person endpoint by the person's birthdate attribute"/>
-      <description value="Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/person-gender"/>
-      </reference>
-      <name value="Search through person endpoint by the person's gender attribute"/>
-      <description value="Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/person-id"/>
       </reference>
       <name value="Search through person endpoint by the person's uuid"/>
@@ -2478,10 +2412,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/person-lastUpdated"/>
+        <reference value="SearchParameter/Practitioner-identifier"/>
       </reference>
-      <name value="Search through person endpoint basing on dateCreated or dateUpdated field of the person record"/>
-      <description value="Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}"/>
+      <name value="Search through Practitioner endpoint by a given Practitioner"/>
+      <description value="Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2489,10 +2423,32 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/person-name"/>
+        <reference value="SearchParameter/Practitioner.family"/>
       </reference>
-      <name value="Search through person endpoint by the person's full or partial name"/>
-      <description value="Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}"/>
+      <name value="Search through Practitioner endpoint by the Practitioner's family name"/>
+      <description value="Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner.name"/>
+      </reference>
+      <name value="Search through Practitioner endpoint by the Practitioner's full or partial name"/>
+      <description value="Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practitioner.given"/>
+      </reference>
+      <name value="Search through Practitioner endpoint by the Practitioner's given name"/>
+      <description value="Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2522,28 +2478,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/serviceRequest-id"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by service Uuid"/>
-      <description value="Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-lastUpdated"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by service lastUpdated field"/>
-      <description value="Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/serviceRequest-occurrence"/>
       </reference>
       <name value="Search through serviceRequest endpoint by Occurrence when service should occurance"/>
@@ -2559,61 +2493,6 @@
       </reference>
       <name value="Search through serviceRequest endpoint by patient uuid"/>
       <description value="Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-patient-identifier"/>
-      </reference>
-      <name value="Search serviceRequest endpoint by patient identifier id"/>
-      <description value="Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-patient-name"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by the patient's full or partial name"/>
-      <description value="Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-patient.family"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by the patient's family name"/>
-      <description value="Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-patient.given"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by the patient's given name"/>
-      <description value="Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/serviceRequest-requester"/>
-      </reference>
-      <name value="Search through serviceRequest endpoint by Practitioner uuid"/>
-      <description value="Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2665,10 +2544,32 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/serviceRequest-subject"/>
+        <reference value="SearchParameter/serviceRequest-requester"/>
       </reference>
-      <name value="Search through serviceRequest endpoint by subject uuid"/>
-      <description value="Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}"/>
+      <name value="Search through serviceRequest endpoint by Practitioner uuid"/>
+      <description value="Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-lastUpdated"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by service lastUpdated field"/>
+      <description value="Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-id"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by service Uuid"/>
+      <description value="Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2713,6 +2614,105 @@
       </reference>
       <name value="Search through serviceRequest endpoint by subject name"/>
       <description value="Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-subject"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by subject uuid"/>
+      <description value="Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-patient.family"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by the patient's family name"/>
+      <description value="Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-patient-name"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by the patient's full or partial name"/>
+      <description value="Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/serviceRequest-patient.given"/>
+      </reference>
+      <name value="Search through serviceRequest endpoint by the patient's given name"/>
+      <description value="Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-id"/>
+      </reference>
+      <name value="Searches based on the exact UUID of the person record"/>
+      <description value="Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-lastUpdated"/>
+      </reference>
+      <name value="Searches based on the the dateCreated field for the observation record"/>
+      <description value="Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-has-member-code"/>
+      </reference>
+      <name value="Searches for an observation group that contains an observation with the provided code"/>
+      <description value="Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-value-concept"/>
+      </reference>
+      <name value="Searches for an observation whose value is a concept that matches the provided concept code"/>
+      <description value="Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/observation-value-date"/>
+      </reference>
+      <name value="Searches for an observation whose value is a date by the specified date range."/>
+      <description value="Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

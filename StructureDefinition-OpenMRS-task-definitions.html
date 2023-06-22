@@ -38,10 +38,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -238,7 +238,7 @@
         
           Active
           
-            as of 2023-05-17
+            as of 2023-06-22
           
         
       </td>
@@ -317,6 +317,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </span></td></tr>
@@ -353,6 +354,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.</p>
 </span></td></tr>
@@ -365,6 +367,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a></span><br/><span style='color:DarkGray'><p>Distinguishes whether the task is a proposal, plan or full order.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This element is immutable.  Proposed tasks, planned tasks, etc. must be distinct instances.</p>
 <p>In most cases, Tasks will have an intent of &quot;order&quot;.</p>
@@ -397,6 +400,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>inv-1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Most often used along with lastUpdated to track duration of task to supporting monitoring and management.</p>
 </span></td></tr>
@@ -408,6 +412,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>inv-1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Used along with history to track task activity and time in a particular task state.  This enables monitoring and management.</p>
 </span></td></tr>
@@ -432,6 +437,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr>
+  <tr><td>Obligations</td><td><table class="grid"><tr><td style="font-size: 11px"><b>Obligations</b></td></tr><tr><td style="font-size: 11px"><span title="No Obligation Code?">??</span></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.</p>
 </span></td></tr>
@@ -474,6 +480,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></span></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
@@ -521,6 +528,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a></span>, <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></span></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Task outputs can take any form.</p>
 </span></td></tr>
@@ -560,6 +568,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </td></tr>
@@ -571,8 +580,9 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
 A human language
-<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
@@ -638,6 +648,7 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>(<a href="http://hl7.org/fhir/R4/activitydefinition.html" title="http://hl7.org/fhir/StructureDefinition/ActivityDefinition">ActivityDefinition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Enables a formal definition of how he task is to be performed, enabling automation.</p>
 </td></tr>
@@ -648,6 +659,7 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Enables a formal definition of how he task is to be performed (e.g. using BPMN, BPEL, XPDL or other formal notation to be associated with a task), enabling automation.</p>
 </td></tr>
@@ -692,6 +704,7 @@ The current status of the task
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.</p>
 </td></tr>
@@ -729,6 +742,7 @@ The current status of the task
 Distinguishes whether the task is a proposal, plan or full order
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This element is immutable.  Proposed tasks, planned tasks, etc. must be distinct instances.</p>
 <p>In most cases, Tasks will have an intent of &quot;order&quot;.</p>
@@ -743,6 +757,7 @@ Distinguishes whether the task is a proposal, plan or full order
 The task's priority
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Used to identify the service level expected while performing a task.</p>
 </td></tr>
@@ -767,6 +782,7 @@ Codes to identify what the task involves.  These will typically be specific to a
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -816,6 +832,7 @@ Codes to identify what the task involves.  These will typically be specific to a
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: inv-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Most often used along with lastUpdated to track duration of task to supporting monitoring and management.</p>
 </td></tr>
@@ -827,6 +844,7 @@ Codes to identify what the task involves.  These will typically be specific to a
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: inv-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Used along with history to track task activity and time in a particular task state.  This enables monitoring and management.</p>
 </td></tr>
@@ -976,6 +994,7 @@ The type(s) of task performers allowed
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>E.g. order that requests monthly lab tests, fulfillment is sought for 1.</p>
 </td></tr>
@@ -1006,6 +1025,7 @@ The type(s) of task performers allowed
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td>Obligations</td><td><table class="grid"><tr><td style="font-size: 11px"><b>Obligations</b></td></tr><tr><td style="font-size: 11px"><span title="No Obligation Code?">??</span></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.</p>
 </td></tr>
@@ -1066,6 +1086,7 @@ The type(s) of task performers allowed
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -1131,6 +1152,7 @@ The type(s) of task performers allowed
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Task outputs can take any form.</p>
 </td></tr>
@@ -1193,7 +1215,7 @@ The type(s) of task performers allowed
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 17, 2023 15:10+0000">2023-05-17</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 22, 2023 11:16+0000">2023-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

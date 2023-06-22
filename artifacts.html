@@ -34,10 +34,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -208,29 +208,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-category.html"
-                     title="SearchParameter/AllergyIntolerance-category">Search through AllergyIntolerance endpoint by the category</a>
+                  <a href="SearchParameter-condition-patient-identifier.html"
+                     title="SearchParameter/condition-patient-identifier">Search condition endpoint by patient identifier id</a>
                </td>
                <td>
-<p>Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-clinical-status.html"
-                     title="SearchParameter/AllergyIntolerance-clinical-status">Search through AllergyIntolerance endpoint by the clinical-status</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-id.html"
-                     title="SearchParameter/AllergyIntolerance-id">Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}</p>
+<p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>
 </td>
             </tr>
             <tr>
@@ -244,137 +226,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-manifestation.html"
-                     title="SearchParameter/AllergyIntolerance-manifestation">Search through AllergyIntolerance endpoint by the manifestation</a>
+                  <a href="SearchParameter-AllergyIntolerance-id.html"
+                     title="SearchParameter/AllergyIntolerance-id">Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute</a>
                </td>
                <td>
-<p>Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient.html"
-                     title="SearchParameter/AllergyIntolerance-patient">Search through AllergyIntolerance endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient-family.html"
-                     title="SearchParameter/AllergyIntolerance-patient-family">Search through AllergyIntolerance endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient-identifier.html"
-                     title="SearchParameter/AllergyIntolerance-patient-identifier">Search through AllergyIntolerance endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient-name.html"
-                     title="SearchParameter/AllergyIntolerance-patient-name">Search through AllergyIntolerance endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-patient.given.html"
-                     title="SearchParameter/AllergyIntolerance-patient.given">Search through AllergyIntolerance endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-severity.html"
-                     title="SearchParameter/AllergyIntolerance-severity">Search through AllergyIntolerance endpoint by the severity</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-subject.html"
-                     title="SearchParameter/AllergyIntolerance-subject">Search through AllergyIntolerance endpoint by subject uuid</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-subject-family.html"
-                     title="SearchParameter/AllergyIntolerance-subject-family">Search through AllergyIntolerance endpoint by subject family</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-subject-given.html"
-                     title="SearchParameter/AllergyIntolerance-subject-given">Search through AllergyIntolerance endpoint by subject given</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-subject-identifier.html"
-                     title="SearchParameter/AllergyIntolerance-subject-identifier">Search through AllergyIntolerance endpoint by subject identifier</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-AllergyIntolerance-subject-name.html"
-                     title="SearchParameter/AllergyIntolerance-subject-name">Search through AllergyIntolerance endpoint by subject name</a>
-               </td>
-               <td>
-<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Condition-requester-family.html"
-                     title="SearchParameter/Condition-requester-family">Search through condition endpoint by Practitioner family</a>
-               </td>
-               <td>
-<p>Searches for condition based on the Practitioner’s family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Condition-requester-given.html"
-                     title="SearchParameter/Condition-requester-given">Search through condition endpoint by Practitioner given</a>
-               </td>
-               <td>
-<p>Searches for condition based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-address-city.html"
-                     title="SearchParameter/Encounter-address-city">Search in Encounter endpoint basing on Encounter location address-city attribute</a>
-               </td>
-               <td>
-<p>Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}</p>
+<p>Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}</p>
 </td>
             </tr>
             <tr>
@@ -384,6 +240,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-lastUpdated.html"
+                     title="SearchParameter/Encounter-lastUpdated">Search in Encounter endpoint basing on Encounter lastUpdated  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-address-city.html"
+                     title="SearchParameter/Encounter-address-city">Search in Encounter endpoint basing on Encounter location address-city attribute</a>
+               </td>
+               <td>
+<p>Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}</p>
 </td>
             </tr>
             <tr>
@@ -406,676 +280,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-date.html"
-                     title="SearchParameter/Encounter-date">Search through Encounter endpoint by the date when the encounter was created</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-Encounter-id.html"
                      title="SearchParameter/Encounter-id">Search in Encounter endpoint basing on Encounter uuid  attribute</a>
                </td>
                <td>
 <p>Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-lastUpdated.html"
-                     title="SearchParameter/Encounter-lastUpdated">Search in Encounter endpoint basing on Encounter lastUpdated  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-location.html"
-                     title="SearchParameter/Encounter-location">Search through Encounter endpoint based on location reference</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-participant.html"
-                     title="SearchParameter/Encounter-participant">Search through Encounter endpoint by a given Practitioner</a>
-               </td>
-               <td>
-<p>Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-participant-identifier.html"
-                     title="SearchParameter/Encounter-participant-identifier">Search through Encounter endpoint by a given Practitioner</a>
-               </td>
-               <td>
-<p>Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-participant.family.html"
-                     title="SearchParameter/Encounter-participant.family">Search through Encounter endpoint by the Practitioner's family name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the Practitioner’s family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-participant.given.html"
-                     title="SearchParameter/Encounter-participant.given">Search through Encounter endpoint by the Practitioner's given name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-participant.name.html"
-                     title="SearchParameter/Encounter-participant.name">Search through Encounter endpoint by the Practitioner's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient.html"
-                     title="SearchParameter/Encounter-patient">Search through Encounter endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient-identifier.html"
-                     title="SearchParameter/Encounter-patient-identifier">Search through Encounter endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient-name.html"
-                     title="SearchParameter/Encounter-patient-name">Search through Encounter endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient.family.html"
-                     title="SearchParameter/Encounter-patient.family">Search through Encounter endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the patient’s family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-patient.given.html"
-                     title="SearchParameter/Encounter-patient.given">Search through Encounter endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for Encounters based on the patient’s given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-subject.html"
-                     title="SearchParameter/Encounter-subject">Search through Encounter endpoint by subject uuid</a>
-               </td>
-               <td>
-<p>Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-subject-family.html"
-                     title="SearchParameter/Encounter-subject-family">Search through Encounter endpoint by subject family</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on the patient’s family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-subject-given.html"
-                     title="SearchParameter/Encounter-subject-given">Search through Encounter endpoint by subject given</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on the patient’s given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-subject-identifier.html"
-                     title="SearchParameter/Encounter-subject-identifier">Search through Encounter endpoint by subject identifier</a>
-               </td>
-               <td>
-<p>Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-subject-name.html"
-                     title="SearchParameter/Encounter-subject-name">Search through Encounter endpoint by subject name</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Encounter-type.html"
-                     title="SearchParameter/Encounter-type">Search through Encounter endpoint by encounter type</a>
-               </td>
-               <td>
-<p>Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-id.html"
-                     title="SearchParameter/MedicationRequest-id">Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-lastUpdated.html"
-                     title="SearchParameter/MedicationRequest-lastUpdated">Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-medication.html"
-                     title="SearchParameter/MedicationRequest-medication">Search through MedicationRequest endpoint based on medication reference</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient.html"
-                     title="SearchParameter/MedicationRequest-patient">Search through MedicationRequest endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient-identifier.html"
-                     title="SearchParameter/MedicationRequest-patient-identifier">Search through MedicationRequest endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient-name.html"
-                     title="SearchParameter/MedicationRequest-patient-name">Search through MedicationRequest endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient.family.html"
-                     title="SearchParameter/MedicationRequest-patient.family">Search through MedicationRequest endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-patient.given.html"
-                     title="SearchParameter/MedicationRequest-patient.given">Search through MedicationRequest endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-requestor.html"
-                     title="SearchParameter/MedicationRequest-requestor">Search through MedicationRequest endpoint by a given Practitioner</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-requestor-identifier.html"
-                     title="SearchParameter/MedicationRequest-requestor-identifier">Search through MedicationRequest endpoint by a given Practitioner</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-requestor.family.html"
-                     title="SearchParameter/MedicationRequest-requestor.family">Search through MedicationRequest endpoint by the Practitioner's family name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the Practitioner’s family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-requestor.given.html"
-                     title="SearchParameter/MedicationRequest-requestor.given">Search through MedicationRequest endpoint by the Practitioner's given name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-requestor.name.html"
-                     title="SearchParameter/MedicationRequest-requestor.name">Search through MedicationRequest endpoint by the Practitioner's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-subject.html"
-                     title="SearchParameter/MedicationRequest-subject">Search through MedicationRequest endpoint by subject uuid</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-subject-family.html"
-                     title="SearchParameter/MedicationRequest-subject-family">Search through MedicationRequest endpoint by subject family</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-subject-given.html"
-                     title="SearchParameter/MedicationRequest-subject-given">Search through MedicationRequest endpoint by subject given</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-subject-identifier.html"
-                     title="SearchParameter/MedicationRequest-subject-identifier">Search through MedicationRequest endpoint by subject identifier</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-MedicationRequest-subject-name.html"
-                     title="SearchParameter/MedicationRequest-subject-name">Search through MedicationRequest endpoint by subject name</a>
-               </td>
-               <td>
-<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-address-city.html"
-                     title="SearchParameter/Practitioner-address-city">Search in Practitioner endpoint basing on Practitioner's address-city attribute</a>
-               </td>
-               <td>
-<p>Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-address-country.html"
-                     title="SearchParameter/Practitioner-address-country">Search in Practitioner endpoint basing on Practitioner's address-country attribute</a>
-               </td>
-               <td>
-<p>Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-address-postalcode.html"
-                     title="SearchParameter/Practitioner-address-postalcode">Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute</a>
-               </td>
-               <td>
-<p>Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-address-state.html"
-                     title="SearchParameter/Practitioner-address-state">Search in Practitioner endpoint basing on Practitioner's address-state attribute</a>
-               </td>
-               <td>
-<p>Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-id.html"
-                     title="SearchParameter/Practitioner-id">Search in Practitioner endpoint basing on Practitioner uuid attribute</a>
-               </td>
-               <td>
-<p>Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-identifier.html"
-                     title="SearchParameter/Practitioner-identifier">Search through Practitioner endpoint by a given Practitioner</a>
-               </td>
-               <td>
-<p>Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner-lastUpdated.html"
-                     title="SearchParameter/Practitioner-lastUpdated">Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner.family.html"
-                     title="SearchParameter/Practitioner.family">Search through Practitioner endpoint by the Practitioner's family name</a>
-               </td>
-               <td>
-<p>Searches for Practitioner based on the Practitioner’s family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner.given.html"
-                     title="SearchParameter/Practitioner.given">Search through Practitioner endpoint by the Practitioner's given name</a>
-               </td>
-               <td>
-<p>Searches for Practitioner based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Practitioner.name.html"
-                     title="SearchParameter/Practitioner.name">Search through Practitioner endpoint by the Practitioner's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for Practitioner based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Task-basedOn.html"
-                     title="SearchParameter/Task-basedOn">Search through FhirTask endpoint by the ServiceRequest Reference uuid</a>
-               </td>
-               <td>
-<p>Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Task-id.html" title="SearchParameter/Task-id">Search in Task endpoint basing on Task uuid attribute</a>
-               </td>
-               <td>
-<p>Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Task-lastUpdated.html"
-                     title="SearchParameter/Task-lastUpdated">Search in Task endpoint basing on Task lastUpdated attribute</a>
-               </td>
-               <td>
-<p>Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Task-owner.html"
-                     title="SearchParameter/Task-owner">Search through FhirTask endpoint by the Organization Reference uuid</a>
-               </td>
-               <td>
-<p>Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Task-status.html"
-                     title="SearchParameter/Task-status">Search through FhirTask endpoint by FhirTask status in the current state</a>
-               </td>
-               <td>
-<p>Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-clinical-status.html"
-                     title="SearchParameter/condition-clinical-status">Search through condition endpoint by Condition clinical status</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-code.html"
-                     title="SearchParameter/condition-code">Search through condition endpoint by concept code</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-encounter.html"
-                     title="SearchParameter/condition-encounter">Search through condition endpoint by encounter uuid</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-id.html"
-                     title="SearchParameter/condition-id">Search through condition endpoint by service Uuid</a>
-               </td>
-               <td>
-<p>Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-lastUpdated.html"
-                     title="SearchParameter/condition-lastUpdated">Search through condition endpoint by service lastUpdated field</a>
-               </td>
-               <td>
-<p>Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-occurrence.html"
-                     title="SearchParameter/condition-occurrence">Search through condition endpoint by Occurrence when service should occurance</a>
-               </td>
-               <td>
-<p>Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-onset-age.html"
-                     title="SearchParameter/condition-onset-age">Search through condition endpoint by Condition clinical onset age</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-onset-date.html"
-                     title="SearchParameter/condition-onset-date">Search through condition endpoint by Condition clinical onset date</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient.html"
-                     title="SearchParameter/condition-patient">Search through condition endpoint by patient uuid</a>
-               </td>
-               <td>
-<p>Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient-identifier.html"
-                     title="SearchParameter/condition-patient-identifier">Search condition endpoint by patient identifier id</a>
-               </td>
-               <td>
-<p>Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient-name.html"
-                     title="SearchParameter/condition-patient-name">Search through condition endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the  patient’s full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient.family.html"
-                     title="SearchParameter/condition-patient.family">Search through condition endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-patient.given.html"
-                     title="SearchParameter/condition-patient.given">Search through condtion endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-recorded-date.html"
-                     title="SearchParameter/condition-recorded-date">Search through condition endpoint by date when the record was created</a>
-               </td>
-               <td>
-<p>Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-requester.html"
-                     title="SearchParameter/condition-requester">Search through condition endpoint by Practitioner uuid</a>
-               </td>
-               <td>
-<p>Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-requester-identifier.html"
-                     title="SearchParameter/condition-requester-identifier">Search through condition endpoint by Practitioner identifier</a>
-               </td>
-               <td>
-<p>Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-requester-name.html"
-                     title="SearchParameter/condition-requester-name">Search through condition endpoint by Practitioner name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-subject.html"
-                     title="SearchParameter/condition-subject">Search through condition endpoint by subject uuid</a>
-               </td>
-               <td>
-<p>Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-subject-family.html"
-                     title="SearchParameter/condition-subject-family">Search through condtion endpoint by subject family</a>
-               </td>
-               <td>
-<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-subject-given.html"
-                     title="SearchParameter/condition-subject-given">Search through condition endpoint by subject given</a>
-               </td>
-               <td>
-<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-subject-identifier.html"
-                     title="SearchParameter/condition-subject-identifier">Search through condition endpoint by subject identifier</a>
-               </td>
-               <td>
-<p>Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-condition-subject-name.html"
-                     title="SearchParameter/condition-subject-name">Search through condition endpoint by subject name</a>
-               </td>
-               <td>
-<p>Searches for condition based on the patient’s full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}</p>
 </td>
             </tr>
             <tr>
@@ -1125,15 +334,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-location-id.html"
-                     title="SearchParameter/location-id">Search in Location endpoint basing on location uuid  attribute</a>
-               </td>
-               <td>
-<p>Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-location-lastUpdated.html"
                      title="SearchParameter/location-lastUpdated">Search in Location endpoint basing on location lastUpdated  attribute</a>
                </td>
@@ -1179,6 +379,806 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="SearchParameter-location-id.html"
+                     title="SearchParameter/location-id">Search in Location endpoint basing on location uuid  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-lastUpdated.html"
+                     title="SearchParameter/MedicationRequest-lastUpdated">Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-id.html"
+                     title="SearchParameter/MedicationRequest-id">Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-lastUpdated.html"
+                     title="SearchParameter/Practitioner-lastUpdated">Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute</a>
+               </td>
+               <td>
+<p>Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-id.html"
+                     title="SearchParameter/Practitioner-id">Search in Practitioner endpoint basing on Practitioner uuid attribute</a>
+               </td>
+               <td>
+<p>Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-address-city.html"
+                     title="SearchParameter/Practitioner-address-city">Search in Practitioner endpoint basing on Practitioner's address-city attribute</a>
+               </td>
+               <td>
+<p>Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-address-country.html"
+                     title="SearchParameter/Practitioner-address-country">Search in Practitioner endpoint basing on Practitioner's address-country attribute</a>
+               </td>
+               <td>
+<p>Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-address-postalcode.html"
+                     title="SearchParameter/Practitioner-address-postalcode">Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute</a>
+               </td>
+               <td>
+<p>Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner-address-state.html"
+                     title="SearchParameter/Practitioner-address-state">Search in Practitioner endpoint basing on Practitioner's address-state attribute</a>
+               </td>
+               <td>
+<p>Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Task-lastUpdated.html"
+                     title="SearchParameter/Task-lastUpdated">Search in Task endpoint basing on Task lastUpdated attribute</a>
+               </td>
+               <td>
+<p>Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Task-id.html" title="SearchParameter/Task-id">Search in Task endpoint basing on Task uuid attribute</a>
+               </td>
+               <td>
+<p>Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-patient-identifier.html"
+                     title="SearchParameter/serviceRequest-patient-identifier">Search serviceRequest endpoint by patient identifier id</a>
+               </td>
+               <td>
+<p>Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient.html"
+                     title="SearchParameter/AllergyIntolerance-patient">Search through AllergyIntolerance endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient-identifier.html"
+                     title="SearchParameter/AllergyIntolerance-patient-identifier">Search through AllergyIntolerance endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-subject-family.html"
+                     title="SearchParameter/AllergyIntolerance-subject-family">Search through AllergyIntolerance endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-subject-given.html"
+                     title="SearchParameter/AllergyIntolerance-subject-given">Search through AllergyIntolerance endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-subject-identifier.html"
+                     title="SearchParameter/AllergyIntolerance-subject-identifier">Search through AllergyIntolerance endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-subject-name.html"
+                     title="SearchParameter/AllergyIntolerance-subject-name">Search through AllergyIntolerance endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-subject.html"
+                     title="SearchParameter/AllergyIntolerance-subject">Search through AllergyIntolerance endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-category.html"
+                     title="SearchParameter/AllergyIntolerance-category">Search through AllergyIntolerance endpoint by the category</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-clinical-status.html"
+                     title="SearchParameter/AllergyIntolerance-clinical-status">Search through AllergyIntolerance endpoint by the clinical-status</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-manifestation.html"
+                     title="SearchParameter/AllergyIntolerance-manifestation">Search through AllergyIntolerance endpoint by the manifestation</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient-family.html"
+                     title="SearchParameter/AllergyIntolerance-patient-family">Search through AllergyIntolerance endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient-name.html"
+                     title="SearchParameter/AllergyIntolerance-patient-name">Search through AllergyIntolerance endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-patient.given.html"
+                     title="SearchParameter/AllergyIntolerance-patient.given">Search through AllergyIntolerance endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the patient’s given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-AllergyIntolerance-severity.html"
+                     title="SearchParameter/AllergyIntolerance-severity">Search through AllergyIntolerance endpoint by the severity</a>
+               </td>
+               <td>
+<p>Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-has-member.html"
+                     title="SearchParameter/observation-has-member">Search through an observation group in the Obervation EndPoint that contains a given observation</a>
+               </td>
+               <td>
+<p>Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-code.html"
+                     title="SearchParameter/condition-code">Search through condition endpoint by concept code</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-onset-age.html"
+                     title="SearchParameter/condition-onset-age">Search through condition endpoint by Condition clinical onset age</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-onset-date.html"
+                     title="SearchParameter/condition-onset-date">Search through condition endpoint by Condition clinical onset date</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-clinical-status.html"
+                     title="SearchParameter/condition-clinical-status">Search through condition endpoint by Condition clinical status</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-recorded-date.html"
+                     title="SearchParameter/condition-recorded-date">Search through condition endpoint by date when the record was created</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-encounter.html"
+                     title="SearchParameter/condition-encounter">Search through condition endpoint by encounter uuid</a>
+               </td>
+               <td>
+<p>Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-occurrence.html"
+                     title="SearchParameter/condition-occurrence">Search through condition endpoint by Occurrence when service should occurance</a>
+               </td>
+               <td>
+<p>Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.html"
+                     title="SearchParameter/condition-patient">Search through condition endpoint by patient uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Condition-requester-family.html"
+                     title="SearchParameter/Condition-requester-family">Search through condition endpoint by Practitioner family</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Condition-requester-given.html"
+                     title="SearchParameter/Condition-requester-given">Search through condition endpoint by Practitioner given</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester-identifier.html"
+                     title="SearchParameter/condition-requester-identifier">Search through condition endpoint by Practitioner identifier</a>
+               </td>
+               <td>
+<p>Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester-name.html"
+                     title="SearchParameter/condition-requester-name">Search through condition endpoint by Practitioner name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-requester.html"
+                     title="SearchParameter/condition-requester">Search through condition endpoint by Practitioner uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-lastUpdated.html"
+                     title="SearchParameter/condition-lastUpdated">Search through condition endpoint by service lastUpdated field</a>
+               </td>
+               <td>
+<p>Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-id.html"
+                     title="SearchParameter/condition-id">Search through condition endpoint by service Uuid</a>
+               </td>
+               <td>
+<p>Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-given.html"
+                     title="SearchParameter/condition-subject-given">Search through condition endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-identifier.html"
+                     title="SearchParameter/condition-subject-identifier">Search through condition endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-name.html"
+                     title="SearchParameter/condition-subject-name">Search through condition endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject.html"
+                     title="SearchParameter/condition-subject">Search through condition endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.family.html"
+                     title="SearchParameter/condition-patient.family">Search through condition endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient-name.html"
+                     title="SearchParameter/condition-patient-name">Search through condition endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the  patient’s full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-subject-family.html"
+                     title="SearchParameter/condition-subject-family">Search through condtion endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-condition-patient.given.html"
+                     title="SearchParameter/condition-patient.given">Search through condtion endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for condition based on the patient’s given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-location.html"
+                     title="SearchParameter/Encounter-location">Search through Encounter endpoint based on location reference</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient.html"
+                     title="SearchParameter/Encounter-patient">Search through Encounter endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient-identifier.html"
+                     title="SearchParameter/Encounter-patient-identifier">Search through Encounter endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-participant.html"
+                     title="SearchParameter/Encounter-participant">Search through Encounter endpoint by a given Practitioner</a>
+               </td>
+               <td>
+<p>Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-participant-identifier.html"
+                     title="SearchParameter/Encounter-participant-identifier">Search through Encounter endpoint by a given Practitioner</a>
+               </td>
+               <td>
+<p>Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-type.html"
+                     title="SearchParameter/Encounter-type">Search through Encounter endpoint by encounter type</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-subject-family.html"
+                     title="SearchParameter/Encounter-subject-family">Search through Encounter endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on the patient’s family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-subject-given.html"
+                     title="SearchParameter/Encounter-subject-given">Search through Encounter endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on the patient’s given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-subject-identifier.html"
+                     title="SearchParameter/Encounter-subject-identifier">Search through Encounter endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-subject-name.html"
+                     title="SearchParameter/Encounter-subject-name">Search through Encounter endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-subject.html"
+                     title="SearchParameter/Encounter-subject">Search through Encounter endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-date.html"
+                     title="SearchParameter/Encounter-date">Search through Encounter endpoint by the date when the encounter was created</a>
+               </td>
+               <td>
+<p>Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient.family.html"
+                     title="SearchParameter/Encounter-patient.family">Search through Encounter endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the patient’s family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient-name.html"
+                     title="SearchParameter/Encounter-patient-name">Search through Encounter endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the patient’s full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-patient.given.html"
+                     title="SearchParameter/Encounter-patient.given">Search through Encounter endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the patient’s given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-participant.family.html"
+                     title="SearchParameter/Encounter-participant.family">Search through Encounter endpoint by the Practitioner's family name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the Practitioner’s family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-participant.name.html"
+                     title="SearchParameter/Encounter-participant.name">Search through Encounter endpoint by the Practitioner's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Encounter-participant.given.html"
+                     title="SearchParameter/Encounter-participant.given">Search through Encounter endpoint by the Practitioner's given name</a>
+               </td>
+               <td>
+<p>Searches for Encounters based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Task-status.html"
+                     title="SearchParameter/Task-status">Search through FhirTask endpoint by FhirTask status in the current state</a>
+               </td>
+               <td>
+<p>Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Task-owner.html"
+                     title="SearchParameter/Task-owner">Search through FhirTask endpoint by the Organization Reference uuid</a>
+               </td>
+               <td>
+<p>Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Task-basedOn.html"
+                     title="SearchParameter/Task-basedOn">Search through FhirTask endpoint by the ServiceRequest Reference uuid</a>
+               </td>
+               <td>
+<p>Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-medication.html"
+                     title="SearchParameter/MedicationRequest-medication">Search through MedicationRequest endpoint based on medication reference</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.html"
+                     title="SearchParameter/MedicationRequest-patient">Search through MedicationRequest endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient-identifier.html"
+                     title="SearchParameter/MedicationRequest-patient-identifier">Search through MedicationRequest endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.html"
+                     title="SearchParameter/MedicationRequest-requestor">Search through MedicationRequest endpoint by a given Practitioner</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor-identifier.html"
+                     title="SearchParameter/MedicationRequest-requestor-identifier">Search through MedicationRequest endpoint by a given Practitioner</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-family.html"
+                     title="SearchParameter/MedicationRequest-subject-family">Search through MedicationRequest endpoint by subject family</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-given.html"
+                     title="SearchParameter/MedicationRequest-subject-given">Search through MedicationRequest endpoint by subject given</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-identifier.html"
+                     title="SearchParameter/MedicationRequest-subject-identifier">Search through MedicationRequest endpoint by subject identifier</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject-name.html"
+                     title="SearchParameter/MedicationRequest-subject-name">Search through MedicationRequest endpoint by subject name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-subject.html"
+                     title="SearchParameter/MedicationRequest-subject">Search through MedicationRequest endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.family.html"
+                     title="SearchParameter/MedicationRequest-patient.family">Search through MedicationRequest endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient-name.html"
+                     title="SearchParameter/MedicationRequest-patient-name">Search through MedicationRequest endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-patient.given.html"
+                     title="SearchParameter/MedicationRequest-patient.given">Search through MedicationRequest endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.family.html"
+                     title="SearchParameter/MedicationRequest-requestor.family">Search through MedicationRequest endpoint by the Practitioner's family name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.name.html"
+                     title="SearchParameter/MedicationRequest-requestor.name">Search through MedicationRequest endpoint by the Practitioner's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-MedicationRequest-requestor.given.html"
+                     title="SearchParameter/MedicationRequest-requestor.given">Search through MedicationRequest endpoint by the Practitioner's given name</a>
+               </td>
+               <td>
+<p>Searches for MedicationRequest based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-patient.html"
+                     title="SearchParameter/observation-patient">Search through observation endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-patient-identifier.html"
+                     title="SearchParameter/observation-patient-identifier">Search through observation endpoint by a given patient</a>
+               </td>
+               <td>
+<p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="SearchParameter-observation-category.html"
                      title="SearchParameter/observation-category">Search through observation endpoint by category</a>
                </td>
@@ -1211,96 +1211,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-has-member.html"
-                     title="SearchParameter/observation-has-member">Search through an observation group in the Obervation EndPoint that contains a given observation</a>
-               </td>
-               <td>
-<p>Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-has-member-code.html"
-                     title="SearchParameter/observation-has-member-code">Searches for an observation group that contains an observation with the provided code</a>
-               </td>
-               <td>
-<p>Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-id.html"
-                     title="SearchParameter/observation-id">Searches based on the exact UUID of the person record</a>
-               </td>
-               <td>
-<p>Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-lastUpdated.html"
-                     title="SearchParameter/observation-lastUpdated">Searches based on the the dateCreated field for the observation record</a>
-               </td>
-               <td>
-<p>Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient.html"
-                     title="SearchParameter/observation-patient">Search through observation endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient-identifier.html"
-                     title="SearchParameter/observation-patient-identifier">Search through observation endpoint by a given patient</a>
-               </td>
-               <td>
-<p>Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient-name.html"
-                     title="SearchParameter/observation-patient-name">Search through observation endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for observations based on the patient’s full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient.family.html"
-                     title="SearchParameter/observation-patient.family">Search through observation endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for observations based on the patient’s family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-patient.given.html"
-                     title="SearchParameter/observation-patient.given">Search through observation endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for observations based on the patient’s given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-observation-subject.html"
-                     title="SearchParameter/observation-subject">Search through observation endpoint by subject uuid</a>
-               </td>
-               <td>
-<p>Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}</p>
 </td>
             </tr>
             <tr>
@@ -1341,20 +1251,83 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-observation-value-concept.html"
-                     title="SearchParameter/observation-value-concept">Searches for an observation whose value is a concept that matches the provided concept code</a>
+                  <a href="SearchParameter-observation-subject.html"
+                     title="SearchParameter/observation-subject">Search through observation endpoint by subject uuid</a>
                </td>
                <td>
-<p>Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}</p>
+<p>Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-observation-value-date.html"
-                     title="SearchParameter/observation-value-date">Searches for an observation whose value is a date by the specified date range.</a>
+                  <a href="SearchParameter-observation-patient.family.html"
+                     title="SearchParameter/observation-patient.family">Search through observation endpoint by the patient's family name</a>
                </td>
                <td>
-<p>Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}</p>
+<p>Searches for observations based on the patient’s family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-patient-name.html"
+                     title="SearchParameter/observation-patient-name">Search through observation endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for observations based on the patient’s full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-patient.given.html"
+                     title="SearchParameter/observation-patient.given">Search through observation endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for observations based on the patient’s given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-lastUpdated.html"
+                     title="SearchParameter/patient-lastUpdated">Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record</a>
+               </td>
+               <td>
+<p>Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-birthdate.html"
+                     title="SearchParameter/patient-birthdate">Search through patient endpoint by the patient's birthdate attribute</a>
+               </td>
+               <td>
+<p>Searches based on the patient’s birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-death-date.html"
+                     title="SearchParameter/patient-death-date">Search through patient endpoint by the patient's death-date attribute</a>
+               </td>
+               <td>
+<p>Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-name.html"
+                     title="SearchParameter/patient-name">Search through patient endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for patient based on patient’s full or partial name eg) /ws/fhir2/{release}/Patient?name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-patient-gender.html"
+                     title="SearchParameter/patient-gender">Search through patient endpoint by the patient's gender attribute</a>
+               </td>
+               <td>
+<p>Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}</p>
 </td>
             </tr>
             <tr>
@@ -1395,20 +1368,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-patient-birthdate.html"
-                     title="SearchParameter/patient-birthdate">Search through patient endpoint by the patient's birthdate attribute</a>
+                  <a href="SearchParameter-patient-id.html"
+                     title="SearchParameter/patient-id">Search through patient endpoint by the patient's uuid</a>
                </td>
                <td>
-<p>Searches based on the patient’s birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-patient-death-date.html"
-                     title="SearchParameter/patient-death-date">Search through patient endpoint by the patient's death-date attribute</a>
-               </td>
-               <td>
-<p>Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}</p>
+<p>Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}</p>
 </td>
             </tr>
             <tr>
@@ -1422,38 +1386,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-patient-gender.html"
-                     title="SearchParameter/patient-gender">Search through patient endpoint by the patient's gender attribute</a>
+                  <a href="SearchParameter-person-lastUpdated.html"
+                     title="SearchParameter/person-lastUpdated">Search through person endpoint basing on dateCreated or dateUpdated field of the person record</a>
                </td>
                <td>
-<p>Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}</p>
+<p>Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-patient-id.html"
-                     title="SearchParameter/patient-id">Search through patient endpoint by the patient's uuid</a>
+                  <a href="SearchParameter-person-birthdate.html"
+                     title="SearchParameter/person-birthdate">Search through person endpoint by the person's birthdate attribute</a>
                </td>
                <td>
-<p>Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}</p>
+<p>Searches based on the person’s birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-patient-lastUpdated.html"
-                     title="SearchParameter/patient-lastUpdated">Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record</a>
+                  <a href="SearchParameter-person-name.html"
+                     title="SearchParameter/person-name">Search through person endpoint by the person's full or partial name</a>
                </td>
                <td>
-<p>Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}</p>
+<p>Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-patient-name.html"
-                     title="SearchParameter/patient-name">Search through patient endpoint by the patient's full or partial name</a>
+                  <a href="SearchParameter-person-gender.html"
+                     title="SearchParameter/person-gender">Search through person endpoint by the person's gender attribute</a>
                </td>
                <td>
-<p>Searches for patient based on patient’s full or partial name eg) /ws/fhir2/{release}/Patient?name={name}</p>
+<p>Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}</p>
 </td>
             </tr>
             <tr>
@@ -1494,24 +1458,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-person-birthdate.html"
-                     title="SearchParameter/person-birthdate">Search through person endpoint by the person's birthdate attribute</a>
-               </td>
-               <td>
-<p>Searches based on the person’s birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-person-gender.html"
-                     title="SearchParameter/person-gender">Search through person endpoint by the person's gender attribute</a>
-               </td>
-               <td>
-<p>Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-person-id.html" title="SearchParameter/person-id">Search through person endpoint by the person's uuid</a>
                </td>
                <td>
@@ -1520,20 +1466,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-person-lastUpdated.html"
-                     title="SearchParameter/person-lastUpdated">Search through person endpoint basing on dateCreated or dateUpdated field of the person record</a>
+                  <a href="SearchParameter-Practitioner-identifier.html"
+                     title="SearchParameter/Practitioner-identifier">Search through Practitioner endpoint by a given Practitioner</a>
                </td>
                <td>
-<p>Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}</p>
+<p>Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-person-name.html"
-                     title="SearchParameter/person-name">Search through person endpoint by the person's full or partial name</a>
+                  <a href="SearchParameter-Practitioner.family.html"
+                     title="SearchParameter/Practitioner.family">Search through Practitioner endpoint by the Practitioner's family name</a>
                </td>
                <td>
-<p>Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}</p>
+<p>Searches for Practitioner based on the Practitioner’s family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner.name.html"
+                     title="SearchParameter/Practitioner.name">Search through Practitioner endpoint by the Practitioner's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for Practitioner based on the Practitioner’s full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-Practitioner.given.html"
+                     title="SearchParameter/Practitioner.given">Search through Practitioner endpoint by the Practitioner's given name</a>
+               </td>
+               <td>
+<p>Searches for Practitioner based on the Practitioner’s given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}</p>
 </td>
             </tr>
             <tr>
@@ -1556,24 +1520,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-id.html"
-                     title="SearchParameter/serviceRequest-id">Search through serviceRequest endpoint by service Uuid</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-lastUpdated.html"
-                     title="SearchParameter/serviceRequest-lastUpdated">Search through serviceRequest endpoint by service lastUpdated field</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="SearchParameter-serviceRequest-occurrence.html"
                      title="SearchParameter/serviceRequest-occurrence">Search through serviceRequest endpoint by Occurrence when service should occurance</a>
                </td>
@@ -1588,51 +1534,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-patient-identifier.html"
-                     title="SearchParameter/serviceRequest-patient-identifier">Search serviceRequest endpoint by patient identifier id</a>
-               </td>
-               <td>
-<p>Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-patient-name.html"
-                     title="SearchParameter/serviceRequest-patient-name">Search through serviceRequest endpoint by the patient's full or partial name</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-patient.family.html"
-                     title="SearchParameter/serviceRequest-patient.family">Search through serviceRequest endpoint by the patient's family name</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on the patient’s family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-patient.given.html"
-                     title="SearchParameter/serviceRequest-patient.given">Search through serviceRequest endpoint by the patient's given name</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-requester.html"
-                     title="SearchParameter/serviceRequest-requester">Search through serviceRequest endpoint by Practitioner uuid</a>
-               </td>
-               <td>
-<p>Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}</p>
 </td>
             </tr>
             <tr>
@@ -1673,11 +1574,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-serviceRequest-subject.html"
-                     title="SearchParameter/serviceRequest-subject">Search through serviceRequest endpoint by subject uuid</a>
+                  <a href="SearchParameter-serviceRequest-requester.html"
+                     title="SearchParameter/serviceRequest-requester">Search through serviceRequest endpoint by Practitioner uuid</a>
                </td>
                <td>
-<p>Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}</p>
+<p>Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-lastUpdated.html"
+                     title="SearchParameter/serviceRequest-lastUpdated">Search through serviceRequest endpoint by service lastUpdated field</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-id.html"
+                     title="SearchParameter/serviceRequest-id">Search through serviceRequest endpoint by service Uuid</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}</p>
 </td>
             </tr>
             <tr>
@@ -1716,6 +1635,87 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Searches for serviceRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-subject.html"
+                     title="SearchParameter/serviceRequest-subject">Search through serviceRequest endpoint by subject uuid</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-patient.family.html"
+                     title="SearchParameter/serviceRequest-patient.family">Search through serviceRequest endpoint by the patient's family name</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on the patient’s family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-patient-name.html"
+                     title="SearchParameter/serviceRequest-patient-name">Search through serviceRequest endpoint by the patient's full or partial name</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on the patient’s full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-serviceRequest-patient.given.html"
+                     title="SearchParameter/serviceRequest-patient.given">Search through serviceRequest endpoint by the patient's given name</a>
+               </td>
+               <td>
+<p>Searches for serviceRequest based on the patient’s given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-id.html"
+                     title="SearchParameter/observation-id">Searches based on the exact UUID of the person record</a>
+               </td>
+               <td>
+<p>Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-lastUpdated.html"
+                     title="SearchParameter/observation-lastUpdated">Searches based on the the dateCreated field for the observation record</a>
+               </td>
+               <td>
+<p>Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-has-member-code.html"
+                     title="SearchParameter/observation-has-member-code">Searches for an observation group that contains an observation with the provided code</a>
+               </td>
+               <td>
+<p>Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-value-concept.html"
+                     title="SearchParameter/observation-value-concept">Searches for an observation whose value is a concept that matches the provided concept code</a>
+               </td>
+               <td>
+<p>Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-observation-value-date.html"
+                     title="SearchParameter/observation-value-date">Searches for an observation whose value is a date by the specified date range.</a>
+               </td>
+               <td>
+<p>Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -1730,47 +1730,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-omrs-Condition.html"
-                     title="StructureDefinition/omrs-Condition">OpenMRS condition</a>
-               </td>
-               <td>
-<p>A FHIR Condition as understood by OpenMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-omrs-encounter.html"
-                     title="StructureDefinition/omrs-encounter">Openmrs Encounter</a>
-               </td>
-               <td>
-<p>A FHIR Encounter as understood by OpenMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-omrs-group.html"
                      title="StructureDefinition/omrs-group">OMRS Group</a>
                </td>
                <td>
 <p>A Group Resource is described as Cohort in Fhir2 OMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-omrs-immunization.html"
-                     title="StructureDefinition/omrs-immunization">OpenMRS Immunization</a>
-               </td>
-               <td>
-<p>A FHIR Immunization Resource as understood by OpenMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-omrs-location.html"
-                     title="StructureDefinition/omrs-location">OpenMRS Location</a>
-               </td>
-               <td>
-<p>An OpenMRS location</p>
 </td>
             </tr>
             <tr>
@@ -1793,11 +1757,74 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-AllergyIntolerance.html"
+                     title="StructureDefinition/omrs-AllergyIntolerance">OpenMRS AllergyIntolerance</a>
+               </td>
+               <td>
+<p>A FHIR Allergy as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-Condition.html"
+                     title="StructureDefinition/omrs-Condition">OpenMRS condition</a>
+               </td>
+               <td>
+<p>A FHIR Condition as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-diagnostic-report.html"
+                     title="StructureDefinition/OpenMRS-diagnostic-report">OpenMRS Diagnostic Report</a>
+               </td>
+               <td>
+<p>DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-encounter.html"
+                     title="StructureDefinition/omrs-encounter">Openmrs Encounter</a>
+               </td>
+               <td>
+<p>A FHIR Encounter as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-immunization.html"
+                     title="StructureDefinition/omrs-immunization">OpenMRS Immunization</a>
+               </td>
+               <td>
+<p>A FHIR Immunization Resource as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-location.html"
+                     title="StructureDefinition/omrs-location">OpenMRS Location</a>
+               </td>
+               <td>
+<p>An OpenMRS location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-omrs-medication-request.html"
                      title="StructureDefinition/omrs-medication-request">OpenMRS Medication Request</a>
                </td>
                <td>
 <p>A FHIR MedicationRequest as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-observation.html"
+                     title="StructureDefinition/OpenMRS-observation">OpenMRS Observation</a>
+               </td>
+               <td>
+<p>Observation resource created in OpenMRS representing a result for an order submitted by an EMR System</p>
 </td>
             </tr>
             <tr>
@@ -1825,33 +1852,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>A FHIR Practitioner as understood by OpenMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-omrs-AllergyIntolerance.html"
-                     title="StructureDefinition/omrs-AllergyIntolerance">OpenMRS AllergyIntolerance</a>
-               </td>
-               <td>
-<p>A FHIR Allergy as understood by OpenMRS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-OpenMRS-diagnostic-report.html"
-                     title="StructureDefinition/OpenMRS-diagnostic-report">OpenMRS Diagnostic Report</a>
-               </td>
-               <td>
-<p>DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-OpenMRS-observation.html"
-                     title="StructureDefinition/OpenMRS-observation">OpenMRS Observation</a>
-               </td>
-               <td>
-<p>Observation resource created in OpenMRS representing a result for an order submitted by an EMR System</p>
 </td>
             </tr>
             <tr>
@@ -1996,11 +1996,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html"
-                     title="MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6">OpenMRS Medication Dispense Example</a>
+                  <a href="Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html"
+                     title="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252">Location Example</a>
                </td>
                <td>
-<p>Example OpenMRS Medication Dispense resource</p>
+<p>Example OpenMRS Location resource</p>
 </td>
             </tr>
             <tr>
@@ -2014,29 +2014,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
-                     title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">OpenMRS Encounter Resource Example</a>
+                  <a href="Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html"
+                     title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">OpenMRS Condition Resource Example</a>
                </td>
                <td>
-<p>Example OpenMRS Encounter resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.html"
-                     title="Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866">OpenMRS Person Example</a>
-               </td>
-               <td>
-<p>Example OMRS Person resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html"
-                     title="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2">OpenMRS Practitioner Example</a>
-               </td>
-               <td>
-<p>Practitioner Resource Example</p>
+<p>Example OMRS Condition resource</p>
 </td>
             </tr>
             <tr>
@@ -2050,29 +2032,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationRequest-OMRSMedicationRequestExample.html"
-                     title="MedicationRequest/OMRSMedicationRequestExample">OpenMRS Medication Request Example</a>
+                  <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
+                     title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">OpenMRS Encounter Resource Example</a>
                </td>
                <td>
-<p>Example OpenMRS Medication Request resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.html"
-                     title="Location/a3b793f0-eb53-4cda-92ce-fe0a77106252">Location Example</a>
-               </td>
-               <td>
-<p>Example OpenMRS Location resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.html"
-                     title="Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c">OpenMRS Condition Resource Example</a>
-               </td>
-               <td>
-<p>Example OMRS Condition resource</p>
+<p>Example OpenMRS Encounter resource</p>
 </td>
             </tr>
             <tr>
@@ -2086,15 +2050,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.html"
-                     title="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763">OpenMRS ServiceRequest Example</a>
-               </td>
-               <td>
-<p>Example OpenMRS Service Request resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.html"
                      title="Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663">OpenMRS Immunization Example</a>
                </td>
@@ -2104,20 +2059,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-e05c3693-4bcf-4e14-8900-86582265c659.html"
-                     title="Organization/e05c3693-4bcf-4e14-8900-86582265c659">Organization example</a>
+                  <a href="MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.html"
+                     title="MedicationDispense/1e2edf7a-89f2-4694-8412-49c99770aed6">OpenMRS Medication Dispense Example</a>
                </td>
                <td>
-<p>Example organization performing a task</p>
+<p>Example OpenMRS Medication Dispense resource</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html"
-                     title="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9">OpenMRS Task</a>
+                  <a href="Medication-f49e4247-528a-4cfd-8856-de161d03fa76.html"
+                     title="Medication/f49e4247-528a-4cfd-8856-de161d03fa76">OpenMRS Medication Example</a>
                </td>
                <td>
-<p>Example OMRS Task resource</p>
+<p>Example OpenMRS Medication resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-OMRSMedicationRequestExample.html"
+                     title="MedicationRequest/OMRSMedicationRequestExample">OpenMRS Medication Request Example</a>
+               </td>
+               <td>
+<p>Example OpenMRS Medication Request resource</p>
 </td>
             </tr>
             <tr>
@@ -2140,11 +2104,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Medication-f49e4247-528a-4cfd-8856-de161d03fa76.html"
-                     title="Medication/f49e4247-528a-4cfd-8856-de161d03fa76">OpenMRS Medication Example</a>
+                  <a href="Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.html"
+                     title="Person/68f44d7f-eb5a-40e9-aa4d-0cc0cc522866">OpenMRS Person Example</a>
                </td>
                <td>
-<p>Example OpenMRS Medication resource</p>
+<p>Example OMRS Person resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html"
+                     title="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2">OpenMRS Practitioner Example</a>
+               </td>
+               <td>
+<p>Practitioner Resource Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.html"
+                     title="ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763">OpenMRS ServiceRequest Example</a>
+               </td>
+               <td>
+<p>Example OpenMRS Service Request resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.html"
+                     title="Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9">OpenMRS Task</a>
+               </td>
+               <td>
+<p>Example OMRS Task resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-e05c3693-4bcf-4e14-8900-86582265c659.html"
+                     title="Organization/e05c3693-4bcf-4e14-8900-86582265c659">Organization example</a>
+               </td>
+               <td>
+<p>Example organization performing a task</p>
 </td>
             </tr>
          </tbody>
@@ -2175,7 +2175,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 17, 2023 15:10+0000">2023-05-17</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 22, 2023 11:16+0000">2023-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

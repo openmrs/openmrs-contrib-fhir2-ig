@@ -38,10 +38,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -228,7 +228,7 @@
         
           Active
           
-            as of 2023-05-17
+            as of 2023-06-22
           
         
       </td>
@@ -285,6 +285,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-contact-point-system.html">ContactPointSystem</a></span><br/><span style='color:DarkGray'><p>Telecommunications form for contact point.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
@@ -293,6 +294,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Need to support legacy numbers that are not in a tightly controlled format.</p>
 </span></td></tr>
@@ -308,6 +310,7 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.</p>
 </span></td></tr>
@@ -353,6 +356,7 @@
 Telecommunications form for contact point
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -361,6 +365,7 @@ Telecommunications form for contact point
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to support legacy numbers that are not in a tightly controlled format.</p>
 </td></tr>
@@ -377,6 +382,7 @@ Use of contact point
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.</p>
 </td></tr>
@@ -389,6 +395,7 @@ Use of contact point
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Note that rank does not necessarily follow the order in which the contacts are represented in the instance.</p>
 </td></tr>
@@ -459,7 +466,7 @@ Use of contact point
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 17, 2023 15:10+0000">2023-05-17</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 22, 2023 11:16+0000">2023-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
