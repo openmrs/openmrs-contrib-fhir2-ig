@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OpenMRSServiceRequest"] ; # 
   fhir:title [ fhir:v "OpenMRS Service Request"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-17T15:10:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-22T11:16:34+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "OpenMRS, Inc." ] ;
      fhir:telecom ( [
@@ -705,7 +705,7 @@
        fhir:path [ fhir:v "ServiceRequest.status" ] ;
        fhir:short [ fhir:v "draft | active | on-hold | revoked | completed | entered-in-error | unknown" ] ;
        fhir:definition [ fhir:v "The status of the order." ] ;
-       fhir:comment [ fhir:v "The status is generally fully in the control of the requester - they determine whether the order is draft or active and, after it has been activated, competed, cancelled or suspended. States relating to the activities of the performer are reflected on either the corresponding event (see [Event Pattern](event.html) for general discussion) or using the [Task](http://hl7.org/fhir/R4/task.html) resource." ] ;
+       fhir:comment [ fhir:v "The status is generally fully in the control of the requester - they determine whether the order is draft or active and, after it has been activated, competed, cancelled or suspended. States relating to the activities of the performer are reflected on either the corresponding event (see [Event Pattern](http://hl7.org/fhir/R4/event.html) for general discussion) or using the [Task](http://hl7.org/fhir/R4/task.html) resource." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -997,7 +997,7 @@
            fhir:value [ fhir:v "ServiceRequestCode" ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
-         fhir:description [ fhir:v "Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred] and a valueset using LOINC Order codes is available [here](valueset-diagnostic-requests.html)." ] ;
+         fhir:description [ fhir:v "Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred] and a valueset using LOINC Order codes is available [here](http://hl7.org/fhir/R4/valueset-diagnostic-requests.html)." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/procedure-code"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/procedure-code>
@@ -1785,7 +1785,7 @@
        fhir:path [ fhir:v "ServiceRequest.reasonCode" ] ;
        fhir:short [ fhir:v "Explanation/Justification for procedure or service" ] ;
        fhir:definition [ fhir:v "An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in `supportingInfo`." ] ;
-       fhir:comment [ fhir:v "This element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all.   Use `CodeableConcept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html)." ] ;
+       fhir:comment [ fhir:v "This element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all.   Use `CodeableConcept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](http://hl7.org/fhir/R4/servicerequest-example-di.html)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1839,7 +1839,7 @@
        fhir:path [ fhir:v "ServiceRequest.reasonReference" ] ;
        fhir:short [ fhir:v "Explanation/Justification for service or service" ] ;
        fhir:definition [ fhir:v "Indicates another resource that provides a justification for why this service is being requested.   May relate to the resources referred to in `supportingInfo`." ] ;
-       fhir:comment [ fhir:v "This element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all.    To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise when referencing  *DiagnosticReport*  it should contain a finding  in `DiagnosticReport.conclusion` and/or `DiagnosticReport.conclusionCode`.   When using a reference to *DocumentReference*, the target document should contain clear findings language providing the relevant reason for this service request.  Use  the CodeableConcept text element in `ServiceRequest.reasonCode` if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html)." ] ;
+       fhir:comment [ fhir:v "This element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all.    To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise when referencing  *DiagnosticReport*  it should contain a finding  in `DiagnosticReport.conclusion` and/or `DiagnosticReport.conclusionCode`.   When using a reference to *DocumentReference*, the target document should contain clear findings language providing the relevant reason for this service request.  Use  the CodeableConcept text element in `ServiceRequest.reasonCode` if the data is free (uncoded) text as shown in the [CT Scan example](http://hl7.org/fhir/R4/servicerequest-example-di.html)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [

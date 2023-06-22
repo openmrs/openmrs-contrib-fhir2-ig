@@ -10,7 +10,7 @@
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS Core FHIR Implementation Guide",
   "status" : "active",
-  "date" : "2023-05-17T15:10:06+00:00",
+  "date" : "2023-06-22T11:16:34+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -578,6 +578,42 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/encounter-type"
+      },
+      "name" : "Encounter Type Code System",
+      "description" : "Encounter Type Coding System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-group-description-ext"
+      },
+      "name" : "Group descriptive extension",
+      "description" : "Extension for group description",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"
+      },
+      "name" : "Location Example",
+      "description" : "Example OpenMRS Location resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -593,70 +629,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/omrs-Condition"
-      },
-      "name" : "OpenMRS condition",
-      "description" : "A FHIR Condition as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-encounter"
-      },
-      "name" : "Openmrs Encounter",
-      "description" : "A FHIR Encounter as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/omrs-group"
       },
       "name" : "OMRS Group",
       "description" : "A Group Resource is described as Cohort in Fhir2 OMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-immunization"
-      },
-      "name" : "OpenMRS Immunization",
-      "description" : "A FHIR Immunization Resource as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-location"
-      },
-      "name" : "OpenMRS Location",
-      "description" : "An OpenMRS location",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-location-contact-point"
-      },
-      "name" : "OpenMRS Location Contact Point",
-      "description" : "An OpenMRS Location Phone Number",
       "exampleBoolean" : false
     },
     {
@@ -686,62 +662,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "AllergyIntolerance"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/omrs-medication-request"
+        "reference" : "AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc"
       },
-      "name" : "OpenMRS Medication Request",
-      "description" : "A FHIR MedicationRequest as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-patient"
-      },
-      "name" : "OpenMRS Patient",
-      "description" : "A FHIR Patient as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-patient-identifier"
-      },
-      "name" : "OpenMRS Patient Identifier",
-      "description" : "Patient Identifers as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-person"
-      },
-      "name" : "OpenMRS Person",
-      "description" : "A FHIR Person as understood by OpenMRS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/omrs-practitioner"
-      },
-      "name" : "Openmrs Practitioner",
-      "description" : "A FHIR Practitioner as understood by OpenMRS",
-      "exampleBoolean" : false
+      "name" : "OpenMRS Allergy Intolerance Example",
+      "description" : "Example OpenMRS Allergy Intolerance resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance"
     },
     {
       "extension" : [{
@@ -761,6 +689,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/omrs-Condition"
+      },
+      "name" : "OpenMRS condition",
+      "description" : "A FHIR Condition as understood by OpenMRS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
+      },
+      "name" : "OpenMRS Condition Resource Example",
+      "description" : "Example OMRS Condition resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/OpenMRS-diagnostic-report"
       },
       "name" : "OpenMRS Diagnostic Report",
@@ -770,14 +722,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "DiagnosticReport"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/OpenMRS-observation"
+        "reference" : "DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de"
       },
-      "name" : "OpenMRS Observation",
-      "description" : "Observation resource created in OpenMRS representing a result for an order submitted by an EMR System",
-      "exampleBoolean" : false
+      "name" : "Openmrs DiagnosticReport",
+      "description" : "Example OMRS DiagnosticReport Resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"
     },
     {
       "extension" : [{
@@ -785,11 +737,35 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/OpenMRS-service-request"
+        "reference" : "StructureDefinition/omrs-encounter"
       },
-      "name" : "OpenMRS Service Request",
-      "description" : "Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources",
+      "name" : "Openmrs Encounter",
+      "description" : "A FHIR Encounter as understood by OpenMRS",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
+      },
+      "name" : "OpenMRS Encounter Resource Example",
+      "description" : "Example OpenMRS Encounter resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/bc572131-c234-436f-9194-00287759a3e4"
+      },
+      "name" : "OpenMRS Group Example",
+      "description" : "Example OpenMRS Group resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-group"
     },
     {
       "extension" : [{
@@ -797,58 +773,46 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/OpenMRS-task"
+        "reference" : "StructureDefinition/omrs-immunization"
       },
-      "name" : "OpenMRS Task",
-      "description" : "A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2",
+      "name" : "OpenMRS Immunization",
+      "description" : "A FHIR Immunization Resource as understood by OpenMRS",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "Immunization"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/omrs-group-description-ext"
+        "reference" : "Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"
       },
-      "name" : "Group descriptive extension",
-      "description" : "Extension for group description",
+      "name" : "OpenMRS Immunization Example",
+      "description" : "Example OpenMRS Immunization Resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-location"
+      },
+      "name" : "OpenMRS Location",
+      "description" : "An OpenMRS location",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/omrs-patient-identifier-location"
+        "reference" : "StructureDefinition/omrs-location-contact-point"
       },
-      "name" : "OpenMRS Patient Identifier Location",
-      "description" : "OpenMRS location for which this identifier is valid",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenMRS-order-code-vs"
-      },
-      "name" : "OpenMRS Order Code",
-      "description" : "The code for the openmrs requested in the EMR.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/encounter-type"
-      },
-      "name" : "Encounter Type Code System",
-      "description" : "Encounter Type Coding System",
+      "name" : "OpenMRS Location Contact Point",
+      "description" : "An OpenMRS Location Phone Number",
       "exampleBoolean" : false
     },
     {
@@ -866,26 +830,134 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AllergyIntolerance"
+        "valueString" : "Medication"
       }],
       "reference" : {
-        "reference" : "AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc"
+        "reference" : "Medication/f49e4247-528a-4cfd-8856-de161d03fa76"
       },
-      "name" : "OpenMRS Allergy Intolerance Example",
-      "description" : "Example OpenMRS Allergy Intolerance resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-AllergyIntolerance"
+      "name" : "OpenMRS Medication Example",
+      "description" : "Example OpenMRS Medication resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"
+        "reference" : "StructureDefinition/omrs-medication-request"
       },
-      "name" : "OpenMRS Encounter Resource Example",
-      "description" : "Example OpenMRS Encounter resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter"
+      "name" : "OpenMRS Medication Request",
+      "description" : "A FHIR MedicationRequest as understood by OpenMRS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OMRSMedicationRequestExample"
+      },
+      "name" : "OpenMRS Medication Request Example",
+      "description" : "Example OpenMRS Medication Request resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/OpenMRS-observation"
+      },
+      "name" : "OpenMRS Observation",
+      "description" : "Observation resource created in OpenMRS representing a result for an order submitted by an EMR System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-openmrs-Observation"
+      },
+      "name" : "OpenMRS Observation Example",
+      "description" : "Example OpenMRS Observation resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/OpenMRS-order-code-vs"
+      },
+      "name" : "OpenMRS Order Code",
+      "description" : "The code for the openmrs requested in the EMR.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-patient"
+      },
+      "name" : "OpenMRS Patient",
+      "description" : "A FHIR Patient as understood by OpenMRS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-openmrs-Patient"
+      },
+      "name" : "OpenMRS Patient Example",
+      "description" : "Example OpenMRS Patient resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-patient-identifier"
+      },
+      "name" : "OpenMRS Patient Identifier",
+      "description" : "Patient Identifers as understood by OpenMRS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-patient-identifier-location"
+      },
+      "name" : "OpenMRS Patient Identifier Location",
+      "description" : "OpenMRS location for which this identifier is valid",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-person"
+      },
+      "name" : "OpenMRS Person",
+      "description" : "A FHIR Person as understood by OpenMRS",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -902,6 +974,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/omrs-practitioner"
+      },
+      "name" : "Openmrs Practitioner",
+      "description" : "A FHIR Practitioner as understood by OpenMRS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -914,38 +998,62 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "DiagnosticReport/8a849d5e-6011-4279-a124-40ada5a687de"
+        "reference" : "StructureDefinition/OpenMRS-service-request"
       },
-      "name" : "Openmrs DiagnosticReport",
-      "description" : "Example OMRS DiagnosticReport Resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-diagnostic-report"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-category"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by the category",
-      "description" : "Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}",
+      "name" : "OpenMRS Service Request",
+      "description" : "Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
+        "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-clinical-status"
+        "reference" : "ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763"
       },
-      "name" : "Search through AllergyIntolerance endpoint by the clinical-status",
-      "description" : "Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}",
+      "name" : "OpenMRS ServiceRequest Example",
+      "description" : "Example OpenMRS Service Request resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/OpenMRS-task"
+      },
+      "name" : "OpenMRS Task",
+      "description" : "A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"
+      },
+      "name" : "OpenMRS Task",
+      "description" : "Example OMRS Task resource",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/e05c3693-4bcf-4e14-8900-86582265c659"
+      },
+      "name" : "Organization example",
+      "description" : "Example organization performing a task",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -953,10 +1061,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-id"
+        "reference" : "SearchParameter/condition-patient-identifier"
       },
-      "name" : "Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute",
-      "description" : "Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}",
+      "name" : "Search condition endpoint by patient identifier id",
+      "description" : "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}",
       "exampleBoolean" : false
     },
     {
@@ -977,178 +1085,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-manifestation"
+        "reference" : "SearchParameter/AllergyIntolerance-id"
       },
-      "name" : "Search through AllergyIntolerance endpoint by the manifestation",
-      "description" : "Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-patient"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by a given patient",
-      "description" : "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-patient-family"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by the patient's family name",
-      "description" : "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-patient-identifier"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by a given patient",
-      "description" : "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-patient-name"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by the patient's full or partial name",
-      "description" : "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-patient.given"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by the patient's given name",
-      "description" : "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-severity"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by the severity",
-      "description" : "Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-subject"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by subject uuid",
-      "description" : "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-subject-family"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by subject family",
-      "description" : "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-subject-given"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by subject given",
-      "description" : "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-subject-identifier"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by subject identifier",
-      "description" : "Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/AllergyIntolerance-subject-name"
-      },
-      "name" : "Search through AllergyIntolerance endpoint by subject name",
-      "description" : "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Condition-requester-family"
-      },
-      "name" : "Search through condition endpoint by Practitioner family",
-      "description" : "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Condition-requester-given"
-      },
-      "name" : "Search through condition endpoint by Practitioner given",
-      "description" : "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-address-city"
-      },
-      "name" : "Search in Encounter endpoint basing on Encounter location address-city attribute",
-      "description" : "Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}",
+      "name" : "Search in AllergyIntolerance endpoint basing on AllergyIntolerance uuid  attribute",
+      "description" : "Searches based on the AllergyIntolerance uuid field for the AllergyIntolerance record eg) /ws/fhir2/{release}}/AllergyIntolerance?_id={uuid}",
       "exampleBoolean" : false
     },
     {
@@ -1161,6 +1101,30 @@
       },
       "name" : "Search in Encounter endpoint basing on  Encounter location address-country attribute",
       "description" : "Searches based on the address-country field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-country={country}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-lastUpdated"
+      },
+      "name" : "Search in Encounter endpoint basing on Encounter lastUpdated  attribute",
+      "description" : "Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-address-city"
+      },
+      "name" : "Search in Encounter endpoint basing on Encounter location address-city attribute",
+      "description" : "Searches based on the address-city field for the Encounter record eg) /ws/fhir2/{release}/Encounter?address-city={city}",
       "exampleBoolean" : false
     },
     {
@@ -1193,1031 +1157,11 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/Encounter-date"
-      },
-      "name" : "Search through Encounter endpoint by the date when the encounter was created",
-      "description" : "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/Encounter-id"
       },
       "name" : "Search in Encounter endpoint basing on Encounter uuid  attribute",
       "description" : "Searches based on the Encounter uuid field for the Encounter record eg) /ws/fhir2/{release}}/Encounter?_id={uuid}",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-lastUpdated"
-      },
-      "name" : "Search in Encounter endpoint basing on Encounter lastUpdated  attribute",
-      "description" : "Searches based on the Encounter lastUpdated field for the Encounter record eg) /ws/fhir2/{release}/Encounter?_lastUpdated={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-location"
-      },
-      "name" : "Search through Encounter endpoint based on location reference",
-      "description" : "Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-participant"
-      },
-      "name" : "Search through Encounter endpoint by a given Practitioner",
-      "description" : "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-participant-identifier"
-      },
-      "name" : "Search through Encounter endpoint by a given Practitioner",
-      "description" : "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-participant.family"
-      },
-      "name" : "Search through Encounter endpoint by the Practitioner's family name",
-      "description" : "Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-participant.given"
-      },
-      "name" : "Search through Encounter endpoint by the Practitioner's given name",
-      "description" : "Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-participant.name"
-      },
-      "name" : "Search through Encounter endpoint by the Practitioner's full or partial name",
-      "description" : "Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-patient"
-      },
-      "name" : "Search through Encounter endpoint by a given patient",
-      "description" : "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-patient-identifier"
-      },
-      "name" : "Search through Encounter endpoint by a given patient",
-      "description" : "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-patient-name"
-      },
-      "name" : "Search through Encounter endpoint by the patient's full or partial name",
-      "description" : "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-patient.family"
-      },
-      "name" : "Search through Encounter endpoint by the patient's family name",
-      "description" : "Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-patient.given"
-      },
-      "name" : "Search through Encounter endpoint by the patient's given name",
-      "description" : "Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-subject"
-      },
-      "name" : "Search through Encounter endpoint by subject uuid",
-      "description" : "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-subject-family"
-      },
-      "name" : "Search through Encounter endpoint by subject family",
-      "description" : "Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-subject-given"
-      },
-      "name" : "Search through Encounter endpoint by subject given",
-      "description" : "Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-subject-identifier"
-      },
-      "name" : "Search through Encounter endpoint by subject identifier",
-      "description" : "Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-subject-name"
-      },
-      "name" : "Search through Encounter endpoint by subject name",
-      "description" : "Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Encounter-type"
-      },
-      "name" : "Search through Encounter endpoint by encounter type",
-      "description" : "Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-id"
-      },
-      "name" : "Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute",
-      "description" : "Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-lastUpdated"
-      },
-      "name" : "Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute",
-      "description" : "Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-medication"
-      },
-      "name" : "Search through MedicationRequest endpoint based on medication reference",
-      "description" : "Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-patient"
-      },
-      "name" : "Search through MedicationRequest endpoint by a given patient",
-      "description" : "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-patient-identifier"
-      },
-      "name" : "Search through MedicationRequest endpoint by a given patient",
-      "description" : "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-patient-name"
-      },
-      "name" : "Search through MedicationRequest endpoint by the patient's full or partial name",
-      "description" : "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-patient.family"
-      },
-      "name" : "Search through MedicationRequest endpoint by the patient's family name",
-      "description" : "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-patient.given"
-      },
-      "name" : "Search through MedicationRequest endpoint by the patient's given name",
-      "description" : "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-requestor"
-      },
-      "name" : "Search through MedicationRequest endpoint by a given Practitioner",
-      "description" : "Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-requestor-identifier"
-      },
-      "name" : "Search through MedicationRequest endpoint by a given Practitioner",
-      "description" : "Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-requestor.family"
-      },
-      "name" : "Search through MedicationRequest endpoint by the Practitioner's family name",
-      "description" : "Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-requestor.given"
-      },
-      "name" : "Search through MedicationRequest endpoint by the Practitioner's given name",
-      "description" : "Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-requestor.name"
-      },
-      "name" : "Search through MedicationRequest endpoint by the Practitioner's full or partial name",
-      "description" : "Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-subject"
-      },
-      "name" : "Search through MedicationRequest endpoint by subject uuid",
-      "description" : "Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-subject-family"
-      },
-      "name" : "Search through MedicationRequest endpoint by subject family",
-      "description" : "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-subject-given"
-      },
-      "name" : "Search through MedicationRequest endpoint by subject given",
-      "description" : "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-subject-identifier"
-      },
-      "name" : "Search through MedicationRequest endpoint by subject identifier",
-      "description" : "Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/MedicationRequest-subject-name"
-      },
-      "name" : "Search through MedicationRequest endpoint by subject name",
-      "description" : "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/OMRSMedicationRequestExample"
-      },
-      "name" : "OpenMRS Medication Request Example",
-      "description" : "Example OpenMRS Medication Request resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication-request"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-address-city"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner's address-city attribute",
-      "description" : "Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-address-country"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner's address-country attribute",
-      "description" : "Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-address-postalcode"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute",
-      "description" : "Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-address-state"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner's address-state attribute",
-      "description" : "Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-id"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner uuid attribute",
-      "description" : "Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-identifier"
-      },
-      "name" : "Search through Practitioner endpoint by a given Practitioner",
-      "description" : "Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner-lastUpdated"
-      },
-      "name" : "Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute",
-      "description" : "Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner.family"
-      },
-      "name" : "Search through Practitioner endpoint by the Practitioner's family name",
-      "description" : "Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner.given"
-      },
-      "name" : "Search through Practitioner endpoint by the Practitioner's given name",
-      "description" : "Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Practitioner.name"
-      },
-      "name" : "Search through Practitioner endpoint by the Practitioner's full or partial name",
-      "description" : "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Task-basedOn"
-      },
-      "name" : "Search through FhirTask endpoint by the ServiceRequest Reference uuid",
-      "description" : "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Task-id"
-      },
-      "name" : "Search in Task endpoint basing on Task uuid attribute",
-      "description" : "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Task-lastUpdated"
-      },
-      "name" : "Search in Task endpoint basing on Task lastUpdated attribute",
-      "description" : "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Task-owner"
-      },
-      "name" : "Search through FhirTask endpoint by the Organization Reference uuid",
-      "description" : "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/Task-status"
-      },
-      "name" : "Search through FhirTask endpoint by FhirTask status in the current state",
-      "description" : "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Location"
-      }],
-      "reference" : {
-        "reference" : "Location/a3b793f0-eb53-4cda-92ce-fe0a77106252"
-      },
-      "name" : "Location Example",
-      "description" : "Example OpenMRS Location resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-location"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c"
-      },
-      "name" : "OpenMRS Condition Resource Example",
-      "description" : "Example OMRS Condition resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-Condition"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
-      }],
-      "reference" : {
-        "reference" : "Group/bc572131-c234-436f-9194-00287759a3e4"
-      },
-      "name" : "OpenMRS Group Example",
-      "description" : "Example OpenMRS Group resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-group"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/caec0cba-3802-4b70-a6dd-2eb064450763"
-      },
-      "name" : "OpenMRS ServiceRequest Example",
-      "description" : "Example OpenMRS Service Request resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-clinical-status"
-      },
-      "name" : "Search through condition endpoint by Condition clinical status",
-      "description" : "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-code"
-      },
-      "name" : "Search through condition endpoint by concept code",
-      "description" : "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-encounter"
-      },
-      "name" : "Search through condition endpoint by encounter uuid",
-      "description" : "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-id"
-      },
-      "name" : "Search through condition endpoint by service Uuid",
-      "description" : "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-lastUpdated"
-      },
-      "name" : "Search through condition endpoint by service lastUpdated field",
-      "description" : "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-occurrence"
-      },
-      "name" : "Search through condition endpoint by Occurrence when service should occurance",
-      "description" : "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-onset-age"
-      },
-      "name" : "Search through condition endpoint by Condition clinical onset age",
-      "description" : "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-onset-date"
-      },
-      "name" : "Search through condition endpoint by Condition clinical onset date",
-      "description" : "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-patient"
-      },
-      "name" : "Search through condition endpoint by patient uuid",
-      "description" : "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-patient-identifier"
-      },
-      "name" : "Search condition endpoint by patient identifier id",
-      "description" : "Searches for Condition by the patient identifier eg) /ws/fhir2/{release}/Condition?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-patient-name"
-      },
-      "name" : "Search through condition endpoint by the patient's full or partial name",
-      "description" : "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-patient.family"
-      },
-      "name" : "Search through condition endpoint by the patient's family name",
-      "description" : "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-patient.given"
-      },
-      "name" : "Search through condtion endpoint by the patient's given name",
-      "description" : "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-recorded-date"
-      },
-      "name" : "Search through condition endpoint by date when the record was created",
-      "description" : "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-requester"
-      },
-      "name" : "Search through condition endpoint by Practitioner uuid",
-      "description" : "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-requester-identifier"
-      },
-      "name" : "Search through condition endpoint by Practitioner identifier",
-      "description" : "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-requester-name"
-      },
-      "name" : "Search through condition endpoint by Practitioner name",
-      "description" : "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-subject"
-      },
-      "name" : "Search through condition endpoint by subject uuid",
-      "description" : "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-subject-family"
-      },
-      "name" : "Search through condtion endpoint by subject family",
-      "description" : "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-subject-given"
-      },
-      "name" : "Search through condition endpoint by subject given",
-      "description" : "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-subject-identifier"
-      },
-      "name" : "Search through condition endpoint by subject identifier",
-      "description" : "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/condition-subject-name"
-      },
-      "name" : "Search through condition endpoint by subject name",
-      "description" : "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Immunization"
-      }],
-      "reference" : {
-        "reference" : "Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663"
-      },
-      "name" : "OpenMRS Immunization Example",
-      "description" : "Example OpenMRS Immunization Resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-immunization"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/e05c3693-4bcf-4e14-8900-86582265c659"
-      },
-      "name" : "Organization example",
-      "description" : "Example organization performing a task",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9"
-      },
-      "name" : "OpenMRS Task",
-      "description" : "Example OMRS Task resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-openmrs-Observation"
-      },
-      "name" : "OpenMRS Observation Example",
-      "description" : "Example OpenMRS Observation resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/example-openmrs-Patient"
-      },
-      "name" : "OpenMRS Patient Example",
-      "description" : "Example OpenMRS Patient resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/f49e4247-528a-4cfd-8856-de161d03fa76"
-      },
-      "name" : "OpenMRS Medication Example",
-      "description" : "Example OpenMRS Medication resource",
-      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-medication"
     },
     {
       "extension" : [{
@@ -2277,18 +1221,6 @@
       },
       "name" : "Search in Location endpoint basing on location address-state attribute",
       "description" : "Searches based on the address-state field for the location record eg) /ws/fhir2/{release}/Location?address-state={state}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/location-id"
-      },
-      "name" : "Search in Location endpoint basing on location uuid  attribute",
-      "description" : "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}",
       "exampleBoolean" : false
     },
     {
@@ -2357,6 +1289,1074 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/location-id"
+      },
+      "name" : "Search in Location endpoint basing on location uuid  attribute",
+      "description" : "Searches based on the location uuid field for the location record eg) /ws/fhir2/{release}/Location?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-lastUpdated"
+      },
+      "name" : "Search in MedicationRequest endpoint basing on MedicationRequest lastUpdated  attribute",
+      "description" : "Searches based on the MedicationRequest lastUpdated field for the MedicationRequest record eg) /ws/fhir2/{release}/MedicationRequest?_lastUpdated={date-range}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-id"
+      },
+      "name" : "Search in MedicationRequest endpoint basing on MedicationRequest uuid  attribute",
+      "description" : "Searches based on the MedicationRequest uuid field for the MedicationRequest record eg) /ws/fhir2/{release}}/MedicationRequest?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-lastUpdated"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner lastUpdated  attribute",
+      "description" : "Searches based on the Practitioner lastUpdated field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?_lastUpdated={date-range}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-id"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner uuid attribute",
+      "description" : "Searches based on the Practitioner uuid field for the Practitioner record eg) /ws/fhir2/{release}}/Practitioner?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-address-city"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner's address-city attribute",
+      "description" : "Searches based on the address-city field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-city={city}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-address-country"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner's address-country attribute",
+      "description" : "Searches based on the address-country field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-country={country}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-address-postalcode"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner's address-postalcode attribute",
+      "description" : "Searches based on the address-postalcode field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-postalcode={postalCode}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner-address-state"
+      },
+      "name" : "Search in Practitioner endpoint basing on Practitioner's address-state attribute",
+      "description" : "Searches based on the address-state field for the Practitioner record eg) /ws/fhir2/{release}/Practitioner?address-state={state}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Task-lastUpdated"
+      },
+      "name" : "Search in Task endpoint basing on Task lastUpdated attribute",
+      "description" : "Searches based on the Task lastUpdated field for the Task record eg) /ws/fhir2/{release}/Task?_lastUpdated={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Task-id"
+      },
+      "name" : "Search in Task endpoint basing on Task uuid attribute",
+      "description" : "Searches based on the Task uuid field for the Task record eg) /ws/fhir2/{release}}/Task?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-patient-identifier"
+      },
+      "name" : "Search serviceRequest endpoint by patient identifier id",
+      "description" : "Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-patient"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by a given patient",
+      "description" : "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-patient-identifier"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by a given patient",
+      "description" : "Searches for AllergyIntolerance by a given patient eg) /ws/fhir2/{release}/AllergyIntolerance?patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-subject-family"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by subject family",
+      "description" : "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-subject-given"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by subject given",
+      "description" : "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-subject-identifier"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by subject identifier",
+      "description" : "Searches for AllergyIntolerance by the patient identifier eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-subject-name"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by subject name",
+      "description" : "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-subject"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by subject uuid",
+      "description" : "Searches for AllergyIntolerance by a given subject eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-category"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the category",
+      "description" : "Searches for AllergyIntolerance based on the category eg) /ws/fhir2/{release}/AllergyIntolerance?category={category}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-clinical-status"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the clinical-status",
+      "description" : "Searches for AllergyIntolerance based on the clinical-status eg) /ws/fhir2/{release}/AllergyIntolerance?clinical-status={codeable concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-manifestation"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the manifestation",
+      "description" : "Searches for AllergyIntolerance based on the manifestation eg) /ws/fhir2/{release}/AllergyIntolerance?manifestation={codeable concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-patient-family"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the patient's family name",
+      "description" : "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-patient-name"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the patient's full or partial name",
+      "description" : "Searches for AllergyIntolerance based on the patient's full or partial name eg) /ws/fhir2/{release}/AllergyIntolerance?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-patient.given"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the patient's given name",
+      "description" : "Searches for AllergyIntolerance based on the patient's given name(s) eg) /ws/fhir2/{release}/AllergyIntolerance?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/AllergyIntolerance-severity"
+      },
+      "name" : "Search through AllergyIntolerance endpoint by the severity",
+      "description" : "Searches for AllergyIntolerance based on the severity eg) /ws/fhir2/{release}/AllergyIntolerance?category={codeable concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-has-member"
+      },
+      "name" : "Search through an observation group in the Obervation EndPoint that contains a given observation",
+      "description" : "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-code"
+      },
+      "name" : "Search through condition endpoint by concept code",
+      "description" : "Searches for condition based on the condition concept code eg) /ws/fhir2/{release}/Condition?code={code}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-onset-age"
+      },
+      "name" : "Search through condition endpoint by Condition clinical onset age",
+      "description" : "Searches for condition based on the condition onset age eg) /ws/fhir2/{release}/Condition?onset-age={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-onset-date"
+      },
+      "name" : "Search through condition endpoint by Condition clinical onset date",
+      "description" : "Searches for condition based on the condition onset date concept eg) /ws/fhir2/{release}/Condition?onset-date={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-clinical-status"
+      },
+      "name" : "Search through condition endpoint by Condition clinical status",
+      "description" : "Searches for condition based on the condition clinical status concept eg) /ws/fhir2/{release}/Condition?clinical-status={codeable concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-recorded-date"
+      },
+      "name" : "Search through condition endpoint by date when the record was created",
+      "description" : "Searches for condition based on the condition creation date eg) /ws/fhir2/{release}/Condition?recorded-date={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-encounter"
+      },
+      "name" : "Search through condition endpoint by encounter uuid",
+      "description" : "Searches for condition based on the condition encounter Uuid eg) /ws/fhir2/{release}/Condition?encounter={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-occurrence"
+      },
+      "name" : "Search through condition endpoint by Occurrence when service should occurance",
+      "description" : "Searches for condition based on to occurrent date eg) /ws/fhir2/{release}/Condition?occurrence={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-patient"
+      },
+      "name" : "Search through condition endpoint by patient uuid",
+      "description" : "Searches for condition by a given patient Uuid eg) /ws/fhir2/{release}/Condition?patient={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Condition-requester-family"
+      },
+      "name" : "Search through condition endpoint by Practitioner family",
+      "description" : "Searches for condition based on the Practitioner's family name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Condition-requester-given"
+      },
+      "name" : "Search through condition endpoint by Practitioner given",
+      "description" : "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-requester-identifier"
+      },
+      "name" : "Search through condition endpoint by Practitioner identifier",
+      "description" : "Searches for condition by the Practitioner identifier eg) /ws/fhir2/{release}/Condition?requester:Practitioner.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-requester-name"
+      },
+      "name" : "Search through condition endpoint by Practitioner name",
+      "description" : "Searches for condition based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Condition?requester:Practitioner.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-requester"
+      },
+      "name" : "Search through condition endpoint by Practitioner uuid",
+      "description" : "Searches for condition by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/Condition?requester:Practitioner={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-lastUpdated"
+      },
+      "name" : "Search through condition endpoint by service lastUpdated field",
+      "description" : "Searches for condition based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/Condition?_lastUpdated={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-id"
+      },
+      "name" : "Search through condition endpoint by service Uuid",
+      "description" : "Searches for condition based on service Uuid eg) /ws/fhir2/{release}/Condition?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-subject-given"
+      },
+      "name" : "Search through condition endpoint by subject given",
+      "description" : "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?subject:Patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-subject-identifier"
+      },
+      "name" : "Search through condition endpoint by subject identifier",
+      "description" : "Searches for condition by the patient identifier eg) /ws/fhir2/{release}/Condition?subject:Patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-subject-name"
+      },
+      "name" : "Search through condition endpoint by subject name",
+      "description" : "Searches for condition based on the patient's full or partial name eg) /ws/fhir2/{release}/Condition?subject:Patient.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-subject"
+      },
+      "name" : "Search through condition endpoint by subject uuid",
+      "description" : "Searches for condition by a given subject eg) /ws/fhir2/{release}/condition?subject:Patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-patient.family"
+      },
+      "name" : "Search through condition endpoint by the patient's family name",
+      "description" : "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-patient-name"
+      },
+      "name" : "Search through condition endpoint by the patient's full or partial name",
+      "description" : "Searches for condition based on the  patient's full or partial name eg) /ws/fhir2/{release}/Condition?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-subject-family"
+      },
+      "name" : "Search through condtion endpoint by subject family",
+      "description" : "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/condition-patient.given"
+      },
+      "name" : "Search through condtion endpoint by the patient's given name",
+      "description" : "Searches for condition based on the patient's given name(s) eg) /ws/fhir2/{release}/Condition?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-location"
+      },
+      "name" : "Search through Encounter endpoint based on location reference",
+      "description" : "Searches for Encounter based on the location reference uuid eg) /ws/fhir2/{release}/Encounter?location={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-patient"
+      },
+      "name" : "Search through Encounter endpoint by a given patient",
+      "description" : "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-patient-identifier"
+      },
+      "name" : "Search through Encounter endpoint by a given patient",
+      "description" : "Searches for Encounters by a given patient eg) /ws/fhir2/{release}/Encounter?patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-participant"
+      },
+      "name" : "Search through Encounter endpoint by a given Practitioner",
+      "description" : "Searches for Encounters by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/Encounter?participant={PractitionerUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-participant-identifier"
+      },
+      "name" : "Search through Encounter endpoint by a given Practitioner",
+      "description" : "Searches for Encounters by a given Practitioner eg) /ws/fhir2/{release}/Encounter?participant.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-type"
+      },
+      "name" : "Search through Encounter endpoint by encounter type",
+      "description" : "Searches for Encounter based on encounter type field eg) /ws/fhir2/{release}/Encounter?type={encounterType}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-subject-family"
+      },
+      "name" : "Search through Encounter endpoint by subject family",
+      "description" : "Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-subject-given"
+      },
+      "name" : "Search through Encounter endpoint by subject given",
+      "description" : "Searches for Encounter based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?subject:Patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-subject-identifier"
+      },
+      "name" : "Search through Encounter endpoint by subject identifier",
+      "description" : "Searches for Encounter by the patient identifier eg) /ws/fhir2/{release}/Encounter?subject:Patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-subject-name"
+      },
+      "name" : "Search through Encounter endpoint by subject name",
+      "description" : "Searches for Encounter based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?subject:Patient.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-subject"
+      },
+      "name" : "Search through Encounter endpoint by subject uuid",
+      "description" : "Searches for Encounter by a given subject eg) /ws/fhir2/{release}/Encounter?subject:Patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-date"
+      },
+      "name" : "Search through Encounter endpoint by the date when the encounter was created",
+      "description" : "Searches for Encounter based on the encounter creation date eg) /ws/fhir2/{release}/Encounter?date={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-patient.family"
+      },
+      "name" : "Search through Encounter endpoint by the patient's family name",
+      "description" : "Searches for Encounters based on the patient's family name eg) /ws/fhir2/{release}/Encounter?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-patient-name"
+      },
+      "name" : "Search through Encounter endpoint by the patient's full or partial name",
+      "description" : "Searches for Encounters based on the patient's full or partial name eg) /ws/fhir2/{release}/Encounter?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-patient.given"
+      },
+      "name" : "Search through Encounter endpoint by the patient's given name",
+      "description" : "Searches for Encounters based on the patient's given name(s) eg) /ws/fhir2/{release}/Encounter?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-participant.family"
+      },
+      "name" : "Search through Encounter endpoint by the Practitioner's family name",
+      "description" : "Searches for Encounters based on the Practitioner's family name eg) /ws/fhir2/{release}/Encounter?participant.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-participant.name"
+      },
+      "name" : "Search through Encounter endpoint by the Practitioner's full or partial name",
+      "description" : "Searches for Encounters based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Encounter?participant.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Encounter-participant.given"
+      },
+      "name" : "Search through Encounter endpoint by the Practitioner's given name",
+      "description" : "Searches for Encounters based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Encounter?participant.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Task-status"
+      },
+      "name" : "Search through FhirTask endpoint by FhirTask status in the current state",
+      "description" : "Searches for FhirTask based on the FhirTask status eg) /ws/fhir2/{release}/Task?status={codeable concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Task-owner"
+      },
+      "name" : "Search through FhirTask endpoint by the Organization Reference uuid",
+      "description" : "Searches for FhirTask based on the Organization Reference eg) /ws/fhir2/{release}/Task?owner={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Task-basedOn"
+      },
+      "name" : "Search through FhirTask endpoint by the ServiceRequest Reference uuid",
+      "description" : "Searches for FhirTask based on the ServiceRequest Reference eg) /ws/fhir2/{release}/Task?based-on={ServiceRequestUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-medication"
+      },
+      "name" : "Search through MedicationRequest endpoint based on medication reference",
+      "description" : "Searches for MedicationRequest by medication reference eg) /ws/fhir2/{release}/MedicationRequest?medication={reference}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-patient"
+      },
+      "name" : "Search through MedicationRequest endpoint by a given patient",
+      "description" : "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-patient-identifier"
+      },
+      "name" : "Search through MedicationRequest endpoint by a given patient",
+      "description" : "Searches for MedicationRequest by a given patient eg) /ws/fhir2/{release}/MedicationRequest?patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-requestor"
+      },
+      "name" : "Search through MedicationRequest endpoint by a given Practitioner",
+      "description" : "Searches for MedicationRequest by a given Practitioner Reference uuid eg) /ws/fhir2/{release}/MedicationRequest?requestor={Uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-requestor-identifier"
+      },
+      "name" : "Search through MedicationRequest endpoint by a given Practitioner",
+      "description" : "Searches for MedicationRequest by a given Practitioner eg) /ws/fhir2/{release}/MedicationRequest?requestor.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-subject-family"
+      },
+      "name" : "Search through MedicationRequest endpoint by subject family",
+      "description" : "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-subject-given"
+      },
+      "name" : "Search through MedicationRequest endpoint by subject given",
+      "description" : "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-subject-identifier"
+      },
+      "name" : "Search through MedicationRequest endpoint by subject identifier",
+      "description" : "Searches for MedicationRequest by the patient identifier eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-subject-name"
+      },
+      "name" : "Search through MedicationRequest endpoint by subject name",
+      "description" : "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-subject"
+      },
+      "name" : "Search through MedicationRequest endpoint by subject uuid",
+      "description" : "Searches for MedicationRequest by a given subject eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-patient.family"
+      },
+      "name" : "Search through MedicationRequest endpoint by the patient's family name",
+      "description" : "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-patient-name"
+      },
+      "name" : "Search through MedicationRequest endpoint by the patient's full or partial name",
+      "description" : "Searches for MedicationRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-patient.given"
+      },
+      "name" : "Search through MedicationRequest endpoint by the patient's given name",
+      "description" : "Searches for MedicationRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-requestor.family"
+      },
+      "name" : "Search through MedicationRequest endpoint by the Practitioner's family name",
+      "description" : "Searches for MedicationRequest based on the Practitioner's family name eg) /ws/fhir2/{release}/MedicationRequest?requestor.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-requestor.name"
+      },
+      "name" : "Search through MedicationRequest endpoint by the Practitioner's full or partial name",
+      "description" : "Searches for MedicationRequest based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/MedicationRequest?requestor.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/MedicationRequest-requestor.given"
+      },
+      "name" : "Search through MedicationRequest endpoint by the Practitioner's given name",
+      "description" : "Searches for MedicationRequest based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/MedicationRequest?requestor.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-patient"
+      },
+      "name" : "Search through observation endpoint by a given patient",
+      "description" : "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-patient-identifier"
+      },
+      "name" : "Search through observation endpoint by a given patient",
+      "description" : "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/observation-category"
       },
       "name" : "Search through observation endpoint by category",
@@ -2397,126 +2397,6 @@
       },
       "name" : "Search through observation endpoint by encounter",
       "description" : "Searches for observations by the observation encounter eg) /ws/fhir2/{release}/Observation?encounter.type={type}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-has-member"
-      },
-      "name" : "Search through an observation group in the Obervation EndPoint that contains a given observation",
-      "description" : "Searches for an observation group that contains a given observation eg) /ws/fhir2/{release}/Observation?has-member",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-has-member-code"
-      },
-      "name" : "Searches for an observation group that contains an observation with the provided code",
-      "description" : "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-id"
-      },
-      "name" : "Searches based on the exact UUID of the person record",
-      "description" : "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-lastUpdated"
-      },
-      "name" : "Searches based on the the dateCreated field for the observation record",
-      "description" : "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-patient"
-      },
-      "name" : "Search through observation endpoint by a given patient",
-      "description" : "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-patient-identifier"
-      },
-      "name" : "Search through observation endpoint by a given patient",
-      "description" : "Searches for observations by a given patient eg) /ws/fhir2/{release}/Observation?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-patient-name"
-      },
-      "name" : "Search through observation endpoint by the patient's full or partial name",
-      "description" : "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-patient.family"
-      },
-      "name" : "Search through observation endpoint by the patient's family name",
-      "description" : "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-patient.given"
-      },
-      "name" : "Search through observation endpoint by the patient's given name",
-      "description" : "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/observation-subject"
-      },
-      "name" : "Search through observation endpoint by subject uuid",
-      "description" : "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}",
       "exampleBoolean" : false
     },
     {
@@ -2573,10 +2453,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/observation-value-concept"
+        "reference" : "SearchParameter/observation-subject"
       },
-      "name" : "Searches for an observation whose value is a concept that matches the provided concept code",
-      "description" : "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}",
+      "name" : "Search through observation endpoint by subject uuid",
+      "description" : "Searches for observations by a given subject eg) /ws/fhir2/{release}/Observation?subject:Patient={patientUuid}",
       "exampleBoolean" : false
     },
     {
@@ -2585,10 +2465,94 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/observation-value-date"
+        "reference" : "SearchParameter/observation-patient.family"
       },
-      "name" : "Searches for an observation whose value is a date by the specified date range.",
-      "description" : "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}",
+      "name" : "Search through observation endpoint by the patient's family name",
+      "description" : "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-patient-name"
+      },
+      "name" : "Search through observation endpoint by the patient's full or partial name",
+      "description" : "Searches for observations based on the patient's full or partial name eg) /ws/fhir2/{release}/Observation?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-patient.given"
+      },
+      "name" : "Search through observation endpoint by the patient's given name",
+      "description" : "Searches for observations based on the patient's given name(s) eg) /ws/fhir2/{release}/Observation?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/patient-lastUpdated"
+      },
+      "name" : "Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record",
+      "description" : "Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/patient-birthdate"
+      },
+      "name" : "Search through patient endpoint by the patient's birthdate attribute",
+      "description" : "Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/patient-death-date"
+      },
+      "name" : "Search through patient endpoint by the patient's death-date attribute",
+      "description" : "Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/patient-name"
+      },
+      "name" : "Search through patient endpoint by the patient's full or partial name",
+      "description" : "Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/patient-gender"
+      },
+      "name" : "Search through patient endpoint by the patient's gender attribute",
+      "description" : "Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}",
       "exampleBoolean" : false
     },
     {
@@ -2645,22 +2609,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/patient-birthdate"
+        "reference" : "SearchParameter/patient-id"
       },
-      "name" : "Search through patient endpoint by the patient's birthdate attribute",
-      "description" : "Searches based on the patient's birthdate eg) /ws/fhir2/{release}/Patient?birthdate={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/patient-death-date"
-      },
-      "name" : "Search through patient endpoint by the patient's death-date attribute",
-      "description" : "Searches based on the death date of the patient (if any) eg) /ws/fhir2/{release}/Patient?death-date={date}",
+      "name" : "Search through patient endpoint by the patient's uuid",
+      "description" : "Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}",
       "exampleBoolean" : false
     },
     {
@@ -2681,10 +2633,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/patient-gender"
+        "reference" : "SearchParameter/person-lastUpdated"
       },
-      "name" : "Search through patient endpoint by the patient's gender attribute",
-      "description" : "Searches based on the gender of the patient. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Patient?gender={gender}",
+      "name" : "Search through person endpoint basing on dateCreated or dateUpdated field of the person record",
+      "description" : "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}",
       "exampleBoolean" : false
     },
     {
@@ -2693,10 +2645,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/patient-id"
+        "reference" : "SearchParameter/person-birthdate"
       },
-      "name" : "Search through patient endpoint by the patient's uuid",
-      "description" : "Searches based on the exact UUID of the patient record eg} /ws/fhir2/{release}/Patient?_id={uuid}",
+      "name" : "Search through person endpoint by the person's birthdate attribute",
+      "description" : "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}",
       "exampleBoolean" : false
     },
     {
@@ -2705,10 +2657,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/patient-lastUpdated"
+        "reference" : "SearchParameter/person-name"
       },
-      "name" : "Search through patient endpoint basing on dateCreated or dateUpdated field of the patient record",
-      "description" : "Searches based on the the dateCreated or dateUpdated field for the patient record eg) /ws/fhir2/{release}/Patient?_lastUpdated={date-range}",
+      "name" : "Search through person endpoint by the person's full or partial name",
+      "description" : "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}",
       "exampleBoolean" : false
     },
     {
@@ -2717,10 +2669,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/patient-name"
+        "reference" : "SearchParameter/person-gender"
       },
-      "name" : "Search through patient endpoint by the patient's full or partial name",
-      "description" : "Searches for patient based on patient's full or partial name eg) /ws/fhir2/{release}/Patient?name={name}",
+      "name" : "Search through person endpoint by the person's gender attribute",
+      "description" : "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}",
       "exampleBoolean" : false
     },
     {
@@ -2777,30 +2729,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/person-birthdate"
-      },
-      "name" : "Search through person endpoint by the person's birthdate attribute",
-      "description" : "Searches based on the person's birthdate eg) /ws/fhir2/{release}/Person?birthdate={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/person-gender"
-      },
-      "name" : "Search through person endpoint by the person's gender attribute",
-      "description" : "Searches based on the gender of the person. Note that this value must be from the AdministrativeGender valueset eg) /ws/fhir2/{release}/Person?gender={gender}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/person-id"
       },
       "name" : "Search through person endpoint by the person's uuid",
@@ -2813,10 +2741,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/person-lastUpdated"
+        "reference" : "SearchParameter/Practitioner-identifier"
       },
-      "name" : "Search through person endpoint basing on dateCreated or dateUpdated field of the person record",
-      "description" : "Searches based on the the dateCreated or dateUpdated field for the person record eg) /ws/fhir2/{release}/Person?_lastUpdated={date-range}",
+      "name" : "Search through Practitioner endpoint by a given Practitioner",
+      "description" : "Searches for Practitioner by a given Practitioner eg) /ws/fhir2/{release}/Practitioner?identifier={identifier}",
       "exampleBoolean" : false
     },
     {
@@ -2825,10 +2753,34 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/person-name"
+        "reference" : "SearchParameter/Practitioner.family"
       },
-      "name" : "Search through person endpoint by the person's full or partial name",
-      "description" : "Searches for Person based on full or partial name eg) /ws/fhir2/{release}/Person?name={name}",
+      "name" : "Search through Practitioner endpoint by the Practitioner's family name",
+      "description" : "Searches for Practitioner based on the Practitioner's family name eg) /ws/fhir2/{release}/Practitioner?family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner.name"
+      },
+      "name" : "Search through Practitioner endpoint by the Practitioner's full or partial name",
+      "description" : "Searches for Practitioner based on the Practitioner's full or partial name eg) /ws/fhir2/{release}/Practitioner?name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/Practitioner.given"
+      },
+      "name" : "Search through Practitioner endpoint by the Practitioner's given name",
+      "description" : "Searches for Practitioner based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Practitioner?given={givenName}",
       "exampleBoolean" : false
     },
     {
@@ -2861,30 +2813,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/serviceRequest-id"
-      },
-      "name" : "Search through serviceRequest endpoint by service Uuid",
-      "description" : "Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-lastUpdated"
-      },
-      "name" : "Search through serviceRequest endpoint by service lastUpdated field",
-      "description" : "Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/serviceRequest-occurrence"
       },
       "name" : "Search through serviceRequest endpoint by Occurrence when service should occurance",
@@ -2901,66 +2829,6 @@
       },
       "name" : "Search through serviceRequest endpoint by patient uuid",
       "description" : "Searches for serviceRequest by a given patient Uuid eg) /ws/fhir2/{release}/ServiceRequest?patient={uuid}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-patient-identifier"
-      },
-      "name" : "Search serviceRequest endpoint by patient identifier id",
-      "description" : "Searches for ServiceRequest by the patient identifier eg) /ws/fhir2/{release}/ServiceRequest?patient.identifier={identifier}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-patient-name"
-      },
-      "name" : "Search through serviceRequest endpoint by the patient's full or partial name",
-      "description" : "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-patient.family"
-      },
-      "name" : "Search through serviceRequest endpoint by the patient's family name",
-      "description" : "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-patient.given"
-      },
-      "name" : "Search through serviceRequest endpoint by the patient's given name",
-      "description" : "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/serviceRequest-requester"
-      },
-      "name" : "Search through serviceRequest endpoint by Practitioner uuid",
-      "description" : "Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}",
       "exampleBoolean" : false
     },
     {
@@ -3017,10 +2885,34 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/serviceRequest-subject"
+        "reference" : "SearchParameter/serviceRequest-requester"
       },
-      "name" : "Search through serviceRequest endpoint by subject uuid",
-      "description" : "Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}",
+      "name" : "Search through serviceRequest endpoint by Practitioner uuid",
+      "description" : "Searches for serviceRequest by Practitioner uuid who requested the service eg) /ws/fhir2/{release}/ServiceRequest?requester:Practitioner={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-lastUpdated"
+      },
+      "name" : "Search through serviceRequest endpoint by service lastUpdated field",
+      "description" : "Searches for serviceRequest based on service lastUpdated field eg) /openmrs/ws/fhir2/{release}/ServiceRequest?_lastUpdated={date}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-id"
+      },
+      "name" : "Search through serviceRequest endpoint by service Uuid",
+      "description" : "Searches for serviceRequest based on service Uuid eg) /ws/fhir2/{release}/ServiceRequest?_id={uuid}",
       "exampleBoolean" : false
     },
     {
@@ -3069,6 +2961,114 @@
       },
       "name" : "Search through serviceRequest endpoint by subject name",
       "description" : "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-subject"
+      },
+      "name" : "Search through serviceRequest endpoint by subject uuid",
+      "description" : "Searches for serviceRequest by a given subject eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient={patientUuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-patient.family"
+      },
+      "name" : "Search through serviceRequest endpoint by the patient's family name",
+      "description" : "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?patient.family={familyName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-patient-name"
+      },
+      "name" : "Search through serviceRequest endpoint by the patient's full or partial name",
+      "description" : "Searches for serviceRequest based on the patient's full or partial name eg) /ws/fhir2/{release}/ServiceRequest?patient-name={name}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/serviceRequest-patient.given"
+      },
+      "name" : "Search through serviceRequest endpoint by the patient's given name",
+      "description" : "Searches for serviceRequest based on the patient's given name(s) eg) /ws/fhir2/{release}/ServiceRequest?patient.given={givenName}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-id"
+      },
+      "name" : "Searches based on the exact UUID of the person record",
+      "description" : "Searches based on the exact UUID of the person record eg) /ws/fhir2/{release}/Observation?_id={uuid}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-lastUpdated"
+      },
+      "name" : "Searches based on the the dateCreated field for the observation record",
+      "description" : "Searches based on the the dateCreated field for the observation record eg) /ws/fhir2/{release}/Observation?_lastUpdated={date-range}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-has-member-code"
+      },
+      "name" : "Searches for an observation group that contains an observation with the provided code",
+      "description" : "Searches for an observation group that contains an observation with the provided code eg) /ws/fhir2/{release}/Observation?has-member.code={code}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-value-concept"
+      },
+      "name" : "Searches for an observation whose value is a concept that matches the provided concept code",
+      "description" : "Searches for an observation whose value is a concept that matches the provided concept code eg) /ws/fhir2/{release}/Observation?value-concept={concept}",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/observation-value-date"
+      },
+      "name" : "Searches for an observation whose value is a date by the specified date range.",
+      "description" : "Searches for an observation whose value is a date by the specified date range. eg) /ws/fhir2/{release}/Observation?value-date={date}",
       "exampleBoolean" : false
     }],
     "page" : {
