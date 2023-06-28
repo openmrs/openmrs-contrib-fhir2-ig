@@ -29,6 +29,7 @@ Extension:    OMRSPatientIdentifierLocationExtension
 Id:           omrs-patient-identifier-location
 Title:        "OpenMRS Patient Identifier Location"
 Description:  "OpenMRS location for which this identifier is valid"
+* uri = http://fhir.openmrs.org/ext/patient/identifier#location
 * value[x] only Reference(OMRSLocation)
 * ^context[0].type = #element
 * ^context[0].expression = "Identifier"
