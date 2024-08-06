@@ -26,6 +26,7 @@ the FHIR module supports the export of the following FHIR Resources
 14. [Task](https://fhir.openmrs.org/StructureDefinition-OpenMRS-task.html)
 15. [Group](https://fhir.openmrs.org/StructureDefinition-omrs-group.html)
 16. [Immunization](https://fhir.openmrs.org/StructureDefinition-omrs-immunization.html)
+17. [RelatedPerson](https://fhir.openmrs.org/StructureDefinition-omrs-related-person.html)
 
 ### About This Implementation Guide <a name="about"/>
 The top menu allows quick navigation to the different sections, and a Table of Contents is provided with the entire content of this Implementation Guide.
