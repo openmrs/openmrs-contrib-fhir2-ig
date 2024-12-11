@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhir.openmrs.org/core/CodeSystem/encounter-type,0.1.0,active,,EncounterType,Encounter Type Code System,"Encounter Type Coding System",

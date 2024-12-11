@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "openmrs.fhir.core",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OMRSFhir2ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core</pre><div><p>An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openmrs.fhir.core</b></p><a name=\"openmrs.fhir.core\"> </a><a name=\"hcopenmrs.fhir.core\"> </a><a name=\"openmrs.fhir.core-en-US\"> </a><h2>OMRSFhir2ImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core</pre><div><p>An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR</p>\n</div></div>"
   },
   "url" : "http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core",
   "version" : "0.1.0",
   "name" : "OMRSFhir2ImplementationGuide",
   "title" : "OpenMRS Core FHIR Implementation Guide",
   "status" : "active",
-  "date" : "2023-06-23T17:20:12+00:00",
+  "date" : "2024-12-11T17:17:27+00:00",
   "contact" : [{
     "name" : "OpenMRS, Inc.",
     "telecom" : [{
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7ext",
@@ -40,7 +40,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -255,6 +255,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -309,7 +320,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -523,6 +534,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -586,6 +608,18 @@
       "name" : "Encounter Type Code System",
       "description" : "Encounter Type Coding System",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPersonExample"
+      },
+      "name" : "Example of RelatedPerson",
+      "description" : "An example instance of the OpenMRS RelatedPerson resource.",
+      "exampleCanonical" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-related-person"
     },
     {
       "extension" : [{
@@ -1001,6 +1035,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/omrs-related-person"
+      },
+      "name" : "OpenMRS Related Person",
+      "description" : "A FHIR RelatedPerson as understood by OpenMRS Relationship",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/OpenMRS-service-request"
       },
       "name" : "OpenMRS Service Request",
@@ -1054,6 +1100,162 @@
       "name" : "Organization example",
       "description" : "Example organization performing a task",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-active"
+      },
+      "name" : "Search by RelatedPerson Active Status",
+      "description" : "Indicates if the related person record is active",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-address"
+      },
+      "name" : "Search by RelatedPerson Address",
+      "description" : "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-address-city"
+      },
+      "name" : "Search by RelatedPerson Address City",
+      "description" : "Searches for RelatedPerson based on city of address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-address-country"
+      },
+      "name" : "Search by RelatedPerson Address Country",
+      "description" : "Searches for RelatedPerson based on country of address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-address-postalcode"
+      },
+      "name" : "Search by RelatedPerson Address Postal Code",
+      "description" : "Searches for RelatedPerson based on postal code of address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-address-state"
+      },
+      "name" : "Search by RelatedPerson Address State",
+      "description" : "Searches for RelatedPerson based on state of address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-birthdate"
+      },
+      "name" : "Search by RelatedPerson Birthdate",
+      "description" : "Searches for RelatedPerson based on birthdate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-family"
+      },
+      "name" : "Search by RelatedPerson Family Name",
+      "description" : "A portion of the family name of the related person",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-gender"
+      },
+      "name" : "Search by RelatedPerson Gender",
+      "description" : "Searches for RelatedPerson based on gender",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-given"
+      },
+      "name" : "Search by RelatedPerson Given Name",
+      "description" : "A portion of the given name of the related person",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-identifier"
+      },
+      "name" : "Search by RelatedPerson Identifier",
+      "description" : "An Identifier of the RelatedPerson",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-name"
+      },
+      "name" : "Search by RelatedPerson Name",
+      "description" : "Searches for RelatedPerson based on name",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/relatedperson-patient"
+      },
+      "name" : "Search by RelatedPerson Patient Reference",
+      "description" : "The patient this related person is related to",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1460,7 +1662,7 @@
         "reference" : "SearchParameter/AllergyIntolerance-subject-family"
       },
       "name" : "Search through AllergyIntolerance endpoint by subject family",
-      "description" : "Searches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}",
+      "description" : "\tSearches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {
@@ -1868,7 +2070,7 @@
         "reference" : "SearchParameter/condition-subject-family"
       },
       "name" : "Search through condtion endpoint by subject family",
-      "description" : "Searches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}",
+      "description" : "\tSearches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {
@@ -1964,7 +2166,7 @@
         "reference" : "SearchParameter/Encounter-subject-family"
       },
       "name" : "Search through Encounter endpoint by subject family",
-      "description" : "Searches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}",
+      "description" : "\tSearches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {
@@ -2204,7 +2406,7 @@
         "reference" : "SearchParameter/MedicationRequest-subject-family"
       },
       "name" : "Search through MedicationRequest endpoint by subject family",
-      "description" : "Searches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}",
+      "description" : "\tSearches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {
@@ -2408,7 +2610,7 @@
         "reference" : "SearchParameter/observation-subject-family"
       },
       "name" : "Search through observation endpoint by subject family",
-      "description" : "Searches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}",
+      "description" : "\tSearches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {
@@ -2924,7 +3126,7 @@
         "reference" : "SearchParameter/serviceRequest-subject-family"
       },
       "name" : "Search through serviceRequest endpoint by subject family",
-      "description" : "Searches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}",
+      "description" : "\tSearches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}",
       "exampleBoolean" : false
     },
     {

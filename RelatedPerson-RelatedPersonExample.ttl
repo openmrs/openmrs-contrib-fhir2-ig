@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.openmrs.org/core/RelatedPerson/RelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.openmrs.org/core/StructureDefinition/omrs-related-person"^^xsd:anyURI ;
+       fhir:link <http://fhir.openmrs.org/core/StructureDefinition/omrs-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPersonExample</b></p><a name=\"RelatedPersonExample\"> </a><a name=\"hcRelatedPersonExample\"> </a><a name=\"RelatedPersonExample-en-US\"> </a><p><b>identifier</b>: <code>http://openmrs.org/fhir/RelatedPerson</code>/Person/1000Y</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-example-openmrs-Patient.html\">Ricky Jeannette  Male, DoB: 1996-12-12 ( OpenMRS ID: 4343534 (use: official, ))</a></p><p><b>name</b>: Smith John </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 2001-09-08</p><p><b>period</b>: 2020-01-01 --&gt; 2024-01-01</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openmrs.org/fhir/RelatedPerson"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Person/1000Y" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.openmrs.org/core/Patient/example-openmrs-Patient> ;
+     fhir:reference [ fhir:v "Patient/example-openmrs-Patient" ]
+  ] ; # 
+  fhir:name ( [
+     fhir:id [ fhir:v "915c9146-8bdb-4fad-bc51-4af10d041c86" ] ;
+     fhir:family [ fhir:v "John" ] ;
+     fhir:given ( [ fhir:v "Smith" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2001-09-08"^^xsd:date] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2024-01-01"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

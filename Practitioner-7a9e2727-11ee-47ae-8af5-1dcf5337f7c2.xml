@@ -6,7 +6,7 @@
     <profile value="http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;7a9e2727-11ee-47ae-8af5-1dcf5337f7c2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-omrs-practitioner.html">Openmrs Practitioner</a></p></div><p><b>identifier</b>: id: 1001</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: (545-243-545-1)</p><p><b>address</b>: 534 Erewhon St PleasantVille Vic (HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner 7a9e2727-11ee-47ae-8af5-1dcf5337f7c2</b></p><a name="7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"> </a><a name="hc7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"> </a><a name="7a9e2727-11ee-47ae-8af5-1dcf5337f7c2-en-US"> </a><p><b>identifier</b>: 1001</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>telecom</b>: ph: (545-243-545-1)</p><p><b>address</b>: 534 Erewhon St PleasantVille Vic (home)</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1974-12-25</p></div>
   </text>
   <identifier>
     <value value="1001"/>

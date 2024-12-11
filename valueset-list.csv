@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs,0.1.0,active,,OpenMRSOrderCodeVS,OpenMRS Order Code,"The code for the openmrs requested in the EMR.",,"LOINC"

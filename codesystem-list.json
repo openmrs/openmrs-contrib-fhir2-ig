@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.openmrs.org/core/CodeSystem/encounter-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterType",
+      "title" : "Encounter Type Code System",
+      "description" : "Encounter Type Coding System"
+    }
+  ]
+}

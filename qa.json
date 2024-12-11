@@ -1,12 +1,19 @@
 {
   "url" : "http://fhir.openmrs.org/core/ImplementationGuide/openmrs.fhir.core",
   "name" : "OMRSFhir2ImplementationGuide",
+  "title" : "OpenMRS Core FHIR Implementation Guide",
+  "description" : "An Implementation Guide covering the OpenMRS FHIR2 module implementation of FHIR",
+  "status" : "active",
   "package-id" : "openmrs.fhir.core",
   "ig-ver" : "0.1.0",
-  "date" : "Fri, 23 Jun, 2023 17:20:12 +0000",
-  "errs" : 0,
-  "warnings" : 4,
-  "hints" : 7,
+  "date" : "Wed, 11 Dec, 2024 17:17:27 +0000",
+  "dateISO8601" : "2024-12-11T17:17:27+00:00",
+  "errs" : 5,
+  "warnings" : 26,
+  "hints" : 2,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
   "version" : "4.0.1",
-  "tool" : "5.0.0 (3)"
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1627389952
 }

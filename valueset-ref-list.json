@@ -1,0 +1,17 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OpenMRSOrderCodeVS",
+      "title" : "OpenMRS Order Code",
+      "description" : "The code for the openmrs requested in the EMR.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-OpenMRS-diagnostic-report.html" : "OpenMRS Diagnostic Report",
+      "StructureDefinition-OpenMRS-service-request.html" : "OpenMRS Service Request"
+    }
+  ]
+}

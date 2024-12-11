@@ -1,0 +1,496 @@
+OMRSFhir2ImplementationGuide : Validation Results
+=========================================
+
+err = 5, warn = 26, info = 2
+$--
+Generated $--. FHIR version $-- for openmrs.fhir.core#$-- (canonical = http://fhir.openmrs.org/core)
+ Build Errors : 6 / 5 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openmrs.fhir.core : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-openmrs-Observation : 5 / 3 / 3
+ /github/workspace/fsh-generated/resources/Organization-e05c3693-4bcf-4e14-8900-86582265c659 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-example-openmrs-Patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RelatedPerson-RelatedPersonExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-category : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-clinical-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-manifestation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-severity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Condition-requester-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Condition-requester-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-participant : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-participant-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-participant.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-participant.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-participant.name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Encounter-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-requestor.name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-MedicationRequest-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Practitioner.name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-basedOn : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-owner : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-Task-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-clinical-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-occurrence : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-onset-age : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-onset-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-recorded-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-requester : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-requester-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-requester-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-condition-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-group-Search-entity-paramenter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-partof : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-partof-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-location-tag : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-category : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-concept-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-has-member : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-has-member-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-value-concept : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-observation-value-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-birthdate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-death-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-deceased : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-gender : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-birthdate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-gender : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-person-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-active : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-address : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-address-city : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-address-country : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-address-postalcode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-address-state : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-birthdate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-gender : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-relatedperson-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-lastUpdated : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-occurrence : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient.family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-patient.given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-requester-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-family : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-given : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-serviceRequest-subject-name : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-observation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-service-request : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OpenMRS-task : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-AllergyIntolerance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-Condition : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-address : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-group-description-ext : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-immunization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-location-contact-point : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-medication-request : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-person : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-practitioner : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrs-related-person : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omrsmedication-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OpenMRS-order-code-vs : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request-definitions.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/table/tr/td/p/a at Line 373, column 1211: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request-definitions.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/table/tr/td/p/a at Line 487, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 526, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 744, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1273, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-OpenMRS-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1491, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+WARNING: /github/workspace/output/index.html: The html source has duplicate anchor Ids: about,ip,summary
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc.json ==
+WARNING: AllergyIntolerance/5b829d01-34bb-47d1-b1bb-9303c3a9ebc: AllergyIntolerance.reaction[0].substance.coding[0]: A definition for CodeSystem 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' could not be found, so the code cannot be validated
+== fsh-generated/resources/CodeSystem-encounter-type.json ==
+== fsh-generated/resources/Condition-a6867095-e2b1-4a68-9aaa-0d161a37ce9c.json ==
+WARNING: Condition/a6867095-e2b1-4a68-9aaa-0d161a37ce9c: Condition.code.coding[0]: A definition for CodeSystem 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' could not be found, so the code cannot be validated
+== fsh-generated/resources/DiagnosticReport-8a849d5e-6011-4279-a124-40ada5a687de.json ==
+== fsh-generated/resources/Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.json ==
+WARNING: Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb: Encounter.type[0].coding[0].system: A definition for CodeSystem 'http://fhir.openmrs.org/code-system/encounter-type' could not be found, so the code cannot be validated
+== fsh-generated/resources/Group-bc572131-c234-436f-9194-00287759a3e4.json ==
+== fsh-generated/resources/Immunization-d48df5c7-605f-4f7b-88b3-f7235b474663.json ==
+WARNING: Immunization/d48df5c7-605f-4f7b-88b3-f7235b474663: Immunization.vaccineCode.coding[0]: A definition for CodeSystem 'https://cielterminology.org/' could not be found, so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-openmrs.fhir.core.json ==
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[88].description: value should not start or finish with whitespace '\tSearches for AllergyIntolerance based on the patient's family name eg) /ws/fhir2/{release}/AllergyIntolerance?subject:Patient.family={familyName}'
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[122].description: value should not start or finish with whitespace '\tSearches for condition based on the patient's family name eg) /ws/fhir2/{release}/Condition?subject:Patient.family={familyName}'
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[130].description: value should not start or finish with whitespace '\tSearches for Encounter based on the patient's family name eg) /ws/fhir2/{release}/Encounter?subject:Patient.family={familyName}'
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[150].description: value should not start or finish with whitespace '\tSearches for MedicationRequest based on the patient's family name eg) /ws/fhir2/{release}/MedicationRequest?subject:Patient.family={familyName}'
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[167].description: value should not start or finish with whitespace '\tSearches for observations based on the patient's family name eg) /ws/fhir2/{release}/Observation?subject:Patient.family={familyName}'
+WARNING: ImplementationGuide/openmrs.fhir.core: ImplementationGuide.definition.resource[210].description: value should not start or finish with whitespace '\tSearches for serviceRequest based on the patient's family name eg) /ws/fhir2/{release}/ServiceRequest?subject:Patient.family={familyName}'
+== fsh-generated/resources/Location-a3b793f0-eb53-4cda-92ce-fe0a77106252.json ==
+== fsh-generated/resources/Medication-f49e4247-528a-4cfd-8856-de161d03fa76.json ==
+WARNING: Medication/f49e4247-528a-4cfd-8856-de161d03fa76: Medication.code.coding[0].system: A definition for CodeSystem 'https://cielterminology.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-1e2edf7a-89f2-4694-8412-49c99770aed6.json ==
+== fsh-generated/resources/MedicationRequest-OMRSMedicationRequestExample.json ==
+WARNING: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.medication.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://fhir.openmrs.org' could not be found, so the code cannot be validated
+WARNING: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: A definition for CodeSystem 'http://fhir.openmrs.org' could not be found, so the code cannot be validated
+WARNING: MedicationRequest/OMRSMedicationRequestExample: MedicationRequest.dosageInstruction[0].route.coding[0]: A definition for CodeSystem 'http://fhir.openmrs.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-example-openmrs-Observation.json ==
+WARNING: Observation/example-openmrs-Observation: Observation.referenceRange[0].type.coding[0]: A definition for CodeSystem 'http://fhir.openmrs.org/ext/obs/reference-range' could not be found, so the code cannot be validated
+INFORMATION: Observation/example-openmrs-Observation: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/example-openmrs-Observation: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other slices are allowed in addition to this required slice
+ERROR: Observation/example-openmrs-Observation: Observation: Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
+ERROR: Observation/example-openmrs-Observation: Observation.code: OxygenSatCode: magic LOINC code 2708-6 required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
+ERROR: Observation/example-openmrs-Observation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
+ERROR: Observation/example-openmrs-Observation: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
+WARNING: Observation/example-openmrs-Observation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/example-openmrs-Observation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Organization-e05c3693-4bcf-4e14-8900-86582265c659.json ==
+== fsh-generated/resources/Patient-example-openmrs-Patient.json ==
+== fsh-generated/resources/Person-68f44d7f-eb5a-40e9-aa4d-0cc0cc522866.json ==
+== fsh-generated/resources/Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.json ==
+== fsh-generated/resources/RelatedPerson-RelatedPersonExample.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-category.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-clinical-status.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-id.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-manifestation.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-family.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient-name.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-patient.given.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-severity.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-family.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-given.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-AllergyIntolerance-subject-name.json ==
+== fsh-generated/resources/SearchParameter-Condition-requester-family.json ==
+== fsh-generated/resources/SearchParameter-Condition-requester-given.json ==
+== fsh-generated/resources/SearchParameter-Encounter-address-city.json ==
+== fsh-generated/resources/SearchParameter-Encounter-address-country.json ==
+== fsh-generated/resources/SearchParameter-Encounter-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-Encounter-address-state.json ==
+== fsh-generated/resources/SearchParameter-Encounter-date.json ==
+== fsh-generated/resources/SearchParameter-Encounter-id.json ==
+== fsh-generated/resources/SearchParameter-Encounter-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-Encounter-location.json ==
+== fsh-generated/resources/SearchParameter-Encounter-participant.json ==
+== fsh-generated/resources/SearchParameter-Encounter-participant-identifier.json ==
+== fsh-generated/resources/SearchParameter-Encounter-participant.family.json ==
+== fsh-generated/resources/SearchParameter-Encounter-participant.given.json ==
+== fsh-generated/resources/SearchParameter-Encounter-participant.name.json ==
+== fsh-generated/resources/SearchParameter-Encounter-patient.json ==
+== fsh-generated/resources/SearchParameter-Encounter-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-Encounter-patient-name.json ==
+== fsh-generated/resources/SearchParameter-Encounter-patient.family.json ==
+== fsh-generated/resources/SearchParameter-Encounter-patient.given.json ==
+== fsh-generated/resources/SearchParameter-Encounter-subject.json ==
+== fsh-generated/resources/SearchParameter-Encounter-subject-family.json ==
+== fsh-generated/resources/SearchParameter-Encounter-subject-given.json ==
+== fsh-generated/resources/SearchParameter-Encounter-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-Encounter-subject-name.json ==
+== fsh-generated/resources/SearchParameter-Encounter-type.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-id.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-medication.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient-name.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.family.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-patient.given.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor-identifier.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.family.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.given.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-requestor.name.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-family.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-given.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-MedicationRequest-subject-name.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-address-city.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-address-country.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-address-state.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-id.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-identifier.json ==
+== fsh-generated/resources/SearchParameter-Practitioner-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-Practitioner.family.json ==
+== fsh-generated/resources/SearchParameter-Practitioner.given.json ==
+== fsh-generated/resources/SearchParameter-Practitioner.name.json ==
+== fsh-generated/resources/SearchParameter-Task-basedOn.json ==
+== fsh-generated/resources/SearchParameter-Task-id.json ==
+== fsh-generated/resources/SearchParameter-Task-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-Task-owner.json ==
+== fsh-generated/resources/SearchParameter-Task-status.json ==
+== fsh-generated/resources/SearchParameter-condition-clinical-status.json ==
+== fsh-generated/resources/SearchParameter-condition-code.json ==
+== fsh-generated/resources/SearchParameter-condition-encounter.json ==
+== fsh-generated/resources/SearchParameter-condition-id.json ==
+== fsh-generated/resources/SearchParameter-condition-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-condition-occurrence.json ==
+== fsh-generated/resources/SearchParameter-condition-onset-age.json ==
+== fsh-generated/resources/SearchParameter-condition-onset-date.json ==
+== fsh-generated/resources/SearchParameter-condition-patient.json ==
+== fsh-generated/resources/SearchParameter-condition-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-condition-patient-name.json ==
+== fsh-generated/resources/SearchParameter-condition-patient.family.json ==
+== fsh-generated/resources/SearchParameter-condition-patient.given.json ==
+== fsh-generated/resources/SearchParameter-condition-recorded-date.json ==
+== fsh-generated/resources/SearchParameter-condition-requester.json ==
+== fsh-generated/resources/SearchParameter-condition-requester-identifier.json ==
+== fsh-generated/resources/SearchParameter-condition-requester-name.json ==
+== fsh-generated/resources/SearchParameter-condition-subject.json ==
+== fsh-generated/resources/SearchParameter-condition-subject-family.json ==
+== fsh-generated/resources/SearchParameter-condition-subject-given.json ==
+== fsh-generated/resources/SearchParameter-condition-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-condition-subject-name.json ==
+== fsh-generated/resources/SearchParameter-group-Search-entity-paramenter.json ==
+== fsh-generated/resources/SearchParameter-location-address-city.json ==
+== fsh-generated/resources/SearchParameter-location-address-country.json ==
+== fsh-generated/resources/SearchParameter-location-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-location-address-state.json ==
+== fsh-generated/resources/SearchParameter-location-id.json ==
+== fsh-generated/resources/SearchParameter-location-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-location-name.json ==
+== fsh-generated/resources/SearchParameter-location-partof.json ==
+== fsh-generated/resources/SearchParameter-location-partof-name.json ==
+== fsh-generated/resources/SearchParameter-location-tag.json ==
+== fsh-generated/resources/SearchParameter-observation-category.json ==
+== fsh-generated/resources/SearchParameter-observation-concept-code.json ==
+== fsh-generated/resources/SearchParameter-observation-date.json ==
+== fsh-generated/resources/SearchParameter-observation-encounter.json ==
+== fsh-generated/resources/SearchParameter-observation-has-member.json ==
+== fsh-generated/resources/SearchParameter-observation-has-member-code.json ==
+== fsh-generated/resources/SearchParameter-observation-id.json ==
+== fsh-generated/resources/SearchParameter-observation-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-observation-patient.json ==
+== fsh-generated/resources/SearchParameter-observation-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-observation-patient-name.json ==
+== fsh-generated/resources/SearchParameter-observation-patient.family.json ==
+== fsh-generated/resources/SearchParameter-observation-patient.given.json ==
+== fsh-generated/resources/SearchParameter-observation-subject.json ==
+== fsh-generated/resources/SearchParameter-observation-subject-family.json ==
+== fsh-generated/resources/SearchParameter-observation-subject-given.json ==
+== fsh-generated/resources/SearchParameter-observation-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-observation-subject-name.json ==
+== fsh-generated/resources/SearchParameter-observation-value-concept.json ==
+== fsh-generated/resources/SearchParameter-observation-value-date.json ==
+== fsh-generated/resources/SearchParameter-patient-address-city.json ==
+== fsh-generated/resources/SearchParameter-patient-address-country.json ==
+== fsh-generated/resources/SearchParameter-patient-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-patient-address-state.json ==
+== fsh-generated/resources/SearchParameter-patient-birthdate.json ==
+== fsh-generated/resources/SearchParameter-patient-death-date.json ==
+== fsh-generated/resources/SearchParameter-patient-deceased.json ==
+== fsh-generated/resources/SearchParameter-patient-gender.json ==
+== fsh-generated/resources/SearchParameter-patient-id.json ==
+== fsh-generated/resources/SearchParameter-patient-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-patient-name.json ==
+== fsh-generated/resources/SearchParameter-person-address-city.json ==
+== fsh-generated/resources/SearchParameter-person-address-country.json ==
+== fsh-generated/resources/SearchParameter-person-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-person-address-state.json ==
+== fsh-generated/resources/SearchParameter-person-birthdate.json ==
+== fsh-generated/resources/SearchParameter-person-gender.json ==
+== fsh-generated/resources/SearchParameter-person-id.json ==
+== fsh-generated/resources/SearchParameter-person-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-person-name.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-active.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-address.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-address-city.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-address-country.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-address-state.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-birthdate.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-family.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-gender.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-given.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-identifier.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-name.json ==
+== fsh-generated/resources/SearchParameter-relatedperson-patient.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-code.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-encounter.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-id.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-lastUpdated.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-occurrence.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-patient-name.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.family.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-patient.given.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-requester.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-family.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-given.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-identifier.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-requester-name.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-subject.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-family.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-given.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-identifier.json ==
+== fsh-generated/resources/SearchParameter-serviceRequest-subject-name.json ==
+== fsh-generated/resources/ServiceRequest-caec0cba-3802-4b70-a6dd-2eb064450763.json ==
+== fsh-generated/resources/StructureDefinition-OpenMRS-diagnostic-report.json ==
+WARNING: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.differential.element[4].binding: The definition for the element 'DiagnosticReport.code.coding' binds to the value set 'http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/OpenMRS-diagnostic-report: StructureDefinition.snapshot.element[16].binding: The definition for the element 'DiagnosticReport.code.coding' binds to the value set 'http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-OpenMRS-observation.json ==
+== fsh-generated/resources/StructureDefinition-OpenMRS-service-request.json ==
+WARNING: StructureDefinition/OpenMRS-service-request: StructureDefinition.differential.element[6].binding: The definition for the element 'ServiceRequest.code.coding' binds to the value set 'http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/OpenMRS-service-request: StructureDefinition.snapshot.element[23].binding: The definition for the element 'ServiceRequest.code.coding' binds to the value set 'http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-OpenMRS-task.json ==
+== fsh-generated/resources/StructureDefinition-omrs-AllergyIntolerance.json ==
+== fsh-generated/resources/StructureDefinition-omrs-Condition.json ==
+== fsh-generated/resources/StructureDefinition-omrs-address.json ==
+== fsh-generated/resources/StructureDefinition-omrs-encounter.json ==
+== fsh-generated/resources/StructureDefinition-omrs-group.json ==
+== fsh-generated/resources/StructureDefinition-omrs-group-description-ext.json ==
+== fsh-generated/resources/StructureDefinition-omrs-immunization.json ==
+== fsh-generated/resources/StructureDefinition-omrs-location.json ==
+== fsh-generated/resources/StructureDefinition-omrs-location-contact-point.json ==
+== fsh-generated/resources/StructureDefinition-omrs-medication.json ==
+== fsh-generated/resources/StructureDefinition-omrs-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-omrs-patient.json ==
+== fsh-generated/resources/StructureDefinition-omrs-patient-identifier.json ==
+== fsh-generated/resources/StructureDefinition-omrs-patient-identifier-location.json ==
+== fsh-generated/resources/StructureDefinition-omrs-person.json ==
+== fsh-generated/resources/StructureDefinition-omrs-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-omrs-related-person.json ==
+== fsh-generated/resources/StructureDefinition-omrsmedication-dispense.json ==
+INFORMATION: StructureDefinition/omrsmedication-dispense: StructureDefinition.snapshot.element[29].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/Task-e8f8d71a-6c14-4105-b6fe-30f3cf6b7dc9.json ==
+== fsh-generated/resources/ValueSet-OpenMRS-order-code-vs.json ==

@@ -1,6 +1,7 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: FHIR HL7 vs OMRS FHIR2"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FHIR HL7 vs OMRS FHIR2","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping"
 "Location","Location","","","",0,*,"","","","null {[]} {[]}
-","Details and position information for a physical place","Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated.","","","","","","","","","",,,,,"",,,,"Location",0,*,"","","Entity. Role, or Act",".Role[classCode=SDLC]","OMRS Location"
+","Details and position information for a physical place","Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated.","","","","","","","","","",,,,,"",,,,"Location",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","OMRS Location","Entity. Role, or Act",".Role[classCode=SDLC]"
 "Location.id","Location.id","","","",1,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"","","Location.uuid"
 "Location.meta","Location.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -61,13 +62,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".id","FiveWs.identifier"
 "Location.status","Location.status","","","",0,1,"","Y","Y","code {[]} {[]}
 ","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","","","","","","","","","",,"required","Indicates whether the location is still in use.","http://hl7.org/fhir/ValueSet/location-status|4.0.1","",,,,"Location.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".statusCode","FiveWs.status","retired"
+","retired",".statusCode","FiveWs.status"
 "Location.operationalStatus","Location.operationalStatus","","","",0,1,"","","Y","Coding {[]} {[]}
 ","The operational status of the location (typically only for a bed/room)","The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.","","","","","","","","","",,"preferred","The operational status if the location (where typically a bed/room).","http://terminology.hl7.org/ValueSet/v2-0116","",,,,"Location.operationalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.status"
 "Location.name","Location.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name of the location as used by humans","Name of the location as used by humans. Does not need to be unique.","If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"Location.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".name","name"
+","name",".name"
 "Location.alias","Location.alias","","","",0,*,"","","","string {[]} {[]}
 ","A list of alternate names that the location is known as, or was known as, in the past","A list of alternate names that the location is known as, or was known as, in the past.","There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the location.","Over time locations and organizations go through many changes and can be known by different names.
 
@@ -75,7 +76,7 @@ For searching knowing previous names that the location was known by can be very 
 ",".name"
 "Location.description","Location.description","","","",1,1,"","","Y","string {[]} {[]}
 ","Additional details about the location that could be displayed as further information to identify the location beyond its name","Description of the Location, which helps in finding or referencing the place.","","Humans need additional information to verify a correct location has been identified.","","","","","","","",,,,,"",,,,"Location.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".playingEntity[classCode=PLC determinerCode=INSTANCE].desc","description"
+","description",".playingEntity[classCode=PLC determinerCode=INSTANCE].desc"
 "Location.mode","Location.mode","","","",0,1,"","","Y","code {[]} {[]}
 ","instance | kind","Indicates whether a resource instance represents a specific location or a class of locations.","This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood.","When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location.","","","","","","","",,"required","Indicates whether a resource instance represents a specific location or a class of locations.","http://hl7.org/fhir/ValueSet/location-mode|4.0.1","",,,,"Location.mode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity[classCode=PLC].determinerCode","FiveWs.class"
@@ -108,26 +109,26 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","./formatted"
 "Location.address.line","Location.address.line","","","",0,*,"","","Y","string {[]} {[]}
 ","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = AL]","address1"
+","address1","AD.part[parttype = AL]"
 "Location.address.city","Location.address.city","","Municpality
 ","",0,1,"","","Y","string {[]} {[]}
 ","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CTY]","cityVillage"
+","cityVillage","AD.part[parttype = CTY]"
 "Location.address.district","Location.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
 ","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CNT | CPA]","countyDistrict"
+","countyDistrict","AD.part[parttype = CNT | CPA]"
 "Location.address.state","Location.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
 ","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = STA]","stateProvince"
+","stateProvince","AD.part[parttype = STA]"
 "Location.address.postalCode","Location.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
 ","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = ZIP]","postalCode"
+","postalCode","AD.part[parttype = ZIP]"
 "Location.address.country","Location.address.country","","","",0,1,"","","Y","string {[]} {[]}
 ","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CNT]","country"
+","country","AD.part[parttype = CNT]"
 "Location.address.period","Location.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
   <start value=""2010-03-23""/>
@@ -154,10 +155,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Location.position.longitude","Location.position.longitude","","","",1,1,"","","","decimal {[]} {[]}
 ","Longitude with WGS84 datum","Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.longitude",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)","longintude"
+","longintude","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
 "Location.position.latitude","Location.position.latitude","","","",1,1,"","","","decimal {[]} {[]}
 ","Latitude with WGS84 datum","Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.latitude",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)","latitude"
+","latitude","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
 "Location.position.altitude","Location.position.altitude","","","",0,1,"","","","decimal {[]} {[]}
 ","Altitude with WGS84 datum","Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.altitude",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
@@ -166,7 +167,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".scopingEntity[classCode=ORG determinerKind=INSTANCE]"
 "Location.partOf","Location.partOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Another Location this one is physically a part of","Another Location of which this Location is physically a part of.","","For purposes of location, display and identification, knowing which locations are located within other locations is important.","","","","","","","",,,,,"",,,,"Location.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".inboundLink[typeCode=PART].source[classCode=SDLC]","parentLocation"
+","parentLocation",".inboundLink[typeCode=PART].source[classCode=SDLC]"
 "Location.hoursOfOperation","Location.hoursOfOperation","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","What days/times during a week is this location usually open","What days/times during a week is this location usually open.","This type of information is commonly found published in directories and on websites informing customers when the facility is available.
 
