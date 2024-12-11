@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"a6867095-e2b1-4a68-9aaa-0d161a37ce9c\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;a6867095-e2b1-4a68-9aaa-0d161a37ce9c&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omrs-Condition.html\">OpenMRS condition</a></p></div><p><b>code</b>: 116128 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CIEL#116128)</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Patient/example-openmrs-Patient: Horatio Hornblower (OpenMRS ID:101-6)</a> &quot; JEANNETTE&quot;</p><p><b>recordedDate</b>: 2019-06-18 06:37:26+0300</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition a6867095-e2b1-4a68-9aaa-0d161a37ce9c</b></p><a name=\"a6867095-e2b1-4a68-9aaa-0d161a37ce9c\"> </a><a name=\"hca6867095-e2b1-4a68-9aaa-0d161a37ce9c\"> </a><a name=\"a6867095-e2b1-4a68-9aaa-0d161a37ce9c-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{https://openconceptlab.org/orgs/CIEL/sources/CIEL 116128}\">116128</span></p><p><b>subject</b>: <a href=\"Patient-example-openmrs-Patient.html\">Horatio Hornblower (OpenMRS ID:101-6)</a></p><p><b>recordedDate</b>: 2019-06-18 06:37:26+0300</p></div>"
   ] ; # 
   fhir:code [
      fhir:coding ( [

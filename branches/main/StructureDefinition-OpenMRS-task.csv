@@ -1,6 +1,7 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping","Mapping: FHIR HL7 vs OMRS FHIR2"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FHIR HL7 vs OMRS FHIR2","Mapping: Workflow Pattern","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping"
 "Task","Task","","","",0,*,"","","","null {[]} {[]}
-","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"","","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]","OpenMRSTask"
+","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}inv-1:Last modified date must be greater than or equal to authored-on date. {lastModified.exists().not() or authoredOn.exists().not() or lastModified >= authoredOn}","OpenMRSTask","Request, Event","Entity. Role, or Act","ControlAct[moodCode=INT]"
 "Task.id","Task.id","","","",1,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"","","uuid"
 "Task.meta","Task.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -40,7 +41,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Event.instantiatesUrl",".outboundRelationship[typeCode=DEFN].target"
 "Task.basedOn","Task.basedOn","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://fhir.openmrs.org/core/StructureDefinition/OpenMRS-service-request]]}
 ","Request fulfilled by this task","BasedOn refers to a higher-level authorization that triggered the creation of the task.  It references a ""request"" resource such as a ServiceRequest, MedicationRequest, ServiceRequest, CarePlan, etc. which is distinct from the ""request"" resource the task is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a task is created to fulfill a procedureRequest ( = FocusOn ) to collect a specimen from a patient.","","","","","","","","","",,,,,"",,,,"Task.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.basedOn, Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=INT]","FhirTask.basedOn"
+","FhirTask.basedOn","Request.basedOn, Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=INT]"
 "Task.groupIdentifier","Task.groupIdentifier","","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Requisition or grouper id","An identifier that links together multiple tasks and other requests that were created in the same context.","","Billing and/or reporting can be linked to whether multiple requests were created as a single unit.","","","","","","","",,,,,"",,,,"Task.groupIdentifier",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.groupIdentifier",".inboundRelationship[typeCode=COMP].source[moodCode=INT].id"
@@ -49,7 +50,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Event.partOf",".inboundRelationship[typeCode=COMP].source[moodCode=INT]"
 "Task.status","Task.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","draft | requested | received | accepted | +","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.status, Event.status",".statusCode","FiveWs.status","FhirTask.status"
+","FhirTask.status","Request.status, Event.status",".statusCode","FiveWs.status"
 "Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Reason for current status","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","Codes to identify the reason for current status.  These will typically be specific to a particular workflow.","","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code=""status change""].reasonCode"
@@ -60,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option","Indicates the ""level"" of actionability associated with the Task, i.e. i+R[9]Cs this a proposed task, a planned task, an actionable task, etc.","This element is immutable.  Proposed tasks, planned tasks, etc. must be distinct instances.
 
 In most cases, Tasks will have an intent of ""order"".","","","","","","","","",,"required","Distinguishes whether the task is a proposal, plan or full order.","http://hl7.org/fhir/ValueSet/task-intent|4.0.1","",,,,"Task.intent",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.intent",".moodCode","FiveWs.class","FhirTask.intent"
+","FhirTask.intent","Request.intent",".moodCode","FiveWs.class"
 "Task.priority","Task.priority","","","",0,1,"","","","code {[]} {[]}
 ","routine | urgent | asap | stat","Indicates how quickly the Task should be addressed with respect to other requests.","","Used to identify the service level expected while performing a task.","","If missing, this task should be performed with normal priority","","","","","",,"required","The task's priority.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"Task.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.priority",".priorityCode","FiveWs.grade"
@@ -76,10 +77,10 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "Task.for","Task.for","","Patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.openmrs.org/core/StructureDefinition/omrs-patient]]}
 ","Beneficiary of the Task","The entity who benefits from the performance of the service specified in the task (e.g., the patient).","","Used to track tasks outstanding for a beneficiary.  Do not use to track the task owner or creator (see owner and creator respectively).  This can also affect access control.","","","","","","","",,,,,"",,,,"Task.for",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.subject, Event.subject",".participation[typeCode=RCT].role","FiveWs.subject[x]","FiveWs.subject","FhirTask.for"
+","FhirTask.for","Request.subject, Event.subject",".participation[typeCode=RCT].role","FiveWs.subject[x]","FiveWs.subject"
 "Task.encounter","Task.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.openmrs.org/core/StructureDefinition/omrs-encounter]]}
 ","Healthcare event during which this task originated","The healthcare event  (e.g. a patient and healthcare provider interaction) during which this task was created.","","For some tasks it may be important to know the link between the encounter the task originated within.","","","","","","","",,,,,"",,,,"Task.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.context, Event.context",".inboundRelationship[typeCode=COMP].source[classCode=PCPR, moodCode=EVN]","FiveWs.context","FhirTask.encounter"
+","FhirTask.encounter","Request.context, Event.context",".inboundRelationship[typeCode=COMP].source[classCode=PCPR, moodCode=EVN]","FiveWs.context"
 "Task.executionPeriod","Task.executionPeriod","","","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
@@ -87,12 +88,12 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","",1,1,"","","","dateTime {[]} {[]}
 ","Task Creation Date","The date and time this task was created.","","Most often used along with lastUpdated to track duration of task to supporting monitoring and management.","","","","","","","",,,,,"",,,,"Task.authoredOn",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.authoredOn",".participation[typeCode=AUT].time","FiveWs.recorded","FhirTask.dateCreated"
+","FhirTask.dateCreated","Request.authoredOn",".participation[typeCode=AUT].time","FiveWs.recorded"
 "Task.lastModified","Task.lastModified","","Update Date
 ","",0,1,"","","Y","dateTime {[]} {[]}
 ","Task Last Modified Date","The date and time of last modification to this task.","","Used along with history to track task activity and time in a particular task state.  This enables monitoring and management.","","","","","","","",,,,,"",,,,"Task.lastModified",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".inboundRelationship[typeCode=SUBJ, ].source[classCode=CACT, moodCode=EVN].effectiveTime","FhirTask.dateChanged"
+","FhirTask.dateChanged",".inboundRelationship[typeCode=SUBJ, ].source[classCode=CACT, moodCode=EVN].effectiveTime"
 "Task.requester","Task.requester","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Who is asking for task to be done","The creator of the task.","","Identifies who created this task.  May be used by access control mechanisms (e.g., to ensure that only the creator can cancel a task).","","","","","","","",,,,,"",,,,"Task.requester",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.requester",".participation[typeCode=AUT].role","FiveWs.author"
@@ -102,7 +103,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 "Task.owner","Task.owner","","Performer
 Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor","FhirTask.owner"
+","FhirTask.owner","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
 "Task.location","Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where task occurs","Principal physical location where the this task is performed.","","Ties the event to where the records are likely kept and provides context around the event occurrence (e.g. if it occurred inside or outside a dedicated healthcare setting).","","","","","","","",,,,,"",,,,"Task.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.reasonCode, Event.reasonCode",".participation[typeCode=LOC].role","FiveWs.where[x]"
@@ -149,7 +150,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Task.input","Task.input","","Supporting Information
 ","",0,*,"","","","BackboneElement {[]} {[]}
 ","Information used to perform task","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???","FhirTask.input"
+","FhirTask.input","???"
 "Task.input.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.input.extension","Task.input.extension","","extensions
@@ -171,7 +172,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","???"
 "Task.output","Task.output","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Information produced as part of task","Outputs produced by the Task.","","Resources and data produced during the execution the task.  This data is generated by the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.output",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","???","FhirTask.output"
+","FhirTask.output","???"
 "Task.output.id","Task.output.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Task.output.extension","Task.output.extension","","extensions

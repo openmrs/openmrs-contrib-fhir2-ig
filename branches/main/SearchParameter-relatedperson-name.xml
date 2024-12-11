@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="relatedperson-name"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter relatedperson-name</b></p><a name="relatedperson-name"> </a><a name="hcrelatedperson-name"> </a><a name="relatedperson-name-en-US"> </a><h2>RelatedPersonNameSearchParameter</h2><p>Parameter <code>name</code>:<code>string</code></p><div><p>Searches for RelatedPerson based on name</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <url value="http://fhir.openmrs.org/core/SearchParameter/relatedperson-name"/>
+  <version value="0.1.0"/>
+  <name value="RelatedPersonNameSearchParameter"/>
+  <status value="active"/>
+  <date value="2024-12-11T17:17:27+00:00"/>
+  <contact>
+    <name value="OpenMRS, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openmrs.org"/>
+    </telecom>
+  </contact>
+  <description value="Searches for RelatedPerson based on name"/>
+  <code value="name"/>
+  <base value="RelatedPerson"/>
+  <type value="string"/>
+  <target value="RelatedPerson"/>
+</SearchParameter>

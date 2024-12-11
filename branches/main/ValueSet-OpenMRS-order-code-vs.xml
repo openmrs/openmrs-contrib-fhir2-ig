@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="OpenMRS-order-code-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet OpenMRS-order-code-vs</b></p><a name="OpenMRS-order-code-vs"> </a><a name="hcOpenMRS-order-code-vs"> </a><a name="OpenMRS-order-code-vs-en-US"> </a><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
   </text>
   <url value="http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="OpenMRS Order Code"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2023-06-23T17:20:12+00:00"/>
+  <date value="2024-12-11T17:17:27+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>

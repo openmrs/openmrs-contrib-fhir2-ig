@@ -1050,6 +1050,97 @@
     "name" : "PersonNameSearchParameter"
   },
   {
+    "id" : "relatedperson-active",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-active",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonActiveSearchParameter"
+  },
+  {
+    "id" : "relatedperson-address",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-address",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonAddressSearchParameter"
+  },
+  {
+    "id" : "relatedperson-address-city",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-address-city",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonCitySearchParameter"
+  },
+  {
+    "id" : "relatedperson-address-country",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-address-country",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonCountrySearchParameter"
+  },
+  {
+    "id" : "relatedperson-address-postalcode",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-address-postalcode",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonPostalCodeSearchParameter"
+  },
+  {
+    "id" : "relatedperson-address-state",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-address-state",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonStateSearchParameter"
+  },
+  {
+    "id" : "relatedperson-birthdate",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-birthdate",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonBirthdateSearchParameter"
+  },
+  {
+    "id" : "relatedperson-family",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-family",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonFamilySearchParameter"
+  },
+  {
+    "id" : "relatedperson-gender",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-gender",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonGenderSearchParameter"
+  },
+  {
+    "id" : "relatedperson-given",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-given",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonGivenSearchParameter"
+  },
+  {
+    "id" : "relatedperson-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-identifier",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonIdentifierSearchParameter"
+  },
+  {
+    "id" : "relatedperson-name",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-name",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonNameSearchParameter"
+  },
+  {
+    "id" : "relatedperson-patient",
+    "type" : "SearchParameter",
+    "url" : "http://fhir.openmrs.org/core/SearchParameter/relatedperson-patient",
+    "version" : "0.1.0",
+    "name" : "RelatedPersonPatientSearchParameter"
+  },
+  {
     "id" : "serviceRequest-code",
     "type" : "SearchParameter",
     "url" : "http://fhir.openmrs.org/core/SearchParameter/serviceRequest-code",
@@ -1328,6 +1419,13 @@
     "url" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-practitioner",
     "version" : "0.1.0",
     "name" : "OMRSPractitioner"
+  },
+  {
+    "id" : "omrs-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.openmrs.org/core/StructureDefinition/omrs-related-person",
+    "version" : "0.1.0",
+    "name" : "OMRSRelatedPerson"
   },
   {
     "id" : "omrsmedication-dispense",
